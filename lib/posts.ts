@@ -5,8 +5,8 @@ import remark from 'remark'
 import html from 'remark-html'
 
 interface SortedPosts {
-  id: string,
-  title: string,
+  id: string
+  title: string
   date: string
 }
 

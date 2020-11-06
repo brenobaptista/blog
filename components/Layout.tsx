@@ -16,28 +16,16 @@ export const siteTitle = 'Breno Baptista'
 const Layout = ({ children, home }: Props): JSX.Element => (
   <div className={styles.container}>
     <Head>
-      <link
-        rel='icon'
-        href='/favicon.ico'
-      />
-      <meta
-        name='description'
-        content="Breno Baptista's Portfolio"
-      />
+      <link rel='icon' href='/favicon.ico' />
+      <meta name='description' content="Breno Baptista's Portfolio" />
       <meta
         property='og:image'
         content={`https://og-image.now.sh/${encodeURI(
           siteTitle
         )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
       />
-      <meta
-        name='og:title'
-        content={siteTitle}
-      />
-      <meta
-        name='twitter:card'
-        content='summary_large_image'
-      />
+      <meta name='og:title' content={siteTitle} />
+      <meta name='twitter:card' content='summary_large_image' />
     </Head>
     <header className={styles.header}>
       {home ? (
@@ -50,9 +38,7 @@ const Layout = ({ children, home }: Props): JSX.Element => (
             height={128}
             loading='eager'
           />
-          <h1 className={utilStyles.heading2Xl}>
-            {name}
-          </h1>
+          <h1 className={utilStyles.heading2Xl}>{name}</h1>
         </>
       ) : (
         <>
@@ -70,23 +56,17 @@ const Layout = ({ children, home }: Props): JSX.Element => (
           </Link>
           <h2 className={utilStyles.headingLg}>
             <Link href='/'>
-              <a className={utilStyles.colorInherit}>
-                {name}
-              </a>
+              <a className={utilStyles.colorInherit}>{name}</a>
             </Link>
           </h2>
         </>
       )}
     </header>
-    <main>
-      {children}
-    </main>
+    <main>{children}</main>
     {!home && (
       <div className={styles.backToHome}>
         <Link href='/'>
-          <a>
-            ← Back to home
-          </a>
+          <a>← Back to home</a>
         </Link>
       </div>
     )}

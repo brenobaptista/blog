@@ -32,8 +32,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
     <section className={utilStyles.headingMd}>
       <p>[Your Self Introduction]</p>
       <p>
-        (This is a sample website - you’ll be building a site like this in
-        {' '}
+        (This is a sample website - you’ll be building a site like this in{' '}
         <a href='https://nextjs.org/learn'>our Next.js tutorial</a>
         .)
       </p>
@@ -44,9 +43,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
         {allPostsData.map(({ id, date, title }) => (
           <li className={utilStyles.listItem} key={id}>
             <Link href={`/posts/${id}`}>
-              <a>
-                {title}
-              </a>
+              <a>{title}</a>
             </Link>
             <br />
             <small className={utilStyles.lightText}>
