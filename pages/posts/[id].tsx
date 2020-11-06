@@ -31,7 +31,7 @@ interface Props {
   }
 }
 
-const Post = ({ postData }: Props) => (
+const Post = ({ postData }: Props): JSX.Element => (
   <Layout>
     <Head>
       <title>
