@@ -48,6 +48,7 @@ const Layout = ({ children, home }: Props) => (
             alt={name}
             width={128}
             height={128}
+            loading='eager'
           />
           <h1 className={utilStyles.heading2Xl}>
             {name}
@@ -63,6 +64,7 @@ const Layout = ({ children, home }: Props) => (
                 alt={name}
                 width={96}
                 height={96}
+                loading='eager'
               />
             </a>
           </Link>
