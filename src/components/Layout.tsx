@@ -13,53 +13,39 @@ interface Props {
 const name = 'Breno Baptista'
 export const siteTitle = 'Breno Baptista'
 
-const Layout = ({ children, home }: Props) => (
+const Layout = ({ children, home }: Props): JSX.Element => (
   <div className={styles.container}>
     <Head>
-      <link
-        rel="icon"
-        href="/favicon.ico"
-      />
+      <link rel='icon' href='/favicon.ico' />
+      <meta name='description' content="Breno Baptista's Portfolio" />
       <meta
-        name="description"
-        content="Breno Baptista's Portfolio"
-      />
-      <meta
-        property="og:image"
+        property='og:image'
         content={`https://og-image.now.sh/${encodeURI(
           siteTitle
         )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
       />
-      <meta
-        name="og:title"
-        content={siteTitle}
-      />
-      <meta
-        name="twitter:card"
-        content="summary_large_image"
-      />
+      <meta name='og:title' content={siteTitle} />
+      <meta name='twitter:card' content='summary_large_image' />
     </Head>
     <header className={styles.header}>
       {home ? (
         <>
           <Image
-            src="/images/profile.jpg"
+            src='/images/profile.jpg'
             className={utilStyles.borderCircle}
             alt={name}
             width={128}
             height={128}
             loading='eager'
           />
-          <h1 className={utilStyles.heading2Xl}>
-            {name}
-          </h1>
+          <h1 className={utilStyles.heading2Xl}>{name}</h1>
         </>
       ) : (
         <>
-          <Link href="/">
+          <Link href='/'>
             <a>
               <Image
-                src="/images/profile.jpg"
+                src='/images/profile.jpg'
                 className={utilStyles.borderCircle}
                 alt={name}
                 width={96}
@@ -69,24 +55,18 @@ const Layout = ({ children, home }: Props) => (
             </a>
           </Link>
           <h2 className={utilStyles.headingLg}>
-            <Link href="/">
-              <a className={utilStyles.colorInherit}>
-                {name}
-              </a>
+            <Link href='/'>
+              <a className={utilStyles.colorInherit}>{name}</a>
             </Link>
           </h2>
         </>
       )}
     </header>
-    <main>
-      {children}
-    </main>
+    <main>{children}</main>
     {!home && (
       <div className={styles.backToHome}>
-        <Link href="/">
-          <a>
-            ← Back to home
-          </a>
+        <Link href='/'>
+          <a>← Back to home</a>
         </Link>
       </div>
     )}

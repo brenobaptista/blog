@@ -31,17 +31,13 @@ interface Props {
   }
 }
 
-const Post = ({ postData }: Props) => (
+const Post = ({ postData }: Props): JSX.Element => (
   <Layout>
     <Head>
-      <title>
-        {postData.title}
-      </title>
+      <title>{postData.title}</title>
     </Head>
     <article>
-      <h1 className={utilStyles.headingXl}>
-        {postData.title}
-      </h1>
+      <h1 className={utilStyles.headingXl}>{postData.title}</h1>
       <div className={utilStyles.lightText}>
         <Date date={postData.date} />
       </div>

@@ -4,14 +4,22 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 
+interface SortedPosts {
+  id: string
+  title: string
+  date: string
+}
+
+type PostsByDate = Array<SortedPosts>
+
 interface MatterResultData {
   date: string
   title: string
 }
 
-const postsDirectory = path.join(process.cwd(), 'posts')
+const postsDirectory = path.join(process.cwd(), 'src/posts')
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): PostsByDate {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
@@ -31,28 +39,36 @@ export function getSortedPostsData() {
       ...(matterResult.data as MatterResultData)
     }
   })
+
   // Sort posts by date
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1
-    } else {
-      return -1
     }
+
+    return -1
   })
 }
 
-export function getAllPostIds() {
+type ListFileNames = Array<{ params: { id: string } }>
+
+export function getAllPostIds(): ListFileNames {
   const fileNames = fs.readdirSync(postsDirectory)
-  return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
+  return fileNames.map(fileName => ({
+    params: {
+      id: fileName.replace(/\.md$/, '')
     }
-  })
+  }))
 }
 
-export async function getPostData(id: string) {
+interface PostData {
+  id: string
+  contentHtml: string
+  title: string
+  date: string
+}
+
+export async function getPostData(id: string): Promise<PostData> {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
@@ -65,10 +81,13 @@ export async function getPostData(id: string) {
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
 
+  const { title, date } = matterResult.data
+
   // Combine the data with the id and contentHtml
   return {
     id,
     contentHtml,
-    ...(matterResult.data as MatterResultData)
+    title,
+    date
   }
 }
