@@ -17,7 +17,7 @@ interface MatterResultData {
   title: string
 }
 
-const postsDirectory = path.join(process.cwd(), 'posts')
+const postsDirectory = path.join(process.cwd(), 'src/posts')
 
 export function getSortedPostsData(): PostsByDate {
   // Get file names under /posts
