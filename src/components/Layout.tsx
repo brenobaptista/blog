@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from '../styles/Layout.module.css'
-import utilStyles from '../styles/Utils.module.css'
+import { Container, Header, BackToHome } from '../styles/components/Layout'
 
 interface Props {
   children: React.ReactNode
@@ -14,7 +13,7 @@ const name = 'Breno Baptista'
 export const siteTitle = 'Breno Baptista'
 
 const Layout = ({ children, home }: Props): JSX.Element => (
-  <div className={styles.container}>
+  <Container>
     <Head>
       <link rel='icon' href='/favicon.ico' />
       <meta name='description' content="Breno Baptista's Portfolio" />
@@ -27,18 +26,17 @@ const Layout = ({ children, home }: Props): JSX.Element => (
       <meta name='og:title' content={siteTitle} />
       <meta name='twitter:card' content='summary_large_image' />
     </Head>
-    <header className={styles.header}>
+    <Header>
       {home ? (
         <>
           <Image
             src='/images/profile.jpg'
-            className={utilStyles.borderCircle}
             alt={name}
             width={128}
             height={128}
             loading='eager'
           />
-          <h1 className={utilStyles.heading2Xl}>{name}</h1>
+          <h1>{name}</h1>
         </>
       ) : (
         <>
@@ -46,7 +44,6 @@ const Layout = ({ children, home }: Props): JSX.Element => (
             <a>
               <Image
                 src='/images/profile.jpg'
-                className={utilStyles.borderCircle}
                 alt={name}
                 width={96}
                 height={96}
@@ -54,23 +51,23 @@ const Layout = ({ children, home }: Props): JSX.Element => (
               />
             </a>
           </Link>
-          <h2 className={utilStyles.headingLg}>
+          <h2>
             <Link href='/'>
-              <a className={utilStyles.colorInherit}>{name}</a>
+              <a>{name}</a>
             </Link>
           </h2>
         </>
       )}
-    </header>
+    </Header>
     <main>{children}</main>
     {!home && (
-      <div className={styles.backToHome}>
+      <BackToHome>
         <Link href='/'>
           <a>← Back to home</a>
         </Link>
-      </div>
+      </BackToHome>
     )}
-  </div>
+  </Container>
 )
 
 export default Layout

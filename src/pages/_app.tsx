@@ -1,9 +1,14 @@
 import { AppProps } from 'next/app'
+import { ThemeProvider } from 'styled-components'
 
-import '../styles/globals.css'
+import GlobalStyle from '../styles/global'
+import theme from '../styles/theme'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
-  <Component {...pageProps} />
+  <ThemeProvider theme={theme}>
+    <Component {...pageProps} />
+    <GlobalStyle />
+  </ThemeProvider>
 )
 
 export default MyApp
