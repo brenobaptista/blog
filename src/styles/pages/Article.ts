@@ -8,10 +8,6 @@ const Article = styled.article`
     letter-spacing: -0.05rem;
     margin: 16px 0;
   }
-
-  time {
-    color: ${props => props.theme.colors.date};
-  }
 `
 
 export default Article

@@ -1,5 +1,7 @@
 import { parseISO, format } from 'date-fns'
 
+import Time from '../styles/components/Date'
+
 interface Props {
   date: string
 }
@@ -7,7 +9,7 @@ interface Props {
 const Date = ({ date }: Props): JSX.Element => {
   const parsedDate = parseISO(date)
 
-  return <time dateTime={date}>{format(parsedDate, 'LLLL d, yyyy')}</time>
+  return <Time dateTime={date}>{format(parsedDate, 'LLLL d, yyyy')}</Time>
 }
 
 export default Date
