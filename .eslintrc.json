@@ -20,11 +20,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "implicit-arrow-linebreak": "off",
@@ -33,7 +29,7 @@
     "jsx-quotes": ["error", "prefer-single"],
     "comma-dangle": ["error", "never"],
     "arrow-parens": ["error", "as-needed"],
-    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "import/extensions": ["error", { "extensions": [".tsx"] }],
     "import/no-unresolved": "off",
     "react/prop-types": "off",
