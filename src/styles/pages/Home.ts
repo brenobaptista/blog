@@ -25,8 +25,4 @@ export const Blog = styled.section`
   li {
     margin: 0 0 20px;
   }
-
-  small {
-    color: ${props => props.theme.colors.date};
-  }
 `
