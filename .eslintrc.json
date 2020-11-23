@@ -31,6 +31,7 @@
     "arrow-parens": ["error", "as-needed"],
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "import/extensions": ["error", { "extensions": [".tsx"] }],
+    "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",
