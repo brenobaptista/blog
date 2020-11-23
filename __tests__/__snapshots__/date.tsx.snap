@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <time
+    class="Date__Time-sc-13k4u61-0 ggbmNW"
+    datetime="2020-01-01"
+  >
+    January 1, 2020
+  </time>
+</DocumentFragment>
+`;
