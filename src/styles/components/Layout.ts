@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 576px;
+  max-width: 768px;
   padding: 0 16px;
   margin: 48px auto 96px;
 
@@ -30,20 +30,6 @@ export const Header = styled.header`
 
   a {
     color: inherit;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    font-weight: 800;
-    letter-spacing: -0.05rem;
-    margin: 16px 0;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    margin: 16px 0;
   }
 `
 
