@@ -34,7 +34,7 @@ const Layout = ({ children, home }: Props): JSX.Element => (
             alt={name}
             width={128}
             height={128}
-            loading='eager'
+            priority
           />
           <h1>{name}</h1>
         </>
@@ -47,7 +47,7 @@ const Layout = ({ children, home }: Props): JSX.Element => (
                 alt={name}
                 width={96}
                 height={96}
-                loading='eager'
+                priority
               />
             </a>
           </Link>
