@@ -21,5 +21,7 @@ export default createGlobalStyle`
   html {
     line-height: 1.6;
     font-size: 1.25rem;
+    color: #2e3436;
+    background-color: #f6f5f4;
   }
 `
