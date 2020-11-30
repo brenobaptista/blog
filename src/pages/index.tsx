@@ -30,11 +30,11 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
       <title>{siteTitle}</title>
     </Head>
     <Intro>
-      <p>[Your Self Introduction]</p>
       <p>
-        (This is a sample website - you’ll be building a site like this in{' '}
-        <a href='https://nextjs.org/learn'>our Next.js tutorial</a>
-        .)
+        I&apos;m a full-stack developer based in Fortaleza, Brazil. I work
+        remotely at Massive, where we develop alternatives to fight intrusive
+        advertising. I&apos;m interested in GNU/Linux, open-source software,
+        privacy and cybersecurity.
       </p>
     </Intro>
     <Blog>
