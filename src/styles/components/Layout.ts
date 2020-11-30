@@ -49,6 +49,7 @@ export const ShortBio = styled.div`
     flex: 1;
     margin-left: 20px;
     font-style: italic;
+    text-align: justify;
   }
 `
 

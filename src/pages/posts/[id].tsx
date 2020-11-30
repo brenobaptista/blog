@@ -3,6 +3,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 import Layout from '../../components/Layout'
 import Date from '../../components/Date'
+import Body from '../../styles/pages/Post'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -38,7 +39,7 @@ const Post = ({ postData }: Props): JSX.Element => (
     <article>
       <h1>{postData.title}</h1>
       <Date date={postData.date} />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <Body dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </article>
   </Layout>
 )
