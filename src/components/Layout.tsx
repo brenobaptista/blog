@@ -2,7 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { Container, Header, BackToHome } from '../styles/components/Layout'
+import {
+  Container,
+  Header,
+  Separator,
+  ShortBio,
+  BackToHome
+} from '../styles/components/Layout'
 
 interface Props {
   children: React.ReactNode
@@ -27,7 +33,7 @@ const Layout = ({ children, home }: Props): JSX.Element => (
       <meta name='twitter:card' content='summary_large_image' />
     </Head>
     <Header>
-      {home ? (
+      {home && (
         <>
           <Image
             src='/images/profile.jpg'
@@ -38,34 +44,27 @@ const Layout = ({ children, home }: Props): JSX.Element => (
           />
           <h1>{name}</h1>
         </>
-      ) : (
-        <>
-          <Link href='/'>
-            <a>
-              <Image
-                src='/images/profile.jpg'
-                alt={name}
-                width={96}
-                height={96}
-                priority
-              />
-            </a>
-          </Link>
-          <h2>
-            <Link href='/'>
-              <a>{name}</a>
-            </Link>
-          </h2>
-        </>
       )}
     </Header>
     <main>{children}</main>
     {!home && (
-      <BackToHome>
-        <Link href='/'>
-          <a>← Back to home</a>
-        </Link>
-      </BackToHome>
+      <>
+        <Separator />
+        <ShortBio>
+          <Image src='/images/profile.jpg' alt={name} width={80} height={80} />
+          <p>
+            Breno Baptista is a full-stack developer at Massive, where he
+            develops web apps to fight advertising, data selling and privacy
+            violations. He is interested in GNU/Linux, open-source software,
+            privacy and cybersecurity.
+          </p>
+        </ShortBio>
+        <BackToHome>
+          <Link href='/'>
+            <a>← Back to home</a>
+          </Link>
+        </BackToHome>
+      </>
     )}
   </Container>
 )

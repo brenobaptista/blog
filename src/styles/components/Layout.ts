@@ -27,9 +27,28 @@ export const Header = styled.header`
   img {
     border-radius: 50%;
   }
+`
 
-  a {
-    color: inherit;
+export const Separator = styled.hr`
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+`
+
+export const ShortBio = styled.div`
+  display: flex;
+
+  img {
+    flex: 1;
+    margin-top: 28px;
+    border-radius: 50%;
+  }
+
+  p {
+    flex: 1;
+    margin-left: 20px;
+    font-style: italic;
   }
 `
 
