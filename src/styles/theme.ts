@@ -1,7 +1,7 @@
 const theme = {
   colors: {
-    primary: '#7b6997',
-    date: '#718096;'
+    primary: '#586693',
+    date: '#707070'
   }
 }
 
