@@ -53,10 +53,18 @@ const Layout = ({ children, home }: Props): JSX.Element => (
         <ShortBio>
           <Image src='/images/profile.jpg' alt={name} width={80} height={80} />
           <p>
-            Breno Baptista is a full-stack developer at Massive, where he
-            develops web apps to fight advertising, data selling and privacy
-            violations. He is interested in GNU/Linux, open-source software,
-            privacy and cybersecurity.
+            Breno Baptista is a full-stack developer at{' '}
+            <a
+              href='https://joinmassive.com/team'
+              target='_blank'
+              rel='noreferrer noopener'
+              aria-label='Massive'
+            >
+              Massive
+            </a>
+            , where he develops web apps to fight advertising, data selling and
+            privacy violations. He is interested in GNU/Linux, open-source
+            software, privacy and cybersecurity.
           </p>
         </ShortBio>
         <BackToHome>

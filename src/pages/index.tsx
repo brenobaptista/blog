@@ -32,9 +32,18 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
     <Intro>
       <p>
         I&apos;m a full-stack developer based in Fortaleza, Brazil. I work
-        remotely at Massive, where we develop alternatives to fight intrusive
-        advertising. I&apos;m interested in GNU/Linux, open-source software,
-        privacy and cybersecurity.
+        remotely at{' '}
+        <a
+          href='https://joinmassive.com/team'
+          target='_blank'
+          rel='noreferrer noopener'
+          aria-label='Massive'
+        >
+          Massive
+        </a>
+        , where we develop alternatives to fight intrusive advertising. I&apos;m
+        interested in GNU/Linux, open-source software, privacy and
+        cybersecurity.
       </p>
     </Intro>
     <Blog>
