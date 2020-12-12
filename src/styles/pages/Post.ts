@@ -29,7 +29,7 @@ const Body = styled.div`
     overflow: auto;
   }
 
-  p > code {
+  :not(pre) > code {
     padding: 3px 5px;
     border-radius: 4px;
     word-break: break-word;
