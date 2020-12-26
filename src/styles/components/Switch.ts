@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
-export const Checkbox = styled.input`
+export const InvisibleCheckbox = styled.input`
   position: absolute;
   height: 0;
   width: 0;
   visibility: hidden;
 `
 
-interface LabelProps {
-  isOn: boolean
+interface BackgroundProps {
+  switchValue: boolean
 }
 
-export const Label = styled.label<LabelProps>`
+export const Background = styled.label<BackgroundProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,15 +22,15 @@ export const Label = styled.label<LabelProps>`
   width: 65px;
   height: 32px;
   background: ${props => {
-    const { isOn } = props
+    const { switchValue } = props
     const { primary, altText } = props.theme.colors
 
-    return isOn ? primary : altText
+    return switchValue ? primary : altText
   }};
   transition: background-color 0.2s;
 `
 
-export const Button = styled.span`
+export const Toggle = styled.span`
   content: '';
   position: absolute;
   top: 2px;
@@ -42,11 +42,11 @@ export const Button = styled.span`
   background: ${props => props.theme.colors.background};
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 
-  ${Label}:active & {
+  ${Background}:active & {
     width: 33px;
   }
 
-  ${Checkbox}:checked + ${Label} & {
+  ${InvisibleCheckbox}:checked + ${Background} & {
     left: calc(100% - 2px);
     transform: translateX(-100%);
   }

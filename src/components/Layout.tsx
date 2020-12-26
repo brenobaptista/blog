@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import ToggleSwitch from './ToggleSwitch'
+import Switch from './Switch'
 
 import {
   Container,
@@ -38,9 +38,9 @@ const Layout = ({ children, home }: Props): JSX.Element => {
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
-      <ToggleSwitch
-        isOn={switchValue}
-        handleToggle={() => setSwitchValue(!switchValue)}
+      <Switch
+        switchValue={switchValue}
+        toggleSwitch={() => setSwitchValue(!switchValue)}
       />
       {home && (
         <HomeHeader>
