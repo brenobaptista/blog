@@ -6,14 +6,18 @@ export const Checkbox = styled.input`
   visibility: hidden;
 `
 
-export const Label = styled.label`
+interface LabelProps {
+  isOn: boolean
+}
+
+export const Label = styled.label<LabelProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   width: 100px;
   height: 50px;
-  background: grey;
+  background: ${props => (props.isOn ? props.theme.colors.primary : 'grey')};
   border-radius: 100px;
   position: relative;
   transition: background-color 0.2s;
