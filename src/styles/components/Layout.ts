@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
 `
 
-export const Header = styled.header`
+export const HomeHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
