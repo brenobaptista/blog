@@ -17,7 +17,12 @@ export const Label = styled.label<LabelProps>`
   cursor: pointer;
   width: 100px;
   height: 50px;
-  background: ${props => (props.isOn ? props.theme.colors.primary : 'grey')};
+  background: ${props => {
+    const { isOn } = props
+    const { primary, altText } = props.theme.colors
+
+    return isOn ? primary : altText
+  }};
   border-radius: 100px;
   position: relative;
   transition: background-color 0.2s;
@@ -32,7 +37,7 @@ export const Button = styled.span`
   height: 45px;
   border-radius: 45px;
   transition: 0.2s;
-  background: #fff;
+  background: ${props => props.theme.colors.background};
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 
   ${Label}:active & {

@@ -14,13 +14,13 @@ const Body = styled.div`
     margin-left: 0;
     margin-right: 0;
     padding-left: 20px;
-    border-left: 5px solid #2e3436;
+    border-left: 5px solid ${props => props.theme.colors.text};
   }
 
   code,
   pre {
     font-family: Fira Code, monospace;
-    background-color: #dddcdb;
+    background-color: ${props => props.theme.colors.codeBackground};
   }
 
   pre {
@@ -29,7 +29,7 @@ const Body = styled.div`
     overflow: auto;
   }
 
-  :not(pre) > code {
+  p > code {
     padding: 3px 5px;
     border-radius: 4px;
     word-break: break-word;
