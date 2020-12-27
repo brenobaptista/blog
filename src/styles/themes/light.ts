@@ -1,4 +1,5 @@
-const theme = {
+const light = {
+  mode: 'light',
   colors: {
     primary: '#586693',
     text: '#2e3436',
@@ -10,4 +11,4 @@ const theme = {
   }
 }
 
-export default theme
+export default light

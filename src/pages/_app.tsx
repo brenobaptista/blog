@@ -2,10 +2,10 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
+import light from '../styles/themes/light'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={light}>
     <Component {...pageProps} />
     <GlobalStyle />
   </ThemeProvider>
