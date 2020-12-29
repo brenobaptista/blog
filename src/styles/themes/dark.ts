@@ -1,13 +1,13 @@
 const dark = {
   mode: 'dark',
   colors: {
-    primary: '#586693',
-    text: '#2e3436',
-    altText: '#707070',
-    background: 'black',
-    codeBackground: ' #dddcdb',
-    selector: '#333333',
-    selectorEdge: '#cccccc'
+    primary: '#bd93f9',
+    text: '#eaeaea',
+    altText: '#a9a9a9',
+    background: '#282a36',
+    codeBackground: ' #44475a',
+    selector: '#cccccc',
+    selectorEdge: '#333333'
   }
 }
 
