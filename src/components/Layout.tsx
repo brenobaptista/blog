@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -25,6 +25,16 @@ export const siteTitle = 'Breno Baptista'
 
 const Layout = ({ children, home }: Props): JSX.Element => {
   const [switchValue, setSwitchValue] = useState(false)
+
+  useEffect(() => {
+    const storageValue = localStorage.getItem('theme')
+
+    if (storageValue && JSON.parse(storageValue).mode === 'dark') {
+      setSwitchValue(true)
+    } else {
+      setSwitchValue(false)
+    }
+  }, [])
 
   const toggleTheme = useContext(ThemeContext)
 

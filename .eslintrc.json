@@ -37,6 +37,7 @@
     "react/require-default-props": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/no-danger": "off"
   }
