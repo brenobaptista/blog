@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
 import Switch from './Switch'
+
+import { ThemeContext } from '../context/theme-context'
 
 import {
   Container,
@@ -24,6 +26,8 @@ export const siteTitle = 'Breno Baptista'
 const Layout = ({ children, home }: Props): JSX.Element => {
   const [switchValue, setSwitchValue] = useState(false)
 
+  const toggleTheme = useContext(ThemeContext)
+
   return (
     <Container>
       <Head>
@@ -40,7 +44,10 @@ const Layout = ({ children, home }: Props): JSX.Element => {
       </Head>
       <Switch
         switchValue={switchValue}
-        toggleSwitch={() => setSwitchValue(!switchValue)}
+        toggleSwitch={() => {
+          setSwitchValue(!switchValue)
+          toggleTheme()
+        }}
       />
       {home && (
         <HomeHeader>
