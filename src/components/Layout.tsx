@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 import Switch from './Switch'
 
-import { ThemeContext } from '../context/theme-context'
+import { ThemeContext } from '../pages/_app'
 
 import {
   Container,
