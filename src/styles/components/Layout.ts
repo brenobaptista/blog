@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
 `
 
-export const Header = styled.header`
+export const HomeHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,8 +32,12 @@ export const Header = styled.header`
 export const Separator = styled.hr`
   border: 0;
   height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  background: ${props => props.theme.colors.selector};
+  background-image: ${props => {
+    const { selector, selectorEdge } = props.theme.colors
+
+    return `linear-gradient(to right, ${selectorEdge}, ${selector}, ${selectorEdge})`
+  }};
 `
 
 export const ShortBio = styled.div`

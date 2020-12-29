@@ -5,7 +5,7 @@ import { GetStaticProps } from 'next'
 import Layout, { siteTitle } from '../components/Layout'
 import Date from '../components/Date'
 import { Intro, Blog } from '../styles/pages/Home'
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData } from '../utils/posts'
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()

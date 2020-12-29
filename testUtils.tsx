@@ -2,10 +2,10 @@ import { render } from '@testing-library/react'
 import { RenderResult } from '@testing-library/react/types'
 import { ThemeProvider } from 'styled-components'
 
-import theme from './src/styles/theme'
+import light from './src/styles/themes/light'
 
 const Providers = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  <ThemeProvider theme={light}>{children}</ThemeProvider>
 )
 
 const customRender = (ui: React.ReactElement, options = {}): RenderResult =>
