@@ -20,7 +20,6 @@ interface Props {
   home?: boolean
 }
 
-const name = 'Breno Baptista'
 export const siteTitle = 'Breno Baptista'
 
 const Layout = ({ children, home }: Props): JSX.Element => {
@@ -63,12 +62,12 @@ const Layout = ({ children, home }: Props): JSX.Element => {
         <HomeHeader>
           <Image
             src='/images/profile.jpg'
-            alt={name}
+            alt='Breno Baptista'
             width={128}
             height={128}
             priority
           />
-          <h1>{name}</h1>
+          <h1>Breno Baptista</h1>
         </HomeHeader>
       )}
       <main>{children}</main>
@@ -78,7 +77,7 @@ const Layout = ({ children, home }: Props): JSX.Element => {
           <ShortBio>
             <Image
               src='/images/profile.jpg'
-              alt={name}
+              alt='Breno Baptista'
               width={80}
               height={80}
             />
