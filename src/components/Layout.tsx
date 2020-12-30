@@ -23,7 +23,7 @@ interface Props {
 export const siteTitle = 'Breno Baptista'
 
 const Layout = ({ children, home }: Props): JSX.Element => {
-  const [switchValue, setSwitchValue] = useState(false)
+  const [switchValue, setSwitchValue] = useState(true)
 
   useEffect(() => {
     const storageValue = localStorage.getItem('theme')
