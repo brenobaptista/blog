@@ -11,7 +11,7 @@ import dark from '../styles/themes/dark'
 export const ThemeContext = createContext(null)
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light)
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark)
 
   const toggleTheme = () => {
     setTheme(theme.mode === 'light' ? dark : light)
