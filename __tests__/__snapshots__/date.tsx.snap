@@ -2,8 +2,12 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <time
-    class="Date__Time-sc-13k4u61-0 ggbmNW"
+  .c0 {
+  color: #707070;
+}
+
+<time
+    class="c0"
     datetime="2020-01-01"
   >
     January 1, 2020
