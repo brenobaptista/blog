@@ -49,23 +49,21 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
     </Intro>
     <Blog>
       <h2>Blog</h2>
-      <ul>
-        {allPostsData.map(({ id, title, description, date }) => (
-          <Link href={`/posts/${id}`} key={id}>
-            <a>
-              <li>
-                <div>
-                  {title}
-                  <small>
-                    <Date date={date} />
-                  </small>
-                </div>
-                <p>{description}</p>
-              </li>
-            </a>
-          </Link>
-        ))}
-      </ul>
+      {allPostsData.map(({ id, title, description, date }) => (
+        <Link href={`/posts/${id}`} key={id}>
+          <a>
+            <div>
+              <span>
+                {title}
+                <small>
+                  <Date date={date} />
+                </small>
+              </span>
+              <p>{description}</p>
+            </div>
+          </a>
+        </Link>
+      ))}
     </Blog>
   </Layout>
 )

@@ -12,30 +12,23 @@ export const Blog = styled.section`
   line-height: 1.5;
   padding-top: 1px;
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  a:hover {
+    text-decoration: none;
   }
 
-  li {
-    margin: 0 0 20px;
+  div {
     padding: 20px;
     background-color: ${props => props.theme.colors.codeBackground};
     border-radius: 8px;
   }
 
-  div {
+  span {
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
-  }
-
-  a:hover {
-    text-decoration: none;
   }
 
   p {
