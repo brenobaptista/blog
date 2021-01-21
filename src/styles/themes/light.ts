@@ -3,9 +3,9 @@ const light = {
   colors: {
     primary: '#586693',
     text: '#2e3436',
-    altText: '#707070',
+    altText: '#565656',
     background: '#f6f5f4',
-    codeBackground: ' #dddcdb',
+    altBackground: ' #e4e3e2',
     selector: '#333333',
     selectorEdge: '#cccccc'
   }

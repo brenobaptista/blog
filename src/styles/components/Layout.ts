@@ -7,10 +7,10 @@ export const Container = styled.div`
 
   a {
     color: ${props => props.theme.colors.primary};
-  }
 
-  a:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   img {

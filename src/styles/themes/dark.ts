@@ -3,9 +3,9 @@ const dark = {
   colors: {
     primary: '#bd93f9',
     text: '#eaeaea',
-    altText: '#a9a9a9',
+    altText: '#bababa',
     background: '#282a36',
-    codeBackground: ' #44475a',
+    altBackground: ' #44475a',
     selector: '#cccccc',
     selectorEdge: '#333333'
   }

@@ -8,7 +8,7 @@ declare module 'styled-components' {
       text: string
       altText: string
       background: string
-      codeBackground: string
+      altBackground: string
       selector: string
       selectorEdge: string
     }

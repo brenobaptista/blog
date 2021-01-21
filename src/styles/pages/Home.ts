@@ -18,7 +18,7 @@ export const Blog = styled.section`
 
   div {
     padding: 20px;
-    background-color: ${props => props.theme.colors.codeBackground};
+    background-color: ${props => props.theme.colors.altBackground};
     border-radius: 8px;
   }
 

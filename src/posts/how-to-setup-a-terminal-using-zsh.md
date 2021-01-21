@@ -4,7 +4,7 @@ description: 'Learn how to turn an old-fashioned terminal into your new best fri
 date: '2020-10-31'
 ---
 
-> This guide was inspired by another guide made by Rocketseat (in Portuguese). Check the guide [here](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/).
+> This guide was inspired by another guide made by Rocketseat (in Portuguese). [Check the guide](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/).
 
 ## Install the dependencies
 
