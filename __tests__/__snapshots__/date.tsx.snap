@@ -3,7 +3,8 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   .c0 {
-  color: #707070;
+  font-size: 0.8rem;
+  color: #565656;
 }
 
 <time
