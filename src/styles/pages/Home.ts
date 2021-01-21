@@ -20,5 +20,27 @@ export const Blog = styled.section`
 
   li {
     margin: 0 0 20px;
+    padding: 20px;
+    background-color: ${props => props.theme.colors.codeBackground};
+    border-radius: 8px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: ${props => props.theme.colors.text};
   }
 `

@@ -26,6 +26,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 interface Props {
   postData: {
     title: string
+    description: string
     date: string
     contentHtml: string
   }

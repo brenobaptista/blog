@@ -7,14 +7,16 @@ import html from 'remark-html'
 interface SortedPosts {
   id: string
   title: string
+  description: string
   date: string
 }
 
 type PostsByDate = Array<SortedPosts>
 
 interface MatterResultData {
-  date: string
   title: string
+  description: string
+  date: string
 }
 
 const postsDirectory = path.join(process.cwd(), 'src/posts')
@@ -61,9 +63,10 @@ export function getAllPostIds(): ListFileNames {
 
 interface PostData {
   id: string
-  contentHtml: string
   title: string
+  description: string
   date: string
+  contentHtml: string
 }
 
 export async function getPostData(id: string): Promise<PostData> {
@@ -79,13 +82,14 @@ export async function getPostData(id: string): Promise<PostData> {
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
 
-  const { title, date } = matterResult.data
+  const { title, description, date } = matterResult.data
 
   // Combine the data with the id and contentHtml
   return {
     id,
-    contentHtml,
     title,
-    date
+    description,
+    date,
+    contentHtml
   }
 }

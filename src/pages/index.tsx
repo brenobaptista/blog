@@ -18,9 +18,10 @@ export const getStaticProps: GetStaticProps = async () => {
 
 interface Props {
   allPostsData: {
-    date: string
-    title: string
     id: string
+    title: string
+    description: string
+    date: string
   }[]
 }
 
@@ -49,16 +50,20 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
     <Blog>
       <h2>Blog</h2>
       <ul>
-        {allPostsData.map(({ id, date, title }) => (
-          <li key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small>
-              <Date date={date} />
-            </small>
-          </li>
+        {allPostsData.map(({ id, title, description, date }) => (
+          <Link href={`/posts/${id}`} key={id}>
+            <a>
+              <li>
+                <div>
+                  {title}
+                  <small>
+                    <Date date={date} />
+                  </small>
+                </div>
+                <p>{description}</p>
+              </li>
+            </a>
+          </Link>
         ))}
       </ul>
     </Blog>
