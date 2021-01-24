@@ -10,6 +10,7 @@ import { ThemeContext } from '../pages/_app'
 import {
   Container,
   HomeHeader,
+  SocialIcons,
   Separator,
   ShortBio,
   BackToHome
@@ -71,6 +72,30 @@ const Layout = ({ children, home }: Props): JSX.Element => {
             priority
           />
           <h1>Breno Baptista</h1>
+          <SocialIcons>
+            <a
+              href='https://github.com/brenobaptista/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <Image
+                src='/images/icons/github.svg'
+                alt='GitHub logo'
+                width={40}
+                height={40}
+                priority
+              />
+            </a>
+            <a href='mailto:brenobaptista@protonmail.com'>
+              <Image
+                src='/images/icons/envelope-square.svg'
+                alt='Email icon'
+                width={40}
+                height={40}
+                priority
+              />
+            </a>
+          </SocialIcons>
         </HomeHeader>
       )}
       <main>{children}</main>

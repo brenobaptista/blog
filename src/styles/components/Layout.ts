@@ -29,6 +29,26 @@ export const HomeHeader = styled.header`
   }
 `
 
+export const SocialIcons = styled.div`
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  filter: ${props => {
+    const themeMode = props.theme.mode
+
+    if (themeMode === 'dark') {
+      return 'invert(64%) sepia(99%) saturate(1910%) hue-rotate(213deg) brightness(102%) contrast(95%)'
+    }
+
+    return 'invert(17%) sepia(9%) saturate(608%) hue-rotate(149deg) brightness(91%) contrast(87%)'
+  }};
+
+  img {
+    border-radius: 0;
+  }
+`
+
 export const Separator = styled.hr`
   border: 0;
   height: 1px;
