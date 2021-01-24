@@ -1,15 +1,14 @@
 # Dark Effigy
 
-> My portfolio and blog made using Next.js + TypeScript
+> My blog made using Next.js + TypeScript
 
 ## Features
 
 - Next.js and all its features.
 - 100% TypeScript.
+- Styled Components and dark mode (Dracula theme).
 - ESLint + Prettier + Husky + Lint Staged.
 - Jest and React Testing Library.
-- Styled Components and dark mode (Dracula theme).
-- 100% Score PageSpeed Insights.
 
 ## Getting Started
 
