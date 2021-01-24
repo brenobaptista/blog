@@ -16,12 +16,6 @@ export const Blog = styled.section`
     text-decoration: none;
   }
 
-  div {
-    padding: 20px;
-    background-color: ${props => props.theme.colors.altBackground};
-    border-radius: 8px;
-  }
-
   span {
     display: flex;
     justify-content: space-between;

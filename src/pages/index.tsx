@@ -52,15 +52,13 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
       {allPostsData.map(({ id, title, description, date }) => (
         <Link href={`/posts/${id}`} key={id}>
           <a>
-            <div>
-              <span>
-                {title}
-                <small>
-                  <Date date={date} />
-                </small>
-              </span>
-              <p>{description}</p>
-            </div>
+            <span>
+              {title}
+              <small>
+                <Date date={date} />
+              </small>
+            </span>
+            <p>{description}</p>
           </a>
         </Link>
       ))}
