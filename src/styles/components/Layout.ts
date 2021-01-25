@@ -34,15 +34,9 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
 
-  filter: ${props => {
-    const themeMode = props.theme.mode
-
-    if (themeMode === 'dark') {
-      return 'invert(64%) sepia(99%) saturate(1910%) hue-rotate(213deg) brightness(102%) contrast(95%)'
-    }
-
-    return 'invert(17%) sepia(9%) saturate(608%) hue-rotate(149deg) brightness(91%) contrast(87%)'
-  }};
+  svg {
+    fill: ${props => props.theme.colors.primary};
+  }
 
   img {
     border-radius: 0;

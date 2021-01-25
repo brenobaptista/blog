@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import Switch from './Switch'
+import GitHub from './icons/GitHub'
+import Email from './icons/Email'
 
 import { ThemeContext } from '../pages/_app'
 
@@ -78,22 +80,10 @@ const Layout = ({ children, home }: Props): JSX.Element => {
               target='_blank'
               rel='noreferrer noopener'
             >
-              <Image
-                src='/images/icons/github.svg'
-                alt='GitHub logo'
-                width={40}
-                height={40}
-                priority
-              />
+              <GitHub width={40} height={40} />
             </a>
             <a href='mailto:brenobaptista@protonmail.com'>
-              <Image
-                src='/images/icons/envelope-square.svg'
-                alt='Email icon'
-                width={40}
-                height={40}
-                priority
-              />
+              <Email width={40} height={40} />
             </a>
           </SocialIcons>
         </HomeHeader>
