@@ -20,7 +20,7 @@ export default createGlobalStyle`
 
   html {
     line-height: 1.6;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
     transition: background-color 0.2s, color 0.2s;
