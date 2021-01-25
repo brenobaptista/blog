@@ -7,11 +7,7 @@ export const InvisibleCheckbox = styled.input`
   visibility: hidden;
 `
 
-interface BackgroundProps {
-  switchValue: boolean
-}
-
-export const Background = styled.label<BackgroundProps>`
+export const Background = styled.label`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,12 +17,7 @@ export const Background = styled.label<BackgroundProps>`
   border-radius: 65px;
   width: 65px;
   height: 32px;
-  background: ${props => {
-    const { switchValue } = props
-    const { primary, altText } = props.theme.colors
-
-    return switchValue ? primary : altText
-  }};
+  background: ${props => props.theme.colors.primary};
   transition: background-color 0.2s;
 `
 

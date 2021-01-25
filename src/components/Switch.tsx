@@ -27,7 +27,6 @@ const Switch = ({ switchValue, toggleSwitch }: Props): JSX.Element => {
       />
       <Background
         htmlFor='checkbox'
-        switchValue={switchValue}
         tabIndex={0}
         onKeyDown={event => handleKeyPress(event)}
       >
