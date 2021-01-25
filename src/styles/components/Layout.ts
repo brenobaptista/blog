@@ -38,8 +38,8 @@ export const SocialIcons = styled.div`
     fill: ${props => props.theme.colors.primary};
   }
 
-  img {
-    border-radius: 0;
+  a {
+    line-height: 0;
   }
 `
 
