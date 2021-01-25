@@ -33,7 +33,7 @@ const Layout = ({ children, home }: Props): JSX.Element => {
 
     if (storageValue && JSON.parse(storageValue).mode === 'dark') {
       setSwitchValue(true)
-    } else {
+    } else if (storageValue && JSON.parse(storageValue).mode === 'light') {
       setSwitchValue(false)
     }
   }, [])
