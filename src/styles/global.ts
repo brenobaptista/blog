@@ -26,10 +26,6 @@ export default createGlobalStyle`
     transition: background-color 0.2s, color 0.2s;
   }
 
-  h1, h2 {
-    font-family: Open Sans, Source Sans Pro;
-  }
-
   h1 {
     font-size: 2rem;
     line-height: 1.3;
