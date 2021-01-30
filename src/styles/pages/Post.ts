@@ -34,10 +34,20 @@ const Body = styled.div`
         ? css`
             code {
               color: ${props.theme.colors.text};
+
+              ::selection {
+                color: black;
+                background: transparent;
+              }
             }
 
             span {
               filter: brightness(0.5) saturate(3);
+
+              ::selection {
+                color: black;
+                background: transparent;
+              }
             }
           `
         : null};
