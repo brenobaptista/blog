@@ -47,4 +47,9 @@ export default createGlobalStyle`
   p {
     margin: 16px 0;
   }
+
+  ::selection {
+    color: ${props => props.theme.colors.altBackground};
+    background: ${props => props.theme.colors.primary};
+  }
 `
