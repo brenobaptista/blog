@@ -5,10 +5,6 @@ export const Intro = styled.section`
   line-height: 1.5;
   text-align: justify;
   text-indent: 1.5rem;
-
-  p {
-    margin: 16px 0;
-  }
 `
 
 export const Blog = styled.section`
@@ -18,6 +14,10 @@ export const Blog = styled.section`
 
   a:hover {
     text-decoration: none;
+  }
+
+  div {
+    margin: 16px 0 24px;
   }
 
   span {

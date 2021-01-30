@@ -37,6 +37,14 @@ export default createGlobalStyle`
   h2 {
     font-size: 1.5rem;
     line-height: 1.4;
+    margin: 32px 0 16px;
+  }
+
+  h3 {
+    margin: 16px 0;
+  }
+
+  p {
     margin: 16px 0;
   }
 `

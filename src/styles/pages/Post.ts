@@ -19,6 +19,7 @@ const Body = styled.div`
 
   code,
   pre {
+    font-size: 0.9rem;
     font-family: Fira Code, monospace;
     background-color: ${props => props.theme.colors.altBackground};
   }
