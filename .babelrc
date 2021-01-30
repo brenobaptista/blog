@@ -1,4 +1,20 @@
 {
   "presets": ["next/babel"],
-  "plugins": [["styled-components", { "ssr": true }]]
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ],
+    [
+      "prismjs",
+      {
+        "languages": ["tsx"],
+        "plugins": ["copy-to-clipboard"],
+        "theme": "tomorrow",
+        "css": true
+      }
+    ]
+  ]
 }

@@ -1,5 +1,7 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
+import Prism from 'prismjs'
 
 import Layout from '../../components/Layout'
 import Date from '../../components/Date'
@@ -32,17 +34,23 @@ interface Props {
   }
 }
 
-const Post = ({ postData }: Props): JSX.Element => (
-  <Layout>
-    <Head>
-      <title>{postData.title}</title>
-    </Head>
-    <article>
-      <h1>{postData.title}</h1>
-      <Date date={postData.date} />
-      <Body dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </article>
-  </Layout>
-)
+const Post = ({ postData }: Props): JSX.Element => {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
+
+  return (
+    <Layout>
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+      <article>
+        <h1>{postData.title}</h1>
+        <Date date={postData.date} />
+        <Body dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </article>
+    </Layout>
+  )
+}
 
 export default Post
