@@ -91,7 +91,9 @@ It will install 3 very useful plugins.
 
 Add this to your VSCode configuration:
 
-`"terminal.integrated.shell.osx": "usr/bin/zsh"`
+```
+"terminal.integrated.shell.osx": "usr/bin/zsh"
+```
 
 `usr/bin/zsh` should be the path to your Zsh. Run `which zsh` in your terminal to get the path in your case.
 
@@ -99,7 +101,9 @@ Add this to your VSCode configuration:
 
 If you use yarn and you would like to have emojis in your terminal, run this in your brand-new terminal:
 
-`yarn config set -- --emoji true`
+```
+yarn config set -- --emoji true
+```
 
 ## Screenshot
 
