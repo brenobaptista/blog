@@ -46,6 +46,7 @@ export const SocialIcons = styled.div`
 export const Separator = styled.hr`
   border: 0;
   height: 1px;
+  margin-top: 26px;
   background: ${props => props.theme.colors.selector};
   background-image: ${props => {
     const { selector, selectorEdge } = props.theme.colors

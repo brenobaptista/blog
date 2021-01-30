@@ -8,37 +8,39 @@ date: '2020-10-31'
 
 ## Install the dependencies
 
-### Zsh
+### 1. Zsh
 
 Z shell is an alternative to Bash.
 Many of the useful features of bash were incorporated into zsh, but also many original features were added.
 
 [How to install Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
-### Oh My Zsh
+### 2. Oh My Zsh
 
 Oh My Zsh is a framework for managing your Zsh configuration.
 
 [How to install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-### Fira Code
+### 3. Fira Code
 
 Fira Code is a popular and free monospaced font with programming ligatures.
-If you have Fira Code installed in your browser, you'll be able to see you cool it is with the example below:
+If you have Fira Code installed in your browser, you'll be able to see how cool it is with the example below:
 
 `!= ->> ++ :=`
 `<!-- => === <=`
 
+You still need to install it on your system, though.
+
 [How to install Fira Code into your OS](https://github.com/tonsky/FiraCode/releases)
 
-### Dracula
+### 4. Dracula
 
 Dracula is a popular dark theme that can be used in a lot of graphical interfaces.
 Use it in your terminal because it's the best color palette for dark mode.
 
 [How to integrate Dracula into your terminal](https://draculatheme.com)
 
-### Spaceship Prompt
+### 5. Spaceship Prompt
 
 Spaceship is a minimalistic, powerful and extremely customizable Zsh prompt.
 

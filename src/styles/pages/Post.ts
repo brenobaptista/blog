@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
 
 const Body = styled.div`
-  p {
+  p,
+  li {
     text-align: justify;
   }
 
