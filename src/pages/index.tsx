@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
-import Layout, { siteTitle } from '../components/Layout'
+import Email from '../components/icons/Email'
+import GitHub from '../components/icons/GitHub'
 import Date from '../components/Date'
+import Layout, { siteTitle } from '../components/Layout'
+import { HomeHeader, SocialIcons } from '../styles/components/Layout'
 import { Intro, Blog } from '../styles/pages/Home'
 import { getSortedPostsData } from '../utils/posts'
 
@@ -26,10 +30,32 @@ interface Props {
 }
 
 const Home = ({ allPostsData }: Props): JSX.Element => (
-  <Layout home>
+  <Layout>
     <Head>
       <title>{siteTitle}</title>
     </Head>
+    <HomeHeader>
+      <Image
+        src='/images/profile.jpg'
+        alt='Breno Baptista'
+        width={128}
+        height={128}
+        priority
+      />
+      <h1>Breno Baptista</h1>
+      <SocialIcons>
+        <a
+          href='https://github.com/brenobaptista/'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          <GitHub width={40} height={40} />
+        </a>
+        <a href='mailto:brenobaptista@protonmail.com'>
+          <Email width={40} height={40} />
+        </a>
+      </SocialIcons>
+    </HomeHeader>
     <Intro>
       <p>
         I&apos;m a full-stack developer based in Fortaleza, Brazil. I work

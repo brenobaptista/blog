@@ -2,11 +2,10 @@ import { createContext } from 'react'
 import { AppProps } from 'next/app'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 
-import usePersistedState from '../utils/usePersistedState'
-
-import GlobalStyle from '../styles/global'
-import light from '../styles/themes/light'
 import dark from '../styles/themes/dark'
+import light from '../styles/themes/light'
+import GlobalStyle from '../styles/global'
+import usePersistedState from '../utils/usePersistedState'
 
 export const ThemeContext = createContext(null)
 

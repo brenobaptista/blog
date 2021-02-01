@@ -1,31 +1,17 @@
 import { useState, useEffect, useContext } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 
 import Switch from './Switch'
-import GitHub from './icons/GitHub'
-import Email from './icons/Email'
-
 import { ThemeContext } from '../pages/_app'
-
-import {
-  Container,
-  HomeHeader,
-  SocialIcons,
-  Separator,
-  ShortBio,
-  BackToHome
-} from '../styles/components/Layout'
+import { Container } from '../styles/components/Layout'
 
 interface Props {
   children: React.ReactNode
-  home?: boolean
 }
 
 export const siteTitle = 'Breno Baptista'
 
-const Layout = ({ children, home }: Props): JSX.Element => {
+const Layout = ({ children }: Props): JSX.Element => {
   const [switchValue, setSwitchValue] = useState(true)
 
   useEffect(() => {
@@ -64,63 +50,7 @@ const Layout = ({ children, home }: Props): JSX.Element => {
           toggleTheme()
         }}
       />
-      {home && (
-        <HomeHeader>
-          <Image
-            src='/images/profile.jpg'
-            alt='Breno Baptista'
-            width={128}
-            height={128}
-            priority
-          />
-          <h1>Breno Baptista</h1>
-          <SocialIcons>
-            <a
-              href='https://github.com/brenobaptista/'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              <GitHub width={40} height={40} />
-            </a>
-            <a href='mailto:brenobaptista@protonmail.com'>
-              <Email width={40} height={40} />
-            </a>
-          </SocialIcons>
-        </HomeHeader>
-      )}
       <main>{children}</main>
-      {!home && (
-        <>
-          <Separator />
-          <ShortBio>
-            <Image
-              src='/images/profile.jpg'
-              alt='Breno Baptista'
-              width={80}
-              height={80}
-            />
-            <p>
-              Breno Baptista is a full-stack developer at{' '}
-              <a
-                href='https://joinmassive.com/team'
-                target='_blank'
-                rel='noreferrer noopener'
-                aria-label='Massive'
-              >
-                Massive
-              </a>
-              , where he develops web apps to fight advertising, data selling
-              and privacy violations. He is interested in GNU/Linux, open-source
-              software, privacy and cybersecurity.
-            </p>
-          </ShortBio>
-          <BackToHome>
-            <Link href='/'>
-              <a>← Back to home</a>
-            </Link>
-          </BackToHome>
-        </>
-      )}
     </Container>
   )
 }
