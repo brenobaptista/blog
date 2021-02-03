@@ -10,7 +10,10 @@ const config: Config.InitialOptions = {
   coveragePathIgnorePatterns: [
     '<rootDir>/.next/',
     '<rootDir>/coverage/',
-    '<rootDir>/node_modules/'
+    '<rootDir>/node_modules/',
+    '<rootDir>/src/pages/_app.tsx',
+    '<rootDir>/src/pages/_document.tsx',
+    '<rootDir>/src/styles/global.ts'
   ]
 }
 
