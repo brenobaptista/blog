@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-const Body = styled.div`
+export const Body = styled.div`
   p,
   li {
     text-align: justify;
@@ -61,4 +61,35 @@ const Body = styled.div`
   }
 `
 
-export default Body
+export const Separator = styled.hr`
+  border: 0;
+  height: 1px;
+  margin-top: 26px;
+  background: ${props => props.theme.colors.selector};
+  background-image: ${props => {
+    const { selector, selectorEdge } = props.theme.colors
+
+    return `linear-gradient(to right, ${selectorEdge}, ${selector}, ${selectorEdge})`
+  }};
+`
+
+export const ShortBio = styled.div`
+  display: flex;
+
+  img {
+    flex: 1;
+    margin-top: 28px;
+    border-radius: 50%;
+  }
+
+  p {
+    flex: 1;
+    margin-left: 20px;
+    font-style: italic;
+    text-align: justify;
+  }
+`
+
+export const BackToHome = styled.div`
+  margin: 32px 0 0;
+`

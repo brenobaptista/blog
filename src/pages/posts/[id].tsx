@@ -7,8 +7,7 @@ import Prism from 'prismjs'
 
 import Date from '../../components/Date'
 import Layout from '../../components/Layout'
-import { Separator, ShortBio, BackToHome } from '../../styles/components/Layout'
-import Body from '../../styles/pages/Post'
+import { Body, Separator, ShortBio, BackToHome } from '../../styles/pages/Post'
 import { getAllPostIds, getPostData } from '../../utils/posts'
 
 export const getStaticPaths: GetStaticPaths = async () => {

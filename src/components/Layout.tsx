@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import Switch from './Switch'
 import { ThemeContext } from '../pages/_app'
-import { Container } from '../styles/components/Layout'
+import Container from '../styles/components/Layout'
 
 interface Props {
   children: React.ReactNode
