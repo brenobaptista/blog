@@ -1,7 +1,7 @@
 ---
 title: 'The best way to work with SVGs in React'
 description: 'Learn how to transform an SVG into a React component.'
-date: '2021-01-27'
+date: '2021-01-23'
 ---
 
 Just to make sure we're all on the same page:
