@@ -131,7 +131,7 @@ export const ShortBio = styled.div`
 
   img {
     flex: 1;
-    margin-top: 28px;
+    margin-top: 25px;
     border-radius: 50%;
   }
 
