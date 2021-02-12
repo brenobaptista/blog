@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const Body = styled.div`
   p,
@@ -29,35 +29,88 @@ export const Body = styled.div`
     padding: 25px 30px;
     border-radius: 8px;
     overflow: auto;
-
-    ${props =>
-      props.theme.mode === 'light'
-        ? css`
-            code {
-              color: ${props.theme.colors.text};
-
-              ::selection {
-                color: black;
-                background: transparent;
-              }
-            }
-
-            span {
-              filter: brightness(0.5) saturate(3);
-
-              ::selection {
-                color: black;
-                background: transparent;
-              }
-            }
-          `
-        : null};
   }
 
   p > code {
     padding: 3px 5px;
     border-radius: 4px;
     word-break: break-word;
+  }
+
+  /* Tomorrow theme for Prism.js */
+
+  .token.comment,
+  .token.block-comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #999;
+  }
+
+  .token.punctuation {
+    color: ${props => props.theme.colors.text};
+  }
+
+  .token.tag,
+  .token.attr-name,
+  .token.namespace,
+  .token.deleted {
+    color: ${props => (props.theme.mode === 'dark' ? `#e2777a` : `#e21717`)};
+  }
+
+  .token.function-name {
+    color: #6196cc;
+  }
+
+  .token.boolean,
+  .token.number,
+  .token.function {
+    color: #f08d49;
+  }
+
+  .token.property,
+  .token.class-name,
+  .token.constant,
+  .token.symbol {
+    color: ${props => (props.theme.mode === 'dark' ? `#f8c555` : `#b77625`)};
+  }
+
+  .token.selector,
+  .token.important,
+  .token.atrule,
+  .token.keyword,
+  .token.builtin {
+    color: ${props => props.theme.colors.primary};
+  }
+
+  .token.string,
+  .token.char,
+  .token.attr-value,
+  .token.regex,
+  .token.variable {
+    color: ${props => (props.theme.mode === 'dark' ? `#7ec699` : `#005800`)};
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url {
+    color: ${props => (props.theme.mode === 'dark' ? `#67cdcc` : `#007e7b`)};
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  .token.inserted {
+    color: green;
   }
 `
 
