@@ -37,41 +37,7 @@ export const Body = styled.div`
     word-break: break-word;
   }
 
-  // Tomorrow theme for Prism.js
-
-  code[class*='language-'],
-  pre[class*='language-'] {
-    color: #ccc;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
-
-  /* Code blocks */
-  pre[class*='language-'] {
-    padding: 1em;
-    margin: 0.5em 0;
-    overflow: auto;
-  }
-
-  /* Inline code */
-  :not(pre) > code[class*='language-'] {
-    padding: 0.1em;
-    border-radius: 0.3em;
-  }
+  /* Tomorrow theme for Prism.js */
 
   .token.comment,
   .token.block-comment,
@@ -82,14 +48,14 @@ export const Body = styled.div`
   }
 
   .token.punctuation {
-    color: #ccc;
+    color: ${props => props.theme.colors.text};
   }
 
   .token.tag,
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: #e2777a;
+    color: ${props => (props.theme.mode === 'dark' ? `#e2777a` : `#e21717`)};
   }
 
   .token.function-name {
@@ -106,7 +72,7 @@ export const Body = styled.div`
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: #f8c555;
+    color: ${props => (props.theme.mode === 'dark' ? `#f8c555` : `#b77625`)};
   }
 
   .token.selector,
@@ -114,7 +80,7 @@ export const Body = styled.div`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: #cc99cd;
+    color: ${props => props.theme.colors.primary};
   }
 
   .token.string,
@@ -122,13 +88,13 @@ export const Body = styled.div`
   .token.attr-value,
   .token.regex,
   .token.variable {
-    color: #7ec699;
+    color: ${props => (props.theme.mode === 'dark' ? `#7ec699` : `#005800`)};
   }
 
   .token.operator,
   .token.entity,
   .token.url {
-    color: #67cdcc;
+    color: ${props => (props.theme.mode === 'dark' ? `#67cdcc` : `#007e7b`)};
   }
 
   .token.important,
