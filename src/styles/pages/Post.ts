@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const Body = styled.div`
   p,
@@ -29,29 +29,6 @@ export const Body = styled.div`
     padding: 25px 30px;
     border-radius: 8px;
     overflow: auto;
-
-    ${props =>
-      props.theme.mode === 'light'
-        ? css`
-            code {
-              color: ${props.theme.colors.text};
-
-              ::selection {
-                color: black;
-                background: transparent;
-              }
-            }
-
-            span {
-              filter: brightness(0.5) saturate(3);
-
-              ::selection {
-                color: black;
-                background: transparent;
-              }
-            }
-          `
-        : null};
   }
 
   p > code {
