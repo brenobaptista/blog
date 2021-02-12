@@ -10,7 +10,7 @@
     [
       "prismjs",
       {
-        "languages": ["tsx"],
+        "languages": ["tsx", "bash"],
         "plugins": ["copy-to-clipboard"],
         "theme": "tomorrow",
         "css": true
