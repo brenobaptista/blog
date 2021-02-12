@@ -52,7 +52,7 @@ Spaceship is a minimalistic, powerful and extremely customizable Zsh prompt.
 
 At the end of `~./zshrc`, place this:
 
-```
+```bash
 SPACESHIP_PROMPT_ORDER=(
   user      # Username section
   dir       # Current directory section
@@ -81,7 +81,7 @@ After installing Zinit:
 
 At the end of `~./zshrc`, after `### End of Zinit's installer chunk`, add this:
 
-```
+```bash
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
@@ -93,7 +93,7 @@ It will install 3 very useful plugins.
 
 Add this to your VSCode configuration:
 
-```
+```bash
 "terminal.integrated.shell.osx": "usr/bin/zsh"
 ```
 
@@ -103,7 +103,7 @@ Add this to your VSCode configuration:
 
 If you use yarn and you would like to have emojis in your terminal, run this in your brand-new terminal:
 
-```
+```bash
 yarn config set -- --emoji true
 ```
 
