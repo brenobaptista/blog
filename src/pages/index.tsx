@@ -12,6 +12,7 @@ import { getSortedPostsData } from '../utils/posts'
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
+
   return {
     props: {
       allPostsData

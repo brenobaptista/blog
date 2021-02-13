@@ -16,6 +16,7 @@ import { getAllPostIds, getPostData } from '../../utils/posts'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
+
   return {
     paths,
     fallback: false
@@ -24,6 +25,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params.id as string)
+
   return {
     props: {
       postData
