@@ -5,14 +5,14 @@ import remark from 'remark'
 import html from 'remark-html'
 import prism from 'remark-prism'
 
-interface SortedPosts {
+interface Post {
   id: string
   title: string
   description: string
   date: string
 }
 
-type PostsByDate = Array<SortedPosts>
+type PostsByDate = Array<Post>
 
 interface MatterResultData {
   title: string
@@ -62,12 +62,41 @@ export function getAllPostIds(): ListFileNames {
   }))
 }
 
+interface MorePosts {
+  nextPost: Post | null
+  previousPost: Post | null
+}
+
+function getMorePosts(currentPostId: string): MorePosts {
+  const allPostsData = getSortedPostsData()
+
+  const currentPostIndex = allPostsData.findIndex(
+    post => post.id === currentPostId
+  )
+
+  let nextPost = null
+  let previousPost = null
+
+  if (currentPostIndex === 0) {
+    previousPost = allPostsData[currentPostIndex + 1]
+  } else if (currentPostIndex === allPostsData.length - 1) {
+    nextPost = allPostsData[currentPostIndex - 1]
+  } else {
+    nextPost = allPostsData[currentPostIndex - 1]
+    previousPost = allPostsData[currentPostIndex + 1]
+  }
+
+  return { nextPost, previousPost }
+}
+
 interface PostData {
   id: string
   title: string
   description: string
   date: string
   contentHtml: string
+  nextPost: Post | null
+  previousPost: Post | null
 }
 
 export async function getPostData(id: string): Promise<PostData> {
@@ -87,12 +116,17 @@ export async function getPostData(id: string): Promise<PostData> {
 
   const { title, description, date } = matterResult.data
 
+  // Get nextPost and previousPost based on current post id
+  const { nextPost, previousPost } = getMorePosts(id)
+
   // Combine the data with the id and contentHtml
   return {
     id,
     title,
     description,
     date,
-    contentHtml
+    contentHtml,
+    nextPost,
+    previousPost
   }
 }

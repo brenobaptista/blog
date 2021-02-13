@@ -5,7 +5,13 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 import Date from '../../components/Date'
 import Layout from '../../components/Layout'
-import { Body, Separator, ShortBio, BackToHome } from '../../styles/pages/Post'
+import {
+  Body,
+  Separator,
+  ShortBio,
+  BackToHome,
+  MorePosts
+} from '../../styles/pages/Post'
 import { getAllPostIds, getPostData } from '../../utils/posts'
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -25,12 +31,21 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
+interface Post {
+  id: string
+  title: string
+  description: string
+  date: string
+}
+
 interface Props {
   postData: {
     title: string
     description: string
     date: string
     contentHtml: string
+    nextPost: Post | null
+    previousPost: Post | null
   }
 }
 
@@ -39,6 +54,11 @@ const Post = ({ postData }: Props): JSX.Element => (
     <Head>
       <title>{postData.title}</title>
     </Head>
+    <BackToHome>
+      <Link href='/'>
+        <a>← Back to home</a>
+      </Link>
+    </BackToHome>
     <article>
       <h1>{postData.title}</h1>
       <Date date={postData.date} />
@@ -68,11 +88,22 @@ const Post = ({ postData }: Props): JSX.Element => (
           software, privacy and cybersecurity.
         </p>
       </ShortBio>
-      <BackToHome>
-        <Link href='/'>
-          <a>← Back to home</a>
-        </Link>
-      </BackToHome>
+      <MorePosts>
+        {postData.previousPost ? (
+          <Link href={`/posts/${postData.previousPost.id}`}>
+            <a>← {postData.previousPost.title}</a>
+          </Link>
+        ) : (
+          <div />
+        )}
+        {postData.nextPost ? (
+          <Link href={`/posts/${postData.nextPost.id}`}>
+            <a className='right'>{postData.nextPost.title} →</a>
+          </Link>
+        ) : (
+          <div />
+        )}
+      </MorePosts>
     </>
   </Layout>
 )

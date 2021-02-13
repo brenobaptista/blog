@@ -146,3 +146,18 @@ export const ShortBio = styled.div`
 export const BackToHome = styled.div`
   margin: 32px 0 0;
 `
+
+export const MorePosts = styled.div`
+  display: flex;
+  margin: 32px 0 0;
+
+  a,
+  div {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .right {
+    text-align: right;
+  }
+`
