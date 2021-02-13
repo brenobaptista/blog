@@ -22,7 +22,7 @@ interface MatterResultData {
 
 const postsDirectory = path.join(process.cwd(), 'src/posts')
 
-export function getSortedPostsData(): PostsByDate {
+export const getSortedPostsData = (): PostsByDate => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
@@ -53,8 +53,9 @@ export function getSortedPostsData(): PostsByDate {
 
 type ListFileNames = Array<{ params: { id: string } }>
 
-export function getAllPostIds(): ListFileNames {
+export const getAllPostIds = (): ListFileNames => {
   const fileNames = fs.readdirSync(postsDirectory)
+
   return fileNames.map(fileName => ({
     params: {
       id: fileName.replace(/\.md$/, '')
@@ -67,7 +68,7 @@ interface MorePosts {
   previousPost: Post | null
 }
 
-function getMorePosts(currentPostId: string): MorePosts {
+const getMorePosts = (currentPostId: string): MorePosts => {
   const allPostsData = getSortedPostsData()
 
   const currentPostIndex = allPostsData.findIndex(
@@ -99,7 +100,7 @@ interface PostData {
   previousPost: Post | null
 }
 
-export async function getPostData(id: string): Promise<PostData> {
+export const getPostData = async (id: string): Promise<PostData> => {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
