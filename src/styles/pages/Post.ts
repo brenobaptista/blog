@@ -37,14 +37,14 @@ export const Body = styled.div`
     word-break: break-word;
   }
 
-  /* Tomorrow theme for Prism.js */
+  /* Custom theme for Prism.js based on Tomorrow theme */
 
   .token.comment,
   .token.block-comment,
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #999;
+    color: ${props => (props.theme.mode === 'dark' ? `#ccc` : `#5a5c5a`)};
   }
 
   .token.punctuation {
@@ -55,7 +55,7 @@ export const Body = styled.div`
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: ${props => (props.theme.mode === 'dark' ? `#e2777a` : `#e21717`)};
+    color: ${props => (props.theme.mode === 'dark' ? `#ff9da4` : `#781818`)};
   }
 
   .token.function-name {
@@ -65,14 +65,14 @@ export const Body = styled.div`
   .token.boolean,
   .token.number,
   .token.function {
-    color: #f08d49;
+    color: ${props => (props.theme.mode === 'dark' ? `#ffc58f` : `#5d4900`)};
   }
 
   .token.property,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: ${props => (props.theme.mode === 'dark' ? `#f8c555` : `#b77625`)};
+    color: ${props => (props.theme.mode === 'dark' ? `#f8c555` : `#5d4900`)};
   }
 
   .token.selector,
@@ -80,7 +80,7 @@ export const Body = styled.div`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: ${props => props.theme.colors.primary};
+    color: ${props => (props.theme.mode === 'dark' ? `#ebbbff` : `#274368`)};
   }
 
   .token.string,
@@ -94,7 +94,7 @@ export const Body = styled.div`
   .token.operator,
   .token.entity,
   .token.url {
-    color: ${props => (props.theme.mode === 'dark' ? `#67cdcc` : `#007e7b`)};
+    color: ${props => (props.theme.mode === 'dark' ? `#67cdcc` : `#285151`)};
   }
 
   .token.important,
