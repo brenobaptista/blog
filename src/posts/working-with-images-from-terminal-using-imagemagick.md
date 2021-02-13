@@ -11,64 +11,84 @@ ImageMagick is free and open-source software that allows you to accomplish tasks
 - Or lost time trying to manually remove the margin from a transparent image?
 - Or tried to apply transparency to an image?
 
+If you said "yes" to any of the questions above, I'll teach you how to efficiently do those tasks.
+
 ## Install ImageMagick
 
 > If you use GNU/Linux you probably don't need to install it, it probably already came installed with your distribution.
 > Try running `magick --version` in your terminal to check if you have it installed.
 
-[Install ImageMagick](https://imagemagick.org/script/download.php)
+[Official ImageMagick download page](https://imagemagick.org/script/download.php)
 
 ## Editing images
 
-Let's convert an image in the JPEG format to PNG:
+### Converting
+
+You use the `convert` command to use ImageMagick (in newer versions you can use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with new format, like this:
 
 ```bash
-convert image.jpg image.png
+convert old-image.jpg new-image.png
 ```
 
-We could also resize the image, for example:
+### Resizing
+
+You can pass the `-resize` flag to resize an image with size in pixels or percentage. Also you could [pass options](https://legacy.imagemagick.org/Usage/resize/) to ignore aspect ratio, for example.
 
 ```bash
-convert -resize 512x512 image.jpg image-resized.jpg
+convert -resize 512x512 image.jpg resized-image.jpg
 ```
 
-You can also add transparency to an image. Take this dog, for example:
+> You can do multiple tasks at the same time, like resizing and converting an image using only one command.
+
+### Adding transparency
+
+Take this drawing of a black dog in a white background.
 
 ![Dog](/blog/working-with-images-from-terminal-using-imagemagick/dog.jpg)
 
-```bash
-convert -transparent white dog.jpg dog-wrong.png
-```
-
-![Wrong Dog](/blog/working-with-images-from-terminal-using-imagemagick/dog-wrong.png)
-
-The problem is that the image is not gonna be perfect because maybe there are colors that are not 100% white, so they wouldn't be transparent at the end. So you can tweak with `-fuzz` to try to find a good approximity, like this:
+Let's remove the background:
 
 ```bash
-convert -transparent white -fuzz 30% dog.jpg dog-transparent.png
+convert -transparent white dog.jpg wrong-dog.png
 ```
 
-![Transparent Dog](/blog/working-with-images-from-terminal-using-imagemagick/dog-transparent.png)
+![Wrong Dog](/blog/working-with-images-from-terminal-using-imagemagick/wrong-dog.png)
 
-Now, let's apply some color back to the background:
+Wait, what happened?! The background is not completely transparent.
+
+The problem is that the background is not 100% white, it has some light shades of gray. We told ImageMagick to only apply transparency to white color. To fix this, you can tweak with `-fuzz` flag so colors that are close to white will be considered white, like this:
 
 ```bash
-convert -background '#bd93f9' -flatten dog-transparent.png dog-purple.jpg
+convert -transparent white -fuzz 30% dog.jpg transparent-dog.png
 ```
 
-![Purple Dog](/blog/working-with-images-from-terminal-using-imagemagick/dog-purple.jpg)
+![Transparent Dog](/blog/working-with-images-from-terminal-using-imagemagick/transparent-dog.png)
 
-This image has some margin and I wanna get rid of it. Let's take a look:
+> Every case is different, so you need to try different values for `-fuzz`.
+
+### Applying color
+
+Now, let's do the opposite and apply some color to the background:
 
 ```bash
-convert -trim dog-purple.jpg dog-purple-trimmed.jpg
+convert -background '#bd93f9' -flatten transparent-dog.png purple-dog.jpg
 ```
 
-![Trimmed Purple Dog](/blog/working-with-images-from-terminal-using-imagemagick/dog-purple-trimmed.jpg)
+![Purple Dog](/blog/working-with-images-from-terminal-using-imagemagick/purple-dog.jpg)
+
+### Trimming
+
+Let's crop the empty space around the image above:
+
+```bash
+convert -trim purple-dog.jpg trimmed-dog.jpg
+```
+
+![Trimmed Dog](/blog/working-with-images-from-terminal-using-imagemagick/trimmed-dog.jpg)
 
 ## Optimizing images
 
-You can also optimize JPEG images using this snippet:
+You can optimize JPEG images using the snippet below:
 
 ```bash
 convert image-unoptimized.jpg \
@@ -84,7 +104,7 @@ This strategy focuses on following Google Lighthouse's guide on how to pass the 
 
 ## Creating images
 
-You can use ImageMagick to create simple images with text for your Instagram posts, for example. Like this:
+You can use ImageMagick to create simple images with text:
 
 ```bash
 convert -background '#0f1523' \
@@ -99,8 +119,8 @@ imagemagick.jpg
 
 ![Simple image with text](/blog/working-with-images-from-terminal-using-imagemagick/imagemagick.jpg)
 
-## More ideas
+## Wrap up
 
-A great way to use ImageMagick is to use it on a script. Maybe you could write a bash script to automate some task you have to do with image? You could write a script that automatically adds a watermark to all the thousands of your photos if you work with photography, for example.
+To exercise your skills with ImageMagick, write a bash script that automatically adds a watermark to photos. Have fun!
 
-BTW, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/) if that also interests you. You can use it to record your screen, record your webcam, convert videos into different formats, make simple edits etc.
+BTW, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/). You can use it to record your screen or webcam, convert videos into different formats, make simple edits etc.
