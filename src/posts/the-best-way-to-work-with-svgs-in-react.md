@@ -7,7 +7,7 @@ date: '2021-01-23'
 Just to make sure we're all on the same page:
 
 - **What?** SVG (Scalable Vector Graphics) is used to integrate 2D graphics into HTML.
-- **When?** Do you want to display a photo, landscape etc? Use PNG or JPG. For simple images like logos or icons, use SVG.
+- **When?** Do you want to display a photo? Use PNG or JPG. For simple images like logos or icons, use SVG.
 - **Where?** There are lots of great libraries for you to get SVGs, but I'd recommend using [Font Awesome](https://fontawesome.com/).
 - **Why?** SVG images don't lose any quality if they are zoomed or resized. They are also lightweight.
 - **How?** Use [Inkscape](https://inkscape.org/) to create and edit, but you could use a text editor to make tiny edits.
@@ -39,8 +39,8 @@ const GitHub = ({ width, height }: Props): JSX.Element => (
 export default GitHub
 ```
 
-If you need to convert just a few SVGs right now or if you want to test this library, you can play with the [Playground](https://react-svgr.com/playground/). But if you actually need to convert a bunch of SVGs at the same time you should read the [Documentation](https://react-svgr.com/docs/getting-started/) to use SVGR as a CLI tool for your project.
+If you need to convert just a few SVGs right now or if you want to test this library, you can play with the [Playground](https://react-svgr.com/playground/). But if you need to convert a bunch of SVGs at the same time you should read the [Documentation](https://react-svgr.com/docs/getting-started/) to use SVGR as a CLI tool for your project.
 
 ## Accessible SVGs
 
-There's a [complete guide](https://css-tricks.com/accessible-svgs/) explaining how to create accessible SVGs, but basically you _at least_ need to add a `title` tag to your SVG in order to make it possible for screen readers to understand what the image is about.
+There's a [complete guide](https://css-tricks.com/accessible-svgs/) explaining how to create accessible SVGs. Basically, you _at least_ need to add a `title` tag to your SVG to make it possible for screen readers to understand what the image is about.
