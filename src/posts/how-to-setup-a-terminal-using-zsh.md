@@ -1,6 +1,6 @@
 ---
 title: 'How to Setup a Terminal Using Zsh'
-description: 'Learn how to turn an old-fashioned terminal into your new best friend.'
+description: 'Turn an old-fashioned terminal into your new best friend.'
 date: '2020-10-31'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Working with images from the terminal using ImageMagick'
+title: 'Editing Images From the Terminal With ImageMagick'
 description: 'Use this CLI tool to create, edit, compose or convert images.'
 date: '2021-02-13'
 ---
