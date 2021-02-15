@@ -1,5 +1,5 @@
 ---
-title: 'Working with images from terminal using ImageMagick'
+title: 'Working with images from the terminal using ImageMagick'
 description: 'Use this CLI tool to create, edit, compose or convert images.'
 date: '2021-02-13'
 ---
@@ -24,7 +24,7 @@ If you said "yes" to any of the questions above, I'll teach you how to efficient
 
 ### Converting
 
-You use the `convert` command to use ImageMagick (in newer versions you can use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with new format, like this:
+You use the `convert` command to use ImageMagick (in newer versions you can use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with a new format, like this:
 
 ```bash
 convert old-image.jpg new-image.png
@@ -32,7 +32,7 @@ convert old-image.jpg new-image.png
 
 ### Resizing
 
-You can pass the `-resize` flag to resize an image with size in pixels or percentage. Also you could [pass options](https://legacy.imagemagick.org/Usage/resize/) to ignore aspect ratio, for example.
+You can pass the `-resize` flag to resize an image with a size in pixels or percentage. Also, you could [pass options](https://legacy.imagemagick.org/Usage/resize/) to ignore aspect ratio, for example.
 
 ```bash
 convert -resize 512x512 image.jpg resized-image.jpg
@@ -42,7 +42,7 @@ convert -resize 512x512 image.jpg resized-image.jpg
 
 ### Adding transparency
 
-Take this drawing of a black dog in a white background.
+Take this drawing of a black dog on a white background.
 
 ![Dog](/blog/working-with-images-from-terminal-using-imagemagick/dog.jpg)
 
@@ -123,4 +123,4 @@ imagemagick.jpg
 
 To exercise your skills with ImageMagick, write a bash script that automatically adds a watermark to photos. Have fun!
 
-BTW, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/). You can use it to record your screen or webcam, convert videos into different formats, make simple edits etc.
+BTW, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/). You can use it to record your screen or webcam, convert videos into different formats, or even make simple edits.
