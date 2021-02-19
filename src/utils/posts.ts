@@ -111,7 +111,9 @@ export const getPostData = async (id: string): Promise<PostData> => {
   // Use remark-prism to support syntax hightlighting
   const processedContent = await remark()
     .use(html)
-    .use(prism)
+    .use(prism, {
+      plugins: ['line-numbers', 'command-line']
+    })
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
 

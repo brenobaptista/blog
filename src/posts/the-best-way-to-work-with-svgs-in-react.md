@@ -18,7 +18,7 @@ Just to make sure we're all on the same page:
 
 Here is an example of an SVG that I've transformed into a React component:
 
-```tsx
+```tsx[class="line-numbers"]
 interface Props {
   width: number
   height: number

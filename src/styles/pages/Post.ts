@@ -112,6 +112,69 @@ export const Body = styled.div`
   .token.inserted {
     color: green;
   }
+
+  /* Plugin line-numbers for Prism.js */
+
+  pre[class*='language-'].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+  }
+
+  pre[class*='language-'].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+  }
+
+  .line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: -2px;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+  }
+
+  .line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: ${props => props.theme.colors.altText};
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+  }
+
+  /* Plugin command-line for Prism.js */
+
+  .command-line-prompt {
+    display: block;
+    float: left;
+    font-size: 100%;
+    letter-spacing: -1px;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .command-line-prompt > span:before {
+    color: ${props => props.theme.colors.altText};
+    content: '$';
+    display: block;
+    padding-right: 1.5em;
+  }
 `
 
 export const Separator = styled.hr`

@@ -26,7 +26,7 @@ If you said "yes" to any of the questions above, I'll teach you how to efficient
 
 You use the `convert` command to use ImageMagick (in newer versions you can use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with a new format, like this:
 
-```bash
+```bash[class="command-line"]
 convert old-image.jpg new-image.png
 ```
 
@@ -34,7 +34,7 @@ convert old-image.jpg new-image.png
 
 You can pass the `-resize` flag to resize an image with a size in pixels or percentage. Also, you could [pass options](https://legacy.imagemagick.org/Usage/resize/) to ignore aspect ratio, for example.
 
-```bash
+```bash[class="command-line"]
 convert -resize 512x512 image.jpg resized-image.jpg
 ```
 
@@ -48,7 +48,7 @@ Take this drawing of a black dog on a white background.
 
 Let's remove the background:
 
-```bash
+```bash[class="command-line"]
 convert -transparent white dog.jpg wrong-dog.png
 ```
 
@@ -58,8 +58,9 @@ Wait, what happened?! The background is not completely transparent.
 
 The problem is that the background is not 100% white, it has some light shades of gray. We told ImageMagick to only apply transparency to white color. To fix this, you can tweak with `-fuzz` flag so colors that are close to white will be considered white, like this:
 
-```bash
-convert -transparent white -fuzz 30% dog.jpg transparent-dog.png
+```bash[class="command-line"]
+convert -transparent white -fuzz 30% \
+dog.jpg transparent-dog.png
 ```
 
 ![Transparent Dog](/blog/working-with-images-from-terminal-using-imagemagick/transparent-dog.png)
@@ -70,8 +71,9 @@ convert -transparent white -fuzz 30% dog.jpg transparent-dog.png
 
 Now, let's do the opposite and apply some color to the background:
 
-```bash
-convert -background '#bd93f9' -flatten transparent-dog.png purple-dog.jpg
+```bash[class="command-line"]
+convert -background '#bd93f9' -flatten \
+transparent-dog.png purple-dog.jpg
 ```
 
 ![Purple Dog](/blog/working-with-images-from-terminal-using-imagemagick/purple-dog.jpg)
@@ -80,7 +82,7 @@ convert -background '#bd93f9' -flatten transparent-dog.png purple-dog.jpg
 
 Let's crop the empty space around the image above:
 
-```bash
+```bash[class="command-line"]
 convert -trim purple-dog.jpg trimmed-dog.jpg
 ```
 
@@ -90,14 +92,14 @@ convert -trim purple-dog.jpg trimmed-dog.jpg
 
 You can optimize JPEG images using the snippet below:
 
-```bash
+```bash[class="command-line"]
 convert image-unoptimized.jpg \
--sampling-factor 4:2:0 \
--strip \
--quality 85 \
--interlace JPEG \
--colorspace RGB \
-image-pagespeed.jpg
+  -sampling-factor 4:2:0 \
+  -strip \
+  -quality 85 \
+  -interlace JPEG \
+  -colorspace RGB \
+  image-pagespeed.jpg
 ```
 
 This strategy focuses on following Google Lighthouse's guide on how to pass the "Optimize Images" Lighthouse audit in Chrome DevTools. Read more on this [Stack Overflow post](https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick).
@@ -106,15 +108,15 @@ This strategy focuses on following Google Lighthouse's guide on how to pass the 
 
 You can use ImageMagick to create simple images with text:
 
-```bash
+```bash[class="command-line"]
 convert -background '#0f1523' \
--fill red \
--font Fira-Code-Bold \
--size 512x512 \
--pointsize 30 \
--gravity center \
-label:'How to create an image\nlike this one using\nImageMagick'\
-imagemagick.jpg
+  -fill red \
+  -font Fira-Code-Bold \
+  -size 512x512 \
+  -pointsize 30 \
+  -gravity center \
+  label:'How to create an image\nlike this one using\nImageMagick' \
+  imagemagick.jpg
 ```
 
 ![Simple image with text](/blog/working-with-images-from-terminal-using-imagemagick/imagemagick.jpg)
