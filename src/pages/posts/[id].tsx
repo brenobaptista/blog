@@ -86,8 +86,8 @@ const Post = ({ postData }: Props): JSX.Element => (
             Massive
           </a>
           , where he develops web apps to fight advertising, data selling and
-          privacy violations. He is interested in GNU/Linux, open-source
-          software, privacy and cybersecurity.
+          privacy violations. He is interested in GNU/Linux, shell scripting and
+          front end web technologies.
         </p>
       </ShortBio>
       <MorePosts>

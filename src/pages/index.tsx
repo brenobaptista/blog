@@ -69,8 +69,8 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
           Massive
         </a>
         , where we develop alternatives to fight intrusive advertising. I&apos;m
-        interested in GNU/Linux, open-source software, privacy and
-        cybersecurity.
+        interested in GNU/Linux, shell scripting, open-source software, privacy
+        and front end web technologies.
       </p>
     </Intro>
     <Blog>
