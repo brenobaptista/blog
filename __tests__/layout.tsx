@@ -1,6 +1,6 @@
 import { render, fireEvent } from '../testUtils'
 import Layout from '../src/components/Layout'
-import { ThemeContext } from '../src/pages/_app'
+import ThemeContext from '../src/contexts/ThemeContext'
 
 const renderWithContext = (ui, value) =>
   render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)

@@ -5,6 +5,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 import Date from '../../components/Date'
 import Layout from '../../components/Layout'
+import { getAllPostIds, getPostData } from '../../lib/posts'
 import {
   Body,
   Separator,
@@ -12,7 +13,6 @@ import {
   BackToHome,
   MorePosts
 } from '../../styles/pages/Post'
-import { getAllPostIds, getPostData } from '../../utils/posts'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()

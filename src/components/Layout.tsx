@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react'
 import Head from 'next/head'
 
 import Switch from './Switch'
-import { ThemeContext } from '../pages/_app'
+import ThemeContext from '../contexts/ThemeContext'
 import Container from '../styles/components/Layout'
 
 interface Props {

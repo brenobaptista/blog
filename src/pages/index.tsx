@@ -7,8 +7,8 @@ import Email from '../components/icons/Email'
 import GitHub from '../components/icons/GitHub'
 import Date from '../components/Date'
 import Layout, { siteTitle } from '../components/Layout'
+import { getSortedPostsData } from '../lib/posts'
 import { HomeHeader, SocialIcons, Intro, Blog } from '../styles/pages/Home'
-import { getSortedPostsData } from '../utils/posts'
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
