@@ -1,4 +1,4 @@
-# Effigy
+# Blog
 
 > My blog made using Next.js + TypeScript
 
