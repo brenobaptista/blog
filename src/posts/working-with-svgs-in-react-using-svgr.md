@@ -1,5 +1,5 @@
 ---
-title: 'The Best Way to Work With SVGs in React'
+title: 'Working With SVGs in React Using SVGR'
 description: 'Learn how to transform an SVG into a React component.'
 date: '2021-01-23'
 ---
@@ -12,7 +12,7 @@ Just to make sure we're all on the same page:
 - **Why?** SVG images don't lose any quality if they are zoomed or resized. They are also lightweight.
 - **How?** Use [Inkscape](https://inkscape.org/) to create and edit, but you could use a text editor to make tiny edits.
 
-## React SVGR
+## SVGR
 
 [SVGR](https://react-svgr.com/) is an **awesome** tool that transforms SVG into React components easily. But why should you use it? Because if you use it your SVGs will be bundled with the JS, so they will be available really fast. Besides, it makes the maintenance of SVGs super easy since they are transformed into React components.
 
