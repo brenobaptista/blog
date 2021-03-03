@@ -11,7 +11,7 @@ export const HomeHeader = styled.header`
 `
 
 export const SocialIcons = styled.div`
-  width: 100px;
+  width: 150px;
   display: flex;
   justify-content: space-between;
 

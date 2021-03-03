@@ -5,6 +5,7 @@ import { GetStaticProps } from 'next'
 
 import Email from '../components/icons/Email'
 import GitHub from '../components/icons/GitHub'
+import RSS from '../components/icons/RSS'
 import Date from '../components/Date'
 import Layout, { siteTitle } from '../components/Layout'
 import { Post, getSortedPostsData } from '../lib/posts'
@@ -54,6 +55,13 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
         </a>
         <a href='mailto:brenobaptista@protonmail.com'>
           <Email width={40} height={40} />
+        </a>
+        <a
+          href='https://brenobaptista.vercel.app/rss.xml'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          <RSS width={40} height={40} />
         </a>
       </SocialIcons>
     </HomeHeader>
