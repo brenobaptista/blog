@@ -7,7 +7,7 @@ import Email from '../components/icons/Email'
 import GitHub from '../components/icons/GitHub'
 import Date from '../components/Date'
 import Layout, { siteTitle } from '../components/Layout'
-import { getSortedPostsData } from '../lib/posts'
+import { Post, getSortedPostsData } from '../lib/posts'
 import generateSitemap from '../lib/sitemap'
 import { HomeHeader, SocialIcons, Intro, Blog } from '../styles/pages/Home'
 
@@ -24,12 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 interface Props {
-  allPostsData: {
-    id: string
-    title: string
-    description: string
-    date: string
-  }[]
+  allPostsData: Post[]
 }
 
 const Home = ({ allPostsData }: Props): JSX.Element => (

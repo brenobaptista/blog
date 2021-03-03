@@ -5,7 +5,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 import Date from '../../components/Date'
 import Layout from '../../components/Layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { PostData, getAllPostIds, getPostData } from '../../lib/posts'
 import {
   Body,
   Separator,
@@ -33,22 +33,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-interface Post {
-  id: string
-  title: string
-  description: string
-  date: string
-}
-
 interface Props {
-  postData: {
-    title: string
-    description: string
-    date: string
-    contentHtml: string
-    nextPost: Post | null
-    previousPost: Post | null
-  }
+  postData: PostData
 }
 
 const Post = ({ postData }: Props): JSX.Element => (

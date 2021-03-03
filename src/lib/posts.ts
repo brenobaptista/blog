@@ -5,24 +5,34 @@ import remark from 'remark'
 import html from 'remark-html'
 import prism from 'remark-prism'
 
-interface Post {
-  id: string
-  title: string
-  description: string
-  date: string
-}
-
-type PostsByDate = Array<Post>
-
 interface MatterResultData {
   title: string
   description: string
   date: string
 }
 
+export interface Post extends MatterResultData {
+  id: string
+}
+
+interface FileName {
+  params: {
+    id: string
+  }
+}
+
+interface MorePosts {
+  nextPost: Post | null
+  previousPost: Post | null
+}
+
+export interface PostData extends Post, MorePosts {
+  contentHtml: string
+}
+
 const postsDirectory = path.join(process.cwd(), 'src/posts')
 
-export const getSortedPostsData = (): PostsByDate => {
+export const getSortedPostsData = (): Post[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
@@ -51,9 +61,7 @@ export const getSortedPostsData = (): PostsByDate => {
   })
 }
 
-type ListFileNames = Array<{ params: { id: string } }>
-
-export const getAllPostIds = (): ListFileNames => {
+export const getAllPostIds = (): FileName[] => {
   const fileNames = fs.readdirSync(postsDirectory)
 
   return fileNames.map(fileName => ({
@@ -61,11 +69,6 @@ export const getAllPostIds = (): ListFileNames => {
       id: fileName.replace(/\.md$/, '')
     }
   }))
-}
-
-interface MorePosts {
-  nextPost: Post | null
-  previousPost: Post | null
 }
 
 const getMorePosts = (currentPostId: string): MorePosts => {
@@ -88,16 +91,6 @@ const getMorePosts = (currentPostId: string): MorePosts => {
   }
 
   return { nextPost, previousPost }
-}
-
-interface PostData {
-  id: string
-  title: string
-  description: string
-  date: string
-  contentHtml: string
-  nextPost: Post | null
-  previousPost: Post | null
 }
 
 export const getPostData = async (id: string): Promise<PostData> => {
