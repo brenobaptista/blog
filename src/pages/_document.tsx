@@ -42,6 +42,12 @@ export default class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <meta charSet='utf-8' />
+          <link
+            rel='alternate'
+            type='application/rss+xml'
+            title='RSS feed for blog posts'
+            href='https://brenobaptista.vercel.app/rss.xml'
+          />
         </Head>
         <body>
           <Main />

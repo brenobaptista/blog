@@ -8,11 +8,14 @@ import GitHub from '../components/icons/GitHub'
 import Date from '../components/Date'
 import Layout, { siteTitle } from '../components/Layout'
 import { Post, getSortedPostsData } from '../lib/posts'
+import generateRss from '../lib/rss'
 import generateSitemap from '../lib/sitemap'
 import { HomeHeader, SocialIcons, Intro, Blog } from '../styles/pages/Home'
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
+
+  generateRss(allPostsData)
 
   await generateSitemap()
 
