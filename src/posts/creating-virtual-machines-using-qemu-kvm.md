@@ -23,7 +23,7 @@ It's usually called "qemu-kvm" or "kvm".
 
 ### Download .iso
 
-First of all, you need to download the `.iso` file for Kali Linux (or any other operational system) in the [official website](https://www.kali.org/downloads/).
+First of all, you need to download the `.iso` file for Kali Linux (or any other operational system) on the [official website](https://www.kali.org/downloads/).
 
 ### Boot in Live Mode
 
@@ -59,11 +59,11 @@ I have decided to create a data storage named `kalidisk` that contains `30 GB` o
 
 Now you can modify the previous command to install Kali Linux in the virtual disk that you created earlier.
 
-1. Add `-hda kalidisk.qcow2` to our previous script and run the live version once again. This time it will recognize the new disk and you will have the option to install the system in there.
+1. Add `-hda kalidisk.qcow2` to our previous script and run the live version once again. This time it will recognize the new disk and you will have the option to install the system there.
 
 2. After installing Kali Linux, you can boot from disk if you remove both `-boot d` and `-cdrom kali-linux-2020.3-live-amd64.iso` flags from our command.
 
-3. You can create a bash script (don't forget to make it executable running `chmod +x script.sh` in your terminal) and use it everytime you want to start the virtual machine. You can tweak this script to customize your virtual machine like adding more RAM or CPU cores.
+3. You can create a bash script (don't forget to make it executable running `chmod +x script.sh` in your terminal) and use it every time you want to start the virtual machine. You can tweak this script to customize your virtual machine, for example adding more RAM or CPU cores.
 
 ```bash[class="line-numbers"]
 #!/bin/bash
@@ -80,6 +80,6 @@ qemu-system-x86_64 \
 
 ## MacOS
 
-There is a nice README that explains [how to setup a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result running `macOS Catalina` in dark mode:
+There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a VM running `macOS Catalina` in dark mode:
 
 ![MacOS](/blog/creating-virtual-machines-using-qemu-kvm/mac.jpg)
