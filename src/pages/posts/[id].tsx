@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 import Date from '../../components/Date'
@@ -55,8 +54,8 @@ const Post = ({ postData }: Props): JSX.Element => (
     <>
       <Separator />
       <ShortBio>
-        <Image
-          src='/images/profile.jpg'
+        <img
+          src='/images/profile-80.jpg'
           alt='Breno Baptista'
           width={80}
           height={80}

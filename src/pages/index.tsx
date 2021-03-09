@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
 import Email from '../components/icons/Email'
@@ -37,12 +36,11 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
       <title>{siteTitle}</title>
     </Head>
     <HomeHeader>
-      <Image
-        src='/images/profile.jpg'
+      <img
+        src='/images/profile-128.jpg'
         alt='Breno Baptista'
         width={128}
         height={128}
-        priority
       />
       <h1>Breno Baptista</h1>
       <SocialIcons>

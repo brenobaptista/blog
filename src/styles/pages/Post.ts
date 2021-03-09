@@ -193,13 +193,11 @@ export const ShortBio = styled.div`
   display: flex;
 
   img {
-    flex: 1;
     margin-top: 25px;
     border-radius: 50%;
   }
 
   p {
-    flex: 1;
     margin-left: 20px;
     font-style: italic;
     text-align: justify;
