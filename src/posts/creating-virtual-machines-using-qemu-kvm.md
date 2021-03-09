@@ -10,6 +10,8 @@ date: '2021-03-06'
 
 > In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
 
+## Dependencies
+
 ### Install QEMU
 
 [Download QEMU](https://www.qemu.org/download/)
