@@ -109,4 +109,4 @@ yarn config set -- --emoji true
 
 ## Screenshot
 
-![Terminal](/blog/how-to-setup-a-terminal-using-zsh/terminal.png)
+![Terminal](/blog/customizing-terminal-with-zsh/terminal.png)
