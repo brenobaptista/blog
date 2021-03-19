@@ -4,7 +4,7 @@ description: 'Turn an old-fashioned terminal into your new best friend.'
 date: '2020-10-31'
 ---
 
-> This guide was inspired by another guide made by Rocketseat (in Portuguese). [Check the guide](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/).
+![Terminal](/blog/customizing-terminal-with-zsh/terminal.png)
 
 ## Install the dependencies
 
@@ -106,7 +106,3 @@ If you use yarn and you would like to have emojis in your terminal, run this in 
 ```bash[class="command-line"]
 yarn config set -- --emoji true
 ```
-
-## Screenshot
-
-![Terminal](/blog/customizing-terminal-with-zsh/terminal.png)
