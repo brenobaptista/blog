@@ -7,10 +7,9 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "airbnb",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "prettier/react",
+    "airbnb",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -21,9 +20,8 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "prettier/prettier": "error",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "import/extensions": ["error", { "extensions": [".tsx"] }],
     "import/no-extraneous-dependencies": "off",
@@ -31,6 +29,7 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "no-undef": "off"
   }
 }
