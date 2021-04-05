@@ -6,10 +6,11 @@ import Email from '../components/icons/Email'
 import GitHub from '../components/icons/GitHub'
 import RSS from '../components/icons/RSS'
 import Date from '../components/Date'
-import Layout, { siteTitle } from '../components/Layout'
+import Layout from '../components/Layout'
 import { Post, getSortedPostsData } from '../lib/posts'
 import generateRss from '../lib/rss'
 import generateSitemap from '../lib/sitemap'
+import { siteTitle } from './_document'
 import { HomeHeader, SocialIcons, Intro, Blog } from '../styles/pages/Home'
 
 export const getStaticProps: GetStaticProps = async () => {
