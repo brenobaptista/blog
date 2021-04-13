@@ -62,7 +62,7 @@ const generateSitemap = async (): Promise<void> => {
 export default generateSitemap
 ```
 
-Import the `generateSitemap` function in the `pages/index.ts` file and add it to the `getStaticProps` to make sure Next.js will call this function during the build of the `pages/index.ts` page in production and generate the sitemap.
+Import the `generateSitemap` function in the `pages/index.tsx` file and add it to the `getStaticProps` to make sure Next.js will call this function during the build of the `pages/index.tsx` page in production and generate the sitemap.
 
 ```tsx[class="line-numbers"]
 export async function getStaticProps() {
