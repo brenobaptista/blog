@@ -35,6 +35,10 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
   <Layout>
     <Head>
       <title>{siteTitle}</title>
+      <meta
+        name='description'
+        content="I'm a full-stack developer based in Fortaleza, Brazil."
+      />
     </Head>
     <HomeHeader>
       <img

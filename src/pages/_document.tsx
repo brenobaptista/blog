@@ -51,10 +51,6 @@ export default class MyDocument extends Document {
             href='https://brenobaptista.vercel.app/rss.xml'
           />
           <meta
-            name='description'
-            content="I'm a full-stack developer based in Fortaleza, Brazil."
-          />
-          <meta
             property='og:image'
             content={`https://og-image.vercel.app/${encodeURI(
               siteTitle

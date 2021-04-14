@@ -40,6 +40,7 @@ const Post = ({ postData }: Props): JSX.Element => (
   <Layout>
     <Head>
       <title>{postData.title}</title>
+      <meta name='description' content={postData.description} />
     </Head>
     <BackToHome>
       <Link href='/'>
