@@ -62,6 +62,10 @@ export default class MyDocument extends Document {
           />
           <meta name='og:title' content={siteTitle} />
           <meta name='twitter:card' content='summary_large_image' />
+          <meta
+            name='google-site-verification'
+            content='_cd7mw2YWYlX1KdSTwEDVxDz2n5eWnW87t8mo4WdKF8'
+          />
         </Head>
         <body>
           <Main />
