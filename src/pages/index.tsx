@@ -42,7 +42,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
     </Head>
     <HomeHeader>
       <img
-        src='/images/profile-128.jpg'
+        src='/images/profile-256.jpg'
         alt='Breno Baptista'
         width={128}
         height={128}
