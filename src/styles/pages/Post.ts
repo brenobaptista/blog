@@ -190,15 +190,13 @@ export const Separator = styled.hr`
 `
 
 export const ShortBio = styled.div`
-  display: flex;
-
-  img {
-    margin-top: 25px;
-    border-radius: 50%;
+  svg {
+    float: left;
+    margin-top: 5px;
   }
 
   p {
-    margin-left: 20px;
+    margin-left: 10px;
     font-style: italic;
     text-align: justify;
   }
