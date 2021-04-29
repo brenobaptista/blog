@@ -4,10 +4,12 @@ export const HomeHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
 
-  img {
-    border-radius: 50%;
-  }
+export const ProfileWrapper = styled.div`
+  height: 128px;
+  background-color: ${props => props.theme.colors.primary};
+  border-radius: 50%;
 `
 
 export const SocialIcons = styled.div`

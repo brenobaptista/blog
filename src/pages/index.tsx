@@ -2,16 +2,23 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-import Email from '../components/icons/Email'
-import GitHub from '../components/icons/GitHub'
-import RSS from '../components/icons/RSS'
+import Email from '../components/svgs/Email'
+import GitHub from '../components/svgs/GitHub'
+import Profile from '../components/svgs/Profile'
+import RSS from '../components/svgs/RSS'
 import Date from '../components/Date'
 import Layout from '../components/Layout'
 import { Post, getSortedPostsData } from '../lib/posts'
 import generateRss from '../lib/rss'
 import generateSitemap from '../lib/sitemap'
 import { siteTitle } from './_document'
-import { HomeHeader, SocialIcons, Intro, Blog } from '../styles/pages/Home'
+import {
+  HomeHeader,
+  ProfileWrapper,
+  SocialIcons,
+  Intro,
+  Blog
+} from '../styles/pages/Home'
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
@@ -41,12 +48,9 @@ const Home = ({ allPostsData }: Props): JSX.Element => (
       />
     </Head>
     <HomeHeader>
-      <img
-        src='/images/profile-256.jpg'
-        alt='Breno Baptista'
-        width={128}
-        height={128}
-      />
+      <ProfileWrapper>
+        <Profile width={128} height={128} />
+      </ProfileWrapper>
       <h1>Breno Baptista</h1>
       <SocialIcons>
         <a
