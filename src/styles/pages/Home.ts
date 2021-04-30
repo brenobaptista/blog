@@ -8,7 +8,7 @@ export const HomeHeader = styled.header`
 
 export const ProfileWrapper = styled.div`
   height: 128px;
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.altBackground};
   border-radius: 50%;
 `
 
