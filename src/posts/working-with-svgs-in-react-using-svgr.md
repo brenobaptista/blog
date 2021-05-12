@@ -14,7 +14,7 @@ Just to make sure we're all on the same page:
 
 ## Create React App
 
-SVGs can be imported and used directly as a component in your code. The image is not loaded as a separate file, instead, it’s rendered along with the HTML.
+SVGs can be imported and used directly as a component in your code. The image is not loaded as a separate file, instead, it’s rendered along with the HTML. Don't forget to [check the documentation](https://create-react-app.dev/docs/adding-images-fonts-and-files/#adding-svgs).
 
 ```js[class="line-numbers"]
 import React from 'react';
