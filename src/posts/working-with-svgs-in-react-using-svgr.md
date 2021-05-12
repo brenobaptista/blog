@@ -12,6 +12,25 @@ Just to make sure we're all on the same page:
 - **Why?** SVG images don't lose any quality if they are zoomed or resized. They are also lightweight.
 - **How?** Use [Inkscape](https://inkscape.org/) to create and edit, but you could use a text editor to make tiny edits.
 
+## Create React App
+
+SVGs can be imported and used directly as a component in your code. The image is not loaded as a separate file, instead, it’s rendered along the HTML.
+
+```js[class="line-numbers"]
+import React from 'react';
+import { ReactComponent as Logo } from './logo.svg';
+
+const App = () => (
+  <>
+    <Logo />
+  </>
+)
+
+export default App;
+```
+
+But, unfortunately, this approach only works with `create-react-app`, because it uses `SVGR` (the method below) under the hood to make it possible to transform and import SVGs as a component. If you are not using `create-react-app`, convert the component yourself by using `SVGR`.
+
 ## SVGR
 
 [SVGR](https://react-svgr.com/) is an **awesome** tool that transforms SVG into React components easily. But why should you use it? Because if you use it your SVGs will be bundled with the JS, so they will be available really fast. Besides, it makes the maintenance of SVGs super easy since they are transformed into React components.
