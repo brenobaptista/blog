@@ -1,20 +1,20 @@
+import { useContext } from 'react'
+
+import ThemeContext from '../contexts/ThemeContext'
 import {
   InvisibleCheckbox,
   Background,
   Toggle
 } from '../styles/components/Switch'
 
-interface Props {
-  switchValue: boolean
-  toggleSwitch: () => void
-}
+const Switch = (): JSX.Element => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
-const Switch = ({ switchValue, toggleSwitch }: Props): JSX.Element => {
   const handleKeyPress = (event: React.KeyboardEvent<HTMLLabelElement>) => {
     if (event.key !== ' ') return
 
     event.preventDefault()
-    toggleSwitch()
+    toggleTheme()
   }
 
   return (
@@ -22,8 +22,8 @@ const Switch = ({ switchValue, toggleSwitch }: Props): JSX.Element => {
       <InvisibleCheckbox
         id='checkbox'
         type='checkbox'
-        checked={switchValue}
-        onChange={toggleSwitch}
+        checked={theme.mode === 'dark'}
+        onChange={toggleTheme}
       />
       <Background
         htmlFor='checkbox'
