@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 
 import Switch from './Switch'
 import ThemeContext from '../contexts/ThemeContext'
@@ -9,29 +9,11 @@ interface Props {
 }
 
 const Layout = ({ children }: Props): JSX.Element => {
-  const [switchValue, setSwitchValue] = useState(true)
-
-  useEffect(() => {
-    const storageValue = localStorage.getItem('theme')
-
-    if (storageValue && JSON.parse(storageValue).mode === 'dark') {
-      setSwitchValue(true)
-    } else if (storageValue && JSON.parse(storageValue).mode === 'light') {
-      setSwitchValue(false)
-    }
-  }, [])
-
-  const toggleTheme = useContext(ThemeContext)
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <Container>
-      <Switch
-        switchValue={switchValue}
-        toggleSwitch={() => {
-          setSwitchValue(!switchValue)
-          toggleTheme()
-        }}
-      />
+      <Switch switchValue={theme.mode === 'dark'} toggleSwitch={toggleTheme} />
       <main>{children}</main>
     </Container>
   )
