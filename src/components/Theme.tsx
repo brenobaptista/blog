@@ -1,7 +1,7 @@
-import { ThemeProvider, DefaultTheme } from 'styled-components'
+import { useState, useEffect } from 'react'
+import { ThemeProvider } from 'styled-components'
 
 import ThemeContext from '../contexts/ThemeContext'
-import usePersistedState from '../hooks/usePersistedState'
 import dark from '../styles/themes/dark'
 import light from '../styles/themes/light'
 
@@ -9,31 +9,32 @@ interface Props {
   children: React.ReactNode
 }
 
-const getDefaultTheme = () => {
-  let defaultTheme
+const getTheme = () => {
+  let theme
 
   if (typeof window !== 'undefined') {
     const storageValue = localStorage.getItem('theme')
 
     if (storageValue && JSON.parse(storageValue).mode === 'dark') {
-      defaultTheme = dark
+      theme = dark
     } else if (storageValue && JSON.parse(storageValue).mode === 'light') {
-      defaultTheme = light
+      theme = light
     } else {
-      defaultTheme = dark
+      theme = dark
     }
   }
 
-  return defaultTheme
+  return theme
 }
 
 const Theme = ({ children }: Props): JSX.Element => {
-  const defaultTheme = getDefaultTheme()
+  const initialTheme = getTheme()
 
-  const [theme, setTheme] = usePersistedState<DefaultTheme>(
-    'theme',
-    defaultTheme
-  )
+  const [theme, setTheme] = useState(initialTheme)
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(theme))
+  }, [theme])
 
   const toggleTheme = () => {
     setTheme(theme.mode === 'light' ? dark : light)
