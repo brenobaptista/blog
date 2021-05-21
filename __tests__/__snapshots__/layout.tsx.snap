@@ -29,8 +29,6 @@ exports[`matches snapshot 1`] = `
   width: 65px;
   height: 32px;
   background: #586693;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
 }
 
 .c6 {
@@ -41,14 +39,10 @@ exports[`matches snapshot 1`] = `
   border-radius: 28px;
   width: 28px;
   height: 28px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   background: #f6f5f4;
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.29);
-}
-
-.c3:active .c5 {
-  width: 33px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .c1:checked + .c3 .c5 {
