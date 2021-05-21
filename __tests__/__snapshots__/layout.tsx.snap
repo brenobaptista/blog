@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `
+exports[`matches snapshot in dark mode 1`] = `
 <DocumentFragment>
   .c2 {
   position: absolute;

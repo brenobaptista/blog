@@ -1,23 +1,17 @@
 import { render, fireEvent } from '../testUtils'
 import Switch from '../src/components/Switch'
+import ThemeContext from '../src/contexts/ThemeContext'
 
-test('matches snapshot', () => {
-  const toggleSwitch = jest.fn()
-  const { asFragment } = render(
-    <Switch switchValue toggleSwitch={toggleSwitch} />
-  )
+const renderWithContext = (ui, value) =>
+  render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)
 
-  expect(asFragment()).toMatchSnapshot()
-})
-
-test('toggles Switch using keyboard', () => {
-  const toggleSwitch = jest.fn()
-  const { getByTestId } = render(
-    <Switch switchValue toggleSwitch={toggleSwitch} />
-  )
+test('toggles Switch using keyboard in light mode', () => {
+  const toggleTheme = jest.fn()
+  const theme = { mode: 'light' }
+  const { getByTestId } = renderWithContext(<Switch />, { theme, toggleTheme })
 
   const checkbox = getByTestId('label-checkbox')
   fireEvent.keyDown(checkbox, { key: 'Enter', keyCode: 13 })
   fireEvent.keyDown(checkbox, { key: ' ', keyCode: 32 })
-  expect(toggleSwitch).toHaveBeenCalled()
+  expect(toggleTheme).toHaveBeenCalled()
 })
