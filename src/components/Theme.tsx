@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 
 import ThemeContext from '../contexts/ThemeContext'
@@ -13,7 +12,7 @@ interface Props {
 const getDefaultTheme = () => {
   let defaultTheme
 
-  useEffect(() => {
+  if (typeof window !== 'undefined') {
     const storageValue = localStorage.getItem('theme')
 
     if (storageValue && JSON.parse(storageValue).mode === 'dark') {
@@ -23,7 +22,7 @@ const getDefaultTheme = () => {
     } else {
       defaultTheme = dark
     }
-  }, [])
+  }
 
   return defaultTheme
 }
