@@ -18,7 +18,6 @@ export const Background = styled.label`
   width: 65px;
   height: 32px;
   background: ${props => props.theme.colors.primary};
-  transition: background-color 0.2s;
 `
 
 export const Toggle = styled.span`
@@ -29,13 +28,9 @@ export const Toggle = styled.span`
   border-radius: 28px;
   width: 28px;
   height: 28px;
-  transition: 0.2s;
   background: ${props => props.theme.colors.background};
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
-
-  ${Background}:active & {
-    width: 33px;
-  }
+  transition: 0.2s;
 
   ${InvisibleCheckbox}:checked + ${Background} & {
     left: calc(100% - 2px);
