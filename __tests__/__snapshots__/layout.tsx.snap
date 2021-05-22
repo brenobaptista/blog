@@ -2,14 +2,14 @@
 
 exports[`matches snapshot in dark mode 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
   position: absolute;
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,29 +23,27 @@ exports[`matches snapshot in dark mode 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 32px;
   cursor: pointer;
   border-radius: 65px;
   width: 65px;
-  height: 32px;
+  height: 28px;
   background: #586693;
 }
 
-.c6 {
+.c7 {
   content: '';
   position: absolute;
   top: 2px;
   left: 2px;
-  border-radius: 28px;
-  width: 28px;
-  height: 28px;
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
   background: #f6f5f4;
-  box-shadow: 0 0 2px 0 rgba(10,10,10,0.29);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.c1:checked + .c3 .c5 {
+.c2:checked + .c4 .c6 {
   left: calc(100% - 2px);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -72,25 +70,59 @@ exports[`matches snapshot in dark mode 1`] = `
   display: block;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.c1 a {
+  position: relative;
+  top: -8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e3436;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div
     class="c0"
   >
-    <input
-      checked=""
-      class="c1 c2"
-      id="checkbox"
-      type="checkbox"
-    />
-    <label
-      class="c3 c4"
-      data-testid="label-checkbox"
-      for="checkbox"
-      tabindex="0"
+    <div
+      class="c1"
     >
-      <span
-        class="c5 c6"
+      <a
+        href="/"
+      >
+        Breno Baptista
+      </a>
+      <input
+        checked=""
+        class="c2 c3"
+        id="checkbox"
+        type="checkbox"
       />
-    </label>
+      <label
+        class="c4 c5"
+        data-testid="label-checkbox"
+        for="checkbox"
+        tabindex="0"
+      >
+        <span
+          class="c6 c7"
+        />
+      </label>
+    </div>
     <main />
   </div>
 </DocumentFragment>
