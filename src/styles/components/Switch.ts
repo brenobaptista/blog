@@ -12,11 +12,10 @@ export const Background = styled.label`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 32px;
   cursor: pointer;
   border-radius: 65px;
   width: 65px;
-  height: 32px;
+  height: 28px;
   background: ${props => props.theme.colors.primary};
 `
 
@@ -25,11 +24,10 @@ export const Toggle = styled.span`
   position: absolute;
   top: 2px;
   left: 2px;
-  border-radius: 28px;
-  width: 28px;
-  height: 28px;
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
   background: ${props => props.theme.colors.background};
-  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   transition: 0.2s;
 
   ${InvisibleCheckbox}:checked + ${Background} & {

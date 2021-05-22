@@ -57,7 +57,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
   }, [searchValue])
 
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>{siteTitle}</title>
         <meta

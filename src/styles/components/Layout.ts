@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 768px;
   padding: 0 16px;
   margin: 48px auto 96px;
@@ -19,4 +19,20 @@ const Container = styled.div`
   }
 `
 
-export default Container
+export const Toolbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  a {
+    position: relative;
+    top: -8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: ${props => props.theme.colors.text};
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+`

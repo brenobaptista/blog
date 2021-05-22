@@ -1,14 +1,26 @@
+import Link from 'next/link'
+
 import Switch from './Switch'
 
-import Container from '../styles/components/Layout'
+import { Container, Toolbar } from '../styles/components/Layout'
 
 interface Props {
   children: React.ReactNode
+  home: boolean
 }
 
-const Layout = ({ children }: Props): JSX.Element => (
+const Layout = ({ children, home }: Props): JSX.Element => (
   <Container>
-    <Switch />
+    <Toolbar>
+      {home ? (
+        <div />
+      ) : (
+        <Link href='/'>
+          <a>Breno Baptista</a>
+        </Link>
+      )}
+      <Switch />
+    </Toolbar>
     <main>{children}</main>
   </Container>
 )
