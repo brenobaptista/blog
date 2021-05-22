@@ -51,4 +51,24 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.altBackground};
     background: ${props => props.theme.colors.primary};
   }
+
+  /* Custom scrollbar on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: ${props =>
+      `${props.theme.colors.primary} ${props.theme.colors.altBackground}`};
+  }
+
+  /* Custom scrollbar on Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: ${props => props.theme.colors.altBackground};
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: ${props => props.theme.colors.primary};
+  }
 `
