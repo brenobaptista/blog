@@ -55,8 +55,11 @@ export default createGlobalStyle`
   /* Custom scrollbar on Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: ${props =>
-      `${props.theme.colors.primary} ${props.theme.colors.altBackground}`};
+    scrollbar-color: ${props => {
+      const { primary, altBackground } = props.theme.colors
+
+      return `${primary} ${altBackground}`
+    }};
   }
 
   /* Custom scrollbar on Chrome, Edge and Safari */
