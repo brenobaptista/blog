@@ -5,6 +5,7 @@ import { GetStaticProps } from 'next'
 
 import Email from '../components/svgs/Email'
 import GitHub from '../components/svgs/GitHub'
+import Monero from '../components/svgs/Monero'
 import Profile from '../components/svgs/Profile'
 import RSS from '../components/svgs/RSS'
 import Search from '../components/svgs/Search'
@@ -87,6 +88,9 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
             rel='noreferrer noopener'
           >
             <RSS width={40} height={40} />
+          </a>
+          <a href='/donations'>
+            <Monero width={40} height={40} />
           </a>
         </SocialIcons>
       </HomeHeader>
