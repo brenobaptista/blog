@@ -6,13 +6,7 @@ import Profile from '../../components/svgs/Profile'
 import Date from '../../components/Date'
 import Layout from '../../components/Layout'
 import { PostData, getAllPostIds, getPostData } from '../../lib/posts'
-import {
-  Body,
-  Separator,
-  ShortBio,
-  BackToHome,
-  MorePosts
-} from '../../styles/pages/Post'
+import { Body, Separator, ShortBio, MorePosts } from '../../styles/pages/Post'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
@@ -43,11 +37,6 @@ const Post = ({ postData }: Props): JSX.Element => (
       <title>{postData.title}</title>
       <meta name='description' content={postData.description} />
     </Head>
-    <BackToHome>
-      <Link href='/'>
-        <a>← Back to home</a>
-      </Link>
-    </BackToHome>
     <article>
       <h1>{postData.title}</h1>
       <Date date={postData.date} />

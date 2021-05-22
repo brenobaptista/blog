@@ -202,10 +202,6 @@ export const ShortBio = styled.div`
   }
 `
 
-export const BackToHome = styled.div`
-  margin: 32px 0;
-`
-
 export const MorePosts = styled.div`
   display: flex;
   justify-content: space-between;
