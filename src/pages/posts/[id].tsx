@@ -75,14 +75,20 @@ const Post = ({ postData }: Props): JSX.Element => (
       <MorePosts>
         {postData.previousPost ? (
           <Link href={`/posts/${postData.previousPost.id}`}>
-            <a>← {postData.previousPost.title}</a>
+            <a className='left'>
+              <span>Previous</span>
+              {postData.previousPost.title}
+            </a>
           </Link>
         ) : (
           <div />
         )}
         {postData.nextPost ? (
           <Link href={`/posts/${postData.nextPost.id}`}>
-            <a className='right'>{postData.nextPost.title} →</a>
+            <a className='right'>
+              <span>Next</span>
+              {postData.nextPost.title}
+            </a>
           </Link>
         ) : (
           <div />

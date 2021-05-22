@@ -208,15 +208,47 @@ export const BackToHome = styled.div`
 
 export const MorePosts = styled.div`
   display: flex;
+  justify-content: space-between;
   margin: 32px 0 0;
+  font-size: 0.9rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   a,
   div {
     flex: 1;
-    margin: 0 10px;
+  }
+
+  a {
+    border-radius: 8px;
+    background: ${props => props.theme.colors.altBackground};
+    padding: 10px 12px;
+  }
+
+  span {
+    display: block;
+    color: ${props => props.theme.colors.altText};
+    font-size: 0.8rem;
+  }
+
+  .left {
+    text-align: right;
+    margin-right: 16px;
+
+    @media screen and (max-width: 768px) {
+      text-align: left;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
   }
 
   .right {
-    text-align: right;
+    margin-left: 16px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 `
