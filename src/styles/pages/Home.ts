@@ -6,7 +6,7 @@ export const HomeHeader = styled.header`
   align-items: center;
 `
 
-export const ProfileWrapper = styled.div`
+export const PortraitWrapper = styled.div`
   height: 128px;
   background-color: ${props => props.theme.colors.altBackground};
   border-radius: 50%;

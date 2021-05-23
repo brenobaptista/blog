@@ -6,7 +6,7 @@ import { GetStaticProps } from 'next'
 import Email from '../components/svgs/Email'
 import GitHub from '../components/svgs/GitHub'
 import Monero from '../components/svgs/Monero'
-import Profile from '../components/svgs/Profile'
+import Portrait from '../components/svgs/Portrait'
 import RSS from '../components/svgs/RSS'
 import Search from '../components/svgs/Search'
 import Date from '../components/Date'
@@ -17,7 +17,7 @@ import generateSitemap from '../lib/sitemap'
 import { siteTitle } from './_document'
 import {
   HomeHeader,
-  ProfileWrapper,
+  PortraitWrapper,
   SocialIcons,
   Intro,
   Blog
@@ -67,9 +67,9 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         />
       </Head>
       <HomeHeader>
-        <ProfileWrapper>
-          <Profile width={128} height={128} />
-        </ProfileWrapper>
+        <PortraitWrapper>
+          <Portrait width={128} height={128} />
+        </PortraitWrapper>
         <h1>Breno Baptista</h1>
         <SocialIcons>
           <a

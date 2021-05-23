@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import Profile from '../../components/svgs/Profile'
+import Portrait from '../../components/svgs/Portrait'
 import Date from '../../components/Date'
 import Layout from '../../components/Layout'
 import { PostData, getAllPostIds, getPostData } from '../../lib/posts'
@@ -45,7 +45,7 @@ const Post = ({ postData }: Props): JSX.Element => (
     <>
       <Separator />
       <ShortBio>
-        <Profile width={80} height={80} />
+        <Portrait width={80} height={80} />
         <p>
           Breno Baptista is a full-stack developer at{' '}
           <a

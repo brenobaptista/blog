@@ -1,8 +1,8 @@
 import { render } from '../testUtils'
-import Profile from '../src/components/svgs/Profile'
+import Portrait from '../src/components/svgs/Portrait'
 
 test('matches snapshot', () => {
-  const { asFragment } = render(<Profile width={128} height={128} />)
+  const { asFragment } = render(<Portrait width={128} height={128} />)
 
   expect(asFragment()).toMatchSnapshot()
 })
