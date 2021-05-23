@@ -32,7 +32,7 @@ interface Props {
 }
 
 const Post = ({ postData }: Props): JSX.Element => (
-  <Layout home={false}>
+  <Layout>
     <Head>
       <title>{postData.title}</title>
       <meta name='description' content={postData.description} />

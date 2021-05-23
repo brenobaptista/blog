@@ -6,10 +6,10 @@ import { Container, Toolbar } from '../styles/components/Layout'
 
 interface Props {
   children: React.ReactNode
-  home: boolean
+  home?: boolean
 }
 
-const Layout = ({ children, home }: Props): JSX.Element => (
+const Layout = ({ children, home = false }: Props): JSX.Element => (
   <Container>
     <Toolbar>
       {home ? (

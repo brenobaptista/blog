@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import { Gratitude, Address } from '../styles/pages/Donations'
 
 const Donations = (): JSX.Element => (
-  <Layout home={false}>
+  <Layout>
     <Head>
       <title>Donate to Breno Baptista</title>
       <meta
