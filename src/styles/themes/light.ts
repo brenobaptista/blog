@@ -7,7 +7,8 @@ const light = {
     background: '#f6f5f4',
     altBackground: ' #e4e3e2',
     selector: '#333333',
-    selectorEdge: '#cccccc'
+    selectorEdge: '#cccccc',
+    visited: '#3d4766'
   }
 }
 

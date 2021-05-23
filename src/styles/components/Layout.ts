@@ -5,14 +5,6 @@ export const Container = styled.div`
   padding: 0 16px;
   margin: 48px auto;
 
-  a {
-    color: ${props => props.theme.colors.primary};
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   img {
     max-width: 100%;
     display: block;
@@ -29,10 +21,5 @@ export const Toolbar = styled.div`
     top: -8px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: ${props => props.theme.colors.text};
-
-    &:hover {
-      text-decoration: none;
-    }
   }
 `

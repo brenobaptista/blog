@@ -222,6 +222,14 @@ export const MorePosts = styled.div`
     padding: 10px 12px;
     border-radius: 8px;
     background: ${props => props.theme.colors.altBackground};
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: ${props => props.theme.colors.visited};
+    }
   }
 
   span {

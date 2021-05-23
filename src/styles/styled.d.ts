@@ -11,6 +11,7 @@ declare module 'styled-components' {
       altBackground: string
       selector: string
       selectorEdge: string
+      visited: string
     }
   }
 }

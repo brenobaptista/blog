@@ -13,7 +13,7 @@ export const PortraitWrapper = styled.div`
 `
 
 export const SocialIcons = styled.div`
-  width: 200px;
+  width: 225px;
   display: flex;
   justify-content: space-between;
 
@@ -63,6 +63,14 @@ export const Blog = styled.section`
 
   a:hover {
     text-decoration: none;
+  }
+
+  a:visited {
+    color: ${props => props.theme.colors.visited};
+
+    p {
+      color: ${props => props.theme.colors.altText};
+    }
   }
 
   div {

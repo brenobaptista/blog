@@ -10,8 +10,12 @@ export default createGlobalStyle`
   }
 
   a {
-    color: inherit;
+    color: ${props => props.theme.colors.primary};
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   * {

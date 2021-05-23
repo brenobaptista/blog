@@ -7,7 +7,8 @@ const dark = {
     background: '#282a36',
     altBackground: ' #44475a',
     selector: '#cccccc',
-    selectorEdge: '#333333'
+    selectorEdge: '#333333',
+    visited: '#8466ae'
   }
 }
 
