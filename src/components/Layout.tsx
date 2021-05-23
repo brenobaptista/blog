@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import Footer from './Footer'
 import Switch from './Switch'
 
 import { Container, Toolbar } from '../styles/components/Layout'
@@ -22,6 +23,7 @@ const Layout = ({ children, home = false }: Props): JSX.Element => (
       <Switch />
     </Toolbar>
     <main>{children}</main>
+    <Footer />
   </Container>
 )
 
