@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   max-width: 768px;
   padding: 0 16px;
-  margin: 48px auto 96px;
+  margin: 48px auto;
 
   a {
     color: ${props => props.theme.colors.primary};

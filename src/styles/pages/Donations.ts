@@ -12,7 +12,8 @@ export const Address = styled.div`
   }
 
   div {
-    padding: 8px 16px;
+    margin-bottom: 32px;
+    padding: 16px;
     word-break: break-all;
     font-size: 0.8rem;
     background-color: ${props => props.theme.colors.altBackground};

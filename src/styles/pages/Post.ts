@@ -218,9 +218,10 @@ export const MorePosts = styled.div`
   }
 
   a {
+    margin-bottom: 16px;
+    padding: 10px 12px;
     border-radius: 8px;
     background: ${props => props.theme.colors.altBackground};
-    padding: 10px 12px;
   }
 
   span {
