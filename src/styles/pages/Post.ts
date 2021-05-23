@@ -229,12 +229,16 @@ export const MorePosts = styled.div`
 
     &:visited {
       color: ${props => props.theme.colors.visited};
+
+      span {
+        color: ${props => props.theme.colors.altText};
+      }
     }
   }
 
   span {
     display: block;
-    color: ${props => props.theme.colors.altText};
+    color: ${props => props.theme.colors.text};
     font-size: 0.8rem;
   }
 
