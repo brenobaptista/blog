@@ -2,7 +2,30 @@
 
 exports[`matches snapshot in dark mode 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c9 a {
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.c8 {
+  border: 0;
+  height: 1px;
+  background: #333333;
+  background-image: linear-gradient(to right,#cccccc,#333333,#cccccc);
+}
+
+.c3 {
   position: absolute;
   height: 0;
   width: 0;
@@ -53,16 +76,7 @@ exports[`matches snapshot in dark mode 1`] = `
 .c0 {
   max-width: 768px;
   padding: 0 16px;
-  margin: 48px auto 96px;
-}
-
-.c0 a {
-  color: #586693;
-}
-
-.c0 a:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  margin: 48px auto;
 }
 
 .c0 img {
@@ -87,12 +101,15 @@ exports[`matches snapshot in dark mode 1`] = `
   top: -8px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2e3436;
 }
 
-.c1 a:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
+@media screen and (max-width:360px) {
+  .c9 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 <div
@@ -124,13 +141,69 @@ exports[`matches snapshot in dark mode 1`] = `
       </label>
     </div>
     <main />
+    <footer>
+      <hr
+        class="c8"
+      />
+      <nav
+        class="c9"
+      >
+        <a
+          href="https://github.com/brenobaptista/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <a
+          href="mailto:brenobaptista@protonmail.com"
+        >
+          Email
+        </a>
+        <a
+          href="https://brenobaptista.vercel.app/rss.xml"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          RSS
+        </a>
+        <a
+          href="/donations"
+        >
+          Donations
+        </a>
+      </nav>
+    </footer>
   </div>
 </DocumentFragment>
 `;
 
 exports[`matches snapshot in light mode for home 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c9 a {
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.c8 {
+  border: 0;
+  height: 1px;
+  background: #333333;
+  background-image: linear-gradient(to right,#cccccc,#333333,#cccccc);
+}
+
+.c3 {
   position: absolute;
   height: 0;
   width: 0;
@@ -181,16 +254,7 @@ exports[`matches snapshot in light mode for home 1`] = `
 .c0 {
   max-width: 768px;
   padding: 0 16px;
-  margin: 48px auto 96px;
-}
-
-.c0 a {
-  color: #586693;
-}
-
-.c0 a:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  margin: 48px auto;
 }
 
 .c0 img {
@@ -215,12 +279,15 @@ exports[`matches snapshot in light mode for home 1`] = `
   top: -8px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2e3436;
 }
 
-.c1 a:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
+@media screen and (max-width:360px) {
+  .c9 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 <div
@@ -247,6 +314,39 @@ exports[`matches snapshot in light mode for home 1`] = `
       </label>
     </div>
     <main />
+    <footer>
+      <hr
+        class="c8"
+      />
+      <nav
+        class="c9"
+      >
+        <a
+          href="https://github.com/brenobaptista/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <a
+          href="mailto:brenobaptista@protonmail.com"
+        >
+          Email
+        </a>
+        <a
+          href="https://brenobaptista.vercel.app/rss.xml"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          RSS
+        </a>
+        <a
+          href="/donations"
+        >
+          Donations
+        </a>
+      </nav>
+    </footer>
   </div>
 </DocumentFragment>
 `;
