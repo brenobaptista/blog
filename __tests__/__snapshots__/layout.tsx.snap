@@ -127,3 +127,126 @@ exports[`matches snapshot in dark mode 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`matches snapshot in light mode for home 1`] = `
+<DocumentFragment>
+  .c3 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  border-radius: 65px;
+  width: 65px;
+  height: 28px;
+  background: #586693;
+}
+
+.c7 {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  background: #f6f5f4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.c2:checked + .c4 .c6 {
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.c0 {
+  max-width: 768px;
+  padding: 0 16px;
+  margin: 48px auto 96px;
+}
+
+.c0 a {
+  color: #586693;
+}
+
+.c0 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 img {
+  max-width: 100%;
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.c1 a {
+  position: relative;
+  top: -8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e3436;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div />
+      <input
+        class="c2 c3"
+        id="checkbox"
+        type="checkbox"
+      />
+      <label
+        class="c4 c5"
+        data-testid="label-checkbox"
+        for="checkbox"
+        tabindex="0"
+      >
+        <span
+          class="c6 c7"
+        />
+      </label>
+    </div>
+    <main />
+  </div>
+</DocumentFragment>
+`;

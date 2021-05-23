@@ -17,3 +17,16 @@ test('matches snapshot in dark mode', () => {
 
   expect(asFragment()).toMatchSnapshot()
 })
+
+test('matches snapshot in light mode for home', () => {
+  const toggleTheme = jest.fn()
+  const theme = { mode: 'light' }
+  const { asFragment } = renderWithContext(
+    <Layout home>
+      <></>
+    </Layout>,
+    { theme, toggleTheme }
+  )
+
+  expect(asFragment()).toMatchSnapshot()
+})
