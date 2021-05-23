@@ -10,7 +10,7 @@ const Search = ({ width, height }: Props): JSX.Element => (
     width={width}
     height={height}
   >
-    <title>Search icon</title>
+    <title>Search</title>
     <path
       strokeLinecap='round'
       strokeLinejoin='round'
