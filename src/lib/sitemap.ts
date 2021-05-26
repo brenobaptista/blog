@@ -12,6 +12,7 @@ const generateSitemap = async (): Promise<void> => {
     'src/posts/**/*.md', // All markdown files inside /posts
     '!src/pages/**/[*.{ts,tsx}', // Ignore the dynamic route index (/pages/posts/[id].tsx)
     '!src/pages/_*.{ts,tsx}', // Ignore Next.js files
+    '!src/pages/404.tsx', // Ignore custom 404 page
     '!src/pages/api' // Ignore API routes
   ])
 
