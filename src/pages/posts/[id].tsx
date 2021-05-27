@@ -47,18 +47,9 @@ const Post = ({ postData }: Props): JSX.Element => (
       <ShortBio>
         <Portrait width={80} height={80} />
         <p>
-          Breno Baptista is a full-stack developer at{' '}
-          <a
-            href='https://joinmassive.com/team'
-            target='_blank'
-            rel='noreferrer noopener'
-            aria-label='Massive'
-          >
-            Massive
-          </a>
-          , where he develops web apps to fight advertising, data selling and
-          privacy violations. He is interested in GNU/Linux, shell scripting and
-          front end web technologies.
+          Breno Baptista is a full-stack developer based in Fortaleza, Brazil.
+          He is interested in GNU/Linux, shell scripting, open-source software,
+          privacy and front end web technologies.
         </p>
       </ShortBio>
       <MorePosts>

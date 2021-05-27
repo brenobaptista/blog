@@ -101,6 +101,7 @@ export const Body = styled.div`
   .token.bold {
     font-weight: bold;
   }
+
   .token.italic {
     font-style: italic;
   }
@@ -193,11 +194,11 @@ export const ShortBio = styled.div`
   svg {
     float: left;
     margin-top: 5px;
+    margin-right: 5px;
   }
 
   p {
     margin-left: 10px;
-    font-style: italic;
     text-align: justify;
   }
 `
