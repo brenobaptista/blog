@@ -99,7 +99,7 @@ exports[`matches snapshot in dark mode 1`] = `
 .c1 a {
   position: relative;
   top: -8px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -277,7 +277,7 @@ exports[`matches snapshot in light mode for home 1`] = `
 .c1 a {
   position: relative;
   top: -8px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 

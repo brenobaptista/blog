@@ -20,7 +20,7 @@ export const Body = styled.div`
 
   code,
   pre {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: Fira Code, monospace;
     background-color: ${props => props.theme.colors.altBackground};
   }
@@ -101,6 +101,7 @@ export const Body = styled.div`
   .token.bold {
     font-weight: bold;
   }
+
   .token.italic {
     font-style: italic;
   }
@@ -193,11 +194,11 @@ export const ShortBio = styled.div`
   svg {
     float: left;
     margin-top: 5px;
+    margin-right: 5px;
   }
 
   p {
     margin-left: 10px;
-    font-style: italic;
     text-align: justify;
   }
 `
@@ -206,7 +207,7 @@ export const MorePosts = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 32px 0 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -239,7 +240,6 @@ export const MorePosts = styled.div`
   span {
     display: block;
     color: ${props => props.theme.colors.text};
-    font-size: 0.8rem;
   }
 
   .left {

@@ -3,7 +3,6 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   .c0 {
-  font-size: 0.8rem;
   color: #565656;
 }
 

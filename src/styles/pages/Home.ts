@@ -27,16 +27,15 @@ export const SocialIcons = styled.div`
 `
 
 export const Intro = styled.section`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   text-align: justify;
   text-indent: 1.5rem;
 `
 
 export const Blog = styled.section`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
-  padding-top: 1px;
 
   input {
     padding: 8px 32px 8px 16px;
@@ -61,34 +60,44 @@ export const Blog = styled.section`
     stroke: ${props => props.theme.colors.altText};
   }
 
-  a:hover {
-    text-decoration: none;
-  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
 
-  a:visited {
-    color: ${props => props.theme.colors.visited};
+    &:visited {
+      color: ${props => props.theme.colors.visited};
 
-    p {
-      color: ${props => props.theme.colors.altText};
+      p {
+        color: ${props => props.theme.colors.altText};
+      }
     }
   }
+`
+
+export const Card = styled.div`
+  margin: 32px 0 32px;
 
   div {
-    margin: 32px 0 32px;
-  }
-
-  span {
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
+
+    span:hover {
+      text-decoration: underline;
+    }
+
+    small {
+      font-size: 0.75rem;
+    }
   }
 
   p {
     margin-top: 4px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: ${props => props.theme.colors.text};
 
     &.not-found {
