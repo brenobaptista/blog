@@ -60,28 +60,38 @@ export const Blog = styled.section`
     stroke: ${props => props.theme.colors.altText};
   }
 
-  a:hover {
-    text-decoration: none;
-  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
 
-  a:visited {
-    color: ${props => props.theme.colors.visited};
+    &:visited {
+      color: ${props => props.theme.colors.visited};
 
-    p {
-      color: ${props => props.theme.colors.altText};
+      p {
+        color: ${props => props.theme.colors.altText};
+      }
     }
   }
+`
+
+export const Card = styled.div`
+  margin: 32px 0 32px;
 
   div {
-    margin: 32px 0 32px;
-  }
-
-  span {
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
+    }
+
+    span:hover {
+      text-decoration: underline;
+    }
+
+    small {
+      font-size: 0.75rem;
     }
   }
 
@@ -93,9 +103,5 @@ export const Blog = styled.section`
     &.not-found {
       color: ${props => props.theme.colors.altText};
     }
-  }
-
-  time {
-    font-size: 0.75rem;
   }
 `

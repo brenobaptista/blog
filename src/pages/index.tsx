@@ -20,7 +20,8 @@ import {
   PortraitWrapper,
   SocialIcons,
   Intro,
-  Blog
+  Blog,
+  Card
 } from '../styles/pages/Home'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -124,15 +125,15 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           posts.map(({ id, title, description, date }) => (
             <Link href={`/posts/${id}`} key={id}>
               <a>
-                <div>
-                  <span>
-                    {title}
+                <Card>
+                  <div>
+                    <span>{title}</span>
                     <small>
                       <Date date={date} />
                     </small>
-                  </span>
+                  </div>
                   <p>{description}</p>
-                </div>
+                </Card>
               </a>
             </Link>
           ))
