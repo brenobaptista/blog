@@ -20,7 +20,7 @@ export const Body = styled.div`
 
   code,
   pre {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: Fira Code, monospace;
     background-color: ${props => props.theme.colors.altBackground};
   }
@@ -207,7 +207,7 @@ export const MorePosts = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 32px 0 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -240,7 +240,6 @@ export const MorePosts = styled.div`
   span {
     display: block;
     color: ${props => props.theme.colors.text};
-    font-size: 0.8rem;
   }
 
   .left {

@@ -27,16 +27,15 @@ export const SocialIcons = styled.div`
 `
 
 export const Intro = styled.section`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   text-align: justify;
   text-indent: 1.5rem;
 `
 
 export const Blog = styled.section`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
-  padding-top: 1px;
 
   input {
     padding: 8px 32px 8px 16px;
@@ -88,11 +87,15 @@ export const Blog = styled.section`
 
   p {
     margin-top: 4px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: ${props => props.theme.colors.text};
 
     &.not-found {
       color: ${props => props.theme.colors.altText};
     }
+  }
+
+  time {
+    font-size: 0.75rem;
   }
 `
