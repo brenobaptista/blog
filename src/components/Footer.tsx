@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => (
       >
         GitHub
       </a>
-      <a href='mailto:brenobaptista@protonmail.com'>Email</a>
+      <a href='mailto:contact@brenobaptista.tech'>Email</a>
       <a
         href='https://brenobaptista.vercel.app/rss.xml'
         target='_blank'

@@ -80,7 +80,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           >
             <GitHub width={40} height={40} />
           </a>
-          <a href='mailto:brenobaptista@protonmail.com'>
+          <a href='mailto:contact@brenobaptista.tech'>
             <Email width={40} height={40} />
           </a>
           <a

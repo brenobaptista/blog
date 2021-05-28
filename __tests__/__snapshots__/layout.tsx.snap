@@ -156,7 +156,7 @@ exports[`matches snapshot in dark mode 1`] = `
           GitHub
         </a>
         <a
-          href="mailto:brenobaptista@protonmail.com"
+          href="mailto:contact@brenobaptista.tech"
         >
           Email
         </a>
@@ -329,7 +329,7 @@ exports[`matches snapshot in light mode for home 1`] = `
           GitHub
         </a>
         <a
-          href="mailto:brenobaptista@protonmail.com"
+          href="mailto:contact@brenobaptista.tech"
         >
           Email
         </a>
