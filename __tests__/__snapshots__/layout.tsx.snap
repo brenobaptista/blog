@@ -14,7 +14,7 @@ exports[`matches snapshot in dark mode 1`] = `
 }
 
 .c9 a {
-  padding: 16px;
+  margin: 16px;
   border-radius: 4px;
 }
 
@@ -192,7 +192,7 @@ exports[`matches snapshot in light mode for home 1`] = `
 }
 
 .c9 a {
-  padding: 16px;
+  margin: 16px;
   border-radius: 4px;
 }
 

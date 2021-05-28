@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   }
 
   a {
-    padding: 16px;
+    margin: 16px;
     border-radius: 4px;
   }
 `
