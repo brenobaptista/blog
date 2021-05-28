@@ -49,7 +49,7 @@ const Post = ({ postData }: Props): JSX.Element => (
         <p>
           Breno Baptista is a full-stack developer based in Fortaleza, Brazil.
           He is interested in GNU/Linux, shell scripting, open-source software,
-          privacy and front end web technologies.
+          privacy and front-end web technologies.
         </p>
       </ShortBio>
       <MorePosts>
