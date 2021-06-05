@@ -1,5 +1,5 @@
-const light = {
-  mode: 'light',
+const retro = {
+  mode: 'retro',
   colors: {
     primary: '#586693',
     text: '#2e3436',
@@ -12,4 +12,4 @@ const light = {
   }
 }
 
-export default light
+export default retro

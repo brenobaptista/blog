@@ -5,9 +5,9 @@ import ThemeContext from '../src/contexts/ThemeContext'
 const renderWithContext = (ui, value) =>
   render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)
 
-test('matches snapshot in dark mode', () => {
+test('matches snapshot in dracula mode', () => {
   const toggleTheme = jest.fn()
-  const theme = { mode: 'dark' }
+  const theme = { mode: 'dracula' }
   const { asFragment } = renderWithContext(
     <Layout>
       <></>
@@ -18,9 +18,9 @@ test('matches snapshot in dark mode', () => {
   expect(asFragment()).toMatchSnapshot()
 })
 
-test('matches snapshot in light mode for home', () => {
+test('matches snapshot in retro mode for home', () => {
   const toggleTheme = jest.fn()
-  const theme = { mode: 'light' }
+  const theme = { mode: 'retro' }
   const { asFragment } = renderWithContext(
     <Layout home>
       <></>

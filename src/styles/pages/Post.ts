@@ -44,7 +44,7 @@ export const Body = styled.div`
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: ${props => (props.theme.mode === 'dark' ? `#ccc` : `#5a5c5a`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ccc` : `#5a5c5a`)};
   }
 
   .token.punctuation {
@@ -55,7 +55,7 @@ export const Body = styled.div`
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: ${props => (props.theme.mode === 'dark' ? `#ff9da4` : `#781818`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ff9da4` : `#781818`)};
   }
 
   .token.function-name {
@@ -65,14 +65,14 @@ export const Body = styled.div`
   .token.boolean,
   .token.number,
   .token.function {
-    color: ${props => (props.theme.mode === 'dark' ? `#ffc58f` : `#5d4900`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ffc58f` : `#5d4900`)};
   }
 
   .token.property,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: ${props => (props.theme.mode === 'dark' ? `#f8c555` : `#5d4900`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#f8c555` : `#5d4900`)};
   }
 
   .token.selector,
@@ -80,7 +80,7 @@ export const Body = styled.div`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: ${props => (props.theme.mode === 'dark' ? `#ebbbff` : `#274368`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ebbbff` : `#274368`)};
   }
 
   .token.string,
@@ -88,13 +88,13 @@ export const Body = styled.div`
   .token.attr-value,
   .token.regex,
   .token.variable {
-    color: ${props => (props.theme.mode === 'dark' ? `#7ec699` : `#005800`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#7ec699` : `#005800`)};
   }
 
   .token.operator,
   .token.entity,
   .token.url {
-    color: ${props => (props.theme.mode === 'dark' ? `#67cdcc` : `#285151`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#67cdcc` : `#285151`)};
   }
 
   .token.important,

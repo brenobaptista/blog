@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot in dark mode 1`] = `
+exports[`matches snapshot in dracula mode 1`] = `
 <DocumentFragment>
   .c9 {
   display: -webkit-box;
@@ -178,7 +178,7 @@ exports[`matches snapshot in dark mode 1`] = `
 </DocumentFragment>
 `;
 
-exports[`matches snapshot in light mode for home 1`] = `
+exports[`matches snapshot in retro mode for home 1`] = `
 <DocumentFragment>
   .c9 {
   display: -webkit-box;

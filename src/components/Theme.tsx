@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import ThemeContext from '../contexts/ThemeContext'
-import dark from '../styles/themes/dark'
-import light from '../styles/themes/light'
+import dracula from '../styles/themes/dracula'
+import retro from '../styles/themes/retro'
 
 interface Props {
   children: React.ReactNode
@@ -15,12 +15,12 @@ const getTheme = () => {
   if (typeof window !== 'undefined') {
     const storageValue = localStorage.getItem('theme')
 
-    if (storageValue && JSON.parse(storageValue).mode === 'dark') {
-      theme = dark
-    } else if (storageValue && JSON.parse(storageValue).mode === 'light') {
-      theme = light
+    if (storageValue && JSON.parse(storageValue).mode === 'dracula') {
+      theme = dracula
+    } else if (storageValue && JSON.parse(storageValue).mode === 'retro') {
+      theme = retro
     } else {
-      theme = dark
+      theme = dracula
     }
   }
 
@@ -37,7 +37,7 @@ const Theme = ({ children }: Props): JSX.Element => {
   }, [theme])
 
   const toggleTheme = () => {
-    setTheme(theme.mode === 'light' ? dark : light)
+    setTheme(theme.mode === 'retro' ? dracula : retro)
   }
 
   return (

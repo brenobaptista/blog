@@ -6,7 +6,7 @@
 
 - Next.js and all its features.
 - 100% TypeScript.
-- Styled Components and dark mode (Dracula theme).
+- Styled Components and themes (90's and Dracula).
 - ESLint + Prettier + Husky + Lint Staged.
 - Jest and React Testing Library.
 

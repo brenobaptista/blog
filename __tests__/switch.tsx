@@ -5,9 +5,9 @@ import ThemeContext from '../src/contexts/ThemeContext'
 const renderWithContext = (ui, value) =>
   render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)
 
-test('toggles Switch using keyboard in light mode', () => {
+test('toggles Switch using keyboard in retro mode', () => {
   const toggleTheme = jest.fn()
-  const theme = { mode: 'light' }
+  const theme = { mode: 'retro' }
   const { getByTestId } = renderWithContext(<Switch />, { theme, toggleTheme })
 
   const checkbox = getByTestId('label-checkbox')
