@@ -29,7 +29,6 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "jsx-a11y/media-has-caption": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",
     "no-undef": "off"

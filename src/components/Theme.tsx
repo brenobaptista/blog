@@ -46,11 +46,6 @@ const Theme = ({ children }: Props): JSX.Element => {
         <ThemeProvider theme={theme}>
           <ThemeContext.Provider value={{ theme, toggleTheme }}>
             {children}
-            {theme.mode === 'retro' && (
-              <audio autoPlay loop>
-                <source src='static/retro/bossa-nova.mp3' type='audio/mpeg' />
-              </audio>
-            )}
           </ThemeContext.Provider>
         </ThemeProvider>
       )}
