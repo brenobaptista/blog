@@ -44,7 +44,10 @@ export const Blog = styled.section`
     vertical-align: middle;
     color: ${props => props.theme.colors.altText};
     background-color: ${props => props.theme.colors.altBackground};
-    border-width: 0;
+    border: ${props =>
+      props.theme.mode === 'retro'
+        ? `1px solid ${props.theme.colors.altText}`
+        : 'none'};
     border-radius: 4px;
 
     &::placeholder {
