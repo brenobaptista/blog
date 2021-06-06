@@ -21,8 +21,8 @@ exports[`matches snapshot in dracula mode 1`] = `
 .c8 {
   border: 0;
   height: 1px;
-  background: #333333;
-  background-image: linear-gradient(to right,#cccccc,#333333,#cccccc);
+  background: white;
+  background-image: linear-gradient(to right,white,white,white);
 }
 
 .c3 {
@@ -50,7 +50,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   border-radius: 65px;
   width: 65px;
   height: 28px;
-  background: #586693;
+  background: orange;
 }
 
 .c7 {
@@ -61,7 +61,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   border-radius: 24px;
   width: 24px;
   height: 24px;
-  background: #f6f5f4;
+  background: black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -75,8 +75,9 @@ exports[`matches snapshot in dracula mode 1`] = `
 
 .c0 {
   max-width: 768px;
-  padding: 0 16px;
-  margin: 48px auto;
+  padding: 16px;
+  margin: 32px auto;
+  background-color: black;
 }
 
 .c0 img {
@@ -109,6 +110,12 @@ exports[`matches snapshot in dracula mode 1`] = `
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    margin: 16px 8px;
   }
 }
 
@@ -199,8 +206,8 @@ exports[`matches snapshot in retro mode for home 1`] = `
 .c8 {
   border: 0;
   height: 1px;
-  background: #333333;
-  background-image: linear-gradient(to right,#cccccc,#333333,#cccccc);
+  background: white;
+  background-image: linear-gradient(to right,white,white,white);
 }
 
 .c3 {
@@ -228,7 +235,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   border-radius: 65px;
   width: 65px;
   height: 28px;
-  background: #586693;
+  background: orange;
 }
 
 .c7 {
@@ -239,7 +246,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   border-radius: 24px;
   width: 24px;
   height: 24px;
-  background: #f6f5f4;
+  background: black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -253,8 +260,9 @@ exports[`matches snapshot in retro mode for home 1`] = `
 
 .c0 {
   max-width: 768px;
-  padding: 0 16px;
-  margin: 48px auto;
+  padding: 16px;
+  margin: 32px auto;
+  background-color: black;
 }
 
 .c0 img {
@@ -287,6 +295,12 @@ exports[`matches snapshot in retro mode for home 1`] = `
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    margin: 16px 8px;
   }
 }
 

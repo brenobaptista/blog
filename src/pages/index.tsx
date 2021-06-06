@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
@@ -8,9 +8,9 @@ import GitHub from '../components/svgs/GitHub'
 import Monero from '../components/svgs/Monero'
 import Portrait from '../components/svgs/Portrait'
 import RSS from '../components/svgs/RSS'
-import Search from '../components/svgs/Search'
 import Date from '../components/Date'
 import Layout from '../components/Layout'
+import Search from '../components/Search'
 import { Post, getSortedPostsData } from '../lib/posts'
 import generateRss from '../lib/rss'
 import generateSitemap from '../lib/sitemap'
@@ -44,19 +44,6 @@ interface Props {
 
 const Home = ({ allPostsData }: Props): JSX.Element => {
   const [posts, setPosts] = useState(allPostsData)
-  const [searchValue, setSearchValue] = useState('')
-
-  useEffect(() => {
-    const filteredPosts = allPostsData.filter(post => {
-      const { title, description, date } = post
-
-      const postData = `${title} ${description} ${date}`.toLowerCase()
-
-      return postData.includes(searchValue)
-    })
-
-    setPosts(filteredPosts)
-  }, [searchValue])
 
   return (
     <Layout home>
@@ -114,13 +101,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
       </Intro>
       <Blog>
         <h2>Blog</h2>
-        <input
-          type='text'
-          onChange={event => setSearchValue(event.target.value.toLowerCase())}
-          placeholder='Search posts'
-          aria-label='Search posts'
-        />
-        <Search width={16} height={16} />
+        <Search allPostsData={allPostsData} setPosts={setPosts} />
         {posts.length ? (
           posts.map(({ id, title, description, date }) => (
             <Link href={`/posts/${id}`} key={id}>
