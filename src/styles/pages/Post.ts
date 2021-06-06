@@ -29,6 +29,10 @@ export const Body = styled.div`
     padding: 25px 30px;
     border-radius: 8px;
     overflow: auto;
+    border: ${props =>
+      props.theme.mode === 'retro'
+        ? `1px solid ${props.theme.colors.altText}`
+        : 'none'};
   }
 
   p > code {
@@ -223,6 +227,10 @@ export const MorePosts = styled.div`
     padding: 10px 12px;
     border-radius: 8px;
     background: ${props => props.theme.colors.altBackground};
+    border: ${props =>
+      props.theme.mode === 'retro'
+        ? `1px solid ${props.theme.colors.altText}`
+        : 'none'};
 
     &:hover {
       text-decoration: none;
