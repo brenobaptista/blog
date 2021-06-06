@@ -37,6 +37,8 @@ export default createGlobalStyle`
     font-size: 1.25em;
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
+    background-image: ${props =>
+      props.theme.mode === 'retro' ? 'url(/static/retro/space.gif)' : 'none'};
   }
 
   h1 {
