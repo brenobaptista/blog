@@ -39,40 +39,40 @@ export const Body = styled.div`
 
   /* Custom theme for Prism.js based on Tomorrow theme */
 
-  .token.comment,
-  .token.block-comment,
-  .token.prolog,
-  .token.doctype,
-  .token.cdata {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ccc` : `#5a5c5a`)};
+  .token.function-name {
+    color: #6196cc;
   }
 
   .token.punctuation {
     color: ${props => props.theme.colors.text};
   }
 
+  .token.comment,
+  .token.block-comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: ${props => (props.theme.mode === 'dracula' ? `#ccc` : 'gray')};
+  }
+
   .token.tag,
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ff9da4` : `#781818`)};
-  }
-
-  .token.function-name {
-    color: #6196cc;
+    color: ${props => (props.theme.mode === 'dracula' ? `#ff9da4` : 'red')};
   }
 
   .token.boolean,
   .token.number,
   .token.function {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ffc58f` : `#5d4900`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ffc58f` : 'orange')};
   }
 
   .token.property,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: ${props => (props.theme.mode === 'dracula' ? `#f8c555` : `#5d4900`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#f8c555` : 'orange')};
   }
 
   .token.selector,
@@ -80,7 +80,7 @@ export const Body = styled.div`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ebbbff` : `#274368`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ebbbff` : 'blue')};
   }
 
   .token.string,
@@ -88,13 +88,13 @@ export const Body = styled.div`
   .token.attr-value,
   .token.regex,
   .token.variable {
-    color: ${props => (props.theme.mode === 'dracula' ? `#7ec699` : `#005800`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#7ec699` : 'green')};
   }
 
   .token.operator,
   .token.entity,
   .token.url {
-    color: ${props => (props.theme.mode === 'dracula' ? `#67cdcc` : `#285151`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#67cdcc` : 'cyan')};
   }
 
   .token.important,
