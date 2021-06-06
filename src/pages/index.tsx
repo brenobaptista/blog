@@ -10,6 +10,7 @@ import Portrait from '../components/svgs/Portrait'
 import RSS from '../components/svgs/RSS'
 import Date from '../components/Date'
 import Layout from '../components/Layout'
+import Retro from '../components/Retro'
 import Search from '../components/Search'
 import { Post, getSortedPostsData } from '../lib/posts'
 import generateRss from '../lib/rss'
@@ -99,6 +100,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           software, privacy and front-end web technologies.
         </p>
       </Intro>
+      <Retro />
       <Blog>
         <h2>Blog</h2>
         <Search allPostsData={allPostsData} setPosts={setPosts} />
