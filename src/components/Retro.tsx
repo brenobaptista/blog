@@ -41,67 +41,67 @@ const Retro = (): JSX.Element => {
           </Construction>
           <Badges>
             <img
-              src='/static/images/retro/bookmark.gif'
+              src='/static/images/retro/badges/bookmark.gif'
               alt='Bookmark this page'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/guestbook.gif'
+              src='/static/images/retro/badges/guestbook.gif'
               alt='Sign my guestbook'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/best-viewed.gif'
+              src='/static/images/retro/badges/best-viewed.gif'
               alt='Best viewed with anything'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/free-speech.gif'
+              src='/static/images/retro/badges/free-speech.gif'
               alt='Free speech forever'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/nuke-ie.gif'
+              src='/static/images/retro/badges/nuke-ie.gif'
               alt='Nuke IE'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/anarchy.gif'
+              src='/static/images/retro/badges/anarchy.gif'
               alt='Anarchy now'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/viewed-eyes.gif'
+              src='/static/images/retro/badges/viewed-eyes.gif'
               alt='Best viewed with eyes'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/penguin.gif'
+              src='/static/images/retro/badges/penguin.gif'
               alt='Tux - Linux penguin'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/geocities.gif'
+              src='/static/images/retro/badges/geocities.gif'
               alt='Geocities'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/privacy.gif'
+              src='/static/images/retro/badges/privacy.gif'
               alt='Internet privacy'
               width='88'
               height='31'
             />
             <img
-              src='/static/images/retro/wiby.gif'
+              src='/static/images/retro/badges/wiby.gif'
               alt='Wiby search engine'
               width='88'
               height='31'
