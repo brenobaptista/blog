@@ -34,7 +34,7 @@ export default createGlobalStyle`
 
   html {
     line-height: 1.6;
-    font-size: 1.25em;
+    font-size: ${props => (props.theme.mode === 'retro' ? '1.05em' : '1.25em')};
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
     background-image: ${props =>

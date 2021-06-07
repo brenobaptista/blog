@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Input = styled.input`
   padding: 8px 32px 8px 16px;
   font-size: 0.8rem;
+  font-family: inherit;
   line-height: 1.5;
   vertical-align: middle;
   color: ${props => props.theme.colors.altText};
