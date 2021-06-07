@@ -33,9 +33,9 @@ const Donations = (): JSX.Element => (
         width='240'
         height='240'
       />
-      <div>
+      <p>
         46JkqVvETvyZ1jYWwZfiRsPbvV52rpJzQBMTfXbpft8HVnXtRXKuaZCK9hoQJwmwom96ThyyeLwxNcPopkRCw3QsCin67Gy
-      </div>
+      </p>
     </Address>
   </Layout>
 )

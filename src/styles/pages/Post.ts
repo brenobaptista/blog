@@ -110,10 +110,6 @@ export const Body = styled.div`
     font-style: italic;
   }
 
-  .token.entity {
-    cursor: help;
-  }
-
   .token.inserted {
     color: green;
   }

@@ -11,7 +11,7 @@ export const Address = styled.div`
     margin: 32px auto;
   }
 
-  div {
+  p {
     margin-bottom: 32px;
     padding: 16px;
     word-break: break-all;

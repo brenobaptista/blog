@@ -22,6 +22,9 @@ export default createGlobalStyle`
   a {
     color: ${props => props.theme.colors.primary};
     text-decoration: none;
+    cursor: ${props =>
+      props.theme.mode === 'retro' &&
+      "url('/static/images/retro/cursor/pointer.cur'), pointer"};
 
     &:hover {
       text-decoration: underline;
@@ -41,6 +44,9 @@ export default createGlobalStyle`
       props.theme.mode === 'retro'
         ? 'url(/static/images/retro/space.gif)'
         : 'none'};
+    cursor: ${props =>
+      props.theme.mode === 'retro' &&
+      "url('/static/images/retro/cursor/default.cur'), default"};
   }
 
   h1 {
@@ -63,6 +69,16 @@ export default createGlobalStyle`
 
   p {
     margin: 16px 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  code {
+    cursor: ${props =>
+      props.theme.mode === 'retro' &&
+      "url('/static/images/retro/cursor/text.cur'), text"};
   }
 
   ::selection {

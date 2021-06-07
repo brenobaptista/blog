@@ -46,7 +46,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  cursor: pointer;
+  cursor: url('/static/images/retro/cursor/pointer.cur'),pointer;
   border-radius: 65px;
   width: 65px;
   height: 28px;
@@ -78,6 +78,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   padding: 16px;
   margin: 32px auto;
   background-color: black;
+  font-family: Fira Code,monospace;
 }
 
 .c0 img {
@@ -231,7 +232,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  cursor: pointer;
+  cursor: url('/static/images/retro/cursor/pointer.cur'),pointer;
   border-radius: 65px;
   width: 65px;
   height: 28px;
@@ -263,6 +264,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   padding: 16px;
   margin: 32px auto;
   background-color: black;
+  font-family: Fira Code,monospace;
 }
 
 .c0 img {
