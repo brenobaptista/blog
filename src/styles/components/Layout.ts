@@ -2,8 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 768px;
-  padding: 0 16px;
-  margin: 48px auto;
+  padding: 16px;
+  margin: 32px auto;
+  background-color: ${props => props.theme.colors.background};
+  font-family: ${props =>
+    props.theme.mode === 'retro' && 'Fira Code, monospace'};
+
+  @media screen and (max-width: 768px) {
+    margin: 16px 8px;
+  }
 
   img {
     max-width: 100%;

@@ -1,5 +1,5 @@
-const dark = {
-  mode: 'dark',
+const dracula = {
+  mode: 'dracula',
   colors: {
     primary: '#bd93f9',
     text: '#eaeaea',
@@ -12,4 +12,4 @@ const dark = {
   }
 }
 
-export default dark
+export default dracula

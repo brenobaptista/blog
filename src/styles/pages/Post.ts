@@ -29,6 +29,10 @@ export const Body = styled.div`
     padding: 25px 30px;
     border-radius: 8px;
     overflow: auto;
+    border: ${props =>
+      props.theme.mode === 'retro'
+        ? `1px solid ${props.theme.colors.altText}`
+        : 'none'};
   }
 
   p > code {
@@ -39,40 +43,40 @@ export const Body = styled.div`
 
   /* Custom theme for Prism.js based on Tomorrow theme */
 
-  .token.comment,
-  .token.block-comment,
-  .token.prolog,
-  .token.doctype,
-  .token.cdata {
-    color: ${props => (props.theme.mode === 'dark' ? `#ccc` : `#5a5c5a`)};
+  .token.function-name {
+    color: #6196cc;
   }
 
   .token.punctuation {
     color: ${props => props.theme.colors.text};
   }
 
+  .token.comment,
+  .token.block-comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: ${props => (props.theme.mode === 'dracula' ? `#ccc` : 'gray')};
+  }
+
   .token.tag,
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: ${props => (props.theme.mode === 'dark' ? `#ff9da4` : `#781818`)};
-  }
-
-  .token.function-name {
-    color: #6196cc;
+    color: ${props => (props.theme.mode === 'dracula' ? `#ff9da4` : 'red')};
   }
 
   .token.boolean,
   .token.number,
   .token.function {
-    color: ${props => (props.theme.mode === 'dark' ? `#ffc58f` : `#5d4900`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ffc58f` : 'orange')};
   }
 
   .token.property,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: ${props => (props.theme.mode === 'dark' ? `#f8c555` : `#5d4900`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#f8c555` : 'orange')};
   }
 
   .token.selector,
@@ -80,7 +84,7 @@ export const Body = styled.div`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: ${props => (props.theme.mode === 'dark' ? `#ebbbff` : `#274368`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#ebbbff` : 'blue')};
   }
 
   .token.string,
@@ -88,13 +92,13 @@ export const Body = styled.div`
   .token.attr-value,
   .token.regex,
   .token.variable {
-    color: ${props => (props.theme.mode === 'dark' ? `#7ec699` : `#005800`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#7ec699` : 'green')};
   }
 
   .token.operator,
   .token.entity,
   .token.url {
-    color: ${props => (props.theme.mode === 'dark' ? `#67cdcc` : `#285151`)};
+    color: ${props => (props.theme.mode === 'dracula' ? `#67cdcc` : 'cyan')};
   }
 
   .token.important,
@@ -104,10 +108,6 @@ export const Body = styled.div`
 
   .token.italic {
     font-style: italic;
-  }
-
-  .token.entity {
-    cursor: help;
   }
 
   .token.inserted {
@@ -223,6 +223,10 @@ export const MorePosts = styled.div`
     padding: 10px 12px;
     border-radius: 8px;
     background: ${props => props.theme.colors.altBackground};
+    border: ${props =>
+      props.theme.mode === 'retro'
+        ? `1px solid ${props.theme.colors.altText}`
+        : 'none'};
 
     &:hover {
       text-decoration: none;

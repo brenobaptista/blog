@@ -37,29 +37,6 @@ export const Blog = styled.section`
   font-size: 1.1rem;
   line-height: 1.5;
 
-  input {
-    padding: 8px 32px 8px 16px;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    vertical-align: middle;
-    color: ${props => props.theme.colors.altText};
-    background-color: ${props => props.theme.colors.altBackground};
-    border-width: 0;
-    border-radius: 4px;
-
-    &::placeholder {
-      color: ${props => props.theme.colors.altText};
-    }
-  }
-
-  svg {
-    position: relative;
-    top: 2px;
-    right: 30px;
-    fill: none;
-    stroke: ${props => props.theme.colors.altText};
-  }
-
   a {
     &:hover {
       text-decoration: none;

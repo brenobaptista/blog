@@ -22,6 +22,9 @@ export default createGlobalStyle`
   a {
     color: ${props => props.theme.colors.primary};
     text-decoration: none;
+    cursor: ${props =>
+      props.theme.mode === 'retro' &&
+      "url('/static/images/retro/cursor/pointer.cur'), pointer"};
 
     &:hover {
       text-decoration: underline;
@@ -34,9 +37,16 @@ export default createGlobalStyle`
 
   html {
     line-height: 1.6;
-    font-size: 1.25em;
+    font-size: ${props => (props.theme.mode === 'retro' ? '1.05em' : '1.25em')};
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
+    background-image: ${props =>
+      props.theme.mode === 'retro'
+        ? 'url(/static/images/retro/space.gif)'
+        : 'none'};
+    cursor: ${props =>
+      props.theme.mode === 'retro' &&
+      "url('/static/images/retro/cursor/default.cur'), default"};
   }
 
   h1 {
@@ -59,6 +69,16 @@ export default createGlobalStyle`
 
   p {
     margin: 16px 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  code {
+    cursor: ${props =>
+      props.theme.mode === 'retro' &&
+      "url('/static/images/retro/cursor/text.cur'), text"};
   }
 
   ::selection {

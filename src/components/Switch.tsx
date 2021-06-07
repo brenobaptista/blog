@@ -22,7 +22,7 @@ const Switch = (): JSX.Element => {
       <InvisibleCheckbox
         id='checkbox'
         type='checkbox'
-        checked={theme.mode === 'dark'}
+        checked={theme.mode === 'dracula'}
         onChange={toggleTheme}
       />
       <Background

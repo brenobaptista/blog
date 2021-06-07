@@ -3,7 +3,7 @@ interface Props {
   height: number
 }
 
-const Search = ({ width, height }: Props): JSX.Element => (
+const Magnifier = ({ width, height }: Props): JSX.Element => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
@@ -20,4 +20,4 @@ const Search = ({ width, height }: Props): JSX.Element => (
   </svg>
 )
 
-export default Search
+export default Magnifier
