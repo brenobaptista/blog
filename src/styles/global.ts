@@ -63,10 +63,8 @@ export default createGlobalStyle`
     margin: 32px 0 16px;
   }
 
-  h3 {
-    margin: 16px 0;
-  }
-
+  h3,
+  h4,
   p {
     margin: 16px 0;
   }
