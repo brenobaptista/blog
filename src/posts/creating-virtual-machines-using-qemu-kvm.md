@@ -4,6 +4,10 @@ description: 'Squeeze every last drop of performance out of your virtual machine
 date: '2021-03-06'
 ---
 
+## Table of Contents
+
+## Introduction
+
 **What is QEMU?** QEMU is a free and open-source machine emulator that can perform hardware virtualization. It is a lot faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
 
 **But what is KVM?** KVM (Kernel-based Virtual Machine) is a virtualization module in the Linux kernel.

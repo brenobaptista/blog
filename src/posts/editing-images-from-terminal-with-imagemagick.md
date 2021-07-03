@@ -4,6 +4,10 @@ description: 'Use this CLI tool to create, edit, compose or convert images.'
 date: '2021-02-13'
 ---
 
+## Table of Contents
+
+## Introduction
+
 ImageMagick is free and open-source software that allows you to accomplish tasks on images from the command-line.
 
 - Have you ever opened Photoshop just to resize an image?
@@ -121,7 +125,7 @@ convert -background '#0f1523' \
 
 ![Simple image with text](/static/images/editing-images-from-terminal-with-imagemagick/imagemagick.jpg)
 
-## Wrap up
+## That's all Folks!
 
 To exercise your skills with ImageMagick, write a bash script that automatically adds a watermark to photos. Have fun!
 

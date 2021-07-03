@@ -6,6 +6,8 @@ date: '2020-10-31'
 
 ![Terminal](/static/images/customizing-terminal-with-zsh/terminal.png)
 
+## Table of Contents
+
 ## Install the dependencies
 
 ### 1. Zsh
@@ -99,7 +101,7 @@ Add this to your VSCode configuration:
 
 `usr/bin/zsh` should be the path to your Zsh. Run `which zsh` in your terminal to get the path in your case.
 
-## Bonus Tip
+### Add emojis
 
 If you use yarn and you would like to have emojis in your terminal, run this in your brand-new terminal:
 
