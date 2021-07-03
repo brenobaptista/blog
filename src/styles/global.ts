@@ -47,6 +47,7 @@ export default createGlobalStyle`
     cursor: ${props =>
       props.theme.mode === 'retro' &&
       "url('/static/images/retro/cursor/default.cur'), default"};
+    scroll-behavior: smooth;
   }
 
   h1 {

@@ -41,6 +41,11 @@ export const Body = styled.div`
     word-break: break-word;
   }
 
+  li,
+  li p {
+    margin: 8px 0;
+  }
+
   /* Custom theme for Prism.js based on Tomorrow theme */
 
   .token.function-name {
