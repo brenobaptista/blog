@@ -4,6 +4,9 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 import prism from 'remark-prism'
+import slug from 'remark-slug'
+import headings from 'remark-autolink-headings'
+import toc from 'remark-toc'
 
 interface MatterResultData {
   title: string
@@ -103,6 +106,9 @@ export const getPostData = async (id: string): Promise<PostData> => {
   // Use remark to convert markdown into HTML string
   // Use remark-prism to support syntax hightlighting
   const processedContent = await remark()
+    .use(slug)
+    .use(headings)
+    .use(toc)
     .use(html)
     .use(prism, {
       plugins: ['line-numbers', 'command-line']
