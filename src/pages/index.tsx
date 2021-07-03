@@ -78,9 +78,11 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           >
             <RSS width={40} height={40} />
           </a>
-          <a href='/donations'>
-            <Monero width={40} height={40} />
-          </a>
+          <Link href='/donations'>
+            <a>
+              <Monero width={40} height={40} />
+            </a>
+          </Link>
         </SocialIcons>
       </HomeHeader>
       <Intro>

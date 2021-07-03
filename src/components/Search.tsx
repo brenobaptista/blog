@@ -22,7 +22,7 @@ const Search = ({ allPostsData, setPosts }: Props): JSX.Element => {
     })
 
     setPosts(filteredPosts)
-  }, [searchValue])
+  }, [searchValue, allPostsData, setPosts])
 
   return (
     <>

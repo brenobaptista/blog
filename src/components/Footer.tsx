@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { Nav, Separator } from '../styles/components/Footer'
 
 const Footer = (): JSX.Element => (
@@ -19,7 +21,7 @@ const Footer = (): JSX.Element => (
       >
         RSS
       </a>
-      <a href='/donations'>Donations</a>
+      <Link href='/donations'>Donations</Link>
     </Nav>
   </footer>
 )
