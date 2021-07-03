@@ -9,28 +9,16 @@ interface Props {
   children: React.ReactNode
 }
 
-const getTheme = () => {
-  let theme
+const Theme = ({ children }: Props): JSX.Element => {
+  const [theme, setTheme] = useState(dracula)
 
-  if (typeof window !== 'undefined') {
+  useEffect(() => {
     const storageValue = localStorage.getItem('theme')
 
-    if (storageValue && JSON.parse(storageValue).mode === 'dracula') {
-      theme = dracula
-    } else if (storageValue && JSON.parse(storageValue).mode === 'retro') {
-      theme = retro
-    } else {
-      theme = dracula
+    if (storageValue && JSON.parse(storageValue).mode === 'retro') {
+      setTheme(retro)
     }
-  }
-
-  return theme
-}
-
-const Theme = ({ children }: Props): JSX.Element => {
-  const initialTheme = getTheme()
-
-  const [theme, setTheme] = useState(initialTheme)
+  }, [])
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme))
