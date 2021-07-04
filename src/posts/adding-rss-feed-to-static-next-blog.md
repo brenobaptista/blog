@@ -29,7 +29,7 @@ const generateRssChannel = (posts: Post[]): string => `
     <channel>
       <title>Breno Baptista</title>
       <link>https://brenobaptista.vercel.app</link>
-      <description>I'm a full-stack developer based in Fortaleza, Brazil.</description>
+      <description>I'm a full-stack developer from Brazil.</description>
       <language>en</language>
       <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
       <atom:link href="https://brenobaptista.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>

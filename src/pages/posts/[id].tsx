@@ -47,9 +47,9 @@ const Post = ({ postData }: Props): JSX.Element => (
       <ShortBio>
         <Portrait width={80} height={80} />
         <p>
-          Breno Baptista is a full-stack developer based in Fortaleza, Brazil.
-          He is interested in GNU/Linux, shell scripting, open-source software,
-          privacy and front-end web technologies.
+          Breno Baptista is a full-stack developer from Brazil. He is interested
+          in GNU/Linux, shell scripting, open-source software, privacy and
+          front-end web technologies.
         </p>
       </ShortBio>
       <MorePosts>

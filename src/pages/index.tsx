@@ -52,7 +52,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         <title>{siteTitle}</title>
         <meta
           name='description'
-          content="I'm a full-stack developer based in Fortaleza, Brazil."
+          content="I'm a full-stack developer from Brazil."
         />
       </Head>
       <HomeHeader>
@@ -87,8 +87,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
       </HomeHeader>
       <Intro>
         <p>
-          I&apos;m a full-stack developer based in Fortaleza, Brazil. I work
-          remotely at{' '}
+          I&apos;m a full-stack developer from Brazil. I work remotely at{' '}
           <a
             href='https://joinmassive.com/team'
             target='_blank'
