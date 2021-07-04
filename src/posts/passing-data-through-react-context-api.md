@@ -6,7 +6,7 @@ date: '2021-05-29'
 
 ## Table of Contents
 
-## Introduction
+## Introduction <span class="emoji">👋🏻</span>
 
 The Context API is an alternative to "prop drilling", or moving props from grandparent to parent to child, and so on. You should use this API when you need to pass props through several intermediates and to multiple components.
 
@@ -22,7 +22,7 @@ You're gonna create a "global state" to share data between components, like Redu
 
 The best way to understand a technology is by using it, so run `npx create-react-app react-context-api` and let's learn it together!
 
-## 1. Creating the context
+## 1. Creating the context <span class="emoji">🧠</span>
 
 The first step is to create the context. I suggest you put it in a `contexts` folder inside your `src`.
 
@@ -38,7 +38,7 @@ export default ExampleContext
 
 > You could create the context in the same file as the high-level component below, but it would be disorganized and would lead to errors.
 
-## 2. Providing the context
+## 2. Providing the context <span class="emoji">🫀</span>
 
 The provider needs to exist as a wrapper around the parent component (or container). You can add it to `App.js` or any other parent. In our case, we're gonna add it to a file called `HighComponent.js`, which will render our consumers.
 
@@ -69,7 +69,7 @@ const HighComponent = () => {
 export default HighComponent
 ```
 
-## 3. Consuming the context
+## 3. Consuming the context <span class="emoji">🍓</span>
 
 For the last step, you'll finally consume your context. There are three ways for you to do that:
 
@@ -160,6 +160,6 @@ class LegacyComponent extends Component {
 export default LegacyComponent
 ```
 
-## That's all Folks!
+## That's all Folks! <span class="emoji">🐰🥕</span>
 
 Now you can import `HighComponent.js` inside `App.js` and you should see `My name is Breno Baptista!` three times (or your name). I hope now you understand how to use the Context API and can implement it in your own projects. Happy coding!

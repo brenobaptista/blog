@@ -6,7 +6,7 @@ date: '2021-04-17'
 
 An RSS feed is a standardized XML file that contains information about your blog and all its articles. Check the [RSS 2.0 specification page](https://validator.w3.org/feed/docs/rss2.html) for further information. I use [QuiteRSS](https://quiterss.org/en/download) to consume content over the internet because of the dark mode.
 
-## Really Simple Syndication (rss.xml)
+## Really Simple Syndication (rss.xml) <span class="emoji">🐵</span>
 
 This is my `lib/rss.ts` so you can modify it to fit your case:
 
@@ -84,7 +84,7 @@ This is [my rss.xml](http://brenobaptista.vercel.app/rss.xml) in production.
 
 You can check if your RSS is valid through the [W3C Feed Validation Service](https://validator.w3.org/feed/).
 
-## Sharing your RSS Feed
+## Sharing your RSS Feed <span class="emoji">👪</span>
 
 People need to subscribe to your RSS feed in your blog. Check the header of my [homepage](/). Notice that the last social icon is an RSS icon that shares my RSS feed.
 

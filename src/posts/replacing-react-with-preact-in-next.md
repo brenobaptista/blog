@@ -29,7 +29,7 @@ module.exports = {
 };
 ```
 
-## The Result
+## The Result <span class="emoji">🤯</span>
 
 You can run `yarn build` to check the bundle size difference.
 

@@ -6,7 +6,7 @@ date: '2021-05-08'
 
 > sed stands for stream editor
 
-## Find and Replace Strings
+## Find and Replace Strings <span class="emoji">🔎</span>
 
 The best part about `sed` is that it uses `regex` (regular expression), which makes it super easy to match patterns.
 
@@ -32,7 +32,7 @@ sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
 
 All other use cases are similar to this one, so I recommend you learn the basics of `regex` before learning `sed`.
 
-## Scripting
+## Scripting <span class="emoji">📜</span>
 
 This is a script I wrote using `sed` some time ago. It replaces some strings in different files between the `desktop` and the `web` versions of an app. Notice that the last line uses `sed` to do that task like this: `sed -i "$scripts" $files`.
 

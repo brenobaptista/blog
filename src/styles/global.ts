@@ -85,6 +85,10 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.primary};
   }
 
+  .emoji {
+    display: ${props => (props.theme.mode === 'retro' ? 'none' : 'inline')};
+  }
+
   /* Custom scrollbar on Firefox */
   * {
     scrollbar-width: thin;

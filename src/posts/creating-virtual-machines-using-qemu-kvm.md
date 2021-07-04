@@ -6,7 +6,7 @@ date: '2021-03-06'
 
 ## Table of Contents
 
-## Introduction
+## Introduction <span class="emoji">👋🏻</span>
 
 **What is QEMU?** QEMU is a free and open-source machine emulator that can perform hardware virtualization. It is a lot faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
 
@@ -14,7 +14,7 @@ date: '2021-03-06'
 
 > In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
 
-## Dependencies
+## Dependencies <span class="emoji">🔧</span>
 
 ### Install QEMU
 
@@ -25,7 +25,7 @@ date: '2021-03-06'
 Try your distro's packaging system, this is the easiest and recommended way of installing KVM.
 It's usually called "qemu-kvm" or "kvm".
 
-## Kali Linux
+## Kali Linux <span class="emoji">🕵🏻</span>
 
 ### Download .iso
 
@@ -84,7 +84,7 @@ qemu-system-x86_64 \
 
 ![Kali Linux](/static/images/creating-virtual-machines-using-qemu-kvm/kali.jpg)
 
-## MacOS
+## MacOS <span class="emoji">🍎</span>
 
 There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a VM running `macOS Catalina` in dark mode:
 

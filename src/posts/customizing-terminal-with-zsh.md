@@ -8,7 +8,7 @@ date: '2020-10-31'
 
 ## Table of Contents
 
-## Install the dependencies
+## Dependencies <span class="emoji">🔧</span>
 
 ### 1. Zsh
 
@@ -48,7 +48,7 @@ Spaceship is a minimalistic, powerful and extremely customizable Zsh prompt.
 
 [How to install Spaceship](https://github.com/denysdovhan/spaceship-prompt)
 
-## Additional Configuration
+## Additional Configuration <span class="emoji">🎓</span>
 
 ### Setup Spaceship
 
