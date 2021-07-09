@@ -19,6 +19,11 @@ export const SocialIcons = styled.div`
 
   svg {
     fill: ${props => props.theme.colors.primary};
+
+    &:hover {
+      fill: ${props => props.theme.colors.visited};
+      transition: fill 0.1s;
+    }
   }
 
   a {
