@@ -26,7 +26,7 @@ If you said "yes" to any of the questions above, I'll teach you how to efficient
 
 ## Editing images <span class="emoji">🎞️</span>
 
-### Converting <span class="emoji">🔃</span>
+### Converting <span class="emoji">🔄</span>
 
 You use the `convert` command to use ImageMagick (in newer versions you can use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with a new format, like this:
 

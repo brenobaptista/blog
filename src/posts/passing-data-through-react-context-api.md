@@ -38,7 +38,7 @@ export default ExampleContext
 
 > You could create the context in the same file as the high-level component below, but it would be disorganized and would lead to errors.
 
-## 2. Providing the context <span class="emoji">🫀</span>
+## 2. Providing the context <span class="emoji">🙌🏻</span>
 
 The provider needs to exist as a wrapper around the parent component (or container). You can add it to `App.js` or any other parent. In our case, we're gonna add it to a file called `HighComponent.js`, which will render our consumers.
 

@@ -23,7 +23,7 @@ const Donations = (): JSX.Element => (
       <p>
         I write blog posts to help developers <b>for free</b>. So if you want to
         support this project, please consider donating a small contribution.{' '}
-        <span className='emoji'>🤏</span>
+        <span className='emoji'>🪙</span>
       </p>
       <p>
         I have decided to create a <b>Monero</b> wallet to accept donations. It
