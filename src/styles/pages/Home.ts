@@ -74,6 +74,7 @@ export const Card = styled.div`
 
     small {
       font-size: 0.75rem;
+      line-height: 33px;
     }
   }
 
