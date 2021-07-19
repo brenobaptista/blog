@@ -26,7 +26,7 @@ const Sparkles = (): JSX.Element => {
   const tinyY = []
   const tinyV = []
 
-  function newColor() {
+  const generateNewColor = () => {
     const c = []
 
     c[0] = 255
@@ -40,7 +40,7 @@ const Sparkles = (): JSX.Element => {
     return `rgb(${c[0]}, ${c[1]}, ${c[2]})`
   }
 
-  function updateStar(i: number) {
+  const updateStar = (i: number) => {
     if (--starV[i] === sparkles / 2) {
       star[i].style.clip = 'rect(1px, 4px, 4px, 1px)'
     }
@@ -72,7 +72,7 @@ const Sparkles = (): JSX.Element => {
     }
   }
 
-  function updateTiny(i: number) {
+  const updateTiny = (i: number) => {
     if (--tinyV[i] === sparkles / 2) {
       tiny[i].style.width = '1px'
       tiny[i].style.height = '1px'
@@ -97,7 +97,7 @@ const Sparkles = (): JSX.Element => {
     }
   }
 
-  function sparkle() {
+  const createSparkle = () => {
     let c: number
 
     if (Math.abs(currentX - lastX) > 1 || Math.abs(currentY - lastY) > 1) {
@@ -106,7 +106,7 @@ const Sparkles = (): JSX.Element => {
 
       for (c = 0; c < sparkles; c++)
         if (!starV[c]) {
-          const filteredColor = color === 'random' ? newColor() : color
+          const filteredColor = color === 'random' ? generateNewColor() : color
 
           star[c].style.left = `${(starX[c] = currentX)}px`
           star[c].style.top = `${(starY[c] = currentY + 1)}px`
@@ -125,10 +125,10 @@ const Sparkles = (): JSX.Element => {
       if (tinyV[c]) updateTiny(c)
     }
 
-    setTimeout(sparkle, 40)
+    setTimeout(createSparkle, 40)
   }
 
-  function setScroll() {
+  const calculateScroll = () => {
     if (typeof window.self.pageYOffset === 'number') {
       scrollDown = window.self.pageYOffset
       scrollLeft = window.self.pageXOffset
@@ -151,14 +151,14 @@ const Sparkles = (): JSX.Element => {
     }
   }
 
-  function moveMouse(e) {
-    if (e) {
-      currentY = e.pageY
-      currentX = e.pageX
+  const moveMouse = event => {
+    if (event) {
+      currentY = event.pageY
+      currentX = event.pageX
     }
   }
 
-  function setWidth() {
+  const calculateScreen = () => {
     let screenWidthTemp = 999999
     let screenHeightTemp = 999999
 
@@ -213,7 +213,7 @@ const Sparkles = (): JSX.Element => {
     screenHeight = screenHeightTemp
   }
 
-  function createDiv(height: number, width: number) {
+  const createDiv = (height: number, width: number) => {
     const div = document.createElement('div')
 
     div.style.position = 'absolute'
@@ -225,51 +225,57 @@ const Sparkles = (): JSX.Element => {
   }
 
   useEffect(() => {
-    if (document.getElementById && theme.mode === 'retro') {
-      for (let i = 0; i < sparkles; i++) {
-        starV[i] = 0
-        tinyV[i] = 0
+    if (theme.mode === 'retro') {
+      if (typeof document !== 'undefined') {
+        for (let i = 0; i < sparkles; i++) {
+          starV[i] = 0
+          tinyV[i] = 0
 
-        const ratsFirst = createDiv(3, 3)
-        ratsFirst.style.visibility = 'hidden'
-        ratsFirst.style.zIndex = '999'
-        document.body.appendChild((tiny[i] = ratsFirst))
+          const ratsFirst = createDiv(3, 3)
+          ratsFirst.style.visibility = 'hidden'
+          ratsFirst.style.zIndex = '999'
+          document.body.appendChild((tiny[i] = ratsFirst))
 
-        const ratsLeft = createDiv(1, 5)
-        const ratsDown = createDiv(5, 1)
-        ratsLeft.style.top = '2px'
-        ratsLeft.style.left = '0px'
-        ratsDown.style.top = '0px'
-        ratsDown.style.left = '2px'
+          const ratsLeft = createDiv(1, 5)
+          const ratsDown = createDiv(5, 1)
+          ratsLeft.style.top = '2px'
+          ratsLeft.style.left = '0px'
+          ratsDown.style.top = '0px'
+          ratsDown.style.left = '2px'
 
-        const ratsSecond = createDiv(5, 5)
-        ratsSecond.style.backgroundColor = 'transparent'
-        ratsSecond.style.visibility = 'hidden'
-        ratsSecond.style.zIndex = '999'
-        ratsSecond.appendChild(ratsLeft)
-        ratsSecond.appendChild(ratsDown)
+          const ratsSecond = createDiv(5, 5)
+          ratsSecond.style.backgroundColor = 'transparent'
+          ratsSecond.style.visibility = 'hidden'
+          ratsSecond.style.zIndex = '999'
+          ratsSecond.appendChild(ratsLeft)
+          ratsSecond.appendChild(ratsDown)
 
-        document.body.appendChild((star[i] = ratsSecond))
+          document.body.appendChild((star[i] = ratsSecond))
+        }
+
+        calculateScreen()
+        createSparkle()
+
+        document.addEventListener('mousemove', moveMouse)
+
+        // bug: when putting mouse on right edge, horizontal scroll is displayed
+        document.body.style.overflowX = 'hidden'
       }
 
-      setWidth()
-      sparkle()
-
-      // bug: when putting mouse on right edge, horizontal scroll is displayed
-      document.body.style.overflowX = 'hidden'
+      if (typeof window !== 'undefined') {
+        window.addEventListener('resize', calculateScreen)
+        window.addEventListener('scroll', calculateScroll, { passive: true })
+      }
     }
 
-    if (typeof document !== 'undefined') {
-      document.onmousemove = moveMouse
-    }
-
-    if (typeof window !== 'undefined') {
-      window.onresize = setWidth
-      window.onscroll = setScroll
+    return () => {
+      document.removeEventListener('mousemove', moveMouse)
+      window.removeEventListener('resize', calculateScreen)
+      window.removeEventListener('scroll', calculateScroll)
     }
   }, [theme])
 
-  return <></>
+  return null
 }
 
 export default Sparkles
