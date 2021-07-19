@@ -65,8 +65,10 @@ const Sparkles = (): JSX.Element => {
       tiny[i].style.left = `${(tinyX[i] = starX[i])}px`
       tiny[i].style.width = '2px'
       tiny[i].style.height = '2px'
-      tiny[i].style.backgroundColor =
-        star[i].childNodes[0].style.backgroundColor
+      if (star[i].childNodes[0]) {
+        tiny[i].style.backgroundColor =
+          star[i].childNodes[0].style.backgroundColor
+      }
       star[i].style.visibility = 'hidden'
       tiny[i].style.visibility = 'visible'
     }
@@ -111,8 +113,10 @@ const Sparkles = (): JSX.Element => {
           star[c].style.left = `${(starX[c] = currentX)}px`
           star[c].style.top = `${(starY[c] = currentY + 1)}px`
           star[c].style.clip = 'rect(0px, 5px, 5px, 0px)'
-          star[c].childNodes[0].style.backgroundColor = filteredColor
-          star[c].childNodes[1].style.backgroundColor = filteredColor
+          if (star[c].childNodes[0] && star[c].childNodes[1]) {
+            star[c].childNodes[0].style.backgroundColor = filteredColor
+            star[c].childNodes[1].style.backgroundColor = filteredColor
+          }
           star[c].style.visibility = 'visible'
           starV[c] = sparkles
 
@@ -220,6 +224,7 @@ const Sparkles = (): JSX.Element => {
     div.style.height = `${height}px`
     div.style.width = `${width}px`
     div.style.overflow = 'hidden'
+    div.className = 'sparkle'
 
     return div
   }
@@ -258,7 +263,6 @@ const Sparkles = (): JSX.Element => {
 
         document.addEventListener('mousemove', moveMouse)
 
-        // bug: when putting mouse on right edge, horizontal scroll is displayed
         document.body.style.overflowX = 'hidden'
       }
 
@@ -266,6 +270,10 @@ const Sparkles = (): JSX.Element => {
         window.addEventListener('resize', calculateScreen)
         window.addEventListener('scroll', calculateScroll, { passive: true })
       }
+    } else {
+      document.querySelectorAll('.sparkle').forEach(sparkle => {
+        sparkle.remove()
+      })
     }
 
     return () => {
