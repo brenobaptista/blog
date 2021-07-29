@@ -6,7 +6,6 @@ export const Input = styled.input`
   font-size: 0.8rem;
   font-family: inherit;
   line-height: 1.5;
-  vertical-align: middle;
   color: ${props => props.theme.colors.altText};
   background-color: ${props => props.theme.colors.altBackground};
   border: ${props =>
