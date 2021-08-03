@@ -29,15 +29,11 @@ const Theme = ({ children }: Props): JSX.Element => {
   }
 
   return (
-    <>
-      {theme && (
-        <ThemeProvider theme={theme}>
-          <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            {children}
-          </ThemeContext.Provider>
-        </ThemeProvider>
-      )}
-    </>
+    <ThemeProvider theme={theme}>
+      <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        {children}
+      </ThemeContext.Provider>
+    </ThemeProvider>
   )
 }
 
