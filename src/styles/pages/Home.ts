@@ -22,7 +22,6 @@ export const SocialIcons = styled.div`
 
     &:hover {
       fill: ${props => props.theme.colors.visited};
-      transition: fill 0.1s;
     }
   }
 
