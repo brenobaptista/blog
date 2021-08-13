@@ -16,7 +16,19 @@ export const Marquee = styled.div`
     height: 100%;
     margin: 0;
     line-height: 25px;
-    color: red;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     transform: translateX(100%);
     animation: scroll-left 15s linear infinite;
   }
