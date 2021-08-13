@@ -5,7 +5,7 @@ import ThemeContext from '../contexts/ThemeContext'
 const Sparkles = (): JSX.Element => {
   const { theme } = useContext(ThemeContext)
 
-  const color = 'random'
+  const color = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
   const sparkles = 10
 
   let currentX = 400
@@ -25,20 +25,6 @@ const Sparkles = (): JSX.Element => {
   const tinyX = []
   const tinyY = []
   const tinyV = []
-
-  const generateNewColor = () => {
-    const c = []
-
-    c[0] = 255
-    c[1] = Math.floor(Math.random() * 256)
-    c[2] = Math.floor(Math.random() * (256 - c[1] / 2))
-
-    c.sort(() => {
-      return 0.5 - Math.random()
-    })
-
-    return `rgb(${c[0]}, ${c[1]}, ${c[2]})`
-  }
 
   const updateStar = (i: number) => {
     if (--starV[i] === sparkles / 2) {
@@ -108,7 +94,7 @@ const Sparkles = (): JSX.Element => {
 
       for (c = 0; c < sparkles; c++)
         if (!starV[c]) {
-          const filteredColor = color === 'random' ? generateNewColor() : color
+          const filteredColor = color[Math.floor(Math.random() * 7)]
 
           star[c].style.left = `${(starX[c] = currentX)}px`
           star[c].style.top = `${(starY[c] = currentY + 1)}px`
