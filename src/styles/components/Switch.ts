@@ -19,7 +19,11 @@ export const Background = styled.label`
   border-radius: 65px;
   width: 65px;
   height: 28px;
-  background: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.primary};
+
+  &:hover {
+    background-color: ${props => props.theme.colors.visited};
+  }
 `
 
 export const Toggle = styled.span`
@@ -30,7 +34,7 @@ export const Toggle = styled.span`
   border-radius: 24px;
   width: 24px;
   height: 24px;
-  background: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.background};
   transition: 0.2s;
 
   ${InvisibleCheckbox}:checked + ${Background} & {

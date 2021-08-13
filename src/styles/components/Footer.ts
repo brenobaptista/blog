@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 export const Separator = styled.hr`
   border: 0;
   height: 1px;
-  background: ${props => props.theme.colors.selector};
+  background-color: ${props => props.theme.colors.selector};
   background-image: ${props => {
     const { selector, selectorEdge } = props.theme.colors
 

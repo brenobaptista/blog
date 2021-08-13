@@ -82,7 +82,7 @@ export default createGlobalStyle`
 
   ::selection {
     color: ${props => props.theme.colors.altBackground};
-    background: ${props => props.theme.colors.primary};
+    background-color: ${props => props.theme.colors.primary};
   }
 
   .emoji {
@@ -105,7 +105,7 @@ export default createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track {
-    background: ${props => props.theme.colors.altBackground};
+    background-color: ${props => props.theme.colors.altBackground};
   }
 
   *::-webkit-scrollbar-thumb {
