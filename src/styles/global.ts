@@ -72,6 +72,27 @@ export default createGlobalStyle`
 
   h1,
   h2,
+  h3 {
+    ${props =>
+      props.theme.mode === 'retro' &&
+      `
+      margin-left: 12px;
+      margin-bottom: 32px;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      text-shadow:
+        -2px 2px violet,
+        -4px 4px indigo,
+        -6px 6px blue,
+        -8px 8px green,
+        -10px 10px yellow,
+        -12px 12px orange,
+        -14px 14px red;
+    `}
+  }
+
+  h1,
+  h2,
   h3,
   p,
   code {
