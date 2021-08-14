@@ -35,7 +35,7 @@ export const Toggle = styled.span`
   width: 24px;
   height: 24px;
   background-color: ${props => props.theme.colors.background};
-  transition: 0.2s;
+  transition: 0.2s all ease-in-out;
 
   ${InvisibleCheckbox}:checked + ${Background} & {
     left: calc(100% - 2px);
