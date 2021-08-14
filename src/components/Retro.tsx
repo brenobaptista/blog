@@ -106,6 +106,36 @@ const Retro = (): JSX.Element => {
               width='88'
               height='31'
             />
+            <img
+              src='/static/images/retro/badges/y2k.gif'
+              alt='I survived Y2K'
+              width='88'
+              height='31'
+            />
+            <img
+              src='/static/images/retro/badges/email.gif'
+              alt='Email me'
+              width='88'
+              height='31'
+            />
+            <img
+              src='/static/images/retro/badges/monitor.gif'
+              alt='Best viewed with a monitor'
+              width='88'
+              height='31'
+            />
+            <img
+              src='/static/images/retro/badges/2001.gif'
+              alt='I wish it was 2001'
+              width='88'
+              height='31'
+            />
+            <img
+              src='/static/images/retro/badges/nocodeandrun.gif'
+              alt='No code and run'
+              width='88'
+              height='31'
+            />
           </Badges>
         </>
       )}
