@@ -8,8 +8,45 @@ export const HomeHeader = styled.header`
 
 export const PortraitWrapper = styled.div`
   height: 128px;
-  background-color: ${props => props.theme.colors.altBackground};
   border-radius: 50%;
+
+  ${props =>
+    props.theme.mode === 'dracula'
+      ? `
+      background-color: ${props.theme.colors.altBackground};
+      animation: eclipse 4s infinite;
+    `
+      : `
+      animation: aura 4s infinite;
+    `};
+
+  @keyframes eclipse {
+    0% {
+      filter: drop-shadow(0 0 16px #bd93f9);
+    }
+
+    50% {
+      filter: drop-shadow(0 0 8px #bd93f9);
+    }
+
+    100% {
+      filter: drop-shadow(0 0 16px #bd93f9);
+    }
+  }
+
+  @keyframes aura {
+    0% {
+      filter: drop-shadow(0 -3px 6px orange);
+    }
+
+    50% {
+      filter: drop-shadow(0 -9px 18px orange);
+    }
+
+    100% {
+      filter: drop-shadow(0 -3px 6px orange);
+    }
+  }
 `
 
 export const SocialIcons = styled.div`
