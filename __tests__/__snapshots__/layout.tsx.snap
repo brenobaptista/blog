@@ -21,7 +21,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 .c8 {
   border: 0;
   height: 1px;
-  background: white;
+  background-color: white;
   background-image: linear-gradient(to right,white,white,white);
 }
 
@@ -50,7 +50,11 @@ exports[`matches snapshot in dracula mode 1`] = `
   border-radius: 65px;
   width: 65px;
   height: 28px;
-  background: orange;
+  background-color: orange;
+}
+
+.c5:hover {
+  background-color: darkorange;
 }
 
 .c7 {
@@ -61,7 +65,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   border-radius: 24px;
   width: 24px;
   height: 24px;
-  background: black;
+  background-color: black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -207,7 +211,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
 .c8 {
   border: 0;
   height: 1px;
-  background: white;
+  background-color: white;
   background-image: linear-gradient(to right,white,white,white);
 }
 
@@ -236,7 +240,11 @@ exports[`matches snapshot in retro mode for home 1`] = `
   border-radius: 65px;
   width: 65px;
   height: 28px;
-  background: orange;
+  background-color: orange;
+}
+
+.c5:hover {
+  background-color: darkorange;
 }
 
 .c7 {
@@ -247,7 +255,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   border-radius: 24px;
   width: 24px;
   height: 24px;
-  background: black;
+  background-color: black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
