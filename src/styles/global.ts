@@ -77,7 +77,7 @@ export default createGlobalStyle`
       props.theme.mode === 'retro' &&
       `
       margin-left: 12px;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       letter-spacing: 0.125rem;
       text-transform: uppercase;
       text-shadow:
