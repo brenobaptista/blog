@@ -66,8 +66,8 @@ exports[`matches snapshot in dracula mode 1`] = `
   width: 24px;
   height: 24px;
   background-color: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .c2:checked + .c4 .c6 {
@@ -256,8 +256,8 @@ exports[`matches snapshot in retro mode for home 1`] = `
   width: 24px;
   height: 24px;
   background-color: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .c2:checked + .c4 .c6 {
