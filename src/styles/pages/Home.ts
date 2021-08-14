@@ -9,6 +9,11 @@ export const HomeHeader = styled.header`
 export const PortraitWrapper = styled.div`
   height: 128px;
   border-radius: 50%;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 
   ${props =>
     props.theme.mode === 'dracula'
@@ -36,15 +41,18 @@ export const PortraitWrapper = styled.div`
 
   @keyframes aura {
     0% {
-      filter: drop-shadow(0 -3px 6px orange);
+      transform: translate(0);
+      filter: drop-shadow(0 -4px 8px orange);
     }
 
     50% {
-      filter: drop-shadow(0 -9px 18px orange);
+      transform: scale(1.2) translate(0, -16px);
+      filter: drop-shadow(0 -8px 16px orange);
     }
 
     100% {
-      filter: drop-shadow(0 -3px 6px orange);
+      transform: translate(0);
+      filter: drop-shadow(0 -4px 8px orange);
     }
   }
 `
