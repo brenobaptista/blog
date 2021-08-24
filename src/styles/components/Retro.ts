@@ -49,9 +49,3 @@ export const Construction = styled.div`
   justify-content: space-evenly;
   margin-bottom: 30px;
 `
-
-export const Badges = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`

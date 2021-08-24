@@ -25,3 +25,15 @@ export const Separator = styled.hr`
     return `linear-gradient(to right, ${selectorEdge}, ${selector}, ${selectorEdge})`
   }};
 `
+
+export const Badges = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0;
+`
+
+export const Copyright = styled.div`
+  text-align: center;
+  font-size: 0.8rem;
+`
