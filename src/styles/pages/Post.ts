@@ -61,27 +61,27 @@ export const Body = styled.div`
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ccc` : 'gray')};
+    color: ${props => (props.theme.mode === 'retro' ? 'gray' : `#ccc`)};
   }
 
   .token.tag,
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ff9da4` : 'red')};
+    color: ${props => (props.theme.mode === 'retro' ? 'red' : `#ff9da4`)};
   }
 
   .token.boolean,
   .token.number,
   .token.function {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ffc58f` : 'orange')};
+    color: ${props => (props.theme.mode === 'retro' ? 'orange' : `#ffc58f`)};
   }
 
   .token.property,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: ${props => (props.theme.mode === 'dracula' ? `#f8c555` : 'orange')};
+    color: ${props => (props.theme.mode === 'retro' ? 'orange' : `#f8c555`)};
   }
 
   .token.selector,
@@ -89,7 +89,7 @@ export const Body = styled.div`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: ${props => (props.theme.mode === 'dracula' ? `#ebbbff` : 'blue')};
+    color: ${props => (props.theme.mode === 'retro' ? 'blue' : `#ebbbff`)};
   }
 
   .token.string,
@@ -97,13 +97,13 @@ export const Body = styled.div`
   .token.attr-value,
   .token.regex,
   .token.variable {
-    color: ${props => (props.theme.mode === 'dracula' ? `#7ec699` : 'green')};
+    color: ${props => (props.theme.mode === 'retro' ? 'green' : `#7ec699`)};
   }
 
   .token.operator,
   .token.entity,
   .token.url {
-    color: ${props => (props.theme.mode === 'dracula' ? `#67cdcc` : 'cyan')};
+    color: ${props => (props.theme.mode === 'retro' ? 'cyan' : `#67cdcc`)};
   }
 
   .token.important,
