@@ -30,7 +30,7 @@ export const Badges = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 16px 0;
+  margin: 8px 0 16px;
 `
 
 export const Copyright = styled.div`
