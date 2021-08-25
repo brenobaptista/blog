@@ -7,15 +7,26 @@ exports[`matches snapshot in dracula mode 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  font-size: 0.9rem;
 }
 
 .c9 a {
   margin: 16px;
   border-radius: 4px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c8 {
@@ -160,30 +171,52 @@ exports[`matches snapshot in dracula mode 1`] = `
       <nav
         class="c9"
       >
-        <a
-          href="https://github.com/brenobaptista/"
-          rel="noreferrer noopener"
-          target="_blank"
+        <div
+          class="c10"
         >
-          GitHub
-        </a>
-        <a
-          href="mailto:contact@brenobaptista.tech"
+          <a
+            href="https://github.com/brenobaptista/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/breno-baptista/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div
+          class="c10"
         >
-          Email
-        </a>
-        <a
-          href="https://brenobaptista.vercel.app/rss.xml"
-          rel="noreferrer noopener"
-          target="_blank"
+          <a
+            href="/rss.xml"
+          >
+            RSS Feed
+          </a>
+          <a
+            href="/donations"
+          >
+            Donations
+          </a>
+        </div>
+        <div
+          class="c10"
         >
-          RSS
-        </a>
-        <a
-          href="/donations"
-        >
-          Donations
-        </a>
+          <a
+            href="mailto:contact@brenobaptista.tech"
+          >
+            Email
+          </a>
+          <a
+            href="/resume"
+          >
+            Résumé
+          </a>
+        </div>
       </nav>
     </footer>
   </div>
@@ -192,7 +225,41 @@ exports[`matches snapshot in dracula mode 1`] = `
 
 exports[`matches snapshot in retro mode for home 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+.c9 a {
+  margin: 16px;
+  border-radius: 4px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  background-image: linear-gradient(to right,white,white,white);
+}
+
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -204,10 +271,10 @@ exports[`matches snapshot in retro mode for home 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 16px 0;
+  margin: 8px 0 16px;
 }
 
-.c9 {
+.c12 {
   text-align: center;
   font-size: 0.8rem;
 }
@@ -296,6 +363,15 @@ exports[`matches snapshot in retro mode for home 1`] = `
   font-weight: bold;
 }
 
+@media screen and (max-width:360px) {
+  .c9 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width:768px) {
   .c0 {
     margin: 16px 8px;
@@ -327,8 +403,61 @@ exports[`matches snapshot in retro mode for home 1`] = `
     </div>
     <main />
     <footer>
-      <div
+      <hr
         class="c8"
+      />
+      <nav
+        class="c9"
+      >
+        <div
+          class="c10"
+        >
+          <a
+            href="https://github.com/brenobaptista/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/breno-baptista/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div
+          class="c10"
+        >
+          <a
+            href="/rss.xml"
+          >
+            RSS Feed
+          </a>
+          <a
+            href="/donations"
+          >
+            Donations
+          </a>
+        </div>
+        <div
+          class="c10"
+        >
+          <a
+            href="mailto:contact@brenobaptista.tech"
+          >
+            Email
+          </a>
+          <a
+            href="/resume"
+          >
+            Résumé
+          </a>
+        </div>
+      </nav>
+      <div
+        class="c11"
       >
         <img
           alt="Bookmark this page"
@@ -428,7 +557,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         />
       </div>
       <div
-        class="c9"
+        class="c12"
       >
         © 2020-2021 Breno Baptista
       </div>
