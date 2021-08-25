@@ -2,7 +2,13 @@ import { useContext } from 'react'
 import Link from 'next/link'
 
 import ThemeContext from '../contexts/ThemeContext'
-import { Nav, Separator, Badges, Copyright } from '../styles/components/Footer'
+import {
+  Nav,
+  Column,
+  Separator,
+  Badges,
+  Copyright
+} from '../styles/components/Footer'
 
 const Footer = (): JSX.Element => {
   const { theme } = useContext(ThemeContext)
@@ -11,22 +17,30 @@ const Footer = (): JSX.Element => {
     <footer>
       <Separator />
       <Nav>
-        <a
-          href='https://github.com/brenobaptista/'
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          GitHub
-        </a>
-        <a href='mailto:contact@brenobaptista.tech'>Email</a>
-        <a
-          href='https://brenobaptista.vercel.app/rss.xml'
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          RSS
-        </a>
-        <Link href='/donations'>Donations</Link>
+        <Column>
+          <a
+            href='https://github.com/brenobaptista/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            GitHub
+          </a>
+          <a
+            href='https://www.linkedin.com/in/breno-baptista/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            LinkedIn
+          </a>
+        </Column>
+        <Column>
+          <Link href='/rss.xml'>RSS Feed</Link>
+          <Link href='/donations'>Donations</Link>
+        </Column>
+        <Column>
+          <a href='mailto:contact@brenobaptista.tech'>Email</a>
+          <Link href='/resume'>Résumé</Link>
+        </Column>
       </Nav>
       {theme.mode === 'retro' && (
         <>

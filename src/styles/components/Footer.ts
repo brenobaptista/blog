@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  font-size: 0.9rem;
 
   @media screen and (max-width: 360px) {
     flex-direction: column;
@@ -13,6 +14,11 @@ export const Nav = styled.nav`
     margin: 16px;
     border-radius: 4px;
   }
+`
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 export const Separator = styled.hr`

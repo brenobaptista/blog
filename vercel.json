@@ -14,5 +14,11 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://drive.google.com/file/d/1HTRf78-pXiNUIxHfSscEkUeIySg6MMHX/view?usp=sharing"
+    }
   ]
 }
