@@ -67,9 +67,6 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           >
             <GitHub width={40} height={40} />
           </a>
-          <a href='mailto:contact@brenobaptista.tech'>
-            <Email width={40} height={40} />
-          </a>
           <a
             href='https://brenobaptista.vercel.app/rss.xml'
             target='_blank'
@@ -77,11 +74,14 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           >
             <RSS width={40} height={40} />
           </a>
+          <a href='mailto:contact@brenobaptista.tech'>
+            <Email width={40} height={40} />
+          </a>
         </SocialIcons>
       </HomeHeader>
       <Intro>
         <p>
-          I&apos;m a full-stack developer from Brazil. I work remotely at{' '}
+          I&apos;m a developer from Brazil. I work as a software engineer at{' '}
           <a
             href='https://joinmassive.com/team'
             target='_blank'
@@ -90,9 +90,9 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           >
             Massive
           </a>
-          , where we develop alternatives to fight intrusive advertising.
-          I&apos;m interested in GNU/Linux, shell scripting, open-source
-          software, privacy and front-end web technologies.
+          . I write blog posts about things I&apos;ve found interesting during
+          my daily explorations on the web. I&apos;m interested in Linux, shell
+          scripting, open-source software, privacy and front-end development.
         </p>
       </Intro>
       <Retro />
