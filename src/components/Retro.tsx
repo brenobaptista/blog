@@ -15,27 +15,23 @@ const Retro = (): JSX.Element => {
           </Marquee>
           <Construction>
             <img
-              src='/static/images/retro/man-jackhammer.gif'
+              src='/static/images/retro/jackhammer.gif'
               alt='Man with jackhammer'
-              width='100'
-              height='113'
+              height='100'
             />
             <img
-              src='/static/images/retro/construction.gif'
-              alt='Construction'
-              width='90'
-              height='95'
+              src='/static/images/retro/hamster.gif'
+              alt='Dancing hamster'
+              height='100'
             />
             <img
-              src='/static/images/retro/construction2.gif'
-              alt='Construction2'
-              width='100'
-              height='113'
+              src='/static/images/retro/money.gif'
+              alt='Spinning money'
+              height='100'
             />
             <img
               src='/static/images/retro/worldwideweb.gif'
               alt='World Wide Web'
-              width='91'
               height='100'
             />
           </Construction>
