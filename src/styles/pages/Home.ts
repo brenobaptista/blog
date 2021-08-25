@@ -58,7 +58,7 @@ export const PortraitWrapper = styled.div`
 `
 
 export const SocialIcons = styled.div`
-  width: 225px;
+  width: 160px;
   display: flex;
   justify-content: space-between;
 
