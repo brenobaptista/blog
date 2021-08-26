@@ -32,6 +32,16 @@ export const Separator = styled.hr`
   }};
 `
 
+export const Webring = styled.div`
+  margin: 24px 0;
+  font-size: 0.9rem;
+  text-align: center;
+
+  a {
+    margin: 0 8px;
+  }
+`
+
 export const Badges = styled.div`
   display: flex;
   flex-wrap: wrap;

@@ -260,6 +260,16 @@ exports[`matches snapshot in retro mode for home 1`] = `
 }
 
 .c11 {
+  margin: 24px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.c11 a {
+  margin: 0 8px;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -274,7 +284,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   margin: 8px 0 16px;
 }
 
-.c12 {
+.c13 {
   text-align: center;
   font-size: 0.8rem;
 }
@@ -456,8 +466,36 @@ exports[`matches snapshot in retro mode for home 1`] = `
           </a>
         </div>
       </nav>
+      <hr
+        class="c8"
+      />
       <div
         class="c11"
+      >
+        <a
+          href="https://hotlinewebring.club/brenobaptista/previous"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          ←
+        </a>
+        <a
+          href="https://hotlinewebring.club/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Hotline Webring
+        </a>
+        <a
+          href="https://hotlinewebring.club/brenobaptista/next"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          →
+        </a>
+      </div>
+      <div
+        class="c12"
       >
         <img
           alt="Bookmark this page"
@@ -557,7 +595,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         />
       </div>
       <div
-        class="c12"
+        class="c13"
       >
         © 2020-2021 Breno Baptista
       </div>

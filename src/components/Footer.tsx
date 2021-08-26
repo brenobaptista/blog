@@ -6,6 +6,7 @@ import {
   Nav,
   Column,
   Separator,
+  Webring,
   Badges,
   Copyright
 } from '../styles/components/Footer'
@@ -44,6 +45,30 @@ const Footer = (): JSX.Element => {
       </Nav>
       {theme.mode === 'retro' && (
         <>
+          <Separator />
+          <Webring>
+            <a
+              href='https://hotlinewebring.club/brenobaptista/previous'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              ←
+            </a>
+            <a
+              href='https://hotlinewebring.club/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Hotline Webring
+            </a>
+            <a
+              href='https://hotlinewebring.club/brenobaptista/next'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              →
+            </a>
+          </Webring>
           <Badges>
             <img
               src='/static/images/retro/badges/bookmark.gif'
