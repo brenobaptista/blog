@@ -126,7 +126,7 @@ const fetchDashboardData = uid => new Promise((resolve, reject) => {
 ### 2) .then().catch()
 
 ```js[class="line-numbers"]
-async fetchDashboardData(uid) {
+const fetchDashboardData = uid => {
   firebase
     .database()
     .ref(`dashboard/${uid}`)
@@ -143,15 +143,11 @@ async fetchDashboardData(uid) {
 ### 3) async/await
 
 ```js[class="line-numbers"]
-async fetchDashboardData(uid) {
+const fetchDashboardData = async uid => {
   try {
-    firebase
-      .database()
-      .ref(`dashboard/${uid}`)
-      .once('value')
-      .then(snapshot => {
-        return snapshot.val()
-      })
+    const snapshot = await firebase.database().ref(`dashboard/${uid}`).once('value')
+
+    return snapshot.val()
   } catch (error) {
     throw new Error(error)
   }
