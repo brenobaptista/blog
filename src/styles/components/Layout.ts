@@ -5,6 +5,11 @@ export const Container = styled.div`
   padding: 16px;
   margin: 32px auto;
   background-color: ${props => props.theme.colors.background};
+  border: ${props =>
+    props.theme.mode === 'retro'
+      ? `1px solid ${props.theme.colors.selector}`
+      : 'none'};
+  border-radius: 8px;
   font-family: ${props =>
     props.theme.mode === 'retro' && 'Fira Code, monospace'};
 
