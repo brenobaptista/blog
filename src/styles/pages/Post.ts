@@ -27,12 +27,12 @@ export const Body = styled.div`
 
   pre {
     padding: 25px 30px;
-    border-radius: 8px;
-    overflow: auto;
     border: ${props =>
       props.theme.mode === 'retro'
-        ? `1px solid ${props.theme.colors.altText}`
+        ? `1px solid ${props.theme.colors.selector}`
         : 'none'};
+    border-radius: 8px;
+    overflow: auto;
   }
 
   p > code {
@@ -226,12 +226,12 @@ export const MorePosts = styled.div`
   a {
     margin-bottom: 16px;
     padding: 10px 12px;
-    border-radius: 8px;
-    background-color: ${props => props.theme.colors.altBackground};
     border: ${props =>
       props.theme.mode === 'retro'
-        ? `1px solid ${props.theme.colors.altText}`
+        ? `1px solid ${props.theme.colors.selector}`
         : 'none'};
+    border-radius: 8px;
+    background-color: ${props => props.theme.colors.altBackground};
 
     &:hover {
       text-decoration: none;

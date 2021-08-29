@@ -10,7 +10,7 @@ export const Input = styled.input`
   background-color: ${props => props.theme.colors.altBackground};
   border: ${props =>
     props.theme.mode === 'retro'
-      ? `1px solid ${props.theme.colors.altText}`
+      ? `1px solid ${props.theme.colors.selector}`
       : 'none'};
   border-radius: 4px;
   cursor: ${props =>

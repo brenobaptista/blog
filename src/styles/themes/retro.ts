@@ -6,8 +6,8 @@ const retro = {
     altText: 'gray',
     background: 'black',
     altBackground: 'black',
-    selector: 'white',
-    selectorEdge: 'white',
+    selector: 'gray',
+    selectorEdge: 'gray',
     visited: 'darkorange'
   }
 }
