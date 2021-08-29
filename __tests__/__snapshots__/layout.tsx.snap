@@ -32,8 +32,8 @@ exports[`matches snapshot in dracula mode 1`] = `
 .c8 {
   border: 0;
   height: 1px;
-  background-color: white;
-  background-image: linear-gradient(to right,white,white,white);
+  background-color: gray;
+  background-image: linear-gradient(to right,gray,gray,gray);
 }
 
 .c3 {
@@ -93,6 +93,8 @@ exports[`matches snapshot in dracula mode 1`] = `
   padding: 16px;
   margin: 32px auto;
   background-color: black;
+  border: 1px solid gray;
+  border-radius: 8px;
   font-family: Fira Code,monospace;
 }
 
@@ -255,8 +257,8 @@ exports[`matches snapshot in retro mode for home 1`] = `
 .c8 {
   border: 0;
   height: 1px;
-  background-color: white;
-  background-image: linear-gradient(to right,white,white,white);
+  background-color: gray;
+  background-image: linear-gradient(to right,gray,gray,gray);
 }
 
 .c11 {
@@ -346,6 +348,8 @@ exports[`matches snapshot in retro mode for home 1`] = `
   padding: 16px;
   margin: 32px auto;
   background-color: black;
+  border: 1px solid gray;
+  border-radius: 8px;
   font-family: Fira Code,monospace;
 }
 
