@@ -17,19 +17,19 @@ const Donations = (): JSX.Element => (
         Donations <span className='emoji'>💸</span>
       </h1>
       <p>
-        Thank you for checking out the content of this blog!{' '}
-        <span className='emoji'>🥳</span>
+        Thank you for checking out the content of this blog!
+        <span className='emoji'> 🥳</span>
       </p>
       <p>
         I write blog posts to help developers <b>for free</b>. So if you want to
-        support this project, please consider donating a small contribution.{' '}
-        <span className='emoji'>🪙</span>
+        support this project, please consider donating a small contribution.
+        <span className='emoji'> 🪙</span>
       </p>
       <p>
         I have decided to create a <b>Monero</b> wallet to accept donations. It
         is currently the best way to receive payments privately. If you have
-        another cryptocurrency, you can swap to Monero to donate.{' '}
-        <span className='emoji'>🔄</span>
+        another cryptocurrency, you can swap to Monero to donate.
+        <span className='emoji'> 🔄</span>
       </p>
     </Gratitude>
     <Address>

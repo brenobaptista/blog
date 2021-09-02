@@ -13,8 +13,8 @@ const Custom404 = (): JSX.Element => (
     </h1>
     <p>
       It seems you have found something that used to exist or you spelled
-      something wrong. But at least you have found Pitucho{' '}
-      <span className='emoji'>🐶</span>:
+      something wrong. But at least you have found Pitucho
+      <span className='emoji'> 🐶</span>:
     </p>
     <img src='/static/images/pitucho.jpg' alt='Pitucho' />
   </Layout>
