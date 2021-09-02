@@ -1,6 +1,6 @@
 ---
 title: 'Using Asynchronous Functions in JavaScript'
-description: "I'm on it. When I'm done, I'll send you the result."
+description: 'I’m on it. When I’m done, I’ll send you the result.'
 date: '2021-07-10'
 ---
 
