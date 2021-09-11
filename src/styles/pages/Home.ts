@@ -26,7 +26,8 @@ export const PortraitWrapper = styled.div`
     `};
 
   @keyframes aura {
-    0% {
+    0%,
+    100% {
       transform: translate(0);
       filter: drop-shadow(0 -4px 8px orange);
     }
@@ -35,24 +36,16 @@ export const PortraitWrapper = styled.div`
       transform: scale(1.2) translate(0, -16px);
       filter: drop-shadow(0 -8px 16px orange);
     }
-
-    100% {
-      transform: translate(0);
-      filter: drop-shadow(0 -4px 8px orange);
-    }
   }
 
   @keyframes eclipse {
-    0% {
+    0%,
+    100% {
       filter: drop-shadow(0 0 16px #bd93f9);
     }
 
     50% {
       filter: drop-shadow(0 0 8px #bd93f9);
-    }
-
-    100% {
-      filter: drop-shadow(0 0 16px #bd93f9);
     }
   }
 `
