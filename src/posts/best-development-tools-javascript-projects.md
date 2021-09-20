@@ -11,6 +11,8 @@ ESLint will make sure your code has a level of clarity that allows reading and m
 - [Install ESLint's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Install Airbnb's ESLint rules](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 - [Configure ESLint in Next.js](https://nextjs.org/docs/basic-features/eslint)
+- [Turn off conflicts with Prettier](https://github.com/prettier/eslint-config-prettier)
+- [Run Prettier as a rule](https://github.com/prettier/eslint-plugin-prettier)
 
 My configuration for `.eslintrc.json` using Next.js and TypeScript:
 
