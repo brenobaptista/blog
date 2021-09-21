@@ -86,33 +86,31 @@ const Sparkles = (): JSX.Element => {
   }
 
   const createSparkle = () => {
-    let c: number
-
     if (Math.abs(currentX - lastX) > 1 || Math.abs(currentY - lastY) > 1) {
       lastX = currentX
       lastY = currentY
 
-      for (c = 0; c < sparkles; c++)
-        if (!starV[c]) {
+      for (let i = 0; i < sparkles; i++)
+        if (!starV[i]) {
           const filteredColor = color[Math.floor(Math.random() * 7)]
 
-          star[c].style.left = `${(starX[c] = currentX)}px`
-          star[c].style.top = `${(starY[c] = currentY + 1)}px`
-          star[c].style.clip = 'rect(0px, 5px, 5px, 0px)'
-          if (star[c].childNodes[0] && star[c].childNodes[1]) {
-            star[c].childNodes[0].style.backgroundColor = filteredColor
-            star[c].childNodes[1].style.backgroundColor = filteredColor
+          star[i].style.left = `${(starX[i] = currentX)}px`
+          star[i].style.top = `${(starY[i] = currentY + 1)}px`
+          star[i].style.clip = 'rect(0px, 5px, 5px, 0px)'
+          if (star[i].childNodes[0] && star[i].childNodes[1]) {
+            star[i].childNodes[0].style.backgroundColor = filteredColor
+            star[i].childNodes[1].style.backgroundColor = filteredColor
           }
-          star[c].style.visibility = 'visible'
-          starV[c] = sparkles
+          star[i].style.visibility = 'visible'
+          starV[i] = sparkles
 
           break
         }
     }
 
-    for (c = 0; c < sparkles; c++) {
-      if (starV[c]) updateStar(c)
-      if (tinyV[c]) updateTiny(c)
+    for (let i = 0; i < sparkles; i++) {
+      if (starV[i]) updateStar(i)
+      if (tinyV[i]) updateTiny(i)
     }
 
     setTimeout(createSparkle, 40)
