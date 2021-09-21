@@ -1,12 +1,12 @@
 # Blog
 
-> My blog made using Next.js + TypeScript
+> My blog made using Next.js + Styled Components + TypeScript
 
 ## Features
 
-- Next.js and all its features.
-- 100% TypeScript.
+- Next.js.
 - Styled Components and themes (90's and Dracula).
+- TypeScript.
 - ESLint + Prettier + Husky + Lint Staged.
 - Jest and React Testing Library.
 
