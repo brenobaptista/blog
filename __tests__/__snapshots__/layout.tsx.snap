@@ -57,7 +57,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  cursor: url('/static/images/retro/cursor/pointer.cur'),pointer;
+  cursor: url('/images/retro/cursor/pointer.cur'),pointer;
   border-radius: 65px;
   width: 65px;
   height: 28px;
@@ -312,7 +312,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  cursor: url('/static/images/retro/cursor/pointer.cur'),pointer;
+  cursor: url('/images/retro/cursor/pointer.cur'),pointer;
   border-radius: 65px;
   width: 65px;
   height: 28px;
@@ -504,97 +504,97 @@ exports[`matches snapshot in retro mode for home 1`] = `
         <img
           alt="Bookmark this page"
           height="31"
-          src="/static/images/retro/badges/bookmark.gif"
+          src="/images/retro/badges/bookmark.gif"
           width="88"
         />
         <img
           alt="Sign my guestbook"
           height="31"
-          src="/static/images/retro/badges/guestbook.gif"
+          src="/images/retro/badges/guestbook.gif"
           width="88"
         />
         <img
           alt="Best viewed with anything"
           height="31"
-          src="/static/images/retro/badges/best-viewed.gif"
+          src="/images/retro/badges/best-viewed.gif"
           width="88"
         />
         <img
           alt="Free speech forever"
           height="31"
-          src="/static/images/retro/badges/free-speech.gif"
+          src="/images/retro/badges/free-speech.gif"
           width="88"
         />
         <img
           alt="Nuke IE"
           height="31"
-          src="/static/images/retro/badges/nuke-ie.gif"
+          src="/images/retro/badges/nuke-ie.gif"
           width="88"
         />
         <img
           alt="Anarchy now"
           height="31"
-          src="/static/images/retro/badges/anarchy.gif"
+          src="/images/retro/badges/anarchy.gif"
           width="88"
         />
         <img
           alt="Best viewed with eyes"
           height="31"
-          src="/static/images/retro/badges/viewed-eyes.gif"
+          src="/images/retro/badges/viewed-eyes.gif"
           width="88"
         />
         <img
           alt="Tux - Linux penguin"
           height="31"
-          src="/static/images/retro/badges/penguin.gif"
+          src="/images/retro/badges/penguin.gif"
           width="88"
         />
         <img
           alt="Geocities"
           height="31"
-          src="/static/images/retro/badges/geocities.gif"
+          src="/images/retro/badges/geocities.gif"
           width="88"
         />
         <img
           alt="Internet privacy"
           height="31"
-          src="/static/images/retro/badges/privacy.gif"
+          src="/images/retro/badges/privacy.gif"
           width="88"
         />
         <img
           alt="Wiby search engine"
           height="31"
-          src="/static/images/retro/badges/wiby.gif"
+          src="/images/retro/badges/wiby.gif"
           width="88"
         />
         <img
           alt="I survived Y2K"
           height="31"
-          src="/static/images/retro/badges/y2k.gif"
+          src="/images/retro/badges/y2k.gif"
           width="88"
         />
         <img
           alt="Email me"
           height="31"
-          src="/static/images/retro/badges/email.gif"
+          src="/images/retro/badges/email.gif"
           width="88"
         />
         <img
           alt="Best viewed with a monitor"
           height="31"
-          src="/static/images/retro/badges/monitor.gif"
+          src="/images/retro/badges/monitor.gif"
           width="88"
         />
         <img
           alt="I wish it was 2001"
           height="31"
-          src="/static/images/retro/badges/2001.gif"
+          src="/images/retro/badges/2001.gif"
           width="88"
         />
         <img
           alt="No code and run"
           height="31"
-          src="/static/images/retro/badges/nocodeandrun.gif"
+          src="/images/retro/badges/nocodeandrun.gif"
           width="88"
         />
       </div>
