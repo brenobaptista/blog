@@ -50,37 +50,9 @@ export default class MyDocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
-          <link
-            rel='apple-touch-icon'
-            sizes='180x180'
-            href='/static/favicons/apple-touch-icon.png'
-          />
-          <link
-            rel='icon'
-            type='image/png'
-            sizes='32x32'
-            href='/static/favicons/favicon-32x32.png'
-          />
-          <link
-            rel='icon'
-            type='image/png'
-            sizes='16x16'
-            href='/static/favicons/favicon-16x16.png'
-          />
-          <link rel='manifest' href='/static/favicons/site.webmanifest' />
-          <link
-            rel='mask-icon'
-            href='/static/favicons/safari-pinned-tab.svg'
-            color='#282a36'
-          />
-          <link rel='shortcut icon' href='/static/favicons/favicon.ico' />
-          <meta name='apple-mobile-web-app-title' content='Breno Baptista' />
-          <meta name='application-name' content='Breno Baptista' />
-          <meta name='msapplication-TileColor' content='#282a36' />
-          <meta
-            name='msapplication-config'
-            content='/static/favicons/browserconfig.xml'
-          />
+          <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
+          <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+          <link rel='manifest' href='/site.webmanifest' />
           <meta name='theme-color' content='#282a36' />
           <link
             rel='alternate'
