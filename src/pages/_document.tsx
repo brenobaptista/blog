@@ -50,24 +50,23 @@ export default class MyDocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
-          <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
-          <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
-          <link rel='manifest' href='/site.webmanifest' />
-          <meta name='theme-color' content='#282a36' />
           <link
             rel='alternate'
             type='application/rss+xml'
             title='RSS feed for blog posts'
             href='https://brenobaptista.vercel.app/rss.xml'
           />
+          <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
+          <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+          <link rel='manifest' href='/site.webmanifest' />
+          <meta name='theme-color' content='#282a36' />
+          <meta name='og:title' content={siteTitle} />
           <meta
             property='og:image'
             content={`https://og-image.vercel.app/${encodeURI(
               siteTitle
             )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg`}
           />
-          <meta name='og:title' content={siteTitle} />
-          <meta name='twitter:card' content='summary_large_image' />
           <meta
             name='google-site-verification'
             content='_cd7mw2YWYlX1KdSTwEDVxDz2n5eWnW87t8mo4WdKF8'
