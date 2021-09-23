@@ -8,8 +8,6 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
-export const siteTitle = 'Breno Baptista'
-
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext

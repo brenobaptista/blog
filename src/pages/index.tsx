@@ -14,7 +14,6 @@ import Search from '../components/Search'
 import { Post, getSortedPostsData } from '../lib/posts'
 import generateRss from '../lib/rss'
 import generateSitemap from '../lib/sitemap'
-import { siteTitle } from './_document'
 import {
   HomeHeader,
   PortraitWrapper,
@@ -48,7 +47,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Breno Baptista</title>
         <meta
           name='description'
           content="I'm a full-stack developer from Brazil."
