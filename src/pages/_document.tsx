@@ -60,12 +60,7 @@ export default class MyDocument extends Document {
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='manifest' href='/site.webmanifest' />
           <meta name='theme-color' content='#282a36' />
-          <meta
-            property='og:image'
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle
-            )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg`}
-          />
+          <meta property='og:image' content='/og-image.png' />
           <meta
             name='google-site-verification'
             content='_cd7mw2YWYlX1KdSTwEDVxDz2n5eWnW87t8mo4WdKF8'
