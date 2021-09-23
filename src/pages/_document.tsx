@@ -60,7 +60,6 @@ export default class MyDocument extends Document {
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='manifest' href='/site.webmanifest' />
           <meta name='theme-color' content='#282a36' />
-          <meta name='og:title' content={siteTitle} />
           <meta
             property='og:image'
             content={`https://og-image.vercel.app/${encodeURI(
