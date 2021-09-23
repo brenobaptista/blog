@@ -35,7 +35,7 @@ const Donations = (): JSX.Element => (
     <Address>
       <h2>Monero address</h2>
       <img
-        src='/static/images/monero-address.png'
+        src='/images/monero-address.png'
         alt='Monero address'
         width='240'
         height='240'

@@ -48,7 +48,7 @@ convert -resize 512x512 image.jpg resized-image.jpg
 
 Take this drawing of a black dog on a white background.
 
-![Dog](/static/images/editing-images-from-terminal-with-imagemagick/dog.jpg)
+![Dog](/images/editing-images-from-terminal-with-imagemagick/dog.jpg)
 
 Let's remove the background:
 
@@ -56,7 +56,7 @@ Let's remove the background:
 convert -transparent white dog.jpg wrong-dog.png
 ```
 
-![Wrong Dog](/static/images/editing-images-from-terminal-with-imagemagick/wrong-dog.png)
+![Wrong Dog](/images/editing-images-from-terminal-with-imagemagick/wrong-dog.png)
 
 Wait, what happened?! The background is not completely transparent.
 
@@ -67,7 +67,7 @@ convert -transparent white -fuzz 30% \
 dog.jpg transparent-dog.png
 ```
 
-![Transparent Dog](/static/images/editing-images-from-terminal-with-imagemagick/transparent-dog.png)
+![Transparent Dog](/images/editing-images-from-terminal-with-imagemagick/transparent-dog.png)
 
 > Every case is different, so you need to try different values for `-fuzz`.
 
@@ -80,7 +80,7 @@ convert -background '#bd93f9' -flatten \
 transparent-dog.png purple-dog.jpg
 ```
 
-![Purple Dog](/static/images/editing-images-from-terminal-with-imagemagick/purple-dog.jpg)
+![Purple Dog](/images/editing-images-from-terminal-with-imagemagick/purple-dog.jpg)
 
 ### Trimming <span class="emoji">✂️</span>
 
@@ -90,7 +90,7 @@ Let's crop the empty space around the image above:
 convert -trim purple-dog.jpg trimmed-dog.jpg
 ```
 
-![Trimmed Dog](/static/images/editing-images-from-terminal-with-imagemagick/trimmed-dog.jpg)
+![Trimmed Dog](/images/editing-images-from-terminal-with-imagemagick/trimmed-dog.jpg)
 
 ## Optimizing images <span class="emoji">🎓</span>
 
@@ -123,7 +123,7 @@ convert -background '#0f1523' \
   imagemagick.jpg
 ```
 
-![Simple image with text](/static/images/editing-images-from-terminal-with-imagemagick/imagemagick.jpg)
+![Simple image with text](/images/editing-images-from-terminal-with-imagemagick/imagemagick.jpg)
 
 ## That's all Folks! <span class="emoji">🐰🥕</span>
 

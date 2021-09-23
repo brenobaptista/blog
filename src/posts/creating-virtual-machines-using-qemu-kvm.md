@@ -45,7 +45,7 @@ qemu-system-x86_64 \
   -cdrom kali-linux-2020.3-live-amd64.iso
 ```
 
-![Kali Linux Live](/static/images/creating-virtual-machines-using-qemu-kvm/kali-live.jpg)
+![Kali Linux Live](/images/creating-virtual-machines-using-qemu-kvm/kali-live.jpg)
 
 > Shortcut to get in and out of fullscreen mode: Ctrl + Alt + F
 >
@@ -82,10 +82,10 @@ qemu-system-x86_64 \
   -hda kalidisk.qcow2
 ```
 
-![Kali Linux](/static/images/creating-virtual-machines-using-qemu-kvm/kali.jpg)
+![Kali Linux](/images/creating-virtual-machines-using-qemu-kvm/kali.jpg)
 
 ## MacOS <span class="emoji">🍎</span>
 
 There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a VM running `macOS Catalina` in dark mode:
 
-![MacOS](/static/images/creating-virtual-machines-using-qemu-kvm/mac.jpg)
+![MacOS](/images/creating-virtual-machines-using-qemu-kvm/mac.jpg)

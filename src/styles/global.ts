@@ -24,7 +24,7 @@ export default createGlobalStyle`
     text-decoration: none;
     cursor: ${props =>
       props.theme.mode === 'retro' &&
-      "url('/static/images/retro/cursor/pointer.cur'), pointer"};
+      "url('/images/retro/cursor/pointer.cur'), pointer"};
 
     &:hover {
       text-decoration: underline;
@@ -41,12 +41,10 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
     background-image: ${props =>
-      props.theme.mode === 'retro'
-        ? 'url(/static/images/retro/space.gif)'
-        : 'none'};
+      props.theme.mode === 'retro' ? 'url(/images/retro/space.gif)' : 'none'};
     cursor: ${props =>
       props.theme.mode === 'retro' &&
-      "url('/static/images/retro/cursor/default.cur'), default"};
+      "url('/images/retro/cursor/default.cur'), default"};
     scroll-behavior: smooth;
   }
 
@@ -96,7 +94,7 @@ export default createGlobalStyle`
   code {
     cursor: ${props =>
       props.theme.mode === 'retro' &&
-      "url('/static/images/retro/cursor/text.cur'), text"};
+      "url('/images/retro/cursor/text.cur'), text"};
   }
 
   ::selection {

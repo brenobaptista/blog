@@ -15,7 +15,7 @@ export const Input = styled.input`
   border-radius: 4px;
   cursor: ${props =>
     props.theme.mode === 'retro' &&
-    "url('/static/images/retro/cursor/text.cur'), text"};
+    "url('/images/retro/cursor/text.cur'), text"};
 
   &::placeholder {
     color: ${props => props.theme.colors.altText};

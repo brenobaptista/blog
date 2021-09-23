@@ -16,7 +16,7 @@ const Custom404 = (): JSX.Element => (
       something wrong. But at least you have found Pitucho
       <span className='emoji'> 🐶</span>:
     </p>
-    <img src='/static/images/pitucho.jpg' alt='Pitucho' />
+    <img src='/images/pitucho.jpg' alt='Pitucho' />
   </Layout>
 )
 

@@ -71,6 +71,6 @@ useEffect(() => {
 
 To check CSS variables, open the Inspector for your web browser (right-click a page and select Inspect) and scroll down until you see something like this:
 
-![CSS variables](/static/images/reusing-entities-with-css-variables/root-variables.png)
+![CSS variables](/images/reusing-entities-with-css-variables/root-variables.png)
 
 You can change these values on the browser to test different styles more easily.

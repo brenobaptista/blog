@@ -4,7 +4,7 @@ description: 'Turn an old-fashioned terminal into your new best friend.'
 date: '2020-10-31'
 ---
 
-![Terminal](/static/images/customizing-terminal-with-zsh/terminal.png)
+![Terminal](/images/customizing-terminal-with-zsh/terminal.png)
 
 ## Table of Contents
 

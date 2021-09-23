@@ -14,7 +14,7 @@ export const Background = styled.label`
   position: relative;
   cursor: ${props =>
     props.theme.mode === 'retro'
-      ? "url('/static/images/retro/cursor/pointer.cur'), pointer"
+      ? "url('/images/retro/cursor/pointer.cur'), pointer"
       : 'pointer'};
   border-radius: 65px;
   width: 65px;
