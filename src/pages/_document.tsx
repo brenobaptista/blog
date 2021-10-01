@@ -57,7 +57,7 @@ export default class MyDocument extends Document {
           <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='manifest' href='/site.webmanifest' />
-          <meta name='theme-color' content='#282a36' />
+          <meta name='theme-color' content='#bd93f9' />
           <meta
             property='og:image'
             content='https://brenobaptista.vercel.app/og-image.png'
