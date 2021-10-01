@@ -4,6 +4,8 @@ description: 'Integrate ESLint, Prettier, Lint Staged and Husky.'
 date: '2021-09-11'
 ---
 
+## Table of Contents
+
 ## ESLint <span class="emoji">👀</span>
 
 ESLint will make sure your code has a level of clarity that allows reading and maintaining easier for anyone who has to work on it. Next.js and Create React App already come with ESLint, so we need only to extend its configuration to add Airbnb's rules.
