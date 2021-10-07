@@ -139,7 +139,7 @@ const Sparkles = (): JSX.Element => {
     }
   }
 
-  const moveMouse = event => {
+  const moveMouse = (event: MouseEvent) => {
     if (event) {
       currentY = event.pageY
       currentX = event.pageX
