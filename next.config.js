@@ -7,30 +7,29 @@ module.exports = {
         source: '/(.*)',
         headers: securityHeaders
       }
-    ];
+    ]
   },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
         react: 'preact/compat',
         'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat',
-      });
+        'react-dom': 'preact/compat'
+      })
     }
 
-    return config;
-  },
-};
+    return config
+  }
+}
 
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline';
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
-  media-src 'none';
   connect-src *;
   font-src 'self';
-`;
+`
 
 const securityHeaders = [
   {
@@ -61,4 +60,4 @@ const securityHeaders = [
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
   }
-];
+]

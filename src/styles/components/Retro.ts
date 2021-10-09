@@ -49,3 +49,10 @@ export const Construction = styled.div`
   justify-content: space-evenly;
   margin-bottom: 30px;
 `
+
+export const Song = styled.figure`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+`

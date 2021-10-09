@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 
 import ThemeContext from '../contexts/ThemeContext'
-import { Marquee, Construction } from '../styles/components/Retro'
+import { Marquee, Construction, Song } from '../styles/components/Retro'
 
 const Retro = (): JSX.Element => {
   const { theme } = useContext(ThemeContext)
@@ -35,6 +35,14 @@ const Retro = (): JSX.Element => {
               height='100'
             />
           </Construction>
+          <Song>
+            <figcaption>Unleash the champion within:</figcaption>
+            <audio controls>
+              <source src='/audio/champions.ogg' type='audio/ogg' />
+              <source src='/audio/champions.mp3' type='audio/mpeg' />
+              Your browser does not support the audio element.
+            </audio>
+          </Song>
         </>
       )}
     </>
