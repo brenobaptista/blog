@@ -16,8 +16,8 @@ export const Background = styled.label`
     props.theme.mode === 'retro'
       ? "url('/images/retro/cursor/pointer.cur'), pointer"
       : 'pointer'};
-  border-radius: 65px;
-  width: 65px;
+  border-radius: 64px;
+  width: 64px;
   height: 28px;
   background-color: ${props => props.theme.colors.primary};
 

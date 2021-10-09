@@ -95,7 +95,7 @@ export const Blog = styled.section`
 `
 
 export const Card = styled.div`
-  margin: 32px 0 32px;
+  margin: 32px 0;
 
   div {
     display: flex;
@@ -111,7 +111,7 @@ export const Card = styled.div`
 
     small {
       font-size: 0.75rem;
-      line-height: 33px;
+      line-height: 32px;
     }
   }
 

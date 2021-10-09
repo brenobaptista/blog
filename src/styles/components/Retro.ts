@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const Marquee = styled.div`
   overflow: hidden;
   position: relative;
-  height: 25px;
-  margin: 30px 0;
+  height: 24px;
+  margin: 32px 0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -15,7 +15,7 @@ export const Marquee = styled.div`
     width: 100%;
     height: 100%;
     margin: 0;
-    line-height: 25px;
+    line-height: 24px;
     background-image: linear-gradient(
       to right,
       red,
@@ -47,7 +47,7 @@ export const Construction = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 `
 
 export const Song = styled.figure`

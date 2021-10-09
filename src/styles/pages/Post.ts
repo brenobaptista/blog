@@ -14,8 +14,8 @@ export const Body = styled.div`
   blockquote {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 20px;
-    border-left: 5px solid ${props => props.theme.colors.text};
+    padding-left: 16px;
+    border-left: 4px solid ${props => props.theme.colors.text};
   }
 
   code,
@@ -26,7 +26,7 @@ export const Body = styled.div`
   }
 
   pre {
-    padding: 25px 30px;
+    padding: 24px;
     border: ${props =>
       props.theme.mode === 'retro'
         ? `1px solid ${props.theme.colors.selector}`
@@ -36,7 +36,7 @@ export const Body = styled.div`
   }
 
   p > code {
-    padding: 3px 5px;
+    padding: 4px 8px;
     border-radius: 4px;
     word-break: break-word;
   }
@@ -123,7 +123,7 @@ export const Body = styled.div`
 
   pre[class*='language-'].line-numbers {
     position: relative;
-    padding-left: 3.8em;
+    padding-left: 60px;
     counter-reset: linenumber;
   }
 
@@ -135,58 +135,44 @@ export const Body = styled.div`
   .line-numbers .line-numbers-rows {
     position: absolute;
     pointer-events: none;
-    top: -2px;
-    font-size: 100%;
-    left: -3.8em;
-    width: 3em;
-    letter-spacing: -1px;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+    width: 48px;
+    top: -2px;
+    left: -60px;
+    letter-spacing: -1px;
   }
 
   .line-numbers-rows > span {
-    display: block;
     counter-increment: linenumber;
   }
 
   .line-numbers-rows > span:before {
+    display: block;
+    padding-right: 12px;
+    text-align: right;
     content: counter(linenumber);
     color: ${props => props.theme.colors.altText};
-    display: block;
-    padding-right: 0.8em;
-    text-align: right;
   }
 
   /* Plugin command-line for Prism.js */
 
   .command-line-prompt {
-    display: block;
     float: left;
-    font-size: 100%;
-    letter-spacing: -1px;
     pointer-events: none;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
 
   .command-line-prompt > span:before {
+    padding-right: 24px;
     color: ${props => props.theme.colors.altText};
     content: '$';
-    display: block;
-    padding-right: 1.5em;
   }
 `
 
 export const Separator = styled.hr`
   border: 0;
   height: 1px;
-  margin-top: 26px;
+  margin-top: 24px;
   background-color: ${props => props.theme.colors.selector};
   background-image: ${props => {
     const { selector, selectorEdge } = props.theme.colors
@@ -198,12 +184,10 @@ export const Separator = styled.hr`
 export const ShortBio = styled.div`
   svg {
     float: left;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin: 8px;
   }
 
   p {
-    margin-left: 10px;
     text-align: justify;
   }
 `
@@ -225,7 +209,7 @@ export const MorePosts = styled.div`
 
   a {
     margin-bottom: 16px;
-    padding: 10px 12px;
+    padding: 16px;
     border: ${props =>
       props.theme.mode === 'retro'
         ? `1px solid ${props.theme.colors.selector}`
