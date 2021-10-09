@@ -12,20 +12,21 @@ date: '2020-10-31'
 
 ### 1. Zsh
 
-Z shell is an alternative to Bash.
-Many of the useful features of bash were incorporated into zsh, but also many original features were added.
+<dfn><abbr title="Z shell">Zsh</abbr></dfn> is an alternative to Bash.
+Many of the useful features of Bash were incorporated into Zsh, but also many original features were added.
 
 [How to install Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
 ### 2. Oh My Zsh
 
-Oh My Zsh is a framework for managing your Zsh configuration.
+<dfn>Oh My Zsh</dfn> is a framework for managing your Zsh configuration.
 
 [How to install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ### 3. Fira Code
 
-Fira Code is a popular and free monospaced font with programming ligatures.
+<dfn>Fira Code</dfn> is a popular and free monospaced font with programming ligatures.
+
 If you have Fira Code installed in your browser, you'll be able to see how cool it is with the example below:
 
 `!= ->> ++ :=`
@@ -37,14 +38,15 @@ You still need to install it on your system, though.
 
 ### 4. Dracula
 
-Dracula is a popular dark theme that can be used in a lot of graphical interfaces.
+<dfn>Dracula</dfn> is a popular dark theme that can be used in a lot of graphical interfaces.
+
 Use it in your terminal because it's the best color palette for dark mode.
 
 [How to integrate Dracula into your terminal](https://draculatheme.com)
 
 ### 5. Spaceship Prompt
 
-Spaceship is a minimalistic, powerful and extremely customizable Zsh prompt.
+<dfn>Spaceship</dfn> is a minimalistic, powerful and extremely customizable Zsh prompt.
 
 [How to install Spaceship](https://github.com/denysdovhan/spaceship-prompt)
 
@@ -93,7 +95,7 @@ It will install 3 very useful plugins.
 
 ### VSCode terminal
 
-Add this to your VSCode configuration:
+Add this to your <abbr title="Visual Studio Code">VSCode</abbr> configuration:
 
 ```bash[class="line-numbers"]
 "terminal.integrated.shell.osx": "usr/bin/zsh"

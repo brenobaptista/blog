@@ -8,9 +8,9 @@ date: '2021-03-06'
 
 ## Introduction <span class="emoji">👋🏻</span>
 
-**What is QEMU?** QEMU is a free and open-source machine emulator that can perform hardware virtualization. It is a lot faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
+**What is QEMU?** <dfn>QEMU</dfn> is a free and open-source machine emulator that can perform hardware virtualization. It is a lot faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
 
-**But what is KVM?** KVM (Kernel-based Virtual Machine) is a virtualization module in the Linux kernel.
+**But what is KVM?** <dfn><abbr title="Kernel-based Virtual Machine">KVM</abbr></dfn> is a virtualization module in the Linux kernel.
 
 > In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
 
@@ -23,7 +23,7 @@ date: '2021-03-06'
 ### Install KVM
 
 Try your distro's packaging system, this is the easiest and recommended way of installing KVM.
-It's usually called "qemu-kvm" or "kvm".
+It's usually called `qemu-kvm` or `kvm`.
 
 ## Kali Linux <span class="emoji">🕵🏻</span>
 
@@ -33,7 +33,7 @@ First of all, you need to download the `.iso` file for Kali Linux (or any other 
 
 ### Boot in Live Mode
 
-Go to the directory where you downloaded the official .iso and run this command in your terminal to boot a live version of Kali Linux. No changes to the operational system will be saved.
+Go to the directory where you downloaded the official `.iso` and run this command in your terminal to boot a live version of Kali Linux. No changes to the operational system will be saved.
 
 ```bash[class="command-line"]
 qemu-system-x86_64 \
@@ -47,9 +47,9 @@ qemu-system-x86_64 \
 
 ![Kali Linux Live](/images/creating-virtual-machines-using-qemu-kvm/kali-live.jpg)
 
-> Shortcut to get in and out of fullscreen mode: Ctrl + Alt + F
+> Shortcut to get in and out of fullscreen mode: `Ctrl + Alt + F`
 >
-> Shortcut to release the mouse from the virtual machine window: Ctrl + Alt + G
+> Shortcut to release the mouse from the virtual machine window: `Ctrl + Alt + G`
 
 ### Create data storage
 
@@ -69,7 +69,7 @@ Now you can modify the previous command to install Kali Linux in the virtual dis
 
 2. After installing Kali Linux, you can boot from disk if you remove both `-boot d` and `-cdrom kali-linux-2020.3-live-amd64.iso` flags from our command.
 
-3. You can create a bash script (don't forget to make it executable running `chmod +x script.sh` in your terminal) and use it every time you want to start the virtual machine. You can tweak this script to customize your virtual machine, for example adding more RAM or CPU cores.
+3. You can create a Bash script (don't forget to make it executable running `chmod +x script.sh` in your terminal) and use it every time you want to start the virtual machine. You can tweak this script to customize your virtual machine, for example adding more RAM or CPU cores.
 
 ```bash[class="line-numbers"]
 #!/bin/bash
@@ -86,6 +86,6 @@ qemu-system-x86_64 \
 
 ## MacOS <span class="emoji">🍎</span>
 
-There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a VM running `macOS Catalina` in dark mode:
+There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a virtual machine running `macOS Catalina` in dark mode:
 
 ![MacOS](/images/creating-virtual-machines-using-qemu-kvm/mac.jpg)

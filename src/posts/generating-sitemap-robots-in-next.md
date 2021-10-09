@@ -4,9 +4,9 @@ description: 'Improve your SEO by providing a sitemap to search engines.'
 date: '2021-03-27'
 ---
 
-You can provide search engines with all the URLs for your website using a sitemap. This allows for easier indexing and more efficient crawling by the search engines. In case you have a blog or another website that creates new pages constantly, it's better to generate a dynamic sitemap.
+You can provide search engines with all the <abbr title="Uniform Resource Locator">URLs</abbr> for your website using a sitemap. This allows for easier indexing and more efficient crawling by the search engines. In case you have a blog or another website that creates new pages constantly, it's better to generate a dynamic sitemap.
 
-I'm using markdown files to manage my blog posts, but there is also a way to dynamically create a sitemap if you get your content from a CMS (short for Content Management System).
+I'm using markdown files to manage my blog posts, but there is also a way to dynamically create a sitemap if you get your content from a <abbr title="Content Management System">CMS</abbr>.
 
 ## Sitemap (sitemap.xml) <span class="emoji">🗺️</span>
 

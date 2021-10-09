@@ -4,7 +4,9 @@ description: 'Allow visitors to get updated for new content on your blog.'
 date: '2021-04-17'
 ---
 
-An RSS feed is a standardized XML file that contains information about your blog and all its articles. Check the [RSS 2.0 specification page](https://validator.w3.org/feed/docs/rss2.html) for further information. I use [QuiteRSS](https://quiterss.org/en/download) to consume content over the internet because of the dark mode.
+An <dfn><abbr title="Really Simple Syndication">RSS</abbr></dfn> feed is a standardized <abbr title="eXtensible Markup Language">XML</abbr> file that contains information about your blog and all its articles.
+
+Check the [RSS 2.0 specification page](https://validator.w3.org/feed/docs/rss2.html) for further information.
 
 ## Really Simple Syndication (rss.xml) <span class="emoji">🐵</span>
 
@@ -88,4 +90,4 @@ You can check if your RSS is valid through the [W3C Feed Validation Service](htt
 
 People need to subscribe to your RSS feed in your blog. Check the header of my [homepage](/). Notice that the last social icon is an RSS icon that shares my RSS feed.
 
-In case you want to add this icon to your blog, check my blog post about [working with SVGs in React using SVGR](/posts/working-with-svgs-in-react-using-svgr). I got the SVG for free from [Font Awesome](https://fontawesome.com/).
+In case you want to add this icon to your blog, check my blog post about [working with SVGs in React using SVGR](/posts/working-with-svgs-in-react-using-svgr).

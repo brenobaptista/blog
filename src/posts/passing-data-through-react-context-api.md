@@ -8,7 +8,7 @@ date: '2021-05-29'
 
 ## Introduction <span class="emoji">👋🏻</span>
 
-The Context API is an alternative to "prop drilling", or moving props from grandparent to parent to child, and so on. You should use this API when you need to pass props through several intermediates and to multiple components.
+<dfn>The Context API</dfn> is an alternative to "prop drilling", or moving props from grandparent to parent to child, and so on. You should use this API when you need to pass props through several intermediates and to multiple components.
 
 You're gonna create a "global state" to share data between components, like Redux. But unlike Redux, you don't need to install any external libraries because it comes with React since version 16.3. Also, it's way simpler to understand and implement in your code.
 
@@ -42,7 +42,7 @@ export default ExampleContext
 
 The provider needs to exist as a wrapper around the parent component (or container). You can add it to `App.js` or any other parent. In our case, we're gonna add it to a file called `HighComponent.js`, which will render our consumers.
 
-But remember that in your real-world website the provider will provide access to the data to all child, grandchild, great-grandchild and so on. BTW, you provide context the same way both for class and functional components.
+But remember that in your real-world website the provider will provide access to the data to all child, grandchild, great-grandchild and so on. By the way, you provide context the same way both for class and functional components.
 
 `src/components/HighComponent.js`
 

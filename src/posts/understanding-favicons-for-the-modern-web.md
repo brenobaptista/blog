@@ -4,7 +4,7 @@ description: 'The web bloat has finally reached favicons.'
 date: '2021-10-02'
 ---
 
-First of all, adding a favicon to your website used to be very simple. You'd just created a `.ico` file (which usually contains sizes 16x16, 32x32 and 48x48) and put it in the root directory. Then you would add to the `head` of your website:
+First of all, adding a <abbr title="favorite icon">favicon</abbr> to your website used to be very simple. You'd just created a `.ico` file (which usually contains sizes 16x16, 32x32 and 48x48) and put it in the root directory. Then you would add to the `head` of your website:
 
 ```markup[class="line-numbers"]
 <link rel="icon" href="./favicon.ico" type="image/x-icon">

@@ -4,11 +4,9 @@ description: 'How to use sed to find and replace strings in files.'
 date: '2021-05-08'
 ---
 
-> sed stands for stream editor
-
 ## Find and Replace Strings <span class="emoji">🔎</span>
 
-The best part about `sed` is that it uses `regex` (regular expression), which makes it super easy to match patterns.
+The best part about <abbr title="stream editor">sed</abbr> is that it uses <abbr title="regular expression">regex</abbr>, which makes it super easy to match patterns.
 
 The general form of searching and replacing text using `sed` takes the following form:
 

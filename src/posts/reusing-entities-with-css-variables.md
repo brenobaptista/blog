@@ -6,7 +6,7 @@ date: '2021-08-01'
 
 > Custom properties are also known as CSS variables or cascading variables.
 
-The company I work for uses Sass to style its components. I tried using Sass variables to handle dark mode, but it didn't work. Then I discovered that I should use CSS variables to do that instead.
+The company I work for uses <abbr title="Syntactically Awesome Style Sheets">Sass</abbr> to style its components. I tried using Sass variables to handle dark mode, but it didn't work. Then I discovered that I should use CSS variables to do that instead.
 
 Implementing dark mode with Sass is impracticable because it is a preprocessor language, so any changes imply a new generating process and a page refresh. But CSS variables are easily accessible and can be changed dynamically at any time. You can even [use Sass variables inside CSS variables](https://www.sass-lang.com/documentation/breaking-changes/css-vars).
 

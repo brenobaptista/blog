@@ -8,7 +8,9 @@ date: '2021-09-11'
 
 ## ESLint <span class="emoji">👀</span>
 
-ESLint will make sure your code has a level of clarity that allows reading and maintaining easier for anyone who has to work on it. Next.js and Create React App already come with ESLint, so we need only to extend its configuration to add Airbnb's rules.
+<dfn>ESLint</dfn> will make sure your code has a level of clarity that allows reading and maintaining easier for anyone who has to work on it.
+
+Next.js and Create React App already come with ESLint, so we need only to extend its configuration to add Airbnb's rules.
 
 - [Install ESLint's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Install Airbnb's ESLint rules](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
@@ -63,7 +65,9 @@ My configuration for `.eslintrc.json` using Next.js and TypeScript:
 
 ## Prettier <span class="emoji">🦋</span>
 
-Prettier is an opinionated code formatter. Using Prettier will automatically fix and beautify your code. In VSCode, you can go to settings and use Prettier as the default formatter and enable format on save.
+<dfn>Prettier</dfn> is an opinionated code formatter. Using Prettier will automatically fix and beautify your code.
+
+In <abbr title="Visual Studio Code">VSCode</abbr>, you can go to settings and use Prettier as the default formatter and enable format on save.
 
 - [Install Prettier's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Install Prettier in your project](https://prettier.io/docs/en/install.html)
@@ -83,7 +87,7 @@ My `.prettierrc.json` configuration:
 
 ## Lint Staged <span class="emoji">🛑💩</span>
 
-Instead of running ESLint and Prettier on the entire project every time, Lint Staged will make sure you only lint files that will be committed.
+Instead of running ESLint and Prettier on the entire project every time, <dfn>Lint Staged</dfn> will make sure you only lint files that will be committed.
 
 - [Install Lint Staged in your project](https://github.com/okonet/lint-staged)
 
@@ -98,7 +102,9 @@ My `.lintstagedrc.json` configuration:
 
 ## Husky <span class="emoji">🐺</span>
 
-Husky makes it easy to configure git hooks. It allows you to run commands upon commits, pushes and other hooks. Lint Staged already installs Husky in its script.
+<dfn>Husky</dfn> makes it easy to configure git hooks. It allows you to run commands upon commits, pushes and other hooks.
+
+> Lint Staged already installs Husky in its script.
 
 - [Husky's website](https://typicode.github.io/husky/#/)
 
@@ -117,7 +123,9 @@ yarn jest
 
 ## Bonus: EditorConfig <span class="emoji">🐀</span>
 
-EditorConfig is not exclusive to JavaScript projects, but it's a good idea to use it if you work in a team. It maintains consistent coding styles for developers working across different editors. Just install its extension and create a configuration file to make it work.
+<dfn>EditorConfig</dfn> is not exclusive to JavaScript projects, but it's a good idea to use it if you work in a team. It maintains consistent coding styles for developers working across different editors.
+
+Just install its extension and create a configuration file to make it work.
 
 - [EditorConfig's website](https://editorconfig.org/)
 - [Install EditorConfig's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)

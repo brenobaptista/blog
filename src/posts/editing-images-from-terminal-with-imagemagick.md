@@ -8,7 +8,7 @@ date: '2021-02-13'
 
 ## Introduction <span class="emoji">👋🏻</span>
 
-ImageMagick is free and open-source software that allows you to accomplish tasks on images from the command-line.
+<dfn>ImageMagick</dfn> is free and open-source software that allows you to accomplish tasks on images from the command-line.
 
 - Have you ever opened Photoshop just to resize an image?
 - Or used an online service to upload an image and download the same image into a different format?
@@ -28,7 +28,7 @@ If you said "yes" to any of the questions above, I'll teach you how to efficient
 
 ### Converting <span class="emoji">🔄</span>
 
-You use the `convert` command to use ImageMagick (in newer versions you can use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with a new format, like this:
+You use the `convert` command to use ImageMagick (in newer versions you should use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with a new format, like this:
 
 ```bash[class="command-line"]
 convert old-image.jpg new-image.png
@@ -94,7 +94,7 @@ convert -trim purple-dog.jpg trimmed-dog.jpg
 
 ## Optimizing images <span class="emoji">🎓</span>
 
-You can optimize JPEG images using the snippet below:
+You can optimize <abbr title="Joint Photographic Experts Group">JPG</abbr> images using the snippet below:
 
 ```bash[class="command-line"]
 convert image-unoptimized.jpg \
@@ -129,4 +129,4 @@ convert -background '#0f1523' \
 
 To exercise your skills with ImageMagick, write a bash script that automatically adds a watermark to photos. Have fun!
 
-BTW, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/). You can use it to record your screen or webcam, convert videos into different formats, or even make simple edits.
+By the way, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/). You can use it to record your screen or webcam, convert videos into different formats, or even make simple edits.
