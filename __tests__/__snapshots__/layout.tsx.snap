@@ -209,7 +209,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           class="c10"
         >
           <a
-            href="mailto:contact@brenobaptista.tech"
+            href="mailto:brenobaptista@protonmail.com"
           >
             Email
           </a>
@@ -459,7 +459,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
           class="c10"
         >
           <a
-            href="mailto:contact@brenobaptista.tech"
+            href="mailto:brenobaptista@protonmail.com"
           >
             Email
           </a>

@@ -73,7 +73,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
           >
             <RSS width={40} height={40} />
           </a>
-          <a href='mailto:contact@brenobaptista.tech'>
+          <a href='mailto:brenobaptista@protonmail.com'>
             <Email width={40} height={40} />
           </a>
         </SocialIcons>

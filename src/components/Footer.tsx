@@ -39,7 +39,7 @@ const Footer = (): JSX.Element => {
           <Link href='/donations'>Donations</Link>
         </Column>
         <Column>
-          <a href='mailto:contact@brenobaptista.tech'>Email</a>
+          <a href='mailto:brenobaptista@protonmail.com'>Email</a>
           <Link href='/resume'>Résumé</Link>
         </Column>
       </Nav>
