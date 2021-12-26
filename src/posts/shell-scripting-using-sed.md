@@ -4,7 +4,7 @@ description: 'How to use sed to find and replace strings in files.'
 date: '2021-05-08'
 ---
 
-## Find and Replace Strings <span class="emoji">🔎</span>
+## Find and Replace Strings
 
 The best part about <abbr title="stream editor">sed</abbr> is that it uses <abbr title="regular expression">regex</abbr>, which makes it super easy to match patterns.
 
@@ -30,7 +30,7 @@ sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
 
 All other use cases are similar to this one, so I recommend you learn the basics of `regex` before learning `sed`.
 
-## Scripting <span class="emoji">📜</span>
+## Scripting
 
 This is a script I wrote using `sed` some time ago. It replaces some strings in different files between the `desktop` and the `web` versions of an app. Notice that the last line uses `sed` to do that task like this: `sed -i "$scripts" $files`.
 

@@ -6,7 +6,7 @@ date: '2021-09-11'
 
 ## Table of Contents
 
-## ESLint <span class="emoji">👀</span>
+## ESLint
 
 <dfn>ESLint</dfn> will make sure your code has a level of clarity that allows reading and maintaining easier for anyone who has to work on it.
 
@@ -63,7 +63,7 @@ My configuration for `.eslintrc.json` using Next.js and TypeScript:
 }
 ```
 
-## Prettier <span class="emoji">🦋</span>
+## Prettier
 
 <dfn>Prettier</dfn> is an opinionated code formatter. Using Prettier will automatically fix and beautify your code.
 
@@ -85,7 +85,7 @@ My `.prettierrc.json` configuration:
 }
 ```
 
-## Lint Staged <span class="emoji">🛑💩</span>
+## Lint Staged
 
 Instead of running ESLint and Prettier on the entire project every time, <dfn>Lint Staged</dfn> will make sure you only lint files that will be committed.
 
@@ -100,7 +100,7 @@ My `.lintstagedrc.json` configuration:
 }
 ```
 
-## Husky <span class="emoji">🐺</span>
+## Husky
 
 <dfn>Husky</dfn> makes it easy to configure git hooks. It allows you to run commands upon commits, pushes and other hooks.
 
@@ -121,7 +121,7 @@ My `pre-push` configuration (I use `Jest` for testing):
 yarn jest
 ```
 
-## Bonus: EditorConfig <span class="emoji">🐀</span>
+## Bonus: EditorConfig
 
 <dfn>EditorConfig</dfn> is not exclusive to JavaScript projects, but it's a good idea to use it if you work in a team. It maintains consistent coding styles for developers working across different editors.
 
@@ -144,7 +144,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 ```
 
-## That's all Folks! <span class="emoji">🐰🥕</span>
+## That's all Folks!
 
 Using these tools will make you deliver better code in your projects. Integrate them early on your projects to avoid some technical debt.
 

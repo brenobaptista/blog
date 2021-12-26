@@ -8,7 +8,7 @@ date: '2020-10-31'
 
 ## Table of Contents
 
-## Dependencies <span class="emoji">🔧</span>
+## Dependencies
 
 ### 1. Zsh
 
@@ -50,7 +50,7 @@ Use it in your terminal because it's the best color palette for dark mode.
 
 [How to install Spaceship](https://github.com/denysdovhan/spaceship-prompt)
 
-## Additional Configuration <span class="emoji">🎓</span>
+## Additional Configuration
 
 ### Setup Spaceship
 

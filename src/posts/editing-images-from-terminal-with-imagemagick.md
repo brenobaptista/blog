@@ -6,7 +6,7 @@ date: '2021-02-13'
 
 ## Table of Contents
 
-## Introduction <span class="emoji">👋🏻</span>
+## Introduction
 
 <dfn>ImageMagick</dfn> is free and open-source software that allows you to accomplish tasks on images from the command-line.
 
@@ -17,16 +17,16 @@ date: '2021-02-13'
 
 If you said "yes" to any of the questions above, I'll teach you how to efficiently do those tasks.
 
-## Installing ImageMagick <span class="emoji">🔧</span>
+## Installing ImageMagick
 
 > If you use GNU/Linux you probably don't need to install it, it probably already came installed with your distribution.
 > Try running `magick --version` in your terminal to check if you have it installed.
 
 [Official ImageMagick download page](https://imagemagick.org/script/download.php)
 
-## Editing images <span class="emoji">🎞️</span>
+## Editing images
 
-### Converting <span class="emoji">🔄</span>
+### Converting
 
 You use the `convert` command to use ImageMagick (in newer versions you should use `magick` instead). You pass the image with its format and expect a new image (you can use whatever name you want) with a new format, like this:
 
@@ -34,7 +34,7 @@ You use the `convert` command to use ImageMagick (in newer versions you should u
 convert old-image.jpg new-image.png
 ```
 
-### Resizing <span class="emoji">🗜️</span>
+### Resizing
 
 You can pass the `-resize` flag to resize an image with a size in pixels or percentage. Also, you could [pass options](https://legacy.imagemagick.org/Usage/resize/) to ignore aspect ratio, for example.
 
@@ -44,7 +44,7 @@ convert -resize 512x512 image.jpg resized-image.jpg
 
 > You can do multiple tasks at the same time, like resizing and converting an image using only one command.
 
-### Adding transparency <span class="emoji">👻</span>
+### Adding transparency
 
 Take this drawing of a black dog on a white background.
 
@@ -71,7 +71,7 @@ dog.jpg transparent-dog.png
 
 > Every case is different, so you need to try different values for `-fuzz`.
 
-### Applying color <span class="emoji">🖌️</span>
+### Applying color
 
 Now, let's do the opposite and apply some color to the background:
 
@@ -82,7 +82,7 @@ transparent-dog.png purple-dog.jpg
 
 ![Purple Dog](/images/editing-images-from-terminal-with-imagemagick/purple-dog.jpg)
 
-### Trimming <span class="emoji">✂️</span>
+### Trimming
 
 Let's crop the empty space around the image above:
 
@@ -92,7 +92,7 @@ convert -trim purple-dog.jpg trimmed-dog.jpg
 
 ![Trimmed Dog](/images/editing-images-from-terminal-with-imagemagick/trimmed-dog.jpg)
 
-## Optimizing images <span class="emoji">🎓</span>
+## Optimizing images
 
 You can optimize <abbr title="Joint Photographic Experts Group">JPG</abbr> images using the snippet below:
 
@@ -108,7 +108,7 @@ convert image-unoptimized.jpg \
 
 This strategy focuses on following Google Lighthouse's guide on how to pass the "Optimize Images" Lighthouse audit in Chrome DevTools. Read more on this [Stack Overflow post](https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick).
 
-## Creating images <span class="emoji">🤓</span>
+## Creating images
 
 You can use ImageMagick to create simple images with text:
 
@@ -125,7 +125,7 @@ convert -background '#0f1523' \
 
 ![Simple image with text](/images/editing-images-from-terminal-with-imagemagick/imagemagick.jpg)
 
-## That's all Folks! <span class="emoji">🐰🥕</span>
+## That's all Folks!
 
 To exercise your skills with ImageMagick, write a bash script that automatically adds a watermark to photos. Have fun!
 

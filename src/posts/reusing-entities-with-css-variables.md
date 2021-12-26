@@ -10,7 +10,7 @@ The company I work for uses <abbr title="Syntactically Awesome Style Sheets">Sas
 
 Implementing dark mode with Sass is impracticable because it is a preprocessor language, so any changes imply a new generating process and a page refresh. But CSS variables are easily accessible and can be changed dynamically at any time. You can even [use Sass variables inside CSS variables](https://www.sass-lang.com/documentation/breaking-changes/css-vars).
 
-## Basic Usage <span class="emoji">👷</span>
+## Basic Usage
 
 To declare a CSS variable you will have to add a double dash before the name of that var:
 
@@ -28,7 +28,7 @@ To use the value of the CSS variable, we can use the `var` function:
 }
 ```
 
-## Adding Dark Mode <span class="emoji">🧛</span>
+## Adding Dark Mode
 
 Create a file called `_variables.scss`, so you can set up all CSS variables. Then import that file into your main `styles.scss` using [Sass partials](https://www.sass-lang.com/documentation/at-rules/use).
 
@@ -67,7 +67,7 @@ useEffect(() => {
 }, [theme])
 ```
 
-## Use Inspector <span class="emoji">👀</span>
+## Use Inspector
 
 To check CSS variables, open the Inspector for your web browser (right-click a page and select Inspect) and scroll down until you see something like this:
 

@@ -8,7 +8,7 @@ You can provide search engines with all the <abbr title="Uniform Resource Locato
 
 I'm using markdown files to manage my blog posts, but there is also a way to dynamically create a sitemap if you get your content from a <abbr title="Content Management System">CMS</abbr>.
 
-## Sitemap (sitemap.xml) <span class="emoji">🗺️</span>
+## Sitemap (sitemap.xml)
 
 First, install [globby](https://www.npmjs.com/package/globby) in your project. We'll use it to get all the routes from the `pages` folder using a [glob](https://en.wikipedia.org/wiki/Glob_%28programming%29).
 
@@ -78,7 +78,7 @@ export async function getStaticProps() {
 
 In my case, this is [my sitemap.xml](https://brenobaptista.vercel.app/sitemap.xml). It gets updated dynamically as I push new content.
 
-## Robots exclusion standard (robots.txt) <span class="emoji">🤖</span>
+## Robots exclusion standard (robots.txt)
 
 You can use `robots.txt` to tell search engines where is your sitemap instead of manually submitting it to all of them. You can also tell them which routes they are or are not allowed to index.
 

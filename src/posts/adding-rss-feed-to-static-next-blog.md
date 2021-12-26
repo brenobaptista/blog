@@ -8,7 +8,7 @@ An <dfn><abbr title="Really Simple Syndication">RSS</abbr></dfn> feed is a stand
 
 Check the [RSS 2.0 specification page](https://validator.w3.org/feed/docs/rss2.html) for further information.
 
-## Really Simple Syndication (rss.xml) <span class="emoji">🐵</span>
+## Really Simple Syndication (rss.xml)
 
 This is my `lib/rss.ts` so you can modify it to fit your case:
 
@@ -86,7 +86,7 @@ This is [my rss.xml](http://brenobaptista.vercel.app/rss.xml) in production.
 
 You can check if your RSS is valid through the [W3C Feed Validation Service](https://validator.w3.org/feed/).
 
-## Sharing your RSS Feed <span class="emoji">👪</span>
+## Sharing your RSS Feed
 
 People need to subscribe to your RSS feed in your blog. Check the header of my [homepage](/). Notice that the last social icon is an RSS icon that shares my RSS feed.
 

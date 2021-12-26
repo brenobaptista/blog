@@ -6,7 +6,7 @@ date: '2021-07-10'
 
 ## Table of Contents
 
-## Introduction <span class="emoji">👋🏻</span>
+## Introduction
 
 When setting an operation running (like fetching data from Firebase), you have to use asynchronous code to wait until the result has returned before running another operation.
 
@@ -18,7 +18,7 @@ Main thread:          | Task A |                  | Task B |
 
 If you don't do that, since JavaScript doesn't know how long the data will take to download, it will run the code immediately after the previous line without waiting for a valid response.
 
-## Promise object <span class="emoji">🙏🏻</span>
+## Promise object
 
 A `Promise` is in one of these states:
 
@@ -28,9 +28,9 @@ A `Promise` is in one of these states:
 
 > A promise is said to be settled if it is either fulfilled or rejected, but not pending.
 
-## Creating promises <span class="emoji">🤓</span>
+## Creating promises
 
-### Promise <span class="emoji">🧓🏻</span>
+### Promise
 
 When creating your promises from the ground up (like in your libraries), use the good old Promise with the help of `.then.catch`.
 
@@ -48,7 +48,7 @@ promise()
   .finally(() => console.log("Promise is settled!")) // optional
 ```
 
-#### Chained Promises <span class="emoji">⛓️</span>
+#### Chained Promises
 
 You can use .then.then.then... instead of using .then().catch() inside a .then multiple times.
 
@@ -60,11 +60,11 @@ myPromise
   .catch(handleAnyReject)
 ```
 
-#### Other methods <span class="emoji">➕</span>
+#### Other methods
 
 You can check methods like Promise.all and Promise.race on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#static_methods).
 
-### Async/await <span class="emoji">⏱️</span>
+### Async/await
 
 When using a promise somebody else created, use `async/await`. It's just syntactic sugar for promise use.
 
@@ -86,7 +86,7 @@ const newPromise = async () => {
 
 > When you are at the top level you can't use await, so you need to use .then().catch() in this case.
 
-## Reviewing code <span class="emoji">🧠</span>
+## Reviewing code
 
 Now that you understand async functions in JavaScript, let's analyze the **wrong** code below I found in real life:
 
@@ -154,7 +154,7 @@ const fetchDashboardData = async uid => {
 }
 ```
 
-## That's all Folks! <span class="emoji">🐰🥕</span>
+## That's all Folks!
 
 The best way to learn how to use asynchronous functions in JavaScript is to practice a lot in your projects. So this is your homework:
 

@@ -12,7 +12,7 @@ First of all, adding a <abbr title="favorite icon">favicon</abbr> to your websit
 
 Nowadays, a favicon is a far more advanced topic because we need to take care of specific stuff created by Google, Apple and Microsoft. However, there is no consensus on exactly how we should use favicons, so different people suggest different solutions. Therefore, adding a simple favicon to the site you're developing can become a nightmare.
 
-## Recommended steps <span class="emoji">👣</span>
+## Recommended steps
 
 - Create a favicon in the SVG format.
 
@@ -40,7 +40,7 @@ Nowadays, a favicon is a far more advanced topic because we need to take care of
 
 > You can use the same theme color as you used in site.webmanifest.
 
-## FAQ <span class="emoji">🕵</span>
+## FAQ
 
 Check [Masa Kudamatsu's definitive edition of "How to Favicon in 2021"](https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7) for more answers.
 

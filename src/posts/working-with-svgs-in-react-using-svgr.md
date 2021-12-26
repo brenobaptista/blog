@@ -12,7 +12,7 @@ Just to make sure we're all on the same page:
 - **Why?** SVG images don't lose any quality if they are zoomed or resized. They are also lightweight.
 - **How?** Use [Inkscape](https://inkscape.org/) to create and edit, but you could use a text editor to make tiny edits.
 
-## Create React App <span class="emoji">⚛️</span>
+## Create React App
 
 SVGs can be imported and used directly as a component in your code. The image is not loaded as a separate file. Instead, it’s rendered along with the <abbr title="HyperText Markup Language">HTML</abbr>. Don't forget to check the [documentation](https://create-react-app.dev/docs/adding-images-fonts-and-files/#adding-svgs).
 
@@ -31,7 +31,7 @@ export default App;
 
 But, unfortunately, this approach only works with `create-react-app`, because it uses `SVGR` (the method below) under the hood to make it possible to transform and import SVGs as a component. If you are not using `create-react-app`, convert the SVGs yourself using `SVGR`.
 
-## SVGR <span class="emoji">🦁</span>
+## SVGR
 
 <dfn>[SVGR](https://react-svgr.com/)</dfn> is an **awesome** tool that transforms SVG into React components easily. But why should you use it? Because if you use it your SVGs will be bundled with the JS, so they will be available really fast. Besides, it makes the maintenance of SVGs super easy since they are transformed into React components.
 
@@ -60,6 +60,6 @@ export default GitHub
 
 If you need to convert just a few SVGs right now or if you want to test this library, you can play with the [Playground](https://react-svgr.com/playground/). But if you need to convert a bunch of SVGs at the same time you should read the [Documentation](https://react-svgr.com/docs/getting-started/) to use SVGR as a CLI tool for your project.
 
-## Accessible SVGs <span class="emoji">🧑‍🦯</span>
+## Accessible SVGs
 
 There's a [complete guide](https://css-tricks.com/accessible-svgs/) explaining how to create accessible SVGs. Basically, you _at least_ need to add a `title` tag to your SVG to make it possible for screen readers to understand what the image is about.
