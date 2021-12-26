@@ -163,6 +163,7 @@ export const Body = styled.div`
   }
 
   .command-line-prompt > span:before {
+    display: block;
     padding-right: 24px;
     color: ${props => props.theme.colors.altText};
     content: '$';
