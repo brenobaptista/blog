@@ -97,6 +97,10 @@ export default createGlobalStyle`
       "url('/images/retro/cursor/text.cur'), text"};
   }
 
+  abbr {
+    cursor: help;
+  }
+
   ::selection {
     color: ${props => props.theme.colors.altBackground};
     background-color: ${props => props.theme.colors.primary};
