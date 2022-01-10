@@ -79,14 +79,16 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 ### Zinit and Zsh plugins
 
-[How to install Zinit](https://github.com/zdharma/zinit)
+> Update: the organization `zdharma` was deleted by the author and the community created a new one called `zdharma-continuum`
+
+[How to install Zinit](https://github.com/zdharma-continuum/zinit)
 
 After installing Zinit:
 
 At the end of `~/.zshrc`, after `### End of Zinit's installer chunk`, add this:
 
 ```bash[class="line-numbers"]
-zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 ```
