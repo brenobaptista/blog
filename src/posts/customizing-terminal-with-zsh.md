@@ -94,11 +94,3 @@ zinit light zsh-users/zsh-completions
 ```
 
 It will install 3 very useful plugins.
-
-### Add emojis
-
-If you use yarn and you would like to have emojis in your terminal, run this in your brand-new terminal:
-
-```bash[class="command-line"]
-yarn config set -- --emoji true
-```
