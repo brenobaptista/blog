@@ -21,34 +21,19 @@ Many of the useful features of Bash were incorporated into Zsh, but also many or
 
 <dfn>Oh My Zsh</dfn> is a framework for managing your Zsh configuration.
 
-[How to install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+[How to install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 
-### 3. Fira Code
-
-<dfn>Fira Code</dfn> is a popular and free monospaced font with programming ligatures.
-
-If you have Fira Code installed in your browser, you'll be able to see how cool it is with the example below:
-
-`!= ->> ++ :=`
-`<!-- => === <=`
-
-You still need to install it on your system, though.
-
-[How to install Fira Code into your OS](https://github.com/tonsky/FiraCode/releases)
-
-### 4. Dracula
-
-<dfn>Dracula</dfn> is a popular dark theme that can be used in a lot of graphical interfaces.
-
-Use it in your terminal because it's the best color palette for dark mode.
-
-[How to integrate Dracula into your terminal](https://draculatheme.com)
-
-### 5. Spaceship Prompt
+### 3. Spaceship Prompt
 
 <dfn>Spaceship</dfn> is a minimalistic, powerful and extremely customizable Zsh prompt.
 
-[How to install Spaceship](https://github.com/denysdovhan/spaceship-prompt)
+[How to install Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#oh-my-zsh)
+
+### 4. Zinit
+
+<dfn>Zinit</dfn> is a flexible and fast Zsh plugin manager that will allow you to install everything from GitHub and other sites.
+
+[How to install Zinit](https://github.com/zdharma-continuum/zinit#install)
 
 ## Additional Configuration
 
@@ -77,15 +62,9 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 ```
 
-### Zinit and Zsh plugins
+### Setup Zsh plugins
 
-> Update: the organization `zdharma` was deleted by the author and the community created a new one called `zdharma-continuum`
-
-[How to install Zinit](https://github.com/zdharma-continuum/zinit)
-
-After installing Zinit:
-
-At the end of `~/.zshrc`, after `### End of Zinit's installer chunk`, add this:
+At the end of `~/.zshrc`, add this:
 
 ```bash[class="line-numbers"]
 zinit light zdharma-continuum/fast-syntax-highlighting
@@ -93,4 +72,4 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 ```
 
-It will install 3 very useful plugins.
+Then reload your terminal to install the plugins.
