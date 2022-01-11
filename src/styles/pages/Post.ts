@@ -35,10 +35,14 @@ export const Body = styled.div`
     overflow: auto;
   }
 
-  p > code {
+  code {
     padding: 4px 8px;
     border-radius: 4px;
     word-break: break-word;
+  }
+
+  pre > code {
+    padding: 0;
   }
 
   li,
