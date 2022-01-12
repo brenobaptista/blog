@@ -4,10 +4,6 @@ description: 'Use this CLI tool to create, edit, compose or convert images.'
 date: '2021-02-13'
 ---
 
-## Table of Contents
-
-## Introduction
-
 <dfn>ImageMagick</dfn> is free and open-source software that allows you to accomplish tasks on images from the command-line.
 
 - Have you ever opened Photoshop just to resize an image?
@@ -16,6 +12,8 @@ date: '2021-02-13'
 - Or tried to apply transparency to an image?
 
 If you said "yes" to any of the questions above, I'll teach you how to efficiently do those tasks.
+
+## Table of Contents
 
 ## Installing ImageMagick
 

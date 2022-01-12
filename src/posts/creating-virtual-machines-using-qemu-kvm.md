@@ -4,15 +4,13 @@ description: 'Squeeze every last drop of performance out of your virtual machine
 date: '2021-03-06'
 ---
 
-## Table of Contents
-
-## Introduction
-
 **What is QEMU?** <dfn>QEMU</dfn> is a free and open-source machine emulator that can perform hardware virtualization. It is a lot faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
 
-**But what is KVM?** <dfn><abbr title="Kernel-based Virtual Machine">KVM</abbr></dfn> is a virtualization module in the Linux kernel.
+**What is KVM?** <dfn><abbr title="Kernel-based Virtual Machine">KVM</abbr></dfn> is a virtualization module in the Linux kernel.
 
-> In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
+In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
+
+## Table of Contents
 
 ## Dependencies
 

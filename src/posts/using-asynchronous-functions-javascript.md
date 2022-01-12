@@ -4,19 +4,9 @@ description: 'I’m on it. When I’m done, I’ll send you the result.'
 date: '2021-07-10'
 ---
 
+When executing an operation that needs a response from an external resource, you have to use asynchronous code to wait until the result has returned what you want before running the next operation. If you don't do that, it will run the next line of code immediately after the previous line without waiting for a valid response.
+
 ## Table of Contents
-
-## Introduction
-
-When setting an operation running (like fetching data from Firebase), you have to use asynchronous code to wait until the result has returned before running another operation.
-
-```markup
-Main thread:          | Task A |                  | Task B |
-                          ↓                           ↑
-    Promise:              |------async operation------|
-```
-
-If you don't do that, since JavaScript doesn't know how long the data will take to download, it will run the code immediately after the previous line without waiting for a valid response.
 
 ## Promise object
 

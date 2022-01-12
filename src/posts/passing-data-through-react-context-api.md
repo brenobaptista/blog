@@ -4,10 +4,6 @@ description: 'Context provides a way to share data between components.'
 date: '2021-05-29'
 ---
 
-## Table of Contents
-
-## Introduction
-
 <dfn>The Context API</dfn> is an alternative to "prop drilling", or moving props from grandparent to parent to child, and so on. You should use this API when you need to pass props through several intermediates and to multiple components.
 
 You're gonna create a "global state" to share data between components, like Redux. But unlike Redux, you don't need to install any external libraries because it comes with React since version 16.3. Also, it's way simpler to understand and implement in your code.
@@ -21,6 +17,8 @@ You're gonna create a "global state" to share data between components, like Redu
 ```
 
 The best way to understand a technology is by using it, so run `npx create-react-app react-context-api` and let's learn it together!
+
+## Table of Contents
 
 ## 1. Creating the context
 
