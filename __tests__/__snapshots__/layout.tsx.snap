@@ -58,8 +58,8 @@ exports[`matches snapshot in dracula mode 1`] = `
   justify-content: space-between;
   position: relative;
   cursor: url('/images/retro/cursor/pointer.cur'),pointer;
-  border-radius: 64px;
-  width: 64px;
+  border-radius: 56px;
+  width: 56px;
   height: 28px;
   background-color: orange;
 }
@@ -313,8 +313,8 @@ exports[`matches snapshot in retro mode for home 1`] = `
   justify-content: space-between;
   position: relative;
   cursor: url('/images/retro/cursor/pointer.cur'),pointer;
-  border-radius: 64px;
-  width: 64px;
+  border-radius: 56px;
+  width: 56px;
   height: 28px;
   background-color: orange;
 }
