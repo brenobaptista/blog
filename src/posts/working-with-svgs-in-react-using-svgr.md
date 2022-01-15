@@ -50,7 +50,6 @@ const GitHub = ({ width, height }: Props): JSX.Element => (
     width={width}
     height={height}
   >
-    <title>GitHub logo</title>
     <path d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3 ...' />
   </svg>
 )
@@ -59,7 +58,3 @@ export default GitHub
 ```
 
 If you need to convert just a few SVGs right now or if you want to test this library, you can play with the [Playground](https://react-svgr.com/playground/). But if you need to convert a bunch of SVGs at the same time you should read the [Documentation](https://react-svgr.com/docs/getting-started/) to use SVGR as a CLI tool for your project.
-
-## Accessible SVGs
-
-There's a [complete guide](https://css-tricks.com/accessible-svgs/) explaining how to create accessible SVGs. Basically, you _at least_ need to add a `title` tag to your SVG to make it possible for screen readers to understand what the image is about.
