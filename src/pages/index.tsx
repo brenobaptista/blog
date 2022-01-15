@@ -54,7 +54,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         />
       </Head>
       <HomeHeader>
-        <PortraitWrapper aria-hidden='true'>
+        <PortraitWrapper>
           <Portrait width={128} height={128} />
         </PortraitWrapper>
         <h1>Breno Baptista</h1>

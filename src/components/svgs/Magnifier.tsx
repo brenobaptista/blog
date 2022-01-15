@@ -9,7 +9,9 @@ const Magnifier = ({ width, height }: Props): JSX.Element => (
     viewBox='0 0 24 24'
     width={width}
     height={height}
+    role='img'
   >
+    <title>Search icon</title>
     <path
       strokeLinecap='round'
       strokeLinejoin='round'
