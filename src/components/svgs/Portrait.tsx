@@ -10,7 +10,6 @@ const Portrait = ({ width, height }: Props): JSX.Element => (
     width={width}
     height={height}
   >
-    <title>Low-poly portrait</title>
     <path
       d='M672.986 213.118l50.7 34.187.19 49.466-16.631 82.639-3.418-54.309-18.267-54.835z'
       fill='#453a2d'

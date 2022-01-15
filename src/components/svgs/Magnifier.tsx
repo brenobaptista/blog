@@ -10,7 +10,6 @@ const Magnifier = ({ width, height }: Props): JSX.Element => (
     width={width}
     height={height}
   >
-    <title>Search</title>
     <path
       strokeLinecap='round'
       strokeLinejoin='round'
