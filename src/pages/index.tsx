@@ -85,7 +85,6 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
             href='https://joinmassive.com/team'
             target='_blank'
             rel='noreferrer noopener'
-            aria-label='Massive'
           >
             Massive
           </a>

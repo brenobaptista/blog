@@ -30,7 +30,6 @@ const Search = ({ allPostsData, setPosts }: Props): JSX.Element => {
         type='text'
         onChange={event => setSearchValue(event.target.value.toLowerCase())}
         placeholder='Search posts'
-        aria-label='Search posts'
       />
       <IconWrapper>
         <Magnifier width={16} height={16} />
