@@ -26,20 +26,14 @@ const Footer = (): JSX.Element => {
           >
             GitHub
           </a>
-          <a
-            href='https://www.linkedin.com/in/breno-baptista/'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            LinkedIn
-          </a>
         </Column>
         <Column>
-          <Link href='/rss.xml'>RSS Feed</Link>
-          <Link href='/donations'>Donations</Link>
+          <Link href='/rss.xml'>RSS</Link>
         </Column>
         <Column>
           <a href='mailto:brenobaptista@protonmail.com'>Email</a>
+        </Column>
+        <Column>
           <Link href='/resume'>Résumé</Link>
         </Column>
       </Nav>

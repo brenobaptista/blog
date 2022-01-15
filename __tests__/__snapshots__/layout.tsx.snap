@@ -155,6 +155,7 @@ exports[`matches snapshot in dracula mode 1`] = `
         type="checkbox"
       />
       <label
+        aria-label="Change the visual styles"
         class="c4 c5"
         data-testid="label-checkbox"
         for="checkbox"
@@ -183,13 +184,6 @@ exports[`matches snapshot in dracula mode 1`] = `
           >
             GitHub
           </a>
-          <a
-            href="https://www.linkedin.com/in/breno-baptista/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
         </div>
         <div
           class="c10"
@@ -197,12 +191,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           <a
             href="/rss.xml"
           >
-            RSS Feed
-          </a>
-          <a
-            href="/donations"
-          >
-            Donations
+            RSS
           </a>
         </div>
         <div
@@ -213,6 +202,10 @@ exports[`matches snapshot in dracula mode 1`] = `
           >
             Email
           </a>
+        </div>
+        <div
+          class="c10"
+        >
           <a
             href="/resume"
           >
@@ -405,6 +398,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         type="checkbox"
       />
       <label
+        aria-label="Change the visual styles"
         class="c4 c5"
         data-testid="label-checkbox"
         for="checkbox"
@@ -433,13 +427,6 @@ exports[`matches snapshot in retro mode for home 1`] = `
           >
             GitHub
           </a>
-          <a
-            href="https://www.linkedin.com/in/breno-baptista/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
         </div>
         <div
           class="c10"
@@ -447,12 +434,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
           <a
             href="/rss.xml"
           >
-            RSS Feed
-          </a>
-          <a
-            href="/donations"
-          >
-            Donations
+            RSS
           </a>
         </div>
         <div
@@ -463,6 +445,10 @@ exports[`matches snapshot in retro mode for home 1`] = `
           >
             Email
           </a>
+        </div>
+        <div
+          class="c10"
+        >
           <a
             href="/resume"
           >
