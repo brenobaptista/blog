@@ -3,6 +3,7 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   <svg
+    aria-hidden="true"
     height="16"
     viewBox="0 0 24 24"
     width="16"
