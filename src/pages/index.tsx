@@ -63,6 +63,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
             href='https://github.com/brenobaptista/'
             target='_blank'
             rel='noreferrer noopener'
+            aria-label='GitHub profile'
           >
             <GitHub width={40} height={40} />
           </a>
@@ -70,10 +71,14 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
             href='https://brenobaptista.vercel.app/rss.xml'
             target='_blank'
             rel='noreferrer noopener'
+            aria-label='RSS feed'
           >
             <RSS width={40} height={40} />
           </a>
-          <a href='mailto:brenobaptista@protonmail.com'>
+          <a
+            href='mailto:brenobaptista@protonmail.com'
+            aria-label='Contact me by email'
+          >
             <Email width={40} height={40} />
           </a>
         </SocialIcons>
