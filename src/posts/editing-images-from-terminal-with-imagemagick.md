@@ -125,6 +125,4 @@ convert -background '#0f1523' \
 
 ## That's all Folks!
 
-To exercise your skills with ImageMagick, write a bash script that automatically adds a watermark to photos. Have fun!
-
 By the way, the equivalent of ImageMagick for video and audio is called [FFmpeg](https://ffmpeg.org/). You can use it to record your screen or webcam, convert videos into different formats, or even make simple edits.

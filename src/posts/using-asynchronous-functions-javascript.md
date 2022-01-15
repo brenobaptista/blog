@@ -143,9 +143,3 @@ const fetchDashboardData = async uid => {
   }
 }
 ```
-
-## That's all Folks!
-
-The best way to learn how to use asynchronous functions in JavaScript is to practice a lot in your projects. So this is your homework:
-
-- Create a simple project and practice using [Firebase](https://firebase.google.com/) methods (they are asynchronous). Use this post as a reference when you're stuck.
