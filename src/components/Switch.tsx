@@ -30,6 +30,7 @@ const Switch = (): JSX.Element => {
         tabIndex={0}
         onKeyDown={event => handleKeyPress(event)}
         data-testid='label-checkbox'
+        aria-label='Change the visual styles'
       >
         <Toggle />
       </Background>
