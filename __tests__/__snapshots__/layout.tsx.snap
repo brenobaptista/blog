@@ -178,6 +178,15 @@ exports[`matches snapshot in dracula mode 1`] = `
           class="c10"
         >
           <a
+            href="mailto:brenobaptista@protonmail.com"
+          >
+            Email
+          </a>
+        </div>
+        <div
+          class="c10"
+        >
+          <a
             href="https://github.com/brenobaptista/"
             rel="noreferrer noopener"
             target="_blank"
@@ -192,15 +201,6 @@ exports[`matches snapshot in dracula mode 1`] = `
             href="/rss.xml"
           >
             RSS
-          </a>
-        </div>
-        <div
-          class="c10"
-        >
-          <a
-            href="mailto:brenobaptista@protonmail.com"
-          >
-            Email
           </a>
         </div>
         <div
@@ -421,6 +421,15 @@ exports[`matches snapshot in retro mode for home 1`] = `
           class="c10"
         >
           <a
+            href="mailto:brenobaptista@protonmail.com"
+          >
+            Email
+          </a>
+        </div>
+        <div
+          class="c10"
+        >
+          <a
             href="https://github.com/brenobaptista/"
             rel="noreferrer noopener"
             target="_blank"
@@ -435,15 +444,6 @@ exports[`matches snapshot in retro mode for home 1`] = `
             href="/rss.xml"
           >
             RSS
-          </a>
-        </div>
-        <div
-          class="c10"
-        >
-          <a
-            href="mailto:brenobaptista@protonmail.com"
-          >
-            Email
           </a>
         </div>
         <div
