@@ -56,10 +56,10 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
 
   svg {
-    fill: ${props => props.theme.colors.primary};
+    stroke: ${props => props.theme.colors.primary};
 
     &:hover {
-      fill: ${props => props.theme.colors.visited};
+      stroke: ${props => props.theme.colors.visited};
     }
   }
 
