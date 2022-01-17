@@ -19,6 +19,9 @@ const Footer = (): JSX.Element => {
       <Separator />
       <Nav>
         <Column>
+          <a href='mailto:brenobaptista@protonmail.com'>Email</a>
+        </Column>
+        <Column>
           <a
             href='https://github.com/brenobaptista/'
             target='_blank'
@@ -30,9 +33,7 @@ const Footer = (): JSX.Element => {
         <Column>
           <Link href='/rss.xml'>RSS</Link>
         </Column>
-        <Column>
-          <a href='mailto:brenobaptista@protonmail.com'>Email</a>
-        </Column>
+
         <Column>
           <Link href='/resume'>Résumé</Link>
         </Column>

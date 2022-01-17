@@ -60,6 +60,12 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         <h1>Breno Baptista</h1>
         <SocialIcons>
           <a
+            href='mailto:brenobaptista@protonmail.com'
+            aria-label='Contact me by email'
+          >
+            <Email width={40} height={40} />
+          </a>
+          <a
             href='https://github.com/brenobaptista/'
             target='_blank'
             rel='noreferrer noopener'
@@ -74,12 +80,6 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
             aria-label='RSS feed'
           >
             <RSS width={40} height={40} />
-          </a>
-          <a
-            href='mailto:brenobaptista@protonmail.com'
-            aria-label='Contact me by email'
-          >
-            <Email width={40} height={40} />
           </a>
         </SocialIcons>
       </HomeHeader>
