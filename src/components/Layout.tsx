@@ -5,6 +5,7 @@ import Sparkles from './Sparkles'
 import Switch from './Switch'
 
 import { Container, Toolbar } from '../styles/components/Layout'
+import RetroGlobalStyle from '../styles/retro-global'
 
 interface Props {
   children: React.ReactNode
@@ -26,6 +27,7 @@ const Layout = ({ children, home = false }: Props): JSX.Element => (
     <main>{children}</main>
     <Footer />
     <Sparkles />
+    <RetroGlobalStyle />
   </Container>
 )
 

@@ -22,9 +22,6 @@ export default createGlobalStyle`
   a {
     color: ${props => props.theme.colors.primary};
     text-decoration: none;
-    cursor: ${props =>
-      props.theme.mode === 'retro' &&
-      "url('/images/retro/cursor/pointer.cur'), pointer"};
 
     &:hover {
       text-decoration: underline;
@@ -37,14 +34,9 @@ export default createGlobalStyle`
 
   html {
     line-height: 1.6;
-    font-size: ${props => (props.theme.mode === 'retro' ? '1.05em' : '1.25em')};
+    font-size: 1.25em;
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
-    background-image: ${props =>
-      props.theme.mode === 'retro' ? 'url(/images/retro/space.gif)' : 'none'};
-    cursor: ${props =>
-      props.theme.mode === 'retro' &&
-      "url('/images/retro/cursor/default.cur'), default"};
     scroll-behavior: smooth;
   }
 
@@ -66,35 +58,6 @@ export default createGlobalStyle`
   h4,
   p {
     margin: 16px 0;
-  }
-
-  h1,
-  h2,
-  h3 {
-    ${props =>
-      props.theme.mode === 'retro' &&
-      `
-      margin-left: 8px;
-      letter-spacing: 0.0625rem;
-      text-shadow:
-        -1px 1px violet,
-        -2px 2px indigo,
-        -3px 3px blue,
-        -4px 4px green,
-        -5px 5px yellow,
-        -6px 6px orange,
-        -7px 7px red;
-    `}
-  }
-
-  h1,
-  h2,
-  h3,
-  p,
-  code {
-    cursor: ${props =>
-      props.theme.mode === 'retro' &&
-      "url('/images/retro/cursor/text.cur'), text"};
   }
 
   abbr {
