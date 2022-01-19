@@ -264,6 +264,10 @@ const Sparkles = (): JSX.Element => {
       document.removeEventListener('mousemove', moveMouse)
       window.removeEventListener('resize', calculateScreen)
       window.removeEventListener('scroll', calculateScroll)
+
+      document.querySelectorAll('.sparkle').forEach(sparkle => {
+        sparkle.remove()
+      })
     }
   }, [theme])
 
