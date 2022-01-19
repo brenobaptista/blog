@@ -69,7 +69,7 @@ const Resume = (): JSX.Element => (
         <Section>
           <h2>EXPERIENCE</h2>
           <div>
-            <b>Software Engineer, Massive</b>
+            <b>Jr. Software Engineer, Massive</b>
             <i>August 2020 - Present (USA, remote)</i>
             <ul>
               <li>
