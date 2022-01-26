@@ -82,17 +82,10 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
       </HomeHeader>
       <Intro>
         <p>
-          I’m a developer from Brazil. I work as a software engineer at{' '}
-          <a
-            href='https://joinmassive.com/team'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Massive
-          </a>
-          . I write blog posts about things I’ve found interesting during my
-          daily explorations on the web. I’m interested in Linux, shell
-          scripting, open-source software, privacy and front-end development.
+          I’m a full-stack developer who likes to explore new things every day.
+          I write blog posts about things I’ve found interesting during my daily
+          explorations on the web. I’m interested in Linux, digital privacy and
+          front-end development.
         </p>
       </Intro>
       <Retro />

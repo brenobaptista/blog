@@ -63,8 +63,7 @@ const Resume = (): JSX.Element => (
         </Header>
         <p>
           I’m a full-stack developer who likes to explore new things every day.
-          I’m interested in everything that involves GNU/Linux, shell scripting,
-          open-source software, privacy and front-end web technologies.
+          I’m interested in Linux, digital privacy and front-end development.
         </p>
         <Section>
           <h2>EXPERIENCE</h2>
