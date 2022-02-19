@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  overflow: hidden;
+  position: relative;
+  height: 24px;
+  margin: 32px 0;
+}
+
+.c0 p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 24px;
+  background-image: linear-gradient( to right, red, orange, yellow, green, blue, indigo, violet );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation: scroll-left 15s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <p>
+      WARNING! This site is currently under heavy construction.
+    </p>
+  </div>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+<div
+    class="c0"
+  >
+    <img
+      alt="Man with jackhammer"
+      height="100"
+      src="/images/retro/jackhammer.gif"
+    />
+    <img
+      alt="Dancing hamster"
+      height="100"
+      src="/images/retro/hamster.gif"
+    />
+    <img
+      alt="Spinning money"
+      height="100"
+      src="/images/retro/money.gif"
+    />
+    <img
+      alt="World Wide Web"
+      height="100"
+      src="/images/retro/worldwideweb.gif"
+    />
+  </div>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+<figure
+    class="c0"
+  >
+    <figcaption>
+      Unleash the champion within:
+    </figcaption>
+    <audio
+      controls=""
+    >
+      <source
+        src="/audio/champions.ogg"
+        type="audio/ogg"
+      />
+      <source
+        src="/audio/champions.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+  </figure>
+</DocumentFragment>
+`;
