@@ -10,58 +10,12 @@ date: '2021-09-11'
 
 <dfn>ESLint</dfn> will make sure your code has a level of clarity that allows reading and maintaining easier for anyone who has to work on it.
 
-Next.js and Create React App already come with ESLint, so we need only to extend its configuration to add Airbnb's rules.
+Next.js and Create React App already come with ESLint, so we need only to extend its configuration if needed.
 
 - [Install ESLint's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Install Airbnb's ESLint rules](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 - [Configure ESLint in Next.js](https://nextjs.org/docs/basic-features/eslint)
 - [Turn off conflicts with Prettier](https://github.com/prettier/eslint-config-prettier)
 - [Run Prettier as a rule](https://github.com/prettier/eslint-plugin-prettier)
-
-My configuration for `.eslintrc.json` using Next.js and TypeScript:
-
-```json[class="line-numbers"]
-{
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true,
-    "jest": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "airbnb",
-    "plugin:prettier/recommended",
-    "plugin:@next/next/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint"],
-  "rules": {
-    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-    "import/extensions": ["error", { "extensions": [".tsx"] }],
-    "import/no-extraneous-dependencies": "off",
-    "import/no-unresolved": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-    "react/prop-types": "off",
-    "react/require-default-props": "off",
-    "no-undef": "off",
-    "no-unused-vars": "off",
-    "no-plusplus": "off",
-    "@next/next/no-img-element": "off"
-  }
-}
-```
 
 ## Prettier
 
