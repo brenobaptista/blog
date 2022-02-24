@@ -10,6 +10,8 @@ const customJestConfig = {
     '<rootDir>/.next/',
     '<rootDir>/coverage/',
     '<rootDir>/src/components/svgs/index.tsx',
+    '<rootDir>/src/components/Sparkles.tsx',
+    '<rootDir>/src/lib',
     '<rootDir>/src/pages/_app.tsx',
     '<rootDir>/src/pages/_document.tsx',
     '<rootDir>/src/styles',
