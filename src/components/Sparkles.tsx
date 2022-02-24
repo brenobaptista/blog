@@ -269,6 +269,7 @@ const Sparkles = (): JSX.Element => {
         sparkle.remove()
       })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theme])
 
   return null
