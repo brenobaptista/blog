@@ -1,6 +1,6 @@
-import { render, fireEvent } from '../testUtils'
-import Switch from '../src/components/Switch'
-import ThemeContext from '../src/contexts/ThemeContext'
+import { render, fireEvent } from '../../testUtils'
+import Switch from '../../src/components/Switch'
+import ThemeContext from '../../src/contexts/ThemeContext'
 
 const renderWithContext = (ui, value) =>
   render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)
