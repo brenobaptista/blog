@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot in dracula mode 1`] = `
+<DocumentFragment>
+  .c0 {
+  color: #000000;
+  background: #ffffff;
+  width: 210mm;
+  height: 297mm;
+  padding: 25mm;
+}
+
+.c1 {
+  line-height: normal;
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.c3 div {
+  font-size: 1rem;
+}
+
+.c4 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  color: #000000;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c5 h2 {
+  font-size: 0.9rem;
+  margin: 16px 0;
+}
+
+.c5 b,
+.c5 i {
+  display: block;
+}
+
+.c5 div {
+  margin-bottom: 16px;
+}
+
+@media screen {
+  .c0 {
+    margin: 5mm auto;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <header
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <h1>
+            Breno Baptista
+          </h1>
+          <div>
+            Full-Stack Developer
+          </div>
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <a
+              aria-label="Contact me by email"
+              href="mailto:brenobaptista@protonmail.com"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Contact me by email
+                </title>
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline
+                  points="22,6 12,13 2,6"
+                />
+              </svg>
+              <span>
+                brenobaptista@protomail.com
+              </span>
+            </a>
+          </div>
+          <div>
+            <a
+              aria-label="My blog"
+              href="https://www.brenobaptista.tech/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  RSS feed
+                </title>
+                <path
+                  d="M4 4a16 16 0 0 1 16 16"
+                />
+                <path
+                  d="M4 11a9 9 0 0 1 9 9"
+                />
+                <circle
+                  cx="5"
+                  cy="19"
+                  r="1"
+                />
+              </svg>
+              brenobaptista.tech
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/brenobaptista/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  GitHub profile
+                </title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              <span>
+                github.com/brenobaptista
+              </span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <p>
+        I’m a full-stack developer who likes to explore new things every day. I’m interested in Linux, digital privacy and front-end development.
+      </p>
+      <div
+        class="c5"
+      >
+        <h2>
+          EXPERIENCE
+        </h2>
+        <div>
+          <b>
+            Jr. Software Engineer, Massive
+          </b>
+          <i>
+            August 2020 - Present (USA, remote)
+          </i>
+          <ul>
+            <li>
+              Fought intrusive advertising by developing desktop apps to connect partners with our SDK.
+            </li>
+            <li>
+              Led efforts to vastly reduce technical debt in systems, launching a refactored partner dashboard with better UI/UX and performance.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <b>
+            Jr. Full-Stack Developer, Privacy Pixel
+          </b>
+          <i>
+            January 2020 - August 2020 (USA, remote)
+          </i>
+          <ul>
+            <li>
+              Helped businesses comply with data laws (GDPR/CCPA) with our plugins.
+            </li>
+            <li>
+              Developed internal tools to increase developer efficiency using Bash.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <b>
+            Product Owner, Acens
+          </b>
+          <i>
+            February 2019 - January 2020 (Brazil)
+          </i>
+          <ul>
+            <li>
+              Volunteered to help businesses build online an presence.
+            </li>
+            <li>
+              Managed several projects and improved the organization productivity by enforcing agile across the company.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="c5"
+      >
+        <h2>
+          EDUCATION
+        </h2>
+        <div>
+          <b>
+            Bachelor’s Degree in Computer Science
+          </b>
+          <div>
+            Unifacvest University Center (2019 - 2023)
+          </div>
+        </div>
+        <div>
+          <b>
+            Scrum Fundamentals Certified (SFC™)
+          </b>
+          <div>
+            SCRUMstudy - Accreditation Body for Scrum and Agile (2020)
+          </div>
+        </div>
+      </div>
+      <div
+        class="c5"
+      >
+        <h2>
+          SKILLS
+        </h2>
+        <div>
+          JavaScript, TypeScript, Go, Bash
+        </div>
+        <div>
+          HTML, CSS, Sass, Styled Components, Tailwind, React, React Native, Next.js, Accessibility, Jest/RTL
+        </div>
+        <div>
+          Node.js, Express, Fiber, Chi, MongoDB, Postgres
+        </div>
+        <div>
+          Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
