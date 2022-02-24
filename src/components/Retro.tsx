@@ -1,5 +1,10 @@
 import { useContext } from 'react'
+import Image from 'next/image'
 
+import hamster from '../../public/images/retro/hamster.gif'
+import jackhammer from '../../public/images/retro/jackhammer.gif'
+import money from '../../public/images/retro/money.gif'
+import worldwideweb from '../../public/images/retro/worldwideweb.gif'
 import ThemeContext from '../contexts/ThemeContext'
 import { Marquee, Construction, Song } from '../styles/components/Retro'
 
@@ -14,26 +19,10 @@ const Retro = (): JSX.Element => {
             <p>WARNING! This site is currently under heavy construction.</p>
           </Marquee>
           <Construction>
-            <img
-              src='/images/retro/jackhammer.gif'
-              alt='Man with jackhammer'
-              height='100'
-            />
-            <img
-              src='/images/retro/hamster.gif'
-              alt='Dancing hamster'
-              height='100'
-            />
-            <img
-              src='/images/retro/money.gif'
-              alt='Spinning money'
-              height='100'
-            />
-            <img
-              src='/images/retro/worldwideweb.gif'
-              alt='World Wide Web'
-              height='100'
-            />
+            <Image src={hamster} alt='Dancing hamster' height='100' />
+            <Image src={jackhammer} alt='Man with jackhammer' height='100' />
+            <Image src={money} alt='Spinning money' height='100' />
+            <Image src={worldwideweb} alt='World Wide Web' height='100' />
           </Construction>
           <Song>
             <figcaption>Unleash the champion within:</figcaption>

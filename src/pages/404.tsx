@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
+import pitucho from '../../public/images/pitucho.jpg'
 import Layout from '../components/Layout'
 
 const Custom404 = (): JSX.Element => (
@@ -13,7 +15,7 @@ const Custom404 = (): JSX.Element => (
       It seems you have found something that used to exist or you spelled
       something wrong. But at least you have found Pitucho:
     </p>
-    <img src='/images/pitucho.jpg' alt='Pitucho' />
+    <Image src={pitucho} alt='Pitucho' placeholder='blur' />
   </Layout>
 )
 
