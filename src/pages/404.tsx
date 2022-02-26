@@ -15,7 +15,7 @@ const Custom404 = (): JSX.Element => (
       It seems you have found something that used to exist or you spelled
       something wrong. But at least you have found Pitucho:
     </p>
-    <Image src={pitucho} alt='Pitucho' placeholder='blur' />
+    <Image src={pitucho} alt='Pitucho' />
   </Layout>
 )
 
