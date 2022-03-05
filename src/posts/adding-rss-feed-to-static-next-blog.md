@@ -10,35 +10,37 @@ Check the [RSS 2.0 specification page](https://validator.w3.org/feed/docs/rss2.h
 
 ## Really Simple Syndication (rss.xml)
 
-This is my `lib/rss.ts` so you can modify it to fit your case:
+Create a `lib/rss.ts` file and add this code (modify it to fit your case):
 
 ```tsx[class="line-numbers"]
 import fs from 'fs'
 import { Post } from './posts'
 
-const generateRssItem = (post: Post): string => `
-  <item>
-    <guid>https://brenobaptista.vercel.app/posts/${post.id}</guid>
-    <title>${post.title}</title>
-    <link>https://brenobaptista.vercel.app/posts/${post.id}</link>
-    <description>${post.description}</description>
-    <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-  </item>
-`
+const baseUrl = 'https://brenobaptista.vercel.app'
 
-const generateRssChannel = (posts: Post[]): string => `
-  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-      <title>Breno Baptista</title>
-      <link>https://brenobaptista.vercel.app</link>
-      <description>I'm a full-stack developer from Brazil.</description>
-      <language>en</language>
-      <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
-      <atom:link href="https://brenobaptista.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
-      ${posts.map(generateRssItem).join('')}
-    </channel>
-  </rss>
-`
+const generateRssItem = (post: Post): string => `
+    <item>
+      <guid>${baseUrl}/posts/${post.id}</guid>
+      <title>${post.title}</title>
+      <link>${baseUrl}/posts/${post.id}</link>
+      <description>${post.description}</description>
+      <pubDate>${new Date(post.date).toUTCString()}</pubDate>
+    </item>`
+
+const generateRssChannel = (
+  posts: Post[]
+): string => `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Breno Baptista</title>
+    <link>${baseUrl}</link>
+    <description>I'm a full-stack developer from Brazil.</description>
+    <language>en</language>
+    <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
+    <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
+    ${posts.map(generateRssItem).join('')}
+  </channel>
+</rss>`
 
 const generateRss = (allPostsData: Post[]): void => {
   if (process.env.NODE_ENV === 'development') {
@@ -52,6 +54,8 @@ const generateRss = (allPostsData: Post[]): void => {
 
 export default generateRss
 ```
+
+You may notice that the indentation seems a little weird, but it's required to make the generated file look properly formatted.
 
 Import the `generateRss` function in the `pages/index.tsx` file and add it to the `getStaticProps` to make sure Next.js will call this function during the build of the `pages/index.tsx` page in production and generate the sitemap.
 
