@@ -1,12 +1,13 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
-import prism from 'remark-prism'
-import slug from 'remark-slug'
-import headings from 'remark-autolink-headings'
-import toc from 'remark-toc'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkToc from 'remark-toc'
+import remarkPrism from 'remark-prism'
+import remarkRehype from 'remark-rehype'
+import rehypeSlug from 'rehype-slug'
+import rehypeStringify from 'rehype-stringify'
 
 interface MatterResultData {
   title: string
@@ -96,16 +97,17 @@ export const getPostData = async (id: string): Promise<PostData> => {
 
   const matterResult = matter(fileContents)
 
-  const processedContent = await remark()
-    .use(slug)
-    .use(headings)
-    .use(toc)
-    .use(html)
-    .use(prism, {
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkToc)
+    .use(remarkPrism, {
       plugins: ['line-numbers', 'command-line']
     })
+    .use(remarkRehype)
+    .use(rehypeSlug)
+    .use(rehypeStringify)
     .process(matterResult.content)
-  const contentHtml = processedContent.toString()
+  const contentHtml = String(processedContent)
 
   const { title, description, date } = matterResult.data
 
