@@ -61,19 +61,22 @@ const Resume = (): JSX.Element => (
             </div>
           </Social>
         </Header>
-        <p>
-          I’m a full-stack developer who likes to explore new things every day.
-          I’m interested in Linux, digital privacy and front-end development.
-        </p>
         <Section>
           <h2>EXPERIENCE</h2>
           <div>
-            <b>Jr. Software Engineer, Massive</b>
-            <i>August 2020 - Present (USA, remote)</i>
+            <strong>Software Engineer, Alternative</strong>
+            <em>February 2022 - Present (USA, remote)</em>
+            <ul>
+              <li>Built containerized microservices in Go.</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Jr. Software Engineer, Massive</strong>
+            <em>August 2020 - January 2022 (USA, remote)</em>
             <ul>
               <li>
                 Fought intrusive advertising by developing desktop apps to
-                connect partners with our SDK.
+                connect partners.
               </li>
               <li>
                 Led efforts to vastly reduce technical debt in systems,
@@ -83,8 +86,8 @@ const Resume = (): JSX.Element => (
             </ul>
           </div>
           <div>
-            <b>Jr. Full-Stack Developer, Privacy Pixel</b>
-            <i>January 2020 - August 2020 (USA, remote)</i>
+            <strong>Jr. Full-Stack Developer, Privacy Pixel</strong>
+            <em>January 2020 - August 2020 (USA, remote)</em>
             <ul>
               <li>
                 Helped businesses comply with data laws (GDPR/CCPA) with our
@@ -97,13 +100,16 @@ const Resume = (): JSX.Element => (
             </ul>
           </div>
           <div>
-            <b>Product Owner, Acens</b>
-            <i>February 2019 - January 2020 (Brazil)</i>
+            <strong>Product Owner, Acens</strong>
+            <em>February 2019 - January 2020 (Brazil)</em>
             <ul>
-              <li>Volunteered to help businesses build online an presence.</li>
               <li>
-                Managed several projects and improved the organization
-                productivity by enforcing agile across the company.
+                Volunteered to help businesses build an online presence by
+                managing projects.
+              </li>
+              <li>
+                Improved the organization productivity by enforcing agile across
+                the company.
               </li>
             </ul>
           </div>
@@ -111,11 +117,11 @@ const Resume = (): JSX.Element => (
         <Section>
           <h2>EDUCATION</h2>
           <div>
-            <b>Bachelor’s Degree in Computer Science</b>
+            <strong>Bachelor’s Degree in Computer Science</strong>
             <div>Unifacvest University Center (2019 - 2023)</div>
           </div>
           <div>
-            <b>Scrum Fundamentals Certified (SFC™)</b>
+            <strong>Scrum Fundamentals Certified (SFC™)</strong>
             <div>
               SCRUMstudy - Accreditation Body for Scrum and Agile (2020)
             </div>
@@ -123,13 +129,19 @@ const Resume = (): JSX.Element => (
         </Section>
         <Section>
           <h2>SKILLS</h2>
-          <div>JavaScript, TypeScript, Go, Bash</div>
           <div>
-            HTML, CSS, Sass, Styled Components, Tailwind, React, React Native,
-            Next.js, Accessibility, Jest/RTL
+            <b>Languages: </b>JavaScript, TypeScript, Go, Bash
           </div>
-          <div>Node.js, Express, Fiber, Chi, MongoDB, Postgres</div>
-          <div>Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD</div>
+          <div>
+            <b>Front-end: </b>HTML, CSS, Sass, Styled Components, Tailwind,
+            React, React Native, Next.js, Accessibility, Jest/RTL
+          </div>
+          <div>
+            <b>Back-end: </b>Node.js, Express, Fiber, Chi, MongoDB, Postgres
+          </div>
+          <div>
+            <b>DevOps: </b>Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD
+          </div>
         </Section>
       </Content>
     </Page>

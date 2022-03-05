@@ -7,12 +7,12 @@ exports[`matches snapshot in dracula mode 1`] = `
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 25mm;
+  padding: 22mm 25mm;
 }
 
 .c1 {
   line-height: normal;
-  font-size: 0.8em;
+  font-size: 0.75rem;
   text-align: justify;
 }
 
@@ -21,10 +21,6 @@ exports[`matches snapshot in dracula mode 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   gap: 32px;
 }
 
@@ -41,7 +37,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 }
 
 .c3 div {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .c4 a {
@@ -63,12 +59,21 @@ exports[`matches snapshot in dracula mode 1`] = `
 
 .c5 h2 {
   font-size: 0.9rem;
-  margin: 16px 0;
+  margin: 24px 0 8px;
 }
 
-.c5 b,
-.c5 i {
+.c5 strong,
+.c5 em {
   display: block;
+}
+
+.c5 ul {
+  margin: 10px 0 20px;
+  padding-left: 30px;
+}
+
+.c5 li {
+  padding-bottom: 5px;
 }
 
 .c5 div {
@@ -204,9 +209,6 @@ exports[`matches snapshot in dracula mode 1`] = `
           </div>
         </div>
       </header>
-      <p>
-        I’m a full-stack developer who likes to explore new things every day. I’m interested in Linux, digital privacy and front-end development.
-      </p>
       <div
         class="c5"
       >
@@ -214,15 +216,28 @@ exports[`matches snapshot in dracula mode 1`] = `
           EXPERIENCE
         </h2>
         <div>
-          <b>
-            Jr. Software Engineer, Massive
-          </b>
-          <i>
-            August 2020 - Present (USA, remote)
-          </i>
+          <strong>
+            Software Engineer, Alternative
+          </strong>
+          <em>
+            February 2022 - Present (USA, remote)
+          </em>
           <ul>
             <li>
-              Fought intrusive advertising by developing desktop apps to connect partners with our SDK.
+              Built containerized microservices in Go.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <strong>
+            Jr. Software Engineer, Massive
+          </strong>
+          <em>
+            August 2020 - January 2022 (USA, remote)
+          </em>
+          <ul>
+            <li>
+              Fought intrusive advertising by developing desktop apps to connect partners.
             </li>
             <li>
               Led efforts to vastly reduce technical debt in systems, launching a refactored partner dashboard with better UI/UX and performance.
@@ -230,12 +245,12 @@ exports[`matches snapshot in dracula mode 1`] = `
           </ul>
         </div>
         <div>
-          <b>
+          <strong>
             Jr. Full-Stack Developer, Privacy Pixel
-          </b>
-          <i>
+          </strong>
+          <em>
             January 2020 - August 2020 (USA, remote)
-          </i>
+          </em>
           <ul>
             <li>
               Helped businesses comply with data laws (GDPR/CCPA) with our plugins.
@@ -246,18 +261,18 @@ exports[`matches snapshot in dracula mode 1`] = `
           </ul>
         </div>
         <div>
-          <b>
+          <strong>
             Product Owner, Acens
-          </b>
-          <i>
+          </strong>
+          <em>
             February 2019 - January 2020 (Brazil)
-          </i>
+          </em>
           <ul>
             <li>
-              Volunteered to help businesses build online an presence.
+              Volunteered to help businesses build an online presence by managing projects.
             </li>
             <li>
-              Managed several projects and improved the organization productivity by enforcing agile across the company.
+              Improved the organization productivity by enforcing agile across the company.
             </li>
           </ul>
         </div>
@@ -269,17 +284,17 @@ exports[`matches snapshot in dracula mode 1`] = `
           EDUCATION
         </h2>
         <div>
-          <b>
+          <strong>
             Bachelor’s Degree in Computer Science
-          </b>
+          </strong>
           <div>
             Unifacvest University Center (2019 - 2023)
           </div>
         </div>
         <div>
-          <b>
+          <strong>
             Scrum Fundamentals Certified (SFC™)
-          </b>
+          </strong>
           <div>
             SCRUMstudy - Accreditation Body for Scrum and Agile (2020)
           </div>
@@ -292,15 +307,27 @@ exports[`matches snapshot in dracula mode 1`] = `
           SKILLS
         </h2>
         <div>
+          <b>
+            Languages: 
+          </b>
           JavaScript, TypeScript, Go, Bash
         </div>
         <div>
+          <b>
+            Front-end: 
+          </b>
           HTML, CSS, Sass, Styled Components, Tailwind, React, React Native, Next.js, Accessibility, Jest/RTL
         </div>
         <div>
+          <b>
+            Back-end: 
+          </b>
           Node.js, Express, Fiber, Chi, MongoDB, Postgres
         </div>
         <div>
+          <b>
+            DevOps: 
+          </b>
           Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD
         </div>
       </div>

@@ -12,7 +12,7 @@ export const Page = styled.div`
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 25mm;
+  padding: 22mm 25mm;
 
   @media screen {
     margin: 5mm auto;
@@ -21,13 +21,12 @@ export const Page = styled.div`
 
 export const Content = styled.div`
   line-height: normal;
-  font-size: 0.8em;
+  font-size: 0.75rem;
   text-align: justify;
 `
 
 export const Header = styled.header`
   display: flex;
-  align-items: center;
   gap: 32px;
 `
 
@@ -41,7 +40,7 @@ export const Author = styled.div`
   }
 
   div {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 `
 
@@ -60,12 +59,21 @@ export const Social = styled.div`
 export const Section = styled.div`
   h2 {
     font-size: 0.9rem;
-    margin: 16px 0;
+    margin: 24px 0 8px;
   }
 
-  b,
-  i {
+  strong,
+  em {
     display: block;
+  }
+
+  ul {
+    margin: 10px 0 20px;
+    padding-left: 30px;
+  }
+
+  li {
+    padding-bottom: 5px;
   }
 
   div {
