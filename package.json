@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "date-fns": "2.24.0",
-    "globby": "11.0.4",
     "gray-matter": "4.0.3",
     "next": "^12.1.1-canary.3",
     "preact": "^10.6.6",

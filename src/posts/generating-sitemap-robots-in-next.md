@@ -10,57 +10,46 @@ I'm using markdown files to manage my blog posts, but there is also a way to dyn
 
 ## Sitemap (sitemap.xml)
 
-First, install [globby](https://www.npmjs.com/package/globby) in your project. We'll use it to get all the routes from the `pages` folder using a [glob](https://en.wikipedia.org/wiki/Glob_%28programming%29).
-
-```bash[class="command-line"]
-yarn add globby
-```
-
-This is my `lib/sitemap.ts` so you can modify it to fit your case:
+Create a `lib/sitemap.ts` file and add this code (modify it to fit your case):
 
 ```tsx[class="line-numbers"]
 import fs from 'fs'
-import globby from 'globby'
+import { Post } from './posts'
 
-const generateSitemap = async (): Promise<void> => {
-  // Only generate a sitemap in production
+const baseUrl = 'https://brenobaptista.vercel.app'
+
+const generateSitemapItem = (post: Post): string => `
+  <url>
+    <loc>${`${baseUrl}/posts/${post.id}`}</loc>
+  </url>`
+
+const generateSitemapChannel = (
+  posts: Post[]
+): string => `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${baseUrl}</loc>
+  </url>
+  <url>
+    <loc>${baseUrl}/resume</loc>
+  </url>
+  ${posts.map(generateSitemapItem).join('')}
+</urlset>`
+
+const generateSitemap = (allPostsData: Post[]): void => {
   if (process.env.NODE_ENV === 'development') {
     return
   }
 
-  // Fetch all routes based on patterns
-  const pages = await globby([
-    'src/pages/**/*.{ts,tsx,md}', // All routes inside /pages
-    'src/posts/**/*.md', // All markdown files inside /posts
-    '!src/pages/**/[*.{ts,tsx}', // Ignore the dynamic route index (/pages/posts/[id].tsx)
-    '!src/pages/_*.{ts,tsx}', // Ignore Next.js files
-    '!src/pages/api' // Ignore API routes
-  ])
+  const sitemap = generateSitemapChannel(allPostsData)
 
-  const urlSet = pages
-    .map(page => {
-      // Remove parts of filename that are not route related.
-      const path = page
-        .replace('src', '')
-        .replace('/pages', '')
-        .replace(/\.(tsx|ts)/, '')
-        .replace('.md', '')
-      // Remove the word index from route
-      const route = path === '/index' ? '' : path
-      // Build url portion of sitemap.xml
-      return `<url><loc>https://brenobaptista.vercel.app${route}</loc></url>`
-    })
-    .join('')
-
-  // Add urlSet to entire sitemap string
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urlSet}</urlset>`
-
-  // Create sitemap file
   fs.writeFileSync('public/sitemap.xml', sitemap)
 }
 
 export default generateSitemap
 ```
+
+You may notice that the indentation seems a little weird, but it's required to make the generated file look properly formatted.
 
 Import the `generateSitemap` function in the `pages/index.tsx` file and add it to the `getStaticProps` to make sure Next.js will call this function during the build of the `pages/index.tsx` page in production and generate the sitemap.
 
@@ -68,7 +57,9 @@ Import the `generateSitemap` function in the `pages/index.tsx` file and add it t
 export async function getStaticProps() {
   // ...
 
-  await generateSitemap()
+  const allPostsData = getSortedPostsData()
+
+  generateSitemap(allPostsData)
 
   return {
     // ...
@@ -76,7 +67,7 @@ export async function getStaticProps() {
 }
 ```
 
-In my case, this is [my sitemap.xml](https://brenobaptista.vercel.app/sitemap.xml). It gets updated dynamically as I push new content.
+This is [my sitemap.xml](https://brenobaptista.vercel.app/sitemap.xml) in production.
 
 ## Robots exclusion standard (robots.txt)
 

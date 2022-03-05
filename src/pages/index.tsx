@@ -24,8 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
 
   generateRss(allPostsData)
-
-  await generateSitemap()
+  generateSitemap(allPostsData)
 
   return {
     props: {
