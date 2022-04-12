@@ -65,7 +65,7 @@ export default createGlobalStyle`
   }
 
   ::selection {
-    color: ${props => props.theme.colors.altBackground};
+    color: ${props => props.theme.colors.background};
     background-color: ${props => props.theme.colors.primary};
   }
 
