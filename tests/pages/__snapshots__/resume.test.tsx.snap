@@ -143,7 +143,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           <div>
             <a
               aria-label="My blog"
-              href="https://www.brenobaptista.tech/"
+              href="https://www.brenobaptista.me/"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -174,7 +174,9 @@ exports[`matches snapshot in dracula mode 1`] = `
                   r="1"
                 />
               </svg>
-              brenobaptista.tech
+              <span>
+                brenobaptista.me
+              </span>
             </a>
           </div>
           <div>

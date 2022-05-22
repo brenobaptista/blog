@@ -54,4 +54,4 @@ Check [Masa Kudamatsu's definitive edition of "How to Favicon in 2021"](https://
 
 - While [RealFaviconGenerator](https://realfavicongenerator.net/) does a good job, it only allows you to create favicons from pictures that are up to 2 MB in size. What about using [this favicon generator](https://www.websiteplanet.com/webtools/favicon-generator/) instead?
 
-  - You could resize the image to a lower resolution since the exported favicons would be maximum 512x512 or you could convert it from PNG to JPG if it's the case. I'd say a 2 MB image is just too large, it should be less than 200 kB. You can fix it [running ImageMagick](https://brenobaptista.tech/posts/editing-images-from-terminal-with-imagemagick).
+  - You could resize the image to a lower resolution since the exported favicons would be maximum 512x512 or you could convert it from PNG to JPG if it's the case. I'd say a 2 MB image is just too large, it should be less than 200 kB. You can fix it [running ImageMagick](/posts/editing-images-from-terminal-with-imagemagick).
