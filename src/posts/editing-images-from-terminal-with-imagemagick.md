@@ -40,7 +40,13 @@ You can pass the `-resize` flag to resize an image with a size in pixels or perc
 convert -resize 512x512 image.jpg resized-image.jpg
 ```
 
-> You can do multiple tasks at the same time, like resizing and converting an image using only one command.
+You can even batch resize all images in a folder. In this example, I'm choosing 736 pixels for width and letting ImageMagick handle the height:
+
+```bash[class="command-line"]
+convert -resize 736x ./*.jpg
+```
+
+> You can combine tasks, like resizing and converting an image, in one line.
 
 ### Adding transparency
 
