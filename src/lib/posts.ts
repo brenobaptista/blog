@@ -6,6 +6,7 @@ import remarkParse from 'remark-parse'
 import remarkToc from 'remark-toc'
 import remarkPrism from 'remark-prism'
 import remarkRehype from 'remark-rehype'
+import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import rehypeStringify from 'rehype-stringify'
 
@@ -103,7 +104,8 @@ export const getPostData = async (id: string): Promise<PostData> => {
     .use(remarkPrism, {
       plugins: ['line-numbers', 'command-line']
     })
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
     .use(rehypeSlug)
     .use(rehypeStringify)
     .process(matterResult.content)
