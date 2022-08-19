@@ -1,43 +1,49 @@
 ---
 title: 'Customizing a Terminal With Zsh'
 description: 'Turn an old-fashioned terminal into your new best friend.'
-date: '2020-10-31'
+date: '2022-08-20'
 ---
 
 ![Terminal](/images/customizing-terminal-with-zsh/terminal.png)
 
 ## Table of Contents
 
-## Dependencies
-
-### 1. Zsh
+## 1. Zsh
 
 <dfn><abbr title="Z shell">Zsh</abbr></dfn> is an alternative to Bash.
 Many of the useful features of Bash were incorporated into Zsh, but also many original features were added.
 
 [How to install Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
-### 2. Oh My Zsh
+## 2. Oh My Zsh
 
 <dfn>Oh My Zsh</dfn> is a framework for managing your Zsh configuration.
 
 [How to install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 
-### 3. Spaceship Prompt
+### Plugins
+
+To use plugins with Oh My Zsh, you'll need to clone and enable them in your `~/.zshrc` file.
+
+- [zdharma/fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting#oh-my-zsh): It adds syntax highlighting while you type commands, allowing you to quickly check if they are correct.
+
+- [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh): It suggests commands using your history while you type (like a fuzzy finder).
+
+```bash[class="line-numbers"]
+plugins=(
+  git
+  zsh-autosuggestions
+  fast-syntax-highlighting
+)
+```
+
+## 3. Spaceship Prompt
 
 <dfn>Spaceship</dfn> is a minimalistic, powerful and extremely customizable Zsh prompt.
 
 [How to install Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#oh-my-zsh)
 
-### 4. Zinit
-
-<dfn>Zinit</dfn> is a flexible and fast Zsh plugin manager that will allow you to install everything from GitHub and other sites.
-
-[How to install Zinit](https://github.com/zdharma-continuum/zinit#install)
-
-## Additional Configuration
-
-### Setup Spaceship
+### Setup
 
 At the end of `~/.zshrc`, place this:
 
@@ -61,15 +67,3 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 ```
-
-### Setup Zsh plugins
-
-At the end of `~/.zshrc`, add this:
-
-```bash[class="line-numbers"]
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
-```
-
-Then reload your terminal to install the plugins.
