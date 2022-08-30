@@ -68,6 +68,7 @@ const Resume = (): JSX.Element => (
             <em>February 2022 - Present (USA, remote)</em>
             <ul>
               <li>Built containerized microservices in Go.</li>
+              <li>Delighted clients by crafting web experiences.</li>
             </ul>
           </div>
           <div>
@@ -130,14 +131,14 @@ const Resume = (): JSX.Element => (
         <Section>
           <h2>SKILLS</h2>
           <div>
-            <b>Languages: </b>JavaScript, TypeScript, Go, Bash
+            <b>Languages: </b>JavaScript, TypeScript, Go, Bash, Lua
           </div>
           <div>
             <b>Front-end: </b>HTML, CSS, Sass, Styled Components, Tailwind,
-            React, React Native, Next.js, Accessibility, Jest/RTL
+            React, React Native, Next.js, Accessibility, Jest/RTL, Cypress
           </div>
           <div>
-            <b>Back-end: </b>Node.js, Express, Fiber, Chi, MongoDB, Postgres
+            <b>Back-end: </b>Node, Express, Deno, GraphQL, Postgres, MongoDB
           </div>
           <div>
             <b>DevOps: </b>Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD
