@@ -228,6 +228,9 @@ exports[`matches snapshot in dracula mode 1`] = `
             <li>
               Built containerized microservices in Go.
             </li>
+            <li>
+              Delighted clients by crafting web experiences.
+            </li>
           </ul>
         </div>
         <div>
@@ -312,19 +315,19 @@ exports[`matches snapshot in dracula mode 1`] = `
           <b>
             Languages: 
           </b>
-          JavaScript, TypeScript, Go, Bash
+          JavaScript, TypeScript, Go, Bash, Lua
         </div>
         <div>
           <b>
             Front-end: 
           </b>
-          HTML, CSS, Sass, Styled Components, Tailwind, React, React Native, Next.js, Accessibility, Jest/RTL
+          HTML, CSS, Sass, Styled Components, Tailwind, React, React Native, Next.js, Accessibility, Jest/RTL, Cypress
         </div>
         <div>
           <b>
             Back-end: 
           </b>
-          Node.js, Express, Fiber, Chi, MongoDB, Postgres
+          Node, Express, Deno, GraphQL, Postgres, MongoDB
         </div>
         <div>
           <b>
