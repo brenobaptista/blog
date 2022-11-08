@@ -15,13 +15,7 @@ interface Props {
 const Layout = ({ children, home = false }: Props): JSX.Element => (
   <Container>
     <Toolbar>
-      {home ? (
-        <div />
-      ) : (
-        <Link href='/'>
-          <a>Breno Baptista</a>
-        </Link>
-      )}
+      {home ? <div /> : <Link href='/'>Breno Baptista</Link>}
       <Switch />
     </Toolbar>
     <main>{children}</main>
