@@ -144,7 +144,8 @@ const Resume = (): JSX.Element => {
               React, React Native, Next.js, Accessibility, Jest/RTL, Cypress
             </div>
             <div>
-              <b>Back-end: </b>Node, Express, Deno, GraphQL, Postgres, MongoDB
+              <b>Back-end: </b>Node, Express, Deno, Apollo, GraphQL, Postgres,
+              MongoDB
             </div>
             <div>
               <b>DevOps: </b>Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD

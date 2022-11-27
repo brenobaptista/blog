@@ -327,7 +327,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           <b>
             Back-end: 
           </b>
-          Node, Express, Deno, GraphQL, Postgres, MongoDB
+          Node, Express, Deno, Apollo, GraphQL, Postgres, MongoDB
         </div>
         <div>
           <b>
