@@ -17,18 +17,19 @@ const Sparkles = (): JSX.Element => {
   let scrollLeft = 0
   let scrollDown = 0
 
-  const tiny = []
-  const star = []
-  const starV = []
-  const starX = []
-  const starY = []
-  const tinyX = []
-  const tinyY = []
-  const tinyV = []
+  let tiny: HTMLDivElement[] = []
+  let star: HTMLDivElement[] = []
+  let starV: number[] = []
+  let starX: number[] = []
+  let starY: number[] = []
+  let tinyX: number[] = []
+  let tinyY: number[] = []
+  let tinyV: number[] = []
 
   const updateStar = (i: number) => {
     if (--starV[i] === sparkles / 2) {
-      star[i].style.clip = 'rect(1px, 4px, 4px, 1px)'
+      star[i].style.clipPath =
+        'inset(1px calc(100% - 4px) calc(100% - 4px) 1px)'
     }
 
     if (starV[i]) {
@@ -51,9 +52,9 @@ const Sparkles = (): JSX.Element => {
       tiny[i].style.left = `${(tinyX[i] = starX[i])}px`
       tiny[i].style.width = '2px'
       tiny[i].style.height = '2px'
-      if (star[i].childNodes[0]) {
-        tiny[i].style.backgroundColor =
-          star[i].childNodes[0].style.backgroundColor
+      const starFirstChild = star[i].childNodes[0] as HTMLDivElement
+      if (starFirstChild) {
+        tiny[i].style.backgroundColor = starFirstChild.style.backgroundColor
       }
       star[i].style.visibility = 'hidden'
       tiny[i].style.visibility = 'visible'
@@ -92,17 +93,21 @@ const Sparkles = (): JSX.Element => {
 
       for (let i = 0; i < sparkles; i++)
         if (!starV[i]) {
-          const filteredColor = color[Math.floor(Math.random() * 7)]
+          starV[i] = sparkles
 
           star[i].style.left = `${(starX[i] = currentX)}px`
           star[i].style.top = `${(starY[i] = currentY + 1)}px`
-          star[i].style.clip = 'rect(0px, 5px, 5px, 0px)'
-          if (star[i].childNodes[0] && star[i].childNodes[1]) {
-            star[i].childNodes[0].style.backgroundColor = filteredColor
-            star[i].childNodes[1].style.backgroundColor = filteredColor
-          }
+          star[i].style.clipPath =
+            'inset(0px calc(100% - 5px) calc(100% - 5px) 0px)'
           star[i].style.visibility = 'visible'
-          starV[i] = sparkles
+
+          const starFirstChild = star[i].childNodes[0] as HTMLDivElement
+          const starSecondChild = star[i].childNodes[1] as HTMLDivElement
+          if (starFirstChild && starSecondChild) {
+            const filteredColor = color[Math.floor(Math.random() * 7)]
+            starFirstChild.style.backgroundColor = filteredColor
+            starSecondChild.style.backgroundColor = filteredColor
+          }
 
           break
         }
@@ -223,7 +228,8 @@ const Sparkles = (): JSX.Element => {
           const ratsFirst = createDiv(3, 3)
           ratsFirst.style.visibility = 'hidden'
           ratsFirst.style.zIndex = '999'
-          document.body.appendChild((tiny[i] = ratsFirst))
+          tiny[i] = ratsFirst
+          document.body.appendChild(tiny[i])
 
           const ratsLeft = createDiv(1, 5)
           const ratsDown = createDiv(5, 1)
@@ -238,8 +244,8 @@ const Sparkles = (): JSX.Element => {
           ratsSecond.style.zIndex = '999'
           ratsSecond.appendChild(ratsLeft)
           ratsSecond.appendChild(ratsDown)
-
-          document.body.appendChild((star[i] = ratsSecond))
+          star[i] = ratsSecond
+          document.body.appendChild(star[i])
         }
 
         calculateScreen()
