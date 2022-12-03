@@ -19,7 +19,7 @@ const generateRssChannel = (
   <channel>
     <title>Breno Baptista</title>
     <link>${baseUrl}</link>
-    <description>I'm a full-stack developer from Brazil.</description>
+    <description>Breno Baptista is a software engineer who likes to explore new things every day. He is interested in Linux, open-source software, digital privacy and front-end development.</description>
     <language>en</language>
     <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>

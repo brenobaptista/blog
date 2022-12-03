@@ -46,7 +46,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         <title>Breno Baptista</title>
         <meta
           name='description'
-          content="I'm a full-stack developer from Brazil."
+          content='Breno Baptista is a software engineer who likes to explore new things every day. He is interested in Linux, open-source software, digital privacy and front-end development.'
         />
       </Head>
       <HomeHeader>
@@ -81,10 +81,10 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
       </HomeHeader>
       <Intro>
         <p>
-          I’m a full-stack developer who likes to explore new things every day.
-          I write blog posts about things I’ve found interesting during my daily
-          explorations on the web. I’m interested in Linux, digital privacy and
-          front-end development.
+          I’m a software engineer who likes to explore new things every day. I
+          write blog posts about things I’ve found interesting during my daily
+          explorations on the web. I’m interested in Linux, open-source
+          software, digital privacy and front-end development.
         </p>
       </Intro>
       <Retro />
