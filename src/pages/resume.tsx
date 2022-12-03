@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
 
-import { Email, GitHub, RSS } from '../components/svgs'
+import { Email, GitHub, LinkedIn, RSS } from '../components/svgs'
 import {
   PrintingRules,
   Page,
@@ -32,7 +32,7 @@ const Resume = (): JSX.Element => {
           <Header>
             <Author>
               <h1>Breno Baptista</h1>
-              <div>Full-Stack Developer</div>
+              <div>Software Engineer</div>
             </Author>
             <Social>
               <div>
@@ -65,16 +65,33 @@ const Resume = (): JSX.Element => {
                   <span>github.com/brenobaptista</span>
                 </a>
               </div>
+              <div>
+                <a
+                  href='https://www.linkedin.com/in/breno-baptista/'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  <LinkedIn width={16} height={16} />
+                  <span>linkedin.com/in/breno-baptista</span>
+                </a>
+              </div>
             </Social>
           </Header>
           <Section>
-            <h2>EXPERIENCE</h2>
+            <h2 className='mt-0'>EXPERIENCE</h2>
             <div>
               <strong>Software Engineer, Alternative</strong>
               <em>February 2022 - Present (USA, remote)</em>
               <ul>
-                <li>Built containerized microservices in Go.</li>
-                <li>Delighted clients by crafting web experiences.</li>
+                <li>
+                  Maintained containerized microservices in Go. Responsible for
+                  developing the email service, along with the email templates.
+                </li>
+                <li>
+                  Delighted clients by crafting web experiences. Translated
+                  design mockups into efficient UI components and responsive
+                  pages.
+                </li>
               </ul>
             </div>
             <div>
@@ -140,15 +157,17 @@ const Resume = (): JSX.Element => {
               <b>Languages: </b>JavaScript, TypeScript, Go, Bash, Lua
             </div>
             <div>
-              <b>Front-end: </b>HTML, CSS, Sass, Styled Components, Tailwind,
-              React, React Native, Next.js, Accessibility, Jest/RTL, Cypress
+              <b>Front-end: </b>HTML, CSS, Sass, jQuery, Styled Components,
+              Tailwind, React, React Native, Next.js, Storybook, Accessibility,
+              Jest/RTL, Cypress
             </div>
             <div>
               <b>Back-end: </b>Node, Express, Deno, Apollo, GraphQL, Postgres,
-              MongoDB
+              MongoDB, Firebase
             </div>
             <div>
-              <b>DevOps: </b>Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD
+              <b>DevOps: </b>Git, Docker, AWS, GNU/Linux, Yarn Workspaces,
+              Turborepo, CI/CD
             </div>
           </Section>
         </Content>

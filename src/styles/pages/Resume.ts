@@ -12,7 +12,7 @@ export const Page = styled.div`
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 22mm 25mm;
+  padding: 19mm 25mm;
 
   @media screen {
     margin: 5mm auto;
@@ -60,6 +60,10 @@ export const Section = styled.div`
   h2 {
     font-size: 0.9rem;
     margin: 24px 0 8px;
+  }
+
+  .mt-0 {
+    margin-top: 0;
   }
 
   strong,

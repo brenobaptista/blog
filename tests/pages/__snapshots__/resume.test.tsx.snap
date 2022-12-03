@@ -7,7 +7,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 22mm 25mm;
+  padding: 19mm 25mm;
 }
 
 .c1 {
@@ -62,6 +62,10 @@ exports[`matches snapshot in dracula mode 1`] = `
   margin: 24px 0 8px;
 }
 
+.c5 .mt-0 {
+  margin-top: 0;
+}
+
 .c5 strong,
 .c5 em {
   display: block;
@@ -102,7 +106,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             Breno Baptista
           </h1>
           <div>
-            Full-Stack Developer
+            Software Engineer
           </div>
         </div>
         <div
@@ -209,12 +213,55 @@ exports[`matches snapshot in dracula mode 1`] = `
               </span>
             </a>
           </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/breno-baptista/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  LinkedIn profile
+                </title>
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect
+                  height="12"
+                  width="4"
+                  x="2"
+                  y="9"
+                />
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                />
+              </svg>
+              <span>
+                linkedin.com/in/breno-baptista
+              </span>
+            </a>
+          </div>
         </div>
       </header>
       <div
         class="c5"
       >
-        <h2>
+        <h2
+          class="mt-0"
+        >
           EXPERIENCE
         </h2>
         <div>
@@ -226,10 +273,10 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Built containerized microservices in Go.
+              Maintained containerized microservices in Go. Responsible for developing the email service, along with the email templates.
             </li>
             <li>
-              Delighted clients by crafting web experiences.
+              Delighted clients by crafting web experiences. Translated design mockups into efficient UI components and responsive pages.
             </li>
           </ul>
         </div>
@@ -321,19 +368,19 @@ exports[`matches snapshot in dracula mode 1`] = `
           <b>
             Front-end: 
           </b>
-          HTML, CSS, Sass, Styled Components, Tailwind, React, React Native, Next.js, Accessibility, Jest/RTL, Cypress
+          HTML, CSS, Sass, jQuery, Styled Components, Tailwind, React, React Native, Next.js, Storybook, Accessibility, Jest/RTL, Cypress
         </div>
         <div>
           <b>
             Back-end: 
           </b>
-          Node, Express, Deno, Apollo, GraphQL, Postgres, MongoDB
+          Node, Express, Deno, Apollo, GraphQL, Postgres, MongoDB, Firebase
         </div>
         <div>
           <b>
             DevOps: 
           </b>
-          Git, Docker, AWS, GNU/Linux, Yarn Workspaces, CI/CD
+          Git, Docker, AWS, GNU/Linux, Yarn Workspaces, Turborepo, CI/CD
         </div>
       </div>
     </div>
