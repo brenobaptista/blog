@@ -14,7 +14,7 @@ import {
 
 const Resume = (): JSX.Element => {
   useEffect(() => {
-    print()
+    window.print()
   }, [])
 
   return (
