@@ -199,7 +199,7 @@ export const ShortBio = styled.div`
 
 export const MorePosts = styled.div`
   display: flex;
-  justify-content: space-between;
+  gap: 0 32px;
   margin: 32px 0 0;
   font-size: 0.8rem;
 
@@ -207,12 +207,12 @@ export const MorePosts = styled.div`
     flex-direction: column;
   }
 
-  a,
   div {
     flex: 1;
   }
 
   a {
+    flex: 1;
     margin-bottom: 16px;
     padding: 16px;
     border: ${props =>
@@ -221,6 +221,11 @@ export const MorePosts = styled.div`
         : 'none'};
     border-radius: 8px;
     background-color: ${props => props.theme.colors.altBackground};
+
+    span {
+      display: block;
+      color: ${props => props.theme.colors.text};
+    }
 
     &:hover {
       text-decoration: none;
@@ -233,29 +238,13 @@ export const MorePosts = styled.div`
         color: ${props => props.theme.colors.altText};
       }
     }
-  }
 
-  span {
-    display: block;
-    color: ${props => props.theme.colors.text};
-  }
+    &:first-child {
+      text-align: right;
 
-  .left {
-    text-align: right;
-    margin-right: 16px;
-
-    @media screen and (max-width: 768px) {
-      text-align: left;
-      margin-right: 0;
-      margin-bottom: 16px;
-    }
-  }
-
-  .right {
-    margin-left: 16px;
-
-    @media screen and (max-width: 768px) {
-      margin-left: 0;
+      @media screen and (max-width: 768px) {
+        text-align: left;
+      }
     }
   }
 `

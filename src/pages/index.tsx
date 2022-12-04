@@ -93,18 +93,16 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         <Search allPostsData={allPostsData} setPosts={setPosts} />
         {posts.length ? (
           posts.map(({ id, title, description, date }) => (
-            <Link href={`/posts/${id}`} key={id}>
-              <a>
-                <Card>
-                  <div>
-                    <span>{title}</span>
-                    <small>
-                      <Date date={date} />
-                    </small>
-                  </div>
-                  <p>{description}</p>
-                </Card>
-              </a>
+            <Link href={`/posts/${id}`} key={id} passHref>
+              <Card>
+                <div>
+                  <span>{title}</span>
+                  <small>
+                    <Date date={date} />
+                  </small>
+                </div>
+                <p>{description}</p>
+              </Card>
             </Link>
           ))
         ) : (
