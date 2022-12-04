@@ -145,5 +145,79 @@ exports[`matches snapshot 1`] = `
       Your browser does not support the audio element.
     </audio>
   </figure>
+  .c0 img {
+  visibility: hidden;
+  position: fixed;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  bottom: 0;
+  -webkit-animation: walk 30s linear infinite;
+  animation: walk 30s linear infinite;
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+<div
+    class="c0"
+  >
+    <img
+      alt="Sheep"
+      data-nimg="1"
+      decoding="async"
+      height="20"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+      style="color: transparent; animation-delay: 0s;"
+      width="32"
+    />
+    <img
+      alt="Sheep"
+      data-nimg="1"
+      decoding="async"
+      height="20"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+      style="color: transparent; animation-delay: 1s;"
+      width="32"
+    />
+    <img
+      alt="Sheep"
+      data-nimg="1"
+      decoding="async"
+      height="20"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+      style="color: transparent; animation-delay: 2s;"
+      width="32"
+    />
+    <img
+      alt="Sheep"
+      data-nimg="1"
+      decoding="async"
+      height="20"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+      style="color: transparent; animation-delay: 3s;"
+      width="32"
+    />
+    <img
+      alt="Sheep"
+      data-nimg="1"
+      decoding="async"
+      height="20"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+      style="color: transparent; animation-delay: 4s;"
+      width="32"
+    />
+  </div>
 </DocumentFragment>
 `;
