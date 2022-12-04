@@ -487,358 +487,182 @@ exports[`matches snapshot in retro mode for home 1`] = `
       <div
         class="c12"
       >
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Bookmark this page"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Sign my guestbook"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Best viewed with anything"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Free speech forever"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Nuke IE"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Anarchy now"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Best viewed with eyes"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Tux - Linux penguin"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Geocities"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Internet privacy"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Wiby search engine"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="I survived Y2K"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Email me"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="Best viewed with a monitor"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="I wish it was 2001"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
-        <span
-          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-        >
-          <span
-            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2788%27%20height=%2731%27/%3e"
-              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-            />
-          </span>
-          <img
-            alt="No code and run"
-            data-nimg="intrinsic"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-          <noscript />
-        </span>
+        <img
+          alt="Bookmark this page"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Sign my guestbook"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Best viewed with anything"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Free speech forever"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Nuke IE"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Anarchy now"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Best viewed with eyes"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Tux - Linux penguin"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Geocities"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Internet privacy"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Wiby search engine"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="I survived Y2K"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Email me"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="Best viewed with a monitor"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="I wish it was 2001"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
+        <img
+          alt="No code and run"
+          data-nimg="1"
+          decoding="async"
+          height="31"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="88"
+        />
       </div>
       <div
         class="c13"
