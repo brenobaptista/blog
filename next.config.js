@@ -1,6 +1,9 @@
 module.exports = {
   reactStrictMode: true,
   poweredByHeader: false,
+  compiler: {
+    styledComponents: true
+  },
   async headers() {
     return [
       {
