@@ -4,9 +4,10 @@ import Image from 'next/image'
 import hamster from '../../public/images/retro/hamster.gif'
 import jackhammer from '../../public/images/retro/jackhammer.gif'
 import money from '../../public/images/retro/money.gif'
+import sheep from '../../public/images/retro/sheep.gif'
 import worldwideweb from '../../public/images/retro/worldwideweb.gif'
 import ThemeContext from '../contexts/ThemeContext'
-import { Marquee, Construction, Song } from '../styles/components/Retro'
+import { Marquee, Construction, Song, Sheep } from '../styles/components/Retro'
 
 const Retro = (): JSX.Element => {
   const { theme } = useContext(ThemeContext)
@@ -32,6 +33,43 @@ const Retro = (): JSX.Element => {
               Your browser does not support the audio element.
             </audio>
           </Song>
+          <Sheep>
+            <Image
+              src={sheep}
+              alt='Sheep'
+              width='32'
+              height='20'
+              style={{ animationDelay: '0s' }}
+            />
+            <Image
+              src={sheep}
+              alt='Sheep'
+              width='32'
+              height='20'
+              style={{ animationDelay: '1s' }}
+            />
+            <Image
+              src={sheep}
+              alt='Sheep'
+              width='32'
+              height='20'
+              style={{ animationDelay: '2s' }}
+            />
+            <Image
+              src={sheep}
+              alt='Sheep'
+              width='32'
+              height='20'
+              style={{ animationDelay: '3s' }}
+            />
+            <Image
+              src={sheep}
+              alt='Sheep'
+              width='32'
+              height='20'
+              style={{ animationDelay: '4s' }}
+            />
+          </Sheep>
         </>
       )}
     </>

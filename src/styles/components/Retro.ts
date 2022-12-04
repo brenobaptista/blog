@@ -56,3 +56,36 @@ export const Song = styled.figure`
   align-items: center;
   gap: 8px;
 `
+
+export const Sheep = styled.div`
+  img {
+    visibility: hidden;
+    position: fixed;
+    transform: scaleX(-1);
+    bottom: 0;
+    animation: walk 30s linear infinite;
+  }
+
+  @keyframes walk {
+    0% {
+      left: 0;
+      transform: scaleX(-1);
+      visibility: visible;
+    }
+    49% {
+      left: calc(100vw - 43px);
+      transform: scaleX(-1);
+    }
+    50% {
+      transform: scaleX(1);
+    }
+    99% {
+      left: 0;
+      transform: scaleX(1);
+    }
+    100% {
+      left: 0;
+      transform: scaleX(-1);
+    }
+  }
+`
