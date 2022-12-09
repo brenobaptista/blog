@@ -10,8 +10,7 @@ export const Container = styled.div`
       ? `1px solid ${props.theme.colors.selector}`
       : 'none'};
   border-radius: 8px;
-  font-family: ${props =>
-    props.theme.mode === 'retro' && 'Fira Code, monospace'};
+  font-family: ${props => props.theme.mode === 'retro' && 'monospace'};
 
   @media screen and (max-width: 768px) {
     margin: 16px 8px;

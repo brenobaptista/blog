@@ -95,7 +95,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   background-color: black;
   border: 1px solid gray;
   border-radius: 8px;
-  font-family: Fira Code,monospace;
+  font-family: monospace;
 }
 
 .c0 img {

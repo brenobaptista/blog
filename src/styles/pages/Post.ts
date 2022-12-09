@@ -21,7 +21,7 @@ export const Body = styled.div`
   code,
   pre {
     font-size: 0.8rem;
-    font-family: Fira Code, monospace;
+    font-family: monospace;
     background-color: ${props => props.theme.colors.altBackground};
   }
 
