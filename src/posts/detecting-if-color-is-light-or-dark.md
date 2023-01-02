@@ -31,8 +31,8 @@ The best way to convert color to grayscale is using a formula that is a weighted
 
 The original implementation of the formula was the [REC.601](https://en.wikipedia.org/wiki/Rec._601) standard (for analog TVs), which uses the following weights:
 
-> GRAY = 0.299 _ R + 0.587 _ G + 0.114 \* B
+> GRAY = 0.299 * R + 0.587 * G + 0.114 * B
 
 Newer implementations use the [REC.709](https://en.wikipedia.org/wiki/Rec._709) standard (for digital TVs), which uses the following weights:
 
-> GRAY = 0.2126 _ R + 0.7152 _ G + 0.0722 \* B
+> GRAY = 0.2126 * R + 0.7152 * G + 0.0722 * B
