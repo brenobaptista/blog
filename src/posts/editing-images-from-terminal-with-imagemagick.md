@@ -17,8 +17,7 @@ If you said "yes" to any of the questions above, I'll teach you how to efficient
 
 ## Installing ImageMagick
 
-> If you use GNU/Linux you probably don't need to install it, it probably already came installed with your distribution.
-> Try running `magick --version` in your terminal to check if you have it installed.
+If you use GNU/Linux you probably don't need to install it, it probably already came installed with your distribution. Try running `magick --version` in your terminal to check if you have it installed.
 
 [Official ImageMagick download page](https://imagemagick.org/script/download.php)
 

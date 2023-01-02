@@ -73,7 +73,7 @@ export async function getStaticProps() {
 }
 ```
 
-> I implemented a function called getSortedPostsData that is a method that parses my markdown files to extract metadata about my blog posts. You can check the [source code](https://github.com/brenobaptista/blog/blob/main/src/lib/posts.ts).
+I implemented a function called getSortedPostsData that is a method that parses my markdown files to extract metadata about my blog posts. You can check the [source code](https://github.com/brenobaptista/blog/blob/main/src/lib/posts.ts).
 
 The last step is to add a link to the RSS feed inside your <head> tag. You should put the code inside `pages/_document.tsx` to make it available to all pages. This code is responsible to tell search engine crawlers that this page has an alternate version.
 

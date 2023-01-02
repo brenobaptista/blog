@@ -29,7 +29,7 @@ const App = () => (
 export default App;
 ```
 
-But, unfortunately, this approach only works with `create-react-app`, because it uses `SVGR` (the method below) under the hood to make it possible to transform and import SVGs as a component. If you are not using `create-react-app`, convert the SVGs yourself using `SVGR`.
+But, unfortunately, this approach only works with `create-react-app`, because it uses **SVGR** (the method below) under the hood to make it possible to transform and import SVGs as a component. If you are not using `create-react-app`, convert the SVGs yourself using **SVGR**.
 
 ## SVGR
 

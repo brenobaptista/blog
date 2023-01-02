@@ -4,7 +4,7 @@ description: 'How to use sed to find and replace strings in files.'
 date: '2021-05-08'
 ---
 
-## Find and Replace Strings
+## Finding and Replacing Strings
 
 The best part about <abbr title="stream editor">sed</abbr> is that it uses <abbr title="regular expression">regex</abbr>, which makes it super easy to match patterns.
 

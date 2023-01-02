@@ -34,7 +34,7 @@ const ExampleContext = createContext(null)
 export default ExampleContext
 ```
 
-> You could create the context in the same file as the high-level component below, but it would be disorganized and would lead to errors.
+> You could create the context in the same file as the high-level component below, but it would be disorganized and could lead to errors.
 
 ## 2. Providing the context
 

@@ -14,22 +14,22 @@ In this guide, we will manage our virtual machines through the terminal, but you
 
 ## Dependencies
 
-### Install QEMU
+### QEMU
 
 [Download QEMU](https://www.qemu.org/download/)
 
-### Install KVM
+### KVM
 
 Try your distro's packaging system, this is the easiest and recommended way of installing KVM.
 It's usually called `qemu-kvm` or `kvm`.
 
 ## Kali Linux
 
-### Download .iso
+### Downloading .iso
 
 First of all, you need to download the `.iso` file for Kali Linux (or any other operational system) on the [official website](https://www.kali.org/downloads/).
 
-### Boot in Live Mode
+### Booting in Live Mode
 
 Go to the directory where you downloaded the official `.iso` and run this command in your terminal to boot a live version of Kali Linux. No changes to the operational system will be saved.
 
@@ -49,7 +49,7 @@ qemu-system-x86_64 \
 >
 > Shortcut to release the mouse from the virtual machine window: `Ctrl + Alt + G`
 
-### Create data storage
+### Creating data storage
 
 You will need to create a `.qcow2` file that will act as a virtual data storage. Use `qemu-image` like this:
 
@@ -57,9 +57,9 @@ You will need to create a `.qcow2` file that will act as a virtual data storage.
 qemu-img create -f qcow2 kalidisk.qcow2 30G
 ```
 
-I have decided to create a data storage named `kalidisk` that contains `30 GB` of memory.
+I have decided to create a data storage named `kalidisk` that contains **30 GB** of memory.
 
-### Install Kali Linux
+### Installing Kali Linux
 
 Now you can modify the previous command to install Kali Linux in the virtual disk that you created earlier.
 
@@ -84,6 +84,6 @@ qemu-system-x86_64 \
 
 ## MacOS
 
-There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a virtual machine running `macOS Catalina` in dark mode:
+There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a virtual machine running **macOS Catalina** in dark mode:
 
 ![MacOS](/images/creating-virtual-machines-using-qemu-kvm/mac.jpg)

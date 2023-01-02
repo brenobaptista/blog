@@ -12,10 +12,10 @@ date: '2021-09-11'
 
 Next.js and Create React App already come with ESLint, so we need only to extend its configuration if needed.
 
-- [Install ESLint's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Configure ESLint in Next.js](https://nextjs.org/docs/basic-features/eslint)
-- [Turn off conflicts with Prettier](https://github.com/prettier/eslint-config-prettier)
-- [Run Prettier as a rule](https://github.com/prettier/eslint-plugin-prettier)
+- [Installing ESLint's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Configuring ESLint in Next.js](https://nextjs.org/docs/basic-features/eslint)
+- [Turning off conflicts with Prettier](https://github.com/prettier/eslint-config-prettier)
+- [Running Prettier as a rule](https://github.com/prettier/eslint-plugin-prettier)
 
 ## Prettier
 
@@ -23,8 +23,8 @@ Next.js and Create React App already come with ESLint, so we need only to extend
 
 In <abbr title="Visual Studio Code">VSCode</abbr>, you can go to settings and use Prettier as the default formatter and enable format on save.
 
-- [Install Prettier's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Install Prettier in your project](https://prettier.io/docs/en/install.html)
+- [Installing Prettier's extension for VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Installing Prettier in your project](https://prettier.io/docs/en/install.html)
 
 My `.prettierrc.json` configuration:
 
@@ -43,7 +43,7 @@ My `.prettierrc.json` configuration:
 
 Instead of running ESLint and Prettier on the entire project every time, <dfn>Lint Staged</dfn> will make sure you only lint files that will be committed.
 
-- [Install Lint Staged in your project](https://github.com/okonet/lint-staged)
+- [Installing Lint Staged in your project](https://github.com/okonet/lint-staged)
 
 My `.lintstagedrc.json` configuration:
 
@@ -58,8 +58,7 @@ My `.lintstagedrc.json` configuration:
 
 <dfn>Husky</dfn> makes it easy to configure git hooks. It allows you to run commands upon commits, pushes and other hooks.
 
-> Lint Staged already installs Husky in its script.
-
+- **Lint Staged already installs Husky in its script.**
 - [Husky's website](https://typicode.github.io/husky/#/)
 
 My `pre-commit` configuration:
@@ -69,7 +68,7 @@ npx --no-install lint-staged
 yarn lint-staged
 ```
 
-My `pre-push` configuration (I use `Jest` for testing):
+My `pre-push` configuration (I use [Jest](https://jestjs.io/) for testing):
 
 ```json[class="line-numbers"]
 yarn jest
@@ -102,6 +101,6 @@ insert_final_newline = true
 
 Using these tools will make you deliver better code in your projects. Integrate them early on your projects to avoid some technical debt.
 
-You can also use `TypeScript` instead of `JavaScript`. It is a powerful language that removes all the headaches when debugging your code (no more `console.log` to discover the type of a variable).
+You can also use [TypeScript](https://www.typescriptlang.org/) instead of JavaScript. It is a powerful language that removes all the headaches when debugging your code (no more console logging to discover the type of a variable).
 
-Don't forget to **test your code** using tools like `Jest`/`React Testing Library` and `Cypress`. It will give you the confidence to make changes to your codebase without worrying about breaking stuff in production.
+Don't forget to **test your code** using tools like [Jest](https://jestjs.io/)/[React Testing Library](https://testing-library.com/) and [Cypress](https://www.cypress.io/). It will give you the confidence to make changes to your codebase without worrying about breaking stuff in production.

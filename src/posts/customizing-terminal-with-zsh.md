@@ -13,13 +13,13 @@ date: '2022-08-20'
 <dfn><abbr title="Z shell">Zsh</abbr></dfn> is an alternative to Bash.
 Many of the useful features of Bash were incorporated into Zsh, but also many original features were added.
 
-[How to install Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+- [Installing Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
 ## 2. Oh My Zsh
 
 <dfn>Oh My Zsh</dfn> is a framework for managing your Zsh configuration.
 
-[How to install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
+- [Installing Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 
 ### Plugins
 
@@ -41,7 +41,7 @@ plugins=(
 
 <dfn>Spaceship</dfn> is a minimalistic, powerful and extremely customizable Zsh prompt.
 
-[How to install Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#oh-my-zsh)
+- [Installing Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#oh-my-zsh)
 
 ### Setup
 

@@ -42,8 +42,8 @@ There is no standard structure in Go. However, the community has come with a bas
 ### Package names
 
 - Use singular nouns instead of plural, unless the singular noun causes a collision with existing primitive type names.
-  - Use `controller` instead of `controllers`.
-  - Use `errors` instead of `error`.
+  - Use **controller** instead of **controllers**.
+  - Use **errors** instead of **error**.
 
 ## Examples
 
