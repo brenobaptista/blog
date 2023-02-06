@@ -12,7 +12,7 @@ export const Page = styled.div`
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 19mm 25mm;
+  padding: 16mm 20mm;
 
   @media screen {
     margin: 5mm auto;

@@ -7,7 +7,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 19mm 25mm;
+  padding: 16mm 20mm;
 }
 
 .c1 {
@@ -273,6 +273,9 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
+              Provided a fully-integrated B2B payments and checkout infrastructure.
+            </li>
+            <li>
               Maintained containerized microservices in Go. Responsible for developing the email service, along with the email templates.
             </li>
             <li>
@@ -289,10 +292,10 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Fought intrusive advertising by developing desktop apps to connect partners.
+              Fought intrusive advertising by offering rewards at the cost of unused CPU/GPU.
             </li>
             <li>
-              Led efforts to vastly reduce technical debt in systems, launching a refactored partner dashboard with better UI/UX and performance.
+              Led efforts to vastly reduce technical debt in desktop apps, launching a refactored partner dashboard with better UI/UX and performance.
             </li>
           </ul>
         </div>
@@ -305,10 +308,10 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Helped businesses comply with data laws (GDPR/CCPA) with our plugins.
+              Helped businesses comply with data laws (GDPR/CCPA) with easy plugins.
             </li>
             <li>
-              Developed internal tools to increase developer efficiency using Bash.
+              Developed WordPress and Shopify plugins from scratch.
             </li>
           </ul>
         </div>

@@ -84,6 +84,10 @@ const Resume = (): JSX.Element => {
               <em>February 2022 - Present (USA, remote)</em>
               <ul>
                 <li>
+                  Provided a fully-integrated B2B payments and checkout
+                  infrastructure.
+                </li>
+                <li>
                   Maintained containerized microservices in Go. Responsible for
                   developing the email service, along with the email templates.
                 </li>
@@ -99,11 +103,11 @@ const Resume = (): JSX.Element => {
               <em>August 2020 - January 2022 (USA, remote)</em>
               <ul>
                 <li>
-                  Fought intrusive advertising by developing desktop apps to
-                  connect partners.
+                  Fought intrusive advertising by offering rewards at the cost
+                  of unused CPU/GPU.
                 </li>
                 <li>
-                  Led efforts to vastly reduce technical debt in systems,
+                  Led efforts to vastly reduce technical debt in desktop apps,
                   launching a refactored partner dashboard with better UI/UX and
                   performance.
                 </li>
@@ -114,13 +118,10 @@ const Resume = (): JSX.Element => {
               <em>January 2020 - August 2020 (USA, remote)</em>
               <ul>
                 <li>
-                  Helped businesses comply with data laws (GDPR/CCPA) with our
+                  Helped businesses comply with data laws (GDPR/CCPA) with easy
                   plugins.
                 </li>
-                <li>
-                  Developed internal tools to increase developer efficiency
-                  using Bash.
-                </li>
+                <li>Developed WordPress and Shopify plugins from scratch.</li>
               </ul>
             </div>
             <div>
