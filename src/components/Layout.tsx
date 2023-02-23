@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
-import Footer from './Footer'
-import Sparkles from './Sparkles'
-import Switch from './Switch'
+import Footer from '@/components/Footer'
+import Sparkles from '@/components/Sparkles'
+import Switch from '@/components/Switch'
 
-import { Container, Toolbar } from '../styles/components/Layout'
-import RetroGlobalStyle from '../styles/retro-global'
+import { Container, Toolbar } from '@/styles/components/Layout'
+import RetroGlobalStyle from '@/styles/retro-global'
 
 interface Props {
   children: React.ReactNode

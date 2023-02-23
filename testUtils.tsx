@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import { RenderResult } from '@testing-library/react/types'
 import { ThemeProvider } from 'styled-components'
 
-import retro from './src/styles/themes/retro'
+import retro from '@/styles/themes/retro'
 
 const Providers = ({ children }) => (
   <ThemeProvider theme={retro}>{children}</ThemeProvider>

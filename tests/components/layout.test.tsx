@@ -1,6 +1,6 @@
-import { render } from '../../testUtils'
-import Layout from '../../src/components/Layout'
-import ThemeContext from '../../src/contexts/ThemeContext'
+import { render } from 'testUtils'
+import Layout from '@/components/Layout'
+import ThemeContext from '@/contexts/ThemeContext'
 
 const renderWithContext = (ui, value) =>
   render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)

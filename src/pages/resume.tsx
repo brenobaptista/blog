@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
 
-import { Email, GitHub, LinkedIn, RSS } from '../components/svgs'
+import { Email, GitHub, LinkedIn, RSS } from '@/components/svgs'
 import {
   PrintingRules,
   Page,
@@ -10,7 +10,7 @@ import {
   Author,
   Social,
   Section
-} from '../styles/pages/Resume'
+} from '@/styles/pages/Resume'
 
 const Resume = (): JSX.Element => {
   useEffect(() => {

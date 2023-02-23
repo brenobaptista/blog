@@ -1,13 +1,13 @@
 import { useContext } from 'react'
 import Image from 'next/image'
 
-import hamster from '../../public/images/retro/hamster.gif'
-import jackhammer from '../../public/images/retro/jackhammer.gif'
-import money from '../../public/images/retro/money.gif'
-import sheep from '../../public/images/retro/sheep.gif'
-import worldwideweb from '../../public/images/retro/worldwideweb.gif'
-import ThemeContext from '../contexts/ThemeContext'
-import { Marquee, Construction, Song, Sheep } from '../styles/components/Retro'
+import hamster from 'public/images/retro/hamster.gif'
+import jackhammer from 'public/images/retro/jackhammer.gif'
+import money from 'public/images/retro/money.gif'
+import sheep from 'public/images/retro/sheep.gif'
+import worldwideweb from 'public/images/retro/worldwideweb.gif'
+import ThemeContext from '@/contexts/ThemeContext'
+import { Marquee, Construction, Song, Sheep } from '@/styles/components/Retro'
 
 const Retro = (): JSX.Element => {
   const { theme } = useContext(ThemeContext)

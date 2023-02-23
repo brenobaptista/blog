@@ -1,6 +1,6 @@
 import { parseISO, format } from 'date-fns'
 
-import Time from '../styles/components/Date'
+import Time from '@/styles/components/Date'
 
 interface Props {
   date: string

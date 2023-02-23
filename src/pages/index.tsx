@@ -3,14 +3,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-import { Email, GitHub, Portrait, RSS } from '../components/svgs'
-import Date from '../components/Date'
-import Layout from '../components/Layout'
-import Retro from '../components/Retro'
-import Search from '../components/Search'
-import { Post, getSortedPostsData } from '../lib/posts'
-import generateRss from '../lib/rss'
-import generateSitemap from '../lib/sitemap'
+import { Email, GitHub, Portrait, RSS } from '@/components/svgs'
+import Date from '@/components/Date'
+import Layout from '@/components/Layout'
+import Retro from '@/components/Retro'
+import Search from '@/components/Search'
+import { Post, getSortedPostsData } from '@/lib/posts'
+import generateRss from '@/lib/rss'
+import generateSitemap from '@/lib/sitemap'
 import {
   HomeHeader,
   PortraitWrapper,
@@ -18,7 +18,7 @@ import {
   Intro,
   Blog,
   Card
-} from '../styles/pages/Home'
+} from '@/styles/pages/Home'
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()

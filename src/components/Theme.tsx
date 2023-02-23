@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import ThemeContext from '../contexts/ThemeContext'
-import dracula from '../styles/themes/dracula'
-import retro from '../styles/themes/retro'
+import ThemeContext from '@/contexts/ThemeContext'
+import dracula from '@/styles/themes/dracula'
+import retro from '@/styles/themes/retro'
 
 interface Props {
   children: React.ReactNode

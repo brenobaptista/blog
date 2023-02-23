@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import { Portrait } from '../../components/svgs'
-import Date from '../../components/Date'
-import Layout from '../../components/Layout'
-import { PostData, getAllPostIds, getPostData } from '../../lib/posts'
-import { Body, Separator, ShortBio, MorePosts } from '../../styles/pages/Post'
+import { Portrait } from '@/components/svgs'
+import Date from '@/components/Date'
+import Layout from '@/components/Layout'
+import { PostData, getAllPostIds, getPostData } from '@/lib/posts'
+import { Body, Separator, ShortBio, MorePosts } from '@/styles/pages/Post'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
