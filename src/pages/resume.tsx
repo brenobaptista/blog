@@ -88,40 +88,39 @@ const Resume = (): JSX.Element => {
                   infrastructure.
                 </li>
                 <li>
-                  Maintained containerized microservices in Go. Responsible for
-                  developing the email service, along with the email templates.
+                  Maintained highly-scalable and containerized microservices in
+                  Go. Responsible for developing the email service, along with
+                  the email templates.
                 </li>
                 <li>
                   Delighted clients by crafting web experiences. Translated
                   design mockups into efficient UI components and responsive
                   pages.
                 </li>
+                <li>
+                  Took leadership roles by managing high-priority projects
+                  inside the organization.
+                </li>
               </ul>
             </div>
             <div>
-              <strong>Jr. Software Engineer, Massive</strong>
-              <em>August 2020 - January 2022 (USA, remote)</em>
+              <strong>Full-Stack Developer, Massive</strong>
+              <em>January 2020 - January 2022 (USA, remote)</em>
               <ul>
                 <li>
                   Fought intrusive advertising by offering rewards at the cost
                   of unused CPU/GPU.
                 </li>
                 <li>
-                  Led efforts to vastly reduce technical debt in desktop apps,
-                  launching a refactored partner dashboard with better UI/UX and
-                  performance.
+                  Led efforts to vastly reduce technical debt in web and desktop
+                  apps, launching a refactored partner dashboard with better
+                  UI/UX and performance.
                 </li>
-              </ul>
-            </div>
-            <div>
-              <strong>Jr. Full-Stack Developer, Privacy Pixel</strong>
-              <em>January 2020 - August 2020 (USA, remote)</em>
-              <ul>
                 <li>
                   Helped businesses comply with data laws (GDPR/CCPA) with easy
-                  plugins.
+                  plugins by developing WordPress and Shopify plugins from
+                  scratch.
                 </li>
-                <li>Developed WordPress and Shopify plugins from scratch.</li>
               </ul>
             </div>
             <div>
@@ -129,8 +128,8 @@ const Resume = (): JSX.Element => {
               <em>February 2019 - January 2020 (Brazil)</em>
               <ul>
                 <li>
-                  Volunteered to help businesses build an online presence by
-                  managing projects.
+                  Helped businesses build an online presence by managing a small
+                  team that developed high-impact projects.
                 </li>
                 <li>
                   Improved the organization productivity by enforcing agile

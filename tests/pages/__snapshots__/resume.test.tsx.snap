@@ -7,7 +7,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 16mm 20mm;
+  padding: 22mm 25mm;
 }
 
 .c1 {
@@ -276,42 +276,32 @@ exports[`matches snapshot in dracula mode 1`] = `
               Provided a fully-integrated B2B payments and checkout infrastructure.
             </li>
             <li>
-              Maintained containerized microservices in Go. Responsible for developing the email service, along with the email templates.
+              Maintained highly-scalable and containerized microservices in Go. Responsible for developing the email service, along with the email templates.
             </li>
             <li>
               Delighted clients by crafting web experiences. Translated design mockups into efficient UI components and responsive pages.
+            </li>
+            <li>
+              Took leadership roles by managing high-priority projects inside the organization.
             </li>
           </ul>
         </div>
         <div>
           <strong>
-            Jr. Software Engineer, Massive
+            Full-Stack Developer, Massive
           </strong>
           <em>
-            August 2020 - January 2022 (USA, remote)
+            January 2020 - January 2022 (USA, remote)
           </em>
           <ul>
             <li>
               Fought intrusive advertising by offering rewards at the cost of unused CPU/GPU.
             </li>
             <li>
-              Led efforts to vastly reduce technical debt in desktop apps, launching a refactored partner dashboard with better UI/UX and performance.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <strong>
-            Jr. Full-Stack Developer, Privacy Pixel
-          </strong>
-          <em>
-            January 2020 - August 2020 (USA, remote)
-          </em>
-          <ul>
-            <li>
-              Helped businesses comply with data laws (GDPR/CCPA) with easy plugins.
+              Led efforts to vastly reduce technical debt in web and desktop apps, launching a refactored partner dashboard with better UI/UX and performance.
             </li>
             <li>
-              Developed WordPress and Shopify plugins from scratch.
+              Helped businesses comply with data laws (GDPR/CCPA) with easy plugins by developing WordPress and Shopify plugins from scratch.
             </li>
           </ul>
         </div>
@@ -324,7 +314,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Volunteered to help businesses build an online presence by managing projects.
+              Helped businesses build an online presence by managing a small team that developed high-impact projects.
             </li>
             <li>
               Improved the organization productivity by enforcing agile across the company.
