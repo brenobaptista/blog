@@ -132,6 +132,53 @@ const Resume = (): JSX.Element => (
           </div>
         </Section>
         <Section>
+          <h2>PROJECTS</h2>
+          <ol>
+            <li>
+              <i>Programming Blog: </i>
+              <a
+                href='https://github.com/brenobaptista/blog'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <span>github.com/brenobaptista/blog</span>
+              </a>
+            </li>
+            <li>
+              <i>iOS Calculator Clone App: </i>
+              <a
+                href='https://github.com/brenobaptista/ios-calculator-react-native'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <span>
+                  github.com/brenobaptista/ios-calculator-react-native
+                </span>
+              </a>
+            </li>
+            <li>
+              <i>Tailwind Dashboard Template: </i>
+              <a
+                href='https://github.com/brenobaptista/plume-dashboard'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <span>github.com/brenobaptista/plume-dashboard</span>
+              </a>
+            </li>
+            <li>
+              <i>Pomodoro App: </i>
+              <a
+                href='https://github.com/brenobaptista/pomodoro-react-native'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <span>github.com/brenobaptista/pomodoro-react-native</span>
+              </a>
+            </li>
+          </ol>
+        </Section>
+        <Section>
           <h2>EDUCATION</h2>
           <div>
             <strong>Bachelor’s Degree in Computer Science</strong>

@@ -12,7 +12,7 @@ export const Page = styled.div`
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 22mm 25mm;
+  padding: 10mm 15mm;
 
   @media screen {
     margin: 5mm auto;
@@ -21,8 +21,14 @@ export const Page = styled.div`
 
 export const Content = styled.div`
   line-height: normal;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-align: justify;
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `
 
 export const Header = styled.header`
@@ -34,13 +40,13 @@ export const Author = styled.div`
   flex: 1;
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
   }
 
   div {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 `
 
@@ -50,15 +56,12 @@ export const Social = styled.div`
     align-items: center;
     gap: 8px;
     margin: 4px 0;
-    color: #000000;
-    text-decoration: underline;
-    cursor: pointer;
   }
 `
 
 export const Section = styled.div`
   h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 24px 0 8px;
   }
 
@@ -71,7 +74,8 @@ export const Section = styled.div`
     display: block;
   }
 
-  ul {
+  ul,
+  ol {
     margin: 10px 0 20px;
     padding-left: 30px;
   }

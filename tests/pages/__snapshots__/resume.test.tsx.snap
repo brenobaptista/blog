@@ -7,13 +7,20 @@ exports[`matches snapshot in dracula mode 1`] = `
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 22mm 25mm;
+  padding: 10mm 15mm;
 }
 
 .c1 {
   line-height: normal;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-align: justify;
+}
+
+.c1 a {
+  color: #000000;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .c2 {
@@ -31,13 +38,13 @@ exports[`matches snapshot in dracula mode 1`] = `
 }
 
 .c3 h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 0;
 }
 
 .c3 div {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .c4 a {
@@ -51,14 +58,10 @@ exports[`matches snapshot in dracula mode 1`] = `
   align-items: center;
   gap: 8px;
   margin: 4px 0;
-  color: #000000;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .c5 h2 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 24px 0 8px;
 }
 
@@ -71,7 +74,8 @@ exports[`matches snapshot in dracula mode 1`] = `
   display: block;
 }
 
-.c5 ul {
+.c5 ul,
+.c5 ol {
   margin: 10px 0 20px;
   padding-left: 30px;
 }
@@ -321,6 +325,71 @@ exports[`matches snapshot in dracula mode 1`] = `
             </li>
           </ul>
         </div>
+      </div>
+      <div
+        class="c5"
+      >
+        <h2>
+          PROJECTS
+        </h2>
+        <ol>
+          <li>
+            <i>
+              Programming Blog: 
+            </i>
+            <a
+              href="https://github.com/brenobaptista/blog"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span>
+                github.com/brenobaptista/blog
+              </span>
+            </a>
+          </li>
+          <li>
+            <i>
+              iOS Calculator Clone App: 
+            </i>
+            <a
+              href="https://github.com/brenobaptista/ios-calculator-react-native"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span>
+                github.com/brenobaptista/ios-calculator-react-native
+              </span>
+            </a>
+          </li>
+          <li>
+            <i>
+              Tailwind Dashboard Template: 
+            </i>
+            <a
+              href="https://github.com/brenobaptista/plume-dashboard"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span>
+                github.com/brenobaptista/plume-dashboard
+              </span>
+            </a>
+          </li>
+          <li>
+            <i>
+              Pomodoro App: 
+            </i>
+            <a
+              href="https://github.com/brenobaptista/pomodoro-react-native"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span>
+                github.com/brenobaptista/pomodoro-react-native
+              </span>
+            </a>
+          </li>
+        </ol>
       </div>
       <div
         class="c5"
