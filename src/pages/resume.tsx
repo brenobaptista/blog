@@ -145,6 +145,16 @@ const Resume = (): JSX.Element => (
               </a>
             </li>
             <li>
+              <i>Tailwind Dashboard Template: </i>
+              <a
+                href='https://github.com/brenobaptista/plume-dashboard'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <span>github.com/brenobaptista/plume-dashboard</span>
+              </a>
+            </li>
+            <li>
               <i>iOS Calculator Clone App: </i>
               <a
                 href='https://github.com/brenobaptista/ios-calculator-react-native'
@@ -154,16 +164,6 @@ const Resume = (): JSX.Element => (
                 <span>
                   github.com/brenobaptista/ios-calculator-react-native
                 </span>
-              </a>
-            </li>
-            <li>
-              <i>Tailwind Dashboard Template: </i>
-              <a
-                href='https://github.com/brenobaptista/plume-dashboard'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                <span>github.com/brenobaptista/plume-dashboard</span>
               </a>
             </li>
             <li>

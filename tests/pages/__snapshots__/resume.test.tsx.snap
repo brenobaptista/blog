@@ -349,20 +349,6 @@ exports[`matches snapshot in dracula mode 1`] = `
           </li>
           <li>
             <i>
-              iOS Calculator Clone App: 
-            </i>
-            <a
-              href="https://github.com/brenobaptista/ios-calculator-react-native"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <span>
-                github.com/brenobaptista/ios-calculator-react-native
-              </span>
-            </a>
-          </li>
-          <li>
-            <i>
               Tailwind Dashboard Template: 
             </i>
             <a
@@ -372,6 +358,20 @@ exports[`matches snapshot in dracula mode 1`] = `
             >
               <span>
                 github.com/brenobaptista/plume-dashboard
+              </span>
+            </a>
+          </li>
+          <li>
+            <i>
+              iOS Calculator Clone App: 
+            </i>
+            <a
+              href="https://github.com/brenobaptista/ios-calculator-react-native"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span>
+                github.com/brenobaptista/ios-calculator-react-native
               </span>
             </a>
           </li>
