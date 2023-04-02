@@ -164,6 +164,16 @@ const Resume = (): JSX.Element => (
                 <span>github.com/brenobaptista/apr-calculator</span>
               </a>
             </li>
+            <li>
+              <i>Deno URL Shortener Service: </i>
+              <a
+                href='https://github.com/brenobaptista/deno-url-shortener'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <span>github.com/brenobaptista/deno-url-shortener</span>
+              </a>
+            </li>
           </ol>
         </Section>
         <Section>
