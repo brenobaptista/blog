@@ -155,25 +155,13 @@ const Resume = (): JSX.Element => (
               </a>
             </li>
             <li>
-              <i>iOS Calculator Clone App: </i>
+              <i>APR Calculator Service: </i>
               <a
-                href='https://github.com/brenobaptista/ios-calculator-react-native'
+                href='https://github.com/brenobaptista/apr-calculator'
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <span>
-                  github.com/brenobaptista/ios-calculator-react-native
-                </span>
-              </a>
-            </li>
-            <li>
-              <i>Pomodoro App: </i>
-              <a
-                href='https://github.com/brenobaptista/pomodoro-react-native'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                <span>github.com/brenobaptista/pomodoro-react-native</span>
+                <span>github.com/brenobaptista/apr-calculator</span>
               </a>
             </li>
           </ol>

@@ -363,29 +363,15 @@ exports[`matches snapshot in dracula mode 1`] = `
           </li>
           <li>
             <i>
-              iOS Calculator Clone App: 
+              APR Calculator Service: 
             </i>
             <a
-              href="https://github.com/brenobaptista/ios-calculator-react-native"
+              href="https://github.com/brenobaptista/apr-calculator"
               rel="noreferrer noopener"
               target="_blank"
             >
               <span>
-                github.com/brenobaptista/ios-calculator-react-native
-              </span>
-            </a>
-          </li>
-          <li>
-            <i>
-              Pomodoro App: 
-            </i>
-            <a
-              href="https://github.com/brenobaptista/pomodoro-react-native"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <span>
-                github.com/brenobaptista/pomodoro-react-native
+                github.com/brenobaptista/apr-calculator
               </span>
             </a>
           </li>
