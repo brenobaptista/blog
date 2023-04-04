@@ -35,7 +35,7 @@ My `.prettierrc.json` configuration:
   "jsxSingleQuote": true,
   "arrowParens": "avoid",
   "trailingComma": "none",
-  "endOfLine": "auto"
+  "endOfLine": "lf"
 }
 ```
 
@@ -58,19 +58,19 @@ My `.lintstagedrc.json` configuration:
 
 <dfn>Husky</dfn> makes it easy to configure git hooks. It allows you to run commands upon commits, pushes and other hooks.
 
-- **Lint Staged already installs Husky in its script.**
+- [Installing Husky in your project](https://github.com/typicode/husky)
 - [Husky's website](https://typicode.github.io/husky/#/)
 
-My `pre-commit` configuration:
+My `pre-commit` configuration (runs ESLint and Prettier):
 
 ```json[class="line-numbers"]
-npx --no-install lint-staged
 yarn lint-staged
 ```
 
-My `pre-push` configuration (I use [Jest](https://jestjs.io/) for testing):
+My `pre-push` configuration (runs type-check and Jest):
 
 ```json[class="line-numbers"]
+yarn tsc --noEmit
 yarn jest
 ```
 
