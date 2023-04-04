@@ -363,15 +363,15 @@ exports[`matches snapshot in dracula mode 1`] = `
           </li>
           <li>
             <i>
-              APR Calculator Service: 
+              APR Service for Vehicle Loans: 
             </i>
             <a
-              href="https://github.com/brenobaptista/apr-calculator"
+              href="https://github.com/brenobaptista/apr-service"
               rel="noreferrer noopener"
               target="_blank"
             >
               <span>
-                github.com/brenobaptista/apr-calculator
+                github.com/brenobaptista/apr-service
               </span>
             </a>
           </li>

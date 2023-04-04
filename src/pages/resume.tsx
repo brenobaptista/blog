@@ -155,13 +155,13 @@ const Resume = (): JSX.Element => (
               </a>
             </li>
             <li>
-              <i>APR Calculator Service: </i>
+              <i>APR Service for Vehicle Loans: </i>
               <a
-                href='https://github.com/brenobaptista/apr-calculator'
+                href='https://github.com/brenobaptista/apr-service'
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <span>github.com/brenobaptista/apr-calculator</span>
+                <span>github.com/brenobaptista/apr-service</span>
               </a>
             </li>
             <li>
