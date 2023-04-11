@@ -49,8 +49,8 @@ My `.lintstagedrc.json` configuration:
 
 ```json[class="line-numbers"]
 {
-  "*.js": "eslint --fix",
-  "*.{json,css,md}": "prettier --single-quote --write"
+  "*.{ts,tsx}": "eslint --fix",
+  "*.{ts,tsx}": "prettier --write"
 }
 ```
 
