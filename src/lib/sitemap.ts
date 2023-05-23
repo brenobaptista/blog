@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { Post } from './posts'
 
-const baseUrl = 'https://brenobaptista.vercel.app'
+const baseUrl = 'https://www.brenobaptista.com'
 
 const generateSitemapItem = (post: Post): string => `
   <url>

@@ -70,7 +70,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
             <GitHub width={40} height={40} />
           </a>
           <a
-            href='https://brenobaptista.vercel.app/rss.xml'
+            href='https://www.brenobaptista.com/rss.xml'
             target='_blank'
             rel='noreferrer noopener'
             aria-label='RSS feed'

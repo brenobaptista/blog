@@ -16,7 +16,7 @@ Create a `lib/rss.ts` file and add this code (modify it to fit your case):
 import fs from 'fs'
 import { Post } from './posts'
 
-const baseUrl = 'https://brenobaptista.vercel.app'
+const baseUrl = 'https://www.brenobaptista.com'
 
 const generateRssItem = (post: Post): string => `
     <item>
@@ -82,11 +82,11 @@ The last step is to add a link to the RSS feed inside your <head> tag. You shoul
   rel='alternate'
   type='application/rss+xml'
   title='RSS feed for blog posts'
-  href='https://brenobaptista.vercel.app/rss.xml'
+  href='https://www.brenobaptista.com/rss.xml'
 />
 ```
 
-This is [my rss.xml](http://brenobaptista.vercel.app/rss.xml) in production.
+This is [my rss.xml](https://www.brenobaptista.com/rss.xml) in production.
 
 You can check if your RSS is valid through the [W3C Feed Validation Service](https://validator.w3.org/feed/).
 

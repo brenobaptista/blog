@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
             rel='alternate'
             type='application/rss+xml'
             title='RSS feed for blog posts'
-            href='https://brenobaptista.vercel.app/rss.xml'
+            href='https://www.brenobaptista.com/rss.xml'
           />
           <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
@@ -53,7 +53,7 @@ export default class MyDocument extends Document {
           <meta name='theme-color' content='#bd93f9' />
           <meta
             property='og:image'
-            content='https://brenobaptista.vercel.app/og-image.png'
+            content='https://www.brenobaptista.com/og-image.png'
           />
           <meta
             name='google-site-verification'

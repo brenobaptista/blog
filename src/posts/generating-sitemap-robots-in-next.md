@@ -16,7 +16,7 @@ Create a `lib/sitemap.ts` file and add this code (modify it to fit your case):
 import fs from 'fs'
 import { Post } from './posts'
 
-const baseUrl = 'https://brenobaptista.vercel.app'
+const baseUrl = 'https://www.brenobaptista.com'
 
 const generateSitemapItem = (post: Post): string => `
   <url>
@@ -67,7 +67,7 @@ export async function getStaticProps() {
 }
 ```
 
-This is [my sitemap.xml](https://brenobaptista.vercel.app/sitemap.xml) in production.
+This is [my sitemap.xml](https://www.brenobaptista.com/sitemap.xml) in production.
 
 ## Robots exclusion standard (robots.txt)
 
@@ -79,7 +79,7 @@ This is my `public/robots.txt` so you can modify it to fit your case:
 User-agent: *
 Disallow:
 
-Sitemap: https://brenobaptista.vercel.app/sitemap.xml
+Sitemap: https://www.brenobaptista.com/sitemap.xml
 ```
 
-This is [my robots.txt](https://brenobaptista.vercel.app/robots.txt) in production.
+This is [my robots.txt](https://www.brenobaptista.com/robots.txt) in production.
