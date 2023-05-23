@@ -35,7 +35,7 @@ const Resume = (): JSX.Element => (
                 aria-label='Contact me by email'
               >
                 <Email width={16} height={16} />
-                <span>brenobaptista@protomail.com</span>
+                <span>brenobaptista@protonmail.com</span>
               </a>
             </div>
             <div>
