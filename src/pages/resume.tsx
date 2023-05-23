@@ -40,13 +40,13 @@ const Resume = (): JSX.Element => (
             </div>
             <div>
               <a
-                href='https://www.brenobaptista.me/'
+                href='https://www.brenobaptista.com/'
                 target='_blank'
                 rel='noreferrer noopener'
                 aria-label='My blog'
               >
                 <RSS width={16} height={16} />
-                <span>brenobaptista.me</span>
+                <span>brenobaptista.com</span>
               </a>
             </div>
             <div>
