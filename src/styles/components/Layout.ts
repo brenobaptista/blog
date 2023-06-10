@@ -28,6 +28,16 @@ export const Toolbar = styled.div`
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 8px;
+  border-radius: 0 0 8px 8px;
+  background-color: ${props => {
+    const transparency = props.theme.mode === 'dracula' ? 'aa' : ''
+    return `${props.theme.colors.background}${transparency}`
+  }};
+  backdrop-filter: blur(4px);
 
   a {
     font-size: 1.4rem;

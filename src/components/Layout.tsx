@@ -9,13 +9,12 @@ import RetroGlobalStyle from '@/styles/retro-global'
 
 interface Props {
   children: React.ReactNode
-  home?: boolean
 }
 
-const Layout = ({ children, home = false }: Props): JSX.Element => (
+const Layout = ({ children }: Props): JSX.Element => (
   <Container>
     <Toolbar>
-      {home ? <div /> : <Link href='/'>Breno Baptista</Link>}
+      <Link href='/'>Breno Baptista</Link>
       <Switch />
     </Toolbar>
     <main>{children}</main>

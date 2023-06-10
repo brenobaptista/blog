@@ -8,11 +8,12 @@ export const HomeHeader = styled.header`
 
 export const PortraitWrapper = styled.div`
   height: 128px;
+  margin-bottom: 32px;
   border-radius: 50%;
   transition: 0.2s all ease-in-out;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   ${props =>
@@ -29,23 +30,23 @@ export const PortraitWrapper = styled.div`
     0%,
     100% {
       transform: translate(0);
-      filter: drop-shadow(0 -4px 8px orange);
+      filter: drop-shadow(0 3px 6px orange);
     }
 
     50% {
-      transform: scale(1.2) translate(0, -16px);
-      filter: drop-shadow(0 -8px 16px orange);
+      transform: scale(1.2) translate(0, -8px);
+      filter: drop-shadow(0 4px 8px orange);
     }
   }
 
   @keyframes eclipse {
     0%,
     100% {
-      filter: drop-shadow(0 0 16px #bd93f9);
+      filter: drop-shadow(0 0 10px #bd93f9);
     }
 
     50% {
-      filter: drop-shadow(0 0 8px #bd93f9);
+      filter: drop-shadow(0 0 5px #bd93f9);
     }
   }
 `

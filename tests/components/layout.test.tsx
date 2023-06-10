@@ -22,7 +22,7 @@ test('matches snapshot in retro mode for home', () => {
   const toggleTheme = jest.fn()
   const theme = { mode: 'retro' }
   const { asFragment } = renderWithContext(
-    <Layout home>
+    <Layout>
       <></>
     </Layout>,
     { theme, toggleTheme }

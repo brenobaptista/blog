@@ -136,6 +136,15 @@ exports[`matches snapshot in dracula mode 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 32px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 8px;
+  border-radius: 0 0 8px 8px;
+  background-color: black;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .c1 a {

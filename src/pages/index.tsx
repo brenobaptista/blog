@@ -41,7 +41,7 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
   const [posts, setPosts] = useState<Post[]>(allPostsData)
 
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>Breno Baptista</title>
         <meta
@@ -53,7 +53,6 @@ const Home = ({ allPostsData }: Props): JSX.Element => {
         <PortraitWrapper>
           <Portrait width={128} height={128} />
         </PortraitWrapper>
-        <h1>Breno Baptista</h1>
         <SocialIcons>
           <a
             href='mailto:brenobaptista@protonmail.com'
