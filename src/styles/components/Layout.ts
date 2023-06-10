@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   max-width: 768px;
   padding: 16px;
-  margin: 32px auto;
+  margin: 16px auto;
   background-color: ${props => props.theme.colors.background};
   border: ${props =>
     props.theme.mode === 'retro'
@@ -13,7 +13,7 @@ export const Container = styled.div`
   font-family: ${props => props.theme.mode === 'retro' && 'monospace'};
 
   @media screen and (max-width: 768px) {
-    margin: 16px 8px;
+    margin: 8px;
   }
 
   img {
@@ -25,11 +25,11 @@ export const Container = styled.div`
 export const Toolbar = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 32px;
 
   a {
-    position: relative;
-    top: -8px;
     font-size: 1.4rem;
     font-weight: bold;
   }

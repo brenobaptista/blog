@@ -2,6 +2,8 @@ import { useContext } from 'react'
 
 import ThemeContext from '@/contexts/ThemeContext'
 import {
+  Wrapper,
+  Label,
   InvisibleCheckbox,
   Background,
   Toggle
@@ -18,11 +20,12 @@ const Switch = (): JSX.Element => {
   }
 
   return (
-    <>
+    <Wrapper>
+      <Label>Retro mode</Label>
       <InvisibleCheckbox
         id='checkbox'
         type='checkbox'
-        checked={theme.mode === 'dracula'}
+        checked={theme.mode === 'retro'}
         onChange={toggleTheme}
       />
       <Background
@@ -34,7 +37,7 @@ const Switch = (): JSX.Element => {
       >
         <Toggle />
       </Background>
-    </>
+    </Wrapper>
   )
 }
 

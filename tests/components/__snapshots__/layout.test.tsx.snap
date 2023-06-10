@@ -2,7 +2,7 @@
 
 exports[`matches snapshot in dracula mode 1`] = `
 <DocumentFragment>
-  .c9 {
+  .c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,12 +14,12 @@ exports[`matches snapshot in dracula mode 1`] = `
   font-size: 0.9rem;
 }
 
-.c9 a {
+.c11 a {
   margin: 16px;
   border-radius: 4px;
 }
 
-.c10 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -29,21 +29,41 @@ exports[`matches snapshot in dracula mode 1`] = `
   flex-direction: column;
 }
 
-.c8 {
+.c10 {
   border: 0;
   height: 1px;
   background-color: gray;
   background-image: linear-gradient(to right,gray,gray,gray);
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2px;
+}
+
 .c3 {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.c5 {
   position: absolute;
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61,14 +81,10 @@ exports[`matches snapshot in dracula mode 1`] = `
   border-radius: 56px;
   width: 56px;
   height: 28px;
-  background-color: orange;
-}
-
-.c5:hover {
   background-color: darkorange;
 }
 
-.c7 {
+.c9 {
   content: '';
   position: absolute;
   top: 2px;
@@ -81,7 +97,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   transition: 0.2s all ease-in-out;
 }
 
-.c2:checked + .c4 .c6 {
+.c4:checked + .c6 .c8 {
   left: calc(100% - 2px);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -91,7 +107,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 .c0 {
   max-width: 768px;
   padding: 16px;
-  margin: 32px auto;
+  margin: 16px auto;
   background-color: black;
   border: 1px solid gray;
   border-radius: 8px;
@@ -112,18 +128,23 @@ exports[`matches snapshot in dracula mode 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 32px;
 }
 
 .c1 a {
-  position: relative;
-  top: -8px;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
 @media screen and (max-width:360px) {
-  .c9 {
+  .c11 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -133,7 +154,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 
 @media screen and (max-width:768px) {
   .c0 {
-    margin: 16px 8px;
+    margin: 8px;
   }
 }
 
@@ -148,34 +169,42 @@ exports[`matches snapshot in dracula mode 1`] = `
       >
         Breno Baptista
       </a>
-      <input
-        checked=""
-        class="c2 c3"
-        id="checkbox"
-        type="checkbox"
-      />
-      <label
-        aria-label="Change the visual styles"
-        class="c4 c5"
-        data-testid="label-checkbox"
-        for="checkbox"
-        tabindex="0"
+      <div
+        class="c2"
       >
-        <span
-          class="c6 c7"
+        <div
+          class="c3"
+        >
+          Retro mode
+        </div>
+        <input
+          class="c4 c5"
+          id="checkbox"
+          type="checkbox"
         />
-      </label>
+        <label
+          aria-label="Change the visual styles"
+          class="c6 c7"
+          data-testid="label-checkbox"
+          for="checkbox"
+          tabindex="0"
+        >
+          <span
+            class="c8 c9"
+          />
+        </label>
+      </div>
     </div>
     <main />
     <footer>
       <hr
-        class="c8"
+        class="c10"
       />
       <nav
-        class="c9"
+        class="c11"
       >
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="mailto:brenobaptista@protonmail.com"
@@ -184,7 +213,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           </a>
         </div>
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="https://github.com/brenobaptista/"
@@ -195,7 +224,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           </a>
         </div>
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="/rss.xml"
@@ -204,7 +233,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           </a>
         </div>
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="/resume"
@@ -220,7 +249,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 
 exports[`matches snapshot in retro mode for home 1`] = `
 <DocumentFragment>
-  .c9 {
+  .c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -232,12 +261,12 @@ exports[`matches snapshot in retro mode for home 1`] = `
   font-size: 0.9rem;
 }
 
-.c9 a {
+.c11 a {
   margin: 16px;
   border-radius: 4px;
 }
 
-.c10 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -247,24 +276,24 @@ exports[`matches snapshot in retro mode for home 1`] = `
   flex-direction: column;
 }
 
-.c8 {
+.c10 {
   border: 0;
   height: 1px;
   background-color: gray;
   background-image: linear-gradient(to right,gray,gray,gray);
 }
 
-.c11 {
+.c13 {
   margin: 24px 0;
   font-size: 0.9rem;
   text-align: center;
 }
 
-.c11 a {
+.c13 a {
   margin: 0 8px;
 }
 
-.c12 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -279,19 +308,39 @@ exports[`matches snapshot in retro mode for home 1`] = `
   margin: 8px 0 16px;
 }
 
-.c13 {
+.c15 {
   text-align: center;
   font-size: 0.8rem;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2px;
+}
+
 .c3 {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.c5 {
   position: absolute;
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -309,14 +358,10 @@ exports[`matches snapshot in retro mode for home 1`] = `
   border-radius: 56px;
   width: 56px;
   height: 28px;
-  background-color: orange;
-}
-
-.c5:hover {
   background-color: darkorange;
 }
 
-.c7 {
+.c9 {
   content: '';
   position: absolute;
   top: 2px;
@@ -329,7 +374,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
   transition: 0.2s all ease-in-out;
 }
 
-.c2:checked + .c4 .c6 {
+.c4:checked + .c6 .c8 {
   left: calc(100% - 2px);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -339,7 +384,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
 .c0 {
   max-width: 768px;
   padding: 16px;
-  margin: 32px auto;
+  margin: 16px auto;
   background-color: black;
   border: 1px solid gray;
   border-radius: 8px;
@@ -360,18 +405,23 @@ exports[`matches snapshot in retro mode for home 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 32px;
 }
 
 .c1 a {
-  position: relative;
-  top: -8px;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
 @media screen and (max-width:360px) {
-  .c9 {
+  .c11 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -381,7 +431,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
 
 @media screen and (max-width:768px) {
   .c0 {
-    margin: 16px 8px;
+    margin: 8px;
   }
 }
 
@@ -392,33 +442,43 @@ exports[`matches snapshot in retro mode for home 1`] = `
       class="c1"
     >
       <div />
-      <input
-        class="c2 c3"
-        id="checkbox"
-        type="checkbox"
-      />
-      <label
-        aria-label="Change the visual styles"
-        class="c4 c5"
-        data-testid="label-checkbox"
-        for="checkbox"
-        tabindex="0"
+      <div
+        class="c2"
       >
-        <span
-          class="c6 c7"
+        <div
+          class="c3"
+        >
+          Retro mode
+        </div>
+        <input
+          checked=""
+          class="c4 c5"
+          id="checkbox"
+          type="checkbox"
         />
-      </label>
+        <label
+          aria-label="Change the visual styles"
+          class="c6 c7"
+          data-testid="label-checkbox"
+          for="checkbox"
+          tabindex="0"
+        >
+          <span
+            class="c8 c9"
+          />
+        </label>
+      </div>
     </div>
     <main />
     <footer>
       <hr
-        class="c8"
+        class="c10"
       />
       <nav
-        class="c9"
+        class="c11"
       >
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="mailto:brenobaptista@protonmail.com"
@@ -427,7 +487,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
           </a>
         </div>
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="https://github.com/brenobaptista/"
@@ -438,7 +498,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
           </a>
         </div>
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="/rss.xml"
@@ -447,7 +507,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
           </a>
         </div>
         <div
-          class="c10"
+          class="c12"
         >
           <a
             href="/resume"
@@ -457,10 +517,10 @@ exports[`matches snapshot in retro mode for home 1`] = `
         </div>
       </nav>
       <hr
-        class="c8"
+        class="c10"
       />
       <div
-        class="c11"
+        class="c13"
       >
         <a
           href="https://hotlinewebring.club/brenobaptista/previous"
@@ -485,7 +545,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         </a>
       </div>
       <div
-        class="c12"
+        class="c14"
       >
         <img
           alt="Bookmark this page"
@@ -665,7 +725,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         />
       </div>
       <div
-        class="c13"
+        class="c15"
       >
         © 2020-2023 Breno Baptista
       </div>
