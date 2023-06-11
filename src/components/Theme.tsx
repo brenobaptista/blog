@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 
 import ThemeContext from '@/contexts/ThemeContext'
@@ -12,8 +12,6 @@ interface Props {
 const Theme = ({ children }: Props): JSX.Element => {
   const [theme, setTheme] = useState<DefaultTheme>(dracula)
 
-  const didMountRef = useRef<boolean>(false)
-
   useEffect(() => {
     const storageValue = localStorage.getItem('theme')
 
@@ -23,11 +21,7 @@ const Theme = ({ children }: Props): JSX.Element => {
   }, [])
 
   useEffect(() => {
-    if (didMountRef.current) {
-      localStorage.setItem('theme', JSON.stringify(theme))
-    } else {
-      didMountRef.current = true
-    }
+    localStorage.setItem('theme', JSON.stringify(theme))
   }, [theme])
 
   const toggleTheme = () => {
