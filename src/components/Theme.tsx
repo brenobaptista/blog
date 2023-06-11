@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider, DefaultTheme } from 'styled-components'
 
 import ThemeContext from '@/contexts/ThemeContext'
 import dracula from '@/styles/themes/dracula'
@@ -10,9 +10,9 @@ interface Props {
 }
 
 const Theme = ({ children }: Props): JSX.Element => {
-  const [theme, setTheme] = useState(dracula)
+  const [theme, setTheme] = useState<DefaultTheme>(dracula)
 
-  const didMountRef = useRef(false)
+  const didMountRef = useRef<boolean>(false)
 
   useEffect(() => {
     const storageValue = localStorage.getItem('theme')
