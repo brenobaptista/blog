@@ -1,14 +1,17 @@
 import { render, fireEvent } from 'testUtils'
-import Switch from '@/components/Switch'
+import ThemeSwitcher from '@/components/ThemeSwitcher'
 import ThemeContext from '@/contexts/ThemeContext'
 
 const renderWithContext = (ui, value) =>
   render(<ThemeContext.Provider value={value}>{ui}</ThemeContext.Provider>)
 
-test('toggles Switch using keyboard in retro mode', () => {
+test('toggles ThemeSwitcher using keyboard in retro mode', () => {
   const toggleTheme = jest.fn()
   const theme = { mode: 'retro' }
-  const { getByTestId } = renderWithContext(<Switch />, { theme, toggleTheme })
+  const { getByTestId } = renderWithContext(<ThemeSwitcher />, {
+    theme,
+    toggleTheme
+  })
 
   const checkbox = getByTestId('label-checkbox')
   fireEvent.keyDown(checkbox, { key: 'Enter', keyCode: 13 })
