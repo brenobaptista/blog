@@ -9,7 +9,7 @@ const customJestConfig = {
   coveragePathIgnorePatterns: [
     '<rootDir>/.next/',
     '<rootDir>/coverage/',
-    '<rootDir>/src/components/svgs/index.tsx',
+    '<rootDir>/src/components/icons/index.tsx',
     '<rootDir>/src/components/Sparkles.tsx',
     '<rootDir>/src/lib',
     '<rootDir>/src/pages/_app.tsx',

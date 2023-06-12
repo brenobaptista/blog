@@ -1,5 +1,5 @@
 import { render } from 'testUtils'
-import GitHub from '@/components/svgs/GitHub'
+import GitHub from '@/components/icons/GitHub'
 
 test('matches snapshot', () => {
   const { asFragment } = render(<GitHub width={40} height={40} />)
