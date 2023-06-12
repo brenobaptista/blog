@@ -4,7 +4,7 @@ import Image from 'next/image'
 import pitucho from 'public/images/pitucho.jpg'
 import Layout from '@/components/Layout'
 
-const Custom404 = (): JSX.Element => (
+const Custom404 = () => (
   <Layout>
     <Head>
       <title>404: Not found</title>

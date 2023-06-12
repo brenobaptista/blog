@@ -9,7 +9,7 @@ interface Props {
   setPosts(filteredPosts: Post[]): void
 }
 
-const Search = ({ allPostsData, setPosts }: Props): JSX.Element => {
+const Search = ({ allPostsData, setPosts }: Props) => {
   const [searchValue, setSearchValue] = useState<string>('')
 
   useEffect(() => {

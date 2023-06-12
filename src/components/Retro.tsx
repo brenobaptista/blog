@@ -9,7 +9,7 @@ import worldwideweb from 'public/images/retro/worldwideweb.gif'
 import ThemeContext from '@/contexts/ThemeContext'
 import { Marquee, Construction, Song, Sheep } from '@/styles/components/Retro'
 
-const Retro = (): JSX.Element => {
+const Retro = () => {
   const { theme } = useContext(ThemeContext)
 
   return (

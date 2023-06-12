@@ -9,7 +9,7 @@ import {
   Toggle
 } from '@/styles/components/ThemeSwitcher'
 
-const ThemeSwitcher = (): JSX.Element => {
+const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLLabelElement>) => {

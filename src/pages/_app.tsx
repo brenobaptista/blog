@@ -9,7 +9,7 @@ const inter = Inter({
   display: 'swap'
 })
 
-const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
+const MyApp = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider>
     <div className={inter.className}>
       <Component {...pageProps} />

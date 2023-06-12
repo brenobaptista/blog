@@ -11,7 +11,7 @@ import {
   Section
 } from '@/styles/pages/Resume'
 
-const Resume = (): JSX.Element => (
+const Resume = () => (
   <>
     <Head>
       <title>Résumé</title>

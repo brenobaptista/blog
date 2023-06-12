@@ -11,7 +11,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const Layout = ({ children }: Props): JSX.Element => (
+const Layout = ({ children }: Props) => (
   <Container>
     <Toolbar>
       <Link href='/'>Breno Baptista</Link>

@@ -6,7 +6,7 @@ interface Props {
   date: string
 }
 
-const Date = ({ date }: Props): JSX.Element => {
+const Date = ({ date }: Props) => {
   const parsedDate = parseISO(date)
 
   return <Time dateTime={date}>{format(parsedDate, 'LLLL d, yyyy')}</Time>

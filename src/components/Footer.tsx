@@ -28,7 +28,7 @@ import {
   Copyright
 } from '@/styles/components/Footer'
 
-const Footer = (): JSX.Element => {
+const Footer = () => {
   const { theme } = useContext(ThemeContext)
 
   return (

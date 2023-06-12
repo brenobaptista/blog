@@ -9,7 +9,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const Provider = ({ children }: Props): JSX.Element => {
+const Provider = ({ children }: Props) => {
   const [theme, setTheme] = useState<DefaultTheme>(dracula)
 
   useEffect(() => {

@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react'
 
 import ThemeContext from '@/contexts/ThemeContext'
 
-const Sparkles = (): JSX.Element => {
+const Sparkles = () => {
   const { theme } = useContext(ThemeContext)
 
   const color = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']

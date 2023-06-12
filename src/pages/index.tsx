@@ -37,7 +37,7 @@ interface Props {
   allPostsData: Post[]
 }
 
-const Home = ({ allPostsData }: Props): JSX.Element => {
+const Home = ({ allPostsData }: Props) => {
   const [posts, setPosts] = useState<Post[]>(allPostsData)
 
   return (

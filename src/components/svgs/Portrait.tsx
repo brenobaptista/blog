@@ -3,7 +3,7 @@ interface Props {
   height: number
 }
 
-const Portrait = ({ width, height }: Props): JSX.Element => (
+const Portrait = ({ width, height }: Props) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 1024 1024'
