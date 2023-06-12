@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
 import { Inter } from 'next/font/google'
 
-import Theme from '@/components/Theme'
+import ThemeProvider from '@/components/ThemeProvider'
 import GlobalStyle from '@/styles/global'
 
 const inter = Inter({
@@ -10,12 +10,12 @@ const inter = Inter({
 })
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
-  <Theme>
+  <ThemeProvider>
     <div className={inter.className}>
       <Component {...pageProps} />
     </div>
     <GlobalStyle />
-  </Theme>
+  </ThemeProvider>
 )
 
 export default MyApp

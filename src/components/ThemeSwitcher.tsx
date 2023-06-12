@@ -7,9 +7,9 @@ import {
   InvisibleCheckbox,
   Background,
   Toggle
-} from '@/styles/components/Switch'
+} from '@/styles/components/ThemeSwitcher'
 
-const Switch = (): JSX.Element => {
+const ThemeSwitcher = (): JSX.Element => {
   const { theme, toggleTheme } = useContext(ThemeContext)
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLLabelElement>) => {
@@ -41,4 +41,4 @@ const Switch = (): JSX.Element => {
   )
 }
 
-export default Switch
+export default ThemeSwitcher

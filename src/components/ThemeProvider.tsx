@@ -9,7 +9,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const Theme = ({ children }: Props): JSX.Element => {
+const Provider = ({ children }: Props): JSX.Element => {
   const [theme, setTheme] = useState<DefaultTheme>(dracula)
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const Theme = ({ children }: Props): JSX.Element => {
   )
 }
 
-export default Theme
+export default Provider

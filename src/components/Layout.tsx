@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import Footer from '@/components/Footer'
 import Sparkles from '@/components/Sparkles'
-import Switch from '@/components/Switch'
+import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 import { Container, Toolbar } from '@/styles/components/Layout'
 import RetroGlobalStyle from '@/styles/retro-global'
@@ -15,7 +15,7 @@ const Layout = ({ children }: Props): JSX.Element => (
   <Container>
     <Toolbar>
       <Link href='/'>Breno Baptista</Link>
-      <Switch />
+      <ThemeSwitcher />
     </Toolbar>
     <main>{children}</main>
     <Footer />
