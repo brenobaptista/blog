@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-import { Email, GitHub, Portrait, RSS } from '@/components/icons'
+import { Email, GitHub, Portrait, RSS } from '@/icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import Retro from '@/components/Retro'

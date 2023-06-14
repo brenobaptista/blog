@@ -23,6 +23,9 @@
       "@/components/*": [
         "src/components/*"
       ],
+      "@/icons": [
+        "src/components/icons"
+      ],
       "@/contexts/*": [
         "src/contexts/*"
       ],

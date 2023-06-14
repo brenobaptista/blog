@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import { Portrait } from '@/components/icons'
+import { Portrait } from '@/icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import { PostData, getAllPostIds, getPostData } from '@/lib/posts'

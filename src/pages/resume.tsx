@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Email, GitHub, LinkedIn, RSS } from '@/components/icons'
+import { Email, GitHub, LinkedIn, RSS } from '@/icons'
 import {
   PrintingRules,
   Page,

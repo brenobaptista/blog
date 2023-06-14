@@ -1,8 +1,6 @@
-import Email from './Email'
-import GitHub from './GitHub'
-import LinkedIn from './LinkedIn'
-import Magnifier from './Magnifier'
-import Portrait from './Portrait'
-import RSS from './RSS'
-
-export { Email, GitHub, LinkedIn, Magnifier, Portrait, RSS }
+export { default as Email } from './Email'
+export { default as GitHub } from './GitHub'
+export { default as LinkedIn } from './LinkedIn'
+export { default as Magnifier } from './Magnifier'
+export { default as Portrait } from './Portrait'
+export { default as RSS } from './RSS'
