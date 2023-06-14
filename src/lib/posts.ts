@@ -77,8 +77,8 @@ const getMorePosts = (currentPostId: string): MorePosts => {
     post => post.id === currentPostId
   )
 
-  let nextPost = null
-  let previousPost = null
+  let nextPost: Post | null = null
+  let previousPost: Post | null = null
 
   if (currentPostIndex === 0) {
     previousPost = allPostsData[currentPostIndex + 1]
