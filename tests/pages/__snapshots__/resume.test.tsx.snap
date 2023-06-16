@@ -44,7 +44,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 }
 
 .c3 div {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
 }
 
 .c4 a {
@@ -110,7 +110,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             Breno Baptista
           </h1>
           <div>
-            Software Engineer
+            Software engineer with bachelor’s degree in Computer Science and 4+ years experience at high-growth early-stage startups.
           </div>
         </div>
         <div
@@ -270,7 +270,7 @@ exports[`matches snapshot in dracula mode 1`] = `
         </h2>
         <div>
           <strong>
-            Software Engineer, Alternative
+            Software Engineer, Alternative Payments
           </strong>
           <em>
             February 2022 - Present (USA, remote)

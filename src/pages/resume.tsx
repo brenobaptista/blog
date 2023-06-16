@@ -26,7 +26,10 @@ const Resume = () => (
         <Header>
           <Author>
             <h1>Breno Baptista</h1>
-            <div>Software Engineer</div>
+            <div>
+              Software engineer with bachelor’s degree in Computer Science and
+              4+ years experience at high-growth early-stage startups.
+            </div>
           </Author>
           <Social>
             <div>
@@ -74,7 +77,7 @@ const Resume = () => (
         <Section>
           <h2 className='mt-0'>EXPERIENCE</h2>
           <div>
-            <strong>Software Engineer, Alternative</strong>
+            <strong>Software Engineer, Alternative Payments</strong>
             <em>February 2022 - Present (USA, remote)</em>
             <ul>
               <li>
