@@ -44,7 +44,7 @@ exports[`matches snapshot in dracula mode 1`] = `
 }
 
 .c3 div {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
 }
 
 .c4 a {

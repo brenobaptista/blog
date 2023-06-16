@@ -46,7 +46,7 @@ export const Author = styled.div`
   }
 
   div {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 `
 
