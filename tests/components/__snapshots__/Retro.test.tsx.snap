@@ -106,7 +106,12 @@ exports[`matches snapshot 1`] = `
       width="100"
     />
   </div>
-  .c0 {
+  .c1 {
+  -webkit-animation: blink 1s steps(1,end) infinite;
+  animation: blink 1s steps(1,end) infinite;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -129,7 +134,11 @@ exports[`matches snapshot 1`] = `
     class="c0"
   >
     <figcaption>
-      Unleash the champion within:
+      <div
+        class="c1"
+      >
+        Unleash the champion within:
+      </div>
     </figcaption>
     <audio
       controls=""

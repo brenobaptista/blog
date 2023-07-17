@@ -7,7 +7,13 @@ import money from 'public/images/retro/money.gif'
 import sheep from 'public/images/retro/sheep.gif'
 import worldwideweb from 'public/images/retro/worldwideweb.gif'
 import ThemeContext from '@/contexts/ThemeContext'
-import { Marquee, Construction, Song, Sheep } from '@/styles/components/Retro'
+import {
+  Marquee,
+  Blink,
+  Construction,
+  Song,
+  Sheep
+} from '@/styles/components/Retro'
 
 const Retro = () => {
   const { theme } = useContext(ThemeContext)
@@ -26,7 +32,9 @@ const Retro = () => {
             <Image src={worldwideweb} alt='World Wide Web' height='100' />
           </Construction>
           <Song>
-            <figcaption>Unleash the champion within:</figcaption>
+            <figcaption>
+              <Blink>Unleash the champion within:</Blink>
+            </figcaption>
             <audio controls>
               <source src='/audio/champions.ogg' type='audio/ogg' />
               <source src='/audio/champions.mp3' type='audio/mpeg' />
