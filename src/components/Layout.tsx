@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import Link from 'next/link'
 
 import Footer from '@/components/Footer'
@@ -8,7 +9,7 @@ import { Container, Toolbar } from '@/styles/components/Layout'
 import RetroGlobalStyle from '@/styles/retro-global'
 
 interface Props {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const Layout = ({ children }: Props) => (

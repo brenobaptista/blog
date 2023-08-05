@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, ReactNode } from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 
 import ThemeContext from '@/contexts/ThemeContext'
@@ -6,7 +6,7 @@ import dracula from '@/styles/themes/dracula'
 import retro from '@/styles/themes/retro'
 
 interface Props {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const Provider = ({ children }: Props) => {
