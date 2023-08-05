@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   gap: 2px;
 `
 
-export const Label = styled.div`
+export const Label = styled.label`
   font-size: 0.6rem;
   font-weight: 500;
 `

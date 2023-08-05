@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
 
   return (
     <Wrapper>
-      <Label>Retro mode</Label>
+      <Label htmlFor='checkbox'>Retro mode</Label>
       <InvisibleCheckbox
         id='checkbox'
         type='checkbox'

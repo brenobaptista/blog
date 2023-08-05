@@ -181,11 +181,12 @@ exports[`matches snapshot in dracula mode 1`] = `
       <div
         class="c2"
       >
-        <div
+        <label
           class="c3"
+          for="checkbox"
         >
           Retro mode
-        </div>
+        </label>
         <input
           class="c4 c5"
           id="checkbox"
