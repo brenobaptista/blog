@@ -40,7 +40,7 @@ Add `aria-hidden='true'` attribute in the SVG tag. If you still want to have a t
 
 ```markup[class="line-numbers"]
 <a
-  href='mailto:brenobaptista@protonmail.com'
+  href='mailto:me@brenobaptista.com'
   aria-label='Contact me by email'
 >
   <svg

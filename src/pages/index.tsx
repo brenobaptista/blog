@@ -55,7 +55,7 @@ const Home = ({ allPostsData }: Props) => {
         </PortraitWrapper>
         <SocialIcons>
           <a
-            href='mailto:brenobaptista@protonmail.com'
+            href='mailto:me@brenobaptista.com'
             aria-label='Contact me by email'
           >
             <Email width={40} height={40} />

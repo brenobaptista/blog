@@ -34,11 +34,11 @@ const Resume = () => (
           <Social>
             <div>
               <a
-                href='mailto:brenobaptista@protonmail.com'
+                href='mailto:me@brenobaptista.com'
                 aria-label='Contact me by email'
               >
                 <Email width={16} height={16} />
-                <span>brenobaptista@protonmail.com</span>
+                <span>me@brenobaptista.com</span>
               </a>
             </div>
             <div>

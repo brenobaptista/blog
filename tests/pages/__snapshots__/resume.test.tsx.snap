@@ -119,7 +119,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           <div>
             <a
               aria-label="Contact me by email"
-              href="mailto:brenobaptista@protonmail.com"
+              href="mailto:me@brenobaptista.com"
             >
               <svg
                 aria-hidden="true"
@@ -144,7 +144,7 @@ exports[`matches snapshot in dracula mode 1`] = `
                 />
               </svg>
               <span>
-                brenobaptista@protonmail.com
+                me@brenobaptista.com
               </span>
             </a>
           </div>

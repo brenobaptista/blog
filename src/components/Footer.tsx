@@ -36,7 +36,7 @@ const Footer = () => {
       <Separator />
       <Nav>
         <Column>
-          <a href='mailto:brenobaptista@protonmail.com'>Email</a>
+          <a href='mailto:me@brenobaptista.com'>Email</a>
         </Column>
         <Column>
           <a
