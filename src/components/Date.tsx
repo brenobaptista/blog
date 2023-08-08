@@ -2,11 +2,11 @@ import { parseISO, format } from 'date-fns'
 
 import Time from '@/styles/components/Date'
 
-interface Props {
+interface IDate {
   date: string
 }
 
-const Date = ({ date }: Props) => {
+const Date = ({ date }: IDate) => {
   const parsedDate = parseISO(date)
 
   return <Time dateTime={date}>{format(parsedDate, 'LLLL d, yyyy')}</Time>

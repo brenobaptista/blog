@@ -27,11 +27,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-interface Props {
+interface IPost {
   postData: PostData
 }
 
-const Post = ({ postData }: Props) => (
+const Post = ({ postData }: IPost) => (
   <Layout>
     <Head>
       <title>{postData.title}</title>

@@ -5,11 +5,11 @@ import ThemeContext from '@/contexts/ThemeContext'
 import dracula from '@/styles/themes/dracula'
 import retro from '@/styles/themes/retro'
 
-interface Props {
+interface IThemeProvider {
   children: ReactNode
 }
 
-const Provider = ({ children }: Props) => {
+const Provider = ({ children }: IThemeProvider) => {
   const [theme, setTheme] = useState<DefaultTheme>(dracula)
 
   useEffect(() => {

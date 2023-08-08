@@ -1,9 +1,6 @@
-interface Props {
-  width: number
-  height: number
-}
+import { IIcon } from './types'
 
-const Portrait = ({ width, height }: Props) => (
+const Portrait = ({ width, height }: IIcon) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 1024 1024'

@@ -8,11 +8,11 @@ import ThemeSwitcher from '@/components/ThemeSwitcher'
 import { Container, Toolbar } from '@/styles/components/Layout'
 import RetroGlobalStyle from '@/styles/retro-global'
 
-interface Props {
+interface ILayout {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => (
+const Layout = ({ children }: ILayout) => (
   <Container>
     <Toolbar>
       <Link href='/'>Breno Baptista</Link>

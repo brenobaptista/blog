@@ -33,11 +33,11 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-interface Props {
+interface IHome {
   allPostsData: Post[]
 }
 
-const Home = ({ allPostsData }: Props) => {
+const Home = ({ allPostsData }: IHome) => {
   const [posts, setPosts] = useState<Post[]>(allPostsData)
 
   return (

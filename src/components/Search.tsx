@@ -4,12 +4,12 @@ import { Magnifier } from '@/icons'
 import { Post } from '@/lib/posts'
 import { Input, IconWrapper } from '@/styles/components/Search'
 
-interface Props {
+interface ISearch {
   allPostsData: Post[]
   setPosts(filteredPosts: Post[]): void
 }
 
-const Search = ({ allPostsData, setPosts }: Props) => {
+const Search = ({ allPostsData, setPosts }: ISearch) => {
   const [searchValue, setSearchValue] = useState<string>('')
 
   useEffect(() => {
