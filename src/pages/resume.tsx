@@ -86,8 +86,9 @@ const Resume = () => (
               </li>
               <li>
                 Maintained highly-scalable and containerized microservices in
-                Go. Responsible for developing the email service, along with the
-                email templates.
+                Go. Developed the email service from scratch, ensuring
+                reliability and seemless communication through RabbitMQ
+                messages.
               </li>
               <li>
                 Delighted clients by crafting web experiences. Translated design
