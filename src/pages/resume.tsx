@@ -81,8 +81,8 @@ const Resume = () => (
             <em>February 2022 - Present (USA, remote)</em>
             <ul>
               <li>
-                Provided a fully-integrated B2B payments and checkout
-                infrastructure.
+                Provided an integrated B2B payments and checkout infrastructure
+                for service-based businesses.
               </li>
               <li>
                 Maintained highly-scalable and containerized microservices in
@@ -94,10 +94,6 @@ const Resume = () => (
                 Delighted clients by crafting web experiences. Translated design
                 mockups into efficient UI components and responsive pages.
               </li>
-              <li>
-                Took leadership roles by managing high-priority projects inside
-                the organization.
-              </li>
             </ul>
           </div>
           <div>
@@ -105,8 +101,10 @@ const Resume = () => (
             <em>January 2020 - January 2022 (USA, remote)</em>
             <ul>
               <li>
-                Fought intrusive advertising by offering rewards at the cost of
-                unused CPU/GPU.
+                Fought intrusive advertising by offering monetization of apps
+                without ads at the cost of unused CPU/GPU using
+                cryptocurrencies, blockchain and web3 instead of personal
+                attention and data.
               </li>
               <li>
                 Led efforts to vastly reduce technical debt in web and desktop
@@ -126,11 +124,12 @@ const Resume = () => (
             <ul>
               <li>
                 Helped businesses build an online presence by managing a small
-                team that developed high-impact projects.
+                team that developed high-impact projects to our users.
               </li>
               <li>
                 Improved the organization productivity by enforcing agile across
-                the company.
+                the company. Took part in critical product decisions during
+                sprint meetings and calls with partners.
               </li>
             </ul>
           </div>

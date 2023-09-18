@@ -277,16 +277,13 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Provided a fully-integrated B2B payments and checkout infrastructure.
+              Provided an integrated B2B payments and checkout infrastructure for service-based businesses.
             </li>
             <li>
               Maintained highly-scalable and containerized microservices in Go. Developed the email service from scratch, ensuring reliability and seemless communication through RabbitMQ messages.
             </li>
             <li>
               Delighted clients by crafting web experiences. Translated design mockups into efficient UI components and responsive pages.
-            </li>
-            <li>
-              Took leadership roles by managing high-priority projects inside the organization.
             </li>
           </ul>
         </div>
@@ -299,7 +296,7 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Fought intrusive advertising by offering rewards at the cost of unused CPU/GPU.
+              Fought intrusive advertising by offering monetization of apps without ads at the cost of unused CPU/GPU using cryptocurrencies, blockchain and web3 instead of personal attention and data.
             </li>
             <li>
               Led efforts to vastly reduce technical debt in web and desktop apps, launching a refactored partner dashboard with better UI/UX and performance.
@@ -318,10 +315,10 @@ exports[`matches snapshot in dracula mode 1`] = `
           </em>
           <ul>
             <li>
-              Helped businesses build an online presence by managing a small team that developed high-impact projects.
+              Helped businesses build an online presence by managing a small team that developed high-impact projects to our users.
             </li>
             <li>
-              Improved the organization productivity by enforcing agile across the company.
+              Improved the organization productivity by enforcing agile across the company. Took part in critical product decisions during sprint meetings and calls with partners.
             </li>
           </ul>
         </div>
