@@ -82,17 +82,25 @@ const Resume = () => (
             <ul>
               <li>
                 Provided an integrated B2B payments and checkout infrastructure
-                for service-based businesses.
+                for service-based businesses. Implemented efficient navigation
+                in our data-driven UI by introducing table pagination and better
+                caching strategies in Apollo, resulting in reduced load times
+                and improved performance.
               </li>
               <li>
                 Maintained highly-scalable and containerized microservices in
-                Go. Developed the email service from scratch, ensuring
-                reliability and seemless communication through RabbitMQ
-                messages.
+                Go. Successfully designed and built the email service from the
+                ground up, guaranteeing reliability and seemless communication
+                using RabbitMQ messages. It allowed communication to our
+                customers even when other services were down (cron jobs and
+                caching) and applied customized brand logo/colors for each
+                partner.
               </li>
               <li>
-                Delighted clients by crafting web experiences. Translated design
-                mockups into efficient UI components and responsive pages.
+                <b>Skills: </b>Go, TypeScript, Bash, HTML, Emotion, Tailwind,
+                React.js, Next.js, Storybook, Cypress, Apollo, GraphQL,
+                RabbitMQ, CockroachDB, Git, Docker, RegEx, CI/CD, Turborepo,
+                Datadog
               </li>
             </ul>
           </div>
@@ -116,6 +124,11 @@ const Resume = () => (
                 plugins by developing WordPress and Shopify plugins from
                 scratch.
               </li>
+              <li>
+                <b>Skills: </b>JavaScript, PHP, Bash, HTML, Sass, jQuery,
+                React.js, Jest, React Testing Library, Node.js, Express.js,
+                MongoDB, Firebase, Git, Docker, RegEx, AWS, Serverless, SES
+              </li>
             </ul>
           </div>
           <div>
@@ -130,6 +143,9 @@ const Resume = () => (
                 Improved the organization productivity by enforcing agile across
                 the company. Took part in critical product decisions during
                 sprint meetings and calls with partners.
+              </li>
+              <li>
+                <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
               </li>
             </ul>
           </div>
@@ -146,6 +162,9 @@ const Resume = () => (
               >
                 <span>github.com/brenobaptista/blog</span>
               </a>
+              <br />
+              <b>Skills: </b>TypeScript, HTML, Styled Components, React.js,
+              Next.js, Jest, React Testing Library, Git
             </li>
             <li>
               <i>Tailwind Dashboard Template: </i>
@@ -156,6 +175,8 @@ const Resume = () => (
               >
                 <span>github.com/brenobaptista/plume-dashboard</span>
               </a>
+              <br />
+              <b>Skills: </b>TypeScript, HTML, Tailwind, React.js, Next.js, Git
             </li>
             <li>
               <i>APR Service for Vehicle Loans: </i>
@@ -166,6 +187,9 @@ const Resume = () => (
               >
                 <span>github.com/brenobaptista/apr-service</span>
               </a>
+              <br />
+              <b>Skills: </b>TypeScript, Node.js, Express.js, Jest, Git, Yarn
+              Workspaces
             </li>
             <li>
               <i>Deno URL Shortener Service: </i>
@@ -176,6 +200,8 @@ const Resume = () => (
               >
                 <span>github.com/brenobaptista/deno-url-shortener</span>
               </a>
+              <br />
+              <b>Skills: </b>TypeScript, Deno, Postgres, Git, Docker
             </li>
           </ol>
         </Section>
@@ -190,25 +216,6 @@ const Resume = () => (
             <div>
               SCRUMstudy - Accreditation Body for Scrum and Agile (2020)
             </div>
-          </div>
-        </Section>
-        <Section>
-          <h2>SKILLS</h2>
-          <div>
-            <b>Languages: </b>JavaScript, TypeScript, Go, Bash, Lua
-          </div>
-          <div>
-            <b>Front-end: </b>HTML, CSS, Sass, jQuery, Styled Components,
-            Tailwind, React, React Native, Next.js, Storybook, Accessibility,
-            Jest/RTL, Cypress
-          </div>
-          <div>
-            <b>Back-end: </b>Node, Express, Deno, Apollo, GraphQL, Postgres,
-            MongoDB, Firebase
-          </div>
-          <div>
-            <b>DevOps: </b>Git, Docker, AWS, GNU/Linux, Yarn Workspaces,
-            Turborepo, CI/CD
           </div>
         </Section>
       </Content>
