@@ -96,12 +96,9 @@ const Resume = () => (
                 caching) and applied customized brand logo/colors for each
                 partner.
               </li>
-              <li>
-                <b>Skills: </b>Go, TypeScript, Bash, HTML, Emotion, Tailwind,
-                React.js, Next.js, Storybook, Cypress, Apollo, GraphQL,
-                RabbitMQ, CockroachDB, Git, Docker, RegEx, CI/CD, Turborepo,
-                Datadog
-              </li>
+              <b>Skills: </b>Go, TypeScript, Bash, HTML, Emotion, Tailwind,
+              React.js, Next.js, Storybook, Cypress, Apollo, GraphQL, RabbitMQ,
+              CockroachDB, Git, Docker, RegEx, CI/CD, Turborepo, Datadog
             </ul>
           </div>
           <div>
@@ -109,26 +106,23 @@ const Resume = () => (
             <em>January 2020 - January 2022 (USA, remote)</em>
             <ul>
               <li>
-                Fought intrusive advertising by offering monetization of apps
-                without ads at the cost of unused CPU/GPU using
-                cryptocurrencies, blockchain and web3 instead of personal
-                attention and data.
+                Fought intrusive advertising by offering monetization of apps at
+                the cost of unused CPU/GPU using cryptocurrencies, blockchain
+                and web3 instead of personal attention and data. Also helped
+                businesses comply with data laws (GDPR/CCPA) easily by
+                developing WordPress and Shopify plugins from scratch.
               </li>
               <li>
                 Led efforts to vastly reduce technical debt in web and desktop
                 apps, launching a refactored partner dashboard with better UI/UX
-                and performance.
+                and performance. Enhanced the codebase by transitioning it from
+                class-based components to functional components in React 16.8,
+                resulting in a reduction of approximately 30% in lines of code,
+                making the application easier to maintain.
               </li>
-              <li>
-                Helped businesses comply with data laws (GDPR/CCPA) with easy
-                plugins by developing WordPress and Shopify plugins from
-                scratch.
-              </li>
-              <li>
-                <b>Skills: </b>JavaScript, PHP, Bash, HTML, Sass, jQuery,
-                React.js, Jest, React Testing Library, Node.js, Express.js,
-                MongoDB, Firebase, Git, Docker, RegEx, AWS, Serverless, SES
-              </li>
+              <b>Skills: </b>JavaScript, PHP, Bash, HTML, Sass, jQuery,
+              React.js, Jest, React Testing Library, Node.js, Express.js,
+              MongoDB, Firebase, Git, Docker, RegEx, AWS, Serverless, SES
             </ul>
           </div>
           <div>
@@ -142,11 +136,9 @@ const Resume = () => (
               <li>
                 Improved the organization productivity by enforcing agile across
                 the company. Took part in critical product decisions during
-                sprint meetings and calls with partners.
+                sprint meetings and calls with customers.
               </li>
-              <li>
-                <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
-              </li>
+              <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
             </ul>
           </div>
         </Section>
