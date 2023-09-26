@@ -96,9 +96,8 @@ const Resume = () => (
                 caching) and applied customized brand logo/colors for each
                 partner.
               </li>
-              <b>Skills: </b>Go, TypeScript, Bash, HTML, Emotion, Tailwind,
-              React.js, Next.js, Storybook, Cypress, Apollo, GraphQL, RabbitMQ,
-              CockroachDB, Git, Docker, RegEx, CI/CD, Turborepo, Datadog
+              <b>Skills: </b>Go, TypeScript, Tailwind, React.js, Next.js,
+              Cypress, GraphQL, RabbitMQ, CockroachDB, Docker
             </ul>
           </div>
           <div>
@@ -120,9 +119,8 @@ const Resume = () => (
                 resulting in a reduction of approximately 30% in lines of code,
                 making the application easier to maintain.
               </li>
-              <b>Skills: </b>JavaScript, PHP, Bash, HTML, Sass, jQuery,
-              React.js, Jest, React Testing Library, Node.js, Express.js,
-              MongoDB, Firebase, Git, Docker, RegEx, AWS, Serverless, SES
+              <b>Skills: </b>JavaScript, PHP, React.js, Jest, Node.js,
+              Express.js, MongoDB, Firebase, AWS, Serverless, SES
             </ul>
           </div>
           <div>
@@ -155,8 +153,8 @@ const Resume = () => (
                 <span>github.com/brenobaptista/blog</span>
               </a>
               <br />
-              <b>Skills: </b>TypeScript, HTML, Styled Components, React.js,
-              Next.js, Jest, React Testing Library, Git
+              <b>Skills: </b>TypeScript, Styled Components, React.js, Next.js,
+              Jest, React Testing Library
             </li>
             <li>
               <i>Tailwind Dashboard Template: </i>
@@ -168,7 +166,7 @@ const Resume = () => (
                 <span>github.com/brenobaptista/plume-dashboard</span>
               </a>
               <br />
-              <b>Skills: </b>TypeScript, HTML, Tailwind, React.js, Next.js, Git
+              <b>Skills: </b>TypeScript, Tailwind, React.js, Next.js
             </li>
             <li>
               <i>APR Service for Vehicle Loans: </i>
@@ -180,7 +178,7 @@ const Resume = () => (
                 <span>github.com/brenobaptista/apr-service</span>
               </a>
               <br />
-              <b>Skills: </b>TypeScript, Node.js, Express.js, Jest, Git, Yarn
+              <b>Skills: </b>TypeScript, Node.js, Express.js, Jest, Yarn
               Workspaces
             </li>
             <li>
@@ -193,7 +191,7 @@ const Resume = () => (
                 <span>github.com/brenobaptista/deno-url-shortener</span>
               </a>
               <br />
-              <b>Skills: </b>TypeScript, Deno, Postgres, Git, Docker
+              <b>Skills: </b>TypeScript, Deno, Postgres, Docker
             </li>
           </ol>
         </Section>

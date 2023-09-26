@@ -7,7 +7,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 6mm 10mm;
+  padding: 10mm 12mm;
 }
 
 .c1 {
@@ -285,7 +285,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             <b>
               Skills: 
             </b>
-            Go, TypeScript, Bash, HTML, Emotion, Tailwind, React.js, Next.js, Storybook, Cypress, Apollo, GraphQL, RabbitMQ, CockroachDB, Git, Docker, RegEx, CI/CD, Turborepo, Datadog
+            Go, TypeScript, Tailwind, React.js, Next.js, Cypress, GraphQL, RabbitMQ, CockroachDB, Docker
           </ul>
         </div>
         <div>
@@ -305,7 +305,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             <b>
               Skills: 
             </b>
-            JavaScript, PHP, Bash, HTML, Sass, jQuery, React.js, Jest, React Testing Library, Node.js, Express.js, MongoDB, Firebase, Git, Docker, RegEx, AWS, Serverless, SES
+            JavaScript, PHP, React.js, Jest, Node.js, Express.js, MongoDB, Firebase, AWS, Serverless, SES
           </ul>
         </div>
         <div>
@@ -353,7 +353,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             <b>
               Skills: 
             </b>
-            TypeScript, HTML, Styled Components, React.js, Next.js, Jest, React Testing Library, Git
+            TypeScript, Styled Components, React.js, Next.js, Jest, React Testing Library
           </li>
           <li>
             <i>
@@ -372,7 +372,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             <b>
               Skills: 
             </b>
-            TypeScript, HTML, Tailwind, React.js, Next.js, Git
+            TypeScript, Tailwind, React.js, Next.js
           </li>
           <li>
             <i>
@@ -391,7 +391,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             <b>
               Skills: 
             </b>
-            TypeScript, Node.js, Express.js, Jest, Git, Yarn Workspaces
+            TypeScript, Node.js, Express.js, Jest, Yarn Workspaces
           </li>
           <li>
             <i>
@@ -410,7 +410,7 @@ exports[`matches snapshot in dracula mode 1`] = `
             <b>
               Skills: 
             </b>
-            TypeScript, Deno, Postgres, Git, Docker
+            TypeScript, Deno, Postgres, Docker
           </li>
         </ol>
       </div>
