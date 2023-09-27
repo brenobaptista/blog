@@ -109,15 +109,15 @@ const Resume = () => (
                 the cost of unused CPU/GPU using cryptocurrencies, blockchain
                 and web3 instead of personal attention and data. Also helped
                 businesses comply with data laws (GDPR/CCPA) easily by
-                developing WordPress and Shopify plugins from scratch.
+                developing WordPress and Shopify plugins that integrate with our
+                custom scripts.
               </li>
               <li>
                 Led efforts to vastly reduce technical debt in web and desktop
                 apps, launching a refactored partner dashboard with better UI/UX
-                and performance. Enhanced the codebase by transitioning it from
-                class-based components to functional components in React 16.8,
-                resulting in a reduction of approximately 30% in lines of code,
-                making the application easier to maintain.
+                and performance. Rewrote the codebase to hooks in React 16.8,
+                resulting in a reduction of ~30% in size, making the application
+                easier to maintain.
               </li>
               <b>Skills: </b>JavaScript, PHP, React.js, Jest, Node.js,
               Express.js, MongoDB, Firebase, AWS, Serverless, SES
@@ -129,7 +129,7 @@ const Resume = () => (
             <ul>
               <li>
                 Helped businesses build an online presence by managing a small
-                team that developed high-impact projects to our users.
+                team that developed high-impact projects to our customers.
               </li>
               <li>
                 Improved the organization productivity by enforcing agile across
