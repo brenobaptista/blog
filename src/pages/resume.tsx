@@ -28,7 +28,7 @@ const Resume = () => (
             <h1>Breno Baptista</h1>
             <div>
               Software engineer with bachelor’s degree in Computer Science and
-              4+ years experience at high-growth early-stage startups.
+              5+ years experience at high-growth early-stage startups.
             </div>
           </Author>
           <Social>
