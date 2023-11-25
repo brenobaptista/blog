@@ -37,7 +37,9 @@ plugins=(
 )
 ```
 
-## 3. Spaceship Prompt
+## 3. Change theme or use Spaceship (optional)
+
+You can choose between [themes from Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by replacing `ZSH_THEME="robbyrussell"` in `~/.zshrc` or set up your own using Spaceship.
 
 <dfn>Spaceship</dfn> is a minimalistic, powerful and extremely customizable Zsh prompt.
 
@@ -45,25 +47,18 @@ plugins=(
 
 ### Setup
 
-At the end of `~/.zshrc`, place this:
+In `~/.zshrc`, replace `ZSH_THEME="robbyrussell"` with `ZSH_THEME="spaceship"`.
+
+Below this line, place this example of customization:
 
 ```bash[class="line-numbers"]
 SPACESHIP_PROMPT_ORDER=(
   user      # Username section
   dir       # Current directory section
-  host      # Hostname section
   git       # Git section (git_branch + git_status)
-  hg        # Mercurial section (hg_branch + hg_status)
   exec_time # Execution time
-  line_sep  # Line break
-  vi_mode   # Vi-mode indicator
-  jobs      # Background jobs indicator
-  exit_code # Exit code section
   char      # Prompt character
 )
 SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "
 ```
