@@ -64,14 +64,14 @@ My `.lintstagedrc.json` configuration:
 My `pre-commit` configuration (runs ESLint and Prettier):
 
 ```json[class="line-numbers"]
-yarn lint-staged
+pnpm lint-staged
 ```
 
 My `pre-push` configuration (runs type-check and Jest):
 
 ```json[class="line-numbers"]
-yarn tsc --noEmit
-yarn jest
+pnpm tsc --noEmit
+pnpm jest
 ```
 
 ## Bonus: EditorConfig

@@ -8,7 +8,7 @@ This may not work if certain features of React are required in production, so te
 
 It is very simple to do that:
 
-1. Install Preact using `yarn add preact` or `npm install preact`.
+1. Install Preact using `yarn add preact`, `npm install preact` or `pnpm install preact`.
 
 2. Create `next.config.js` with the following code:
 

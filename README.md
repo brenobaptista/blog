@@ -14,10 +14,10 @@
 
 ```
 Install dependencies:
-$ yarn
+$ pnpm install
 
 Serve with hot reload at localhost:3000
-$ yarn dev
+$ pnpm dev
 ```
 
 ## Author
