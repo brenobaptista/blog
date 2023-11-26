@@ -36,11 +36,13 @@ Instead of using GNOME's workspaces shortcuts, remap the first 4 workspaces to u
 
 To move the workspace switcher popup from the left to the bottom, open the Extensions app and disable "Cosmic Workspaces". It's also more intuitive because it'll switch horizontally instead of vertically.
 
-Removing the workspace switcher will break the dynamic workspaces feature, so use static instead (I use 4 workspaces). Then install the extension "Disable Workspace Switcher" below.
+Removing the workspace switcher will break the dynamic workspaces feature, so use static instead (I use 4 workspaces in Settings app -> Desktop -> Workspaces -> Fixed Number of Workspaces). Then install the extension "Disable Workspace Switcher" below.
 
 ## Recommended extensions
 
+First, you can install the **browser** extension "GNOME Shell integration" to make this easier. Then in each **desktop** extension you can install by accessing the URL and just clicking one button.
+
 - [Space Bar](https://extensions.gnome.org/extension/5090/space-bar/): displays workspaces information in top panel. I like to disable "Show empty workspaces".
-- [Disable Workspace Switch Animation for GNOME 40+](https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/): disables the annoying animation when switching workspaces.
 - [Disable Workspace Switcher](https://extensions.gnome.org/extension/4980/disable-workspace-switcher/): disables the annoying workspace switcher popup. Alternatives: "Workspace Switcher Manager" or "Just Perfection".
 - [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/): sets applications to open automatically in some workspace.
+- [Disable Workspace Switch Animation for GNOME 40+](https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/): disables the animation when switching workspaces (optional, I like it)
