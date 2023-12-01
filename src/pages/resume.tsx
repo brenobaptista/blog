@@ -21,14 +21,15 @@ const Resume = () => (
       />
     </Head>
     <PrintingRules />
+
     <Page>
       <Content>
         <Header>
           <Author>
             <h1>Breno Baptista</h1>
             <div>
-              Software engineer with bachelor’s degree in Computer Science and
-              5+ years experience at high-growth early-stage startups.
+              Lead software engineer with bachelor’s degree in Computer Science
+              and 5+ years experience at high-growth early-stage startups.
             </div>
           </Author>
           <Social>
@@ -74,27 +75,77 @@ const Resume = () => (
             </div>
           </Social>
         </Header>
+
         <Section>
-          <h2 className='mt-0'>EXPERIENCE</h2>
+          <h2>EXPERIENCE</h2>
+          <div>
+            <strong>Lead Software Engineer, Alternative Payments</strong>
+            <em>October 2023 - Present (USA, remote)</em>
+            <ul>
+              <li>
+                Led a team of 4 engineers into the development of the new auth
+                experience for partner app, which is used by 1800+ users, and
+                for payments app, which is used by 56000+ users.
+              </li>
+              <li>
+                Replaced passwordless authentication (email and JWT) with an
+                advanced open-source security software called{' '}
+                <a
+                  href='https://www.ory.sh/'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  Ory
+                </a>
+                .
+              </li>
+              <b>Skills: </b>Ory (Kratos, Hydra), OAuth2 protocol, OpenID
+              Connect (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP.
+            </ul>
+          </div>
           <div>
             <strong>Software Engineer, Alternative Payments</strong>
-            <em>February 2022 - Present (USA, remote)</em>
+            <em>February 2022 - October 2023 (USA, remote)</em>
             <ul>
               <li>
                 Provided an integrated B2B payments and checkout infrastructure
-                for service-based businesses. Implemented efficient navigation
-                in our data-driven UI by introducing table pagination and better
-                caching strategies in Apollo, resulting in reduced load times
-                and improved performance.
+                for service-based businesses.
+              </li>
+              <li>
+                Implemented efficient navigation in our data-driven UI by
+                introducing table pagination and better caching strategies in
+                Apollo, resulting in reduced load times and improved
+                performance.
               </li>
               <li>
                 Maintained highly-scalable and containerized microservices in
-                Go. Successfully designed and built the email service from the
+                Go.
+              </li>
+              <li>
+                Successfully designed and built the email service from the
                 ground up, guaranteeing reliability and seemless communication
-                using RabbitMQ messages. It allowed communication to our
-                customers even when other services were down (cron jobs and
-                caching) and applied customized brand logo/colors for each
-                partner.
+                using RabbitMQ messages.
+                <ul>
+                  <li>
+                    It was developed with a smart internal engine to handle the
+                    logic for all templates:{' '}
+                    <a
+                      href='https://www.brenobaptista.com/posts/model-for-microservices-oriented-email-service'
+                      target='_blank'
+                      rel='noreferrer noopener'
+                    >
+                      brenobaptista.com/posts/model-for-microservices-oriented-email-service
+                    </a>
+                  </li>
+                  <li>
+                    It allowed communication to our customers even when other
+                    services were down by leveraging cron jobs and caching.
+                  </li>
+                  <li>
+                    It automatically applied customized brand logo and colors
+                    for each partner.
+                  </li>
+                </ul>
               </li>
               <b>Skills: </b>Go, TypeScript, Tailwind, React.js, Next.js,
               Cypress, GraphQL, RabbitMQ, CockroachDB, Docker
@@ -107,22 +158,34 @@ const Resume = () => (
               <li>
                 Fought intrusive advertising by offering monetization of apps at
                 the cost of unused CPU/GPU using cryptocurrencies, blockchain
-                and web3 instead of personal attention and data. Also helped
-                businesses comply with data laws (GDPR/CCPA) easily by
+                and web3 instead of personal attention and data.
+              </li>
+              <li>
+                Helped businesses comply with data laws (GDPR/CCPA) easily by
                 developing WordPress and Shopify plugins that integrate with our
                 custom scripts.
               </li>
               <li>
                 Led efforts to vastly reduce technical debt in web and desktop
                 apps, launching a refactored partner dashboard with better UI/UX
-                and performance. Rewrote the codebase to hooks in React 16.8,
-                resulting in a reduction of ~30% in size, making the application
-                easier to maintain.
+                and performance.
+              </li>
+              <li>
+                Rewrote the codebase to hooks in React 16.8, resulting in a
+                reduction of ~30% in size, making the application easier to
+                maintain.
               </li>
               <b>Skills: </b>JavaScript, PHP, React.js, Jest, Node.js,
               Express.js, MongoDB, Firebase, AWS, Serverless, SES
             </ul>
           </div>
+        </Section>
+      </Content>
+    </Page>
+
+    <Page>
+      <Content>
+        <Section>
           <div>
             <strong>Product Owner, Acens</strong>
             <em>February 2019 - January 2020 (Brazil)</em>
@@ -133,13 +196,17 @@ const Resume = () => (
               </li>
               <li>
                 Improved the organization productivity by enforcing agile across
-                the company. Took part in critical product decisions during
-                sprint meetings and calls with customers.
+                the company.
+              </li>
+              <li>
+                Took part in critical product decisions during sprint meetings
+                and calls with customers.
               </li>
               <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
             </ul>
           </div>
         </Section>
+
         <Section>
           <h2>PROJECTS</h2>
           <ol>
@@ -150,7 +217,7 @@ const Resume = () => (
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <span>github.com/brenobaptista/blog</span>
+                github.com/brenobaptista/blog
               </a>
               <br />
               <b>Skills: </b>TypeScript, Styled Components, React.js, Next.js,
@@ -163,7 +230,7 @@ const Resume = () => (
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <span>github.com/brenobaptista/plume-dashboard</span>
+                github.com/brenobaptista/plume-dashboard
               </a>
               <br />
               <b>Skills: </b>TypeScript, Tailwind, React.js, Next.js
@@ -175,7 +242,7 @@ const Resume = () => (
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <span>github.com/brenobaptista/apr-service</span>
+                github.com/brenobaptista/apr-service
               </a>
               <br />
               <b>Skills: </b>TypeScript, Node.js, Express.js, Jest, Yarn
@@ -188,13 +255,39 @@ const Resume = () => (
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <span>github.com/brenobaptista/deno-url-shortener</span>
+                github.com/brenobaptista/deno-url-shortener
               </a>
               <br />
               <b>Skills: </b>TypeScript, Deno, Postgres, Docker
             </li>
+            <li>
+              <i>React Native iOS Calculator: </i>
+              <a
+                href='https://github.com/brenobaptista/ios-calculator-react-native'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/ios-calculator-react-native
+              </a>
+              <br />
+              <b>Skills: </b>JavaScript, React Native, Expo
+            </li>
+            <li>
+              <i>React Native Pomodoro: </i>
+              <a
+                href='https://github.com/brenobaptista/pomodoro-react-native'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/pomodoro-react-native
+              </a>
+              <br />
+              <b>Skills: </b>JavaScript, React Native, Expo, Unit Testing (Jest
+              and Enzyme), Redux
+            </li>
           </ol>
         </Section>
+
         <Section>
           <h2>EDUCATION</h2>
           <div>
@@ -206,6 +299,18 @@ const Resume = () => (
             <div>
               SCRUMstudy - Accreditation Body for Scrum and Agile (2020)
             </div>
+          </div>
+          <div>
+            <strong>
+              React - The Complete Guide (incl Hooks, React Router, Redux)
+            </strong>
+            <div>Udemy (2019)</div>
+          </div>
+          <div>
+            <strong>
+              NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)
+            </strong>
+            <div>Udemy (2019)</div>
           </div>
         </Section>
       </Content>
