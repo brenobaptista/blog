@@ -50,13 +50,13 @@ date: '2023-06-21'
 
 ![Tangua Park](/images/trip-curitiba-winter-2023/tangua7.jpg)
 
-## Bosque Joao Paulo II
+## Pope's Woods
 
-![Bosque Joao Paulo II](/images/trip-curitiba-winter-2023/bosque-papa.jpg)
+![Pope's Woods](/images/trip-curitiba-winter-2023/bosque-papa.jpg)
 
-![Bosque Joao Paulo II](/images/trip-curitiba-winter-2023/bosque-papa2.jpg)
+![Pope's Woods](/images/trip-curitiba-winter-2023/bosque-papa2.jpg)
 
-![Bosque Joao Paulo II](/images/trip-curitiba-winter-2023/bosque-papa3.jpg)
+![Pope's Woods](/images/trip-curitiba-winter-2023/bosque-papa3.jpg)
 
 ## Autumn Street
 
