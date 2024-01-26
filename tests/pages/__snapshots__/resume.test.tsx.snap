@@ -282,7 +282,7 @@ exports[`matches snapshot in dracula mode 1`] = `
               Led a team of 4 engineers into the development of the new auth experience for partner app, which is used by 1800+ users, and for payments app, which is used by 56000+ users.
             </li>
             <li>
-              Replaced passwordless authentication (email and JWT) with an advanced open-source security software called 
+              Replaced passwordless authentication (magic links) with an advanced open-source security software called 
               <a
                 href="https://www.ory.sh/"
                 rel="noreferrer noopener"

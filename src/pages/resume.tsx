@@ -88,7 +88,7 @@ const Resume = () => (
                 for payments app, which is used by 56000+ users.
               </li>
               <li>
-                Replaced passwordless authentication (email and JWT) with an
+                Replaced passwordless authentication (magic links) with an
                 advanced open-source security software called{' '}
                 <a
                   href='https://www.ory.sh/'
