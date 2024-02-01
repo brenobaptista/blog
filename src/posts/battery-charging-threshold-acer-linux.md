@@ -11,7 +11,7 @@ As an owner of an Acer Nitro 5 (AN515-57), I wanted to extend the lifespan of my
   - [acer-wmi-battery with DKMS support](https://github.com/Diman119/acer-wmi-battery/tree/dkms): use this one for now. This is a fork with DKMS support: this means that you won't need to re-build the driver again after a kernel update.
   - [PR discussion](https://github.com/frederik-h/acer-wmi-battery/pull/31): this is the pull request for the fork above.
 
-- [GNOME extension to fix health_mode persistency](https://github.com/maniacx/Battery-Health-Charging): a bug makes the health_mode value reset back to 0 every week or so when I turn on my laptop, so the feature is disabled. The workaround I figured out for now is using this GNOME extension that offers a nice GUI and hopefully will force health_mode to use value 1.
+- [GNOME extension to fix health_mode persistency](https://github.com/maniacx/Battery-Health-Charging): a bug makes the health_mode value reset back to 0 every week or so when I turn on my laptop, so the feature is disabled. The workaround I figured out for now is using this GNOME extension that offers a nice GUI and forces health_mode to use value 1 when you log in your machine.
 
 ## Uninstallation
 
