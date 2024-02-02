@@ -31,6 +31,6 @@ You could also run `shutdown` to just power off your computer normally or `reboo
 
 To add an alias, go to your `.bashrc` or `.zshrc` and put this line somewhere at the end of the file:
 
-```json[class="line-numbers"]
+```bash[class="line-numbers"]
 alias unfreeze="kill -9 -1"
 ```
