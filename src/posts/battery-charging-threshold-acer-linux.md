@@ -1,7 +1,7 @@
 ---
 title: 'Battery Charging Threshold for Acer laptops on Linux'
 description: 'Leverage open-source tools to achieve the Acer Care Center feature.'
-date: '2024-01-25'
+date: '2024-01-26'
 ---
 
 As an owner of an Acer Nitro 5 (AN515-57), I wanted to extend the lifespan of my battery by limiting its charging capacity to 80%. Unfortunately, Acer doesn't provide an official solution for this on Linux. However, with the power of open-source tools, we can still achieve this functionality.

@@ -1,7 +1,7 @@
 ---
 title: 'Rescuing Unresponsive GUI on Linux'
 description: 'Gaming on Linux is so cool that it freezes your desktop!'
-date: '2024-02-01'
+date: '2024-02-02'
 ---
 
 On Linux we have these virtual terminals (TTYs) built-in. They provide a way to bypass the whole graphical user interface and give you just a simple and reliable terminal.
