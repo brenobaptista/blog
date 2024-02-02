@@ -21,3 +21,13 @@ In case you want to uninstall the software above, here are the links:
 
 - [Uninstallation for GNOME extension](https://maniacx.github.io/Battery-Health-Charging/installation#uninstallation)
   - Don't forget to remove the polkit rules before uninstalling the extension.
+
+## Debugging
+
+A few days after the publishing of this post, a reader called Anhar reported that he had the same laptop model but it didn't work for him. It turned out that a custom fan control driver [nbfc-linux](https://github.com/nbfc-linux/nbfc-linux) was conflicting with the custom battery charging driver. So when debugging, disable other custom drivers to check if they are conflicting.
+
+To check if the service is running, run `lsmod | grep -i acer` and look for `acer_wmi_battery`.
+
+To check if the DKMS is working, run `dkms status | grep -i acer` and look for `acer_wmi_battery`.
+
+To check if the health_mode is enabled, run: `cat /sys/bus/wmi/drivers/acer-wmi-battery/health_mode`. If it returns 1 it means it is enabled, but if it returns 0 then use an editor to put it as 1 (in this case you have to use sudo to run with privileged permissions).
