@@ -83,9 +83,9 @@ const Resume = () => (
             <em>October 2023 - Present (USA, remote)</em>
             <ul>
               <li>
-                Led a team of 4 engineers into the development of the new auth
-                experience for partner app, which is used by 1800+ users, and
-                for payments app, which is used by 56000+ users.
+                Led a squad of 4 engineers into the development of the new auth
+                experience for partner app, which is used by 2,500+ users, and
+                for payments app, which is used by 100,000+ users.
               </li>
               <li>
                 Replaced passwordless authentication (magic links) with an
@@ -99,8 +99,15 @@ const Resume = () => (
                 </a>
                 .
               </li>
+              <li>
+                Managed the migration of webhook callbacks into a centralized
+                service that receives all webhooks from integrations and
+                transforms into messages using an outbox pattern to prevent data
+                loss if either the message broker or the database is down.
+              </li>
               <b>Skills: </b>Ory (Kratos, Hydra), OAuth2 protocol, OpenID
-              Connect (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP.
+              Connect (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP,
+              Webhook.
             </ul>
           </div>
           <div>
