@@ -81,7 +81,7 @@ exports[`matches snapshot in dracula mode 1`] = `
   border-radius: 56px;
   width: 56px;
   height: 28px;
-  background-color: darkorange;
+  background-color: orange;
 }
 
 .c9 {
