@@ -26,6 +26,7 @@ const Provider = ({ children }: IThemeProvider) => {
 
   const toggleTheme = () => {
     setTheme(theme.mode === 'retro' ? dracula : retro)
+    localStorage.setItem('hasToggledTheme', 'true')
   }
 
   return (

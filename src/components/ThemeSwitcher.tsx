@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 
 import ThemeContext from '@/contexts/ThemeContext'
 import {
@@ -11,6 +11,22 @@ import {
 
 const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
+  const [startAnnoyingAnimation, setStartAnnoyingAnimation] = useState(false)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const hasToggledTheme = localStorage.getItem('hasToggledTheme')
+      if (hasToggledTheme) {
+        clearInterval(interval)
+        return
+      }
+
+      setStartAnnoyingAnimation(true)
+      setTimeout(() => setStartAnnoyingAnimation(false), 1500)
+    }, 10000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLLabelElement>) => {
     if (event.key !== ' ') return
@@ -34,8 +50,9 @@ const ThemeSwitcher = () => {
         onKeyDown={event => handleKeyPress(event)}
         data-testid='label-checkbox'
         aria-label='Change the visual styles'
+        startAnnoyingAnimation={startAnnoyingAnimation}
       >
-        <Toggle />
+        <Toggle startAnnoyingAnimation={startAnnoyingAnimation} />
       </Background>
     </Wrapper>
   )
