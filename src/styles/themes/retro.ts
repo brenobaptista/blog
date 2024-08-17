@@ -8,7 +8,7 @@ const retro = {
     altBackground: 'black',
     selector: 'gray',
     selectorEdge: 'gray',
-    visited: 'darkorange'
+    visited: 'brown'
   }
 }
 
