@@ -31,16 +31,16 @@ export const Background = styled.label<{ startAnnoyingAnimation: boolean }>`
   border-radius: 56px;
   width: 56px;
   height: 28px;
-  background-color: ${props => props.theme.colors.visited};
+  background-color: ${props => props.theme.colors.primary};
   animation: ${props =>
     props.startAnnoyingAnimation && `annoyingBackground 1.5s ease-in-out`};
 
   @keyframes annoyingBackground {
     45%,
     55% {
-      background-color: darkorange;
+      background-color: orange;
       transform: scale(1.1);
-      filter: drop-shadow(0 0 5px darkorange);
+      filter: drop-shadow(0 0 5px orange);
     }
   }
 `
