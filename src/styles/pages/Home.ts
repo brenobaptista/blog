@@ -6,24 +6,20 @@ export const HomeHeader = styled.header`
   align-items: center;
 `
 
-export const PortraitWrapper = styled.div`
-  height: 128px;
+export const ProfileWrapper = styled.div`
   margin-bottom: 32px;
-  border-radius: 50%;
+  overflow: hidden;
   transition: 0.2s all ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 
   ${props =>
     props.theme.mode === 'retro'
       ? `
       animation: aura 4s infinite;
+      border-radius: 0%;
     `
       : `
-      background-color: ${props.theme.colors.altBackground};
       animation: eclipse 4s infinite;
+      border-radius: 50%;
     `};
 
   @keyframes aura {
@@ -34,7 +30,7 @@ export const PortraitWrapper = styled.div`
     }
 
     50% {
-      transform: scale(1.2) translate(0, -8px);
+      transform: translate(0, -8px);
       filter: drop-shadow(0 4px 8px orange);
     }
   }

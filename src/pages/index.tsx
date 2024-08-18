@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
-import { Email, GitHub, Portrait, RSS } from '@/icons'
+import profile from 'public/images/profile.jpg'
+import { Email, GitHub, RSS } from '@/icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import Retro from '@/components/Retro'
@@ -13,7 +15,7 @@ import generateRss from '@/lib/rss'
 import generateSitemap from '@/lib/sitemap'
 import {
   HomeHeader,
-  PortraitWrapper,
+  ProfileWrapper,
   SocialIcons,
   Intro,
   Blog,
@@ -50,9 +52,9 @@ const Home = ({ allPostsData }: IHome) => {
         />
       </Head>
       <HomeHeader>
-        <PortraitWrapper>
-          <Portrait width={128} height={128} />
-        </PortraitWrapper>
+        <ProfileWrapper>
+          <Image src={profile} alt='Profile picture' width='128' height='128' />
+        </ProfileWrapper>
         <SocialIcons>
           <a
             href='mailto:me@brenobaptista.com'

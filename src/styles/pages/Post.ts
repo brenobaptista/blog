@@ -186,15 +186,25 @@ export const Separator = styled.hr`
   }};
 `
 
-export const ShortBio = styled.div`
-  svg {
-    float: left;
-    margin: 8px;
-  }
+export const ShortBio = styled.p`
+  text-align: justify;
+  line-height: 32px;
+`
 
-  p {
-    text-align: justify;
-  }
+export const ProfileWrapper = styled.div`
+  float: left;
+  margin: 16px 16px 0px 0px;
+  overflow: hidden;
+  transition: 0.2s all ease-in-out;
+
+  ${props =>
+    props.theme.mode === 'retro'
+      ? `
+      border-radius: 0%;
+    `
+      : `
+      border-radius: 50%;
+    `};
 `
 
 export const MorePosts = styled.div`

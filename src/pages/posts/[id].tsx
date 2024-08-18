@@ -1,12 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import { Portrait } from '@/icons'
+import profile from 'public/images/profile.jpg'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import { PostData, getAllPostIds, getPostData } from '@/lib/posts'
-import { Body, Separator, ShortBio, MorePosts } from '@/styles/pages/Post'
+import {
+  Body,
+  Separator,
+  ShortBio,
+  ProfileWrapper,
+  MorePosts
+} from '@/styles/pages/Post'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
@@ -44,13 +51,13 @@ const Post = ({ postData }: IPost) => (
     </article>
     <>
       <Separator />
+      <ProfileWrapper>
+        <Image src={profile} alt='Profile picture' width='80' height='80' />
+      </ProfileWrapper>
       <ShortBio>
-        <Portrait width={80} height={80} />
-        <p>
-          Breno Baptista is a software engineer who likes to explore new things
-          every day. He is interested in Linux, open-source software, digital
-          privacy and front-end development.
-        </p>
+        Breno Baptista is a software engineer who likes to explore new things
+        every day. He is interested in Linux, open-source software, digital
+        privacy and front-end development.
       </ShortBio>
       <MorePosts>
         {postData.previousPost ? (
