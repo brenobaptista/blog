@@ -82,72 +82,22 @@ const Footer = () => {
             </a>
           </Webring>
           <Badges>
-            <Image
-              src={bookmark}
-              alt='Bookmark this page'
-              width='88'
-              height='31'
-            />
-            <Image
-              src={guestbook}
-              alt='Sign my guestbook'
-              width='88'
-              height='31'
-            />
-            <Image
-              src={bestViewed}
-              alt='Best viewed with anything'
-              width='88'
-              height='31'
-            />
-            <Image
-              src={freeSpeech}
-              alt='Free speech forever'
-              width='88'
-              height='31'
-            />
-            <Image src={nukeIE} alt='Nuke IE' width='88' height='31' />
-            <Image src={anarchy} alt='Anarchy now' width='88' height='31' />
-            <Image
-              src={viewedEyes}
-              alt='Best viewed with eyes'
-              width='88'
-              height='31'
-            />
-            <Image
-              src={penguin}
-              alt='Tux - Linux penguin'
-              width='88'
-              height='31'
-            />
-            <Image src={geocities} alt='Geocities' width='88' height='31' />
-            <Image
-              src={privacy}
-              alt='Internet privacy'
-              width='88'
-              height='31'
-            />
-            <Image src={wiby} alt='Wiby search engine' width='88' height='31' />
-            <Image src={y2k} alt='I survived Y2K' width='88' height='31' />
-            <Image src={email} alt='Email me' width='88' height='31' />
-            <Image
-              src={monitor}
-              alt='Best viewed with a monitor'
-              width='88'
-              height='31'
-            />
-            <Image
-              src={i2001}
-              alt='I wish it was 2001'
-              width='88'
-              height='31'
-            />
-            <Image
-              src={nocodeandrun}
-              alt='No code and run'
-              width='88'
-              height='31'
-            />
+            <Image src={bookmark} alt='Bookmark this page' />
+            <Image src={guestbook} alt='Sign my guestbook' />
+            <Image src={bestViewed} alt='Best viewed with anything' />
+            <Image src={freeSpeech} alt='Free speech forever' />
+            <Image src={nukeIE} alt='Nuke IE' />
+            <Image src={anarchy} alt='Anarchy now' />
+            <Image src={viewedEyes} alt='Best viewed with eyes' />
+            <Image src={penguin} alt='Tux - Linux penguin' />
+            <Image src={geocities} alt='Geocities' />
+            <Image src={privacy} alt='Internet privacy' />
+            <Image src={wiby} alt='Wiby search engine' />
+            <Image src={y2k} alt='I survived Y2K' />
+            <Image src={email} alt='Email me' />
+            <Image src={monitor} alt='Best viewed with a monitor' />
+            <Image src={i2001} alt='I wish it was 2001' />
+            <Image src={nocodeandrun} alt='No code and run' />
           </Badges>
           <Copyright>
             © 2020-{new Date().getFullYear()} Breno Baptista
