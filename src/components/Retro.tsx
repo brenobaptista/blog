@@ -26,10 +26,10 @@ const Retro = () => {
             <p>WARNING! This site is currently under heavy construction.</p>
           </Marquee>
           <Construction>
-            <Image src={hamster} alt='Dancing hamster' height='100' />
-            <Image src={jackhammer} alt='Man with jackhammer' height='100' />
-            <Image src={money} alt='Spinning money' height='100' />
-            <Image src={worldwideweb} alt='World Wide Web' height='100' />
+            <Image src={hamster} alt='Dancing hamster' />
+            <Image src={jackhammer} alt='Man with jackhammer' />
+            <Image src={money} alt='Spinning money' />
+            <Image src={worldwideweb} alt='World Wide Web' />
           </Construction>
           <Song>
             <figcaption>
@@ -42,41 +42,11 @@ const Retro = () => {
             </audio>
           </Song>
           <Sheep>
-            <Image
-              src={sheep}
-              alt='Sheep'
-              width='32'
-              height='20'
-              style={{ animationDelay: '0s' }}
-            />
-            <Image
-              src={sheep}
-              alt='Sheep'
-              width='32'
-              height='20'
-              style={{ animationDelay: '1s' }}
-            />
-            <Image
-              src={sheep}
-              alt='Sheep'
-              width='32'
-              height='20'
-              style={{ animationDelay: '2s' }}
-            />
-            <Image
-              src={sheep}
-              alt='Sheep'
-              width='32'
-              height='20'
-              style={{ animationDelay: '3s' }}
-            />
-            <Image
-              src={sheep}
-              alt='Sheep'
-              width='32'
-              height='20'
-              style={{ animationDelay: '4s' }}
-            />
+            <Image src={sheep} alt='Sheep' style={{ animationDelay: '0s' }} />
+            <Image src={sheep} alt='Sheep' style={{ animationDelay: '1s' }} />
+            <Image src={sheep} alt='Sheep' style={{ animationDelay: '2s' }} />
+            <Image src={sheep} alt='Sheep' style={{ animationDelay: '3s' }} />
+            <Image src={sheep} alt='Sheep' style={{ animationDelay: '4s' }} />
           </Sheep>
         </>
       )}

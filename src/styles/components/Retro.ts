@@ -62,6 +62,12 @@ export const Construction = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 32px;
+  height: 100px;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
 `
 
 export const Song = styled.figure`
