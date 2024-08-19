@@ -53,7 +53,14 @@ const Home = ({ allPostsData }: IHome) => {
       </Head>
       <HomeHeader>
         <ProfileWrapper>
-          <Image src={profile} alt='Profile picture' width={128} height={128} />
+          <Image
+            src={profile}
+            alt='Profile picture'
+            width={128}
+            height={128}
+            quality={100}
+            priority
+          />
         </ProfileWrapper>
         <SocialIcons>
           <a
