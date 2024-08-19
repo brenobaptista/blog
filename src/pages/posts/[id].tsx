@@ -52,7 +52,7 @@ const Post = ({ postData }: IPost) => (
     <>
       <Separator />
       <ProfileWrapper>
-        <Image src={profile} alt='Profile picture' width='80' height='80' />
+        <Image src={profile} alt='Profile picture' width={80} height={80} />
       </ProfileWrapper>
       <ShortBio>
         Breno Baptista is a software engineer who likes to explore new things
