@@ -13,17 +13,21 @@ date: '2022-08-20'
 <dfn><abbr title="Z shell">Zsh</abbr></dfn> is an alternative to Bash.
 Many of the useful features of Bash were incorporated into Zsh, but also many original features were added.
 
-- [Installing Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+- [Installing and Setting Up Zsh as Default](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default)
 
 ## 2. Oh My Zsh
 
 <dfn>Oh My Zsh</dfn> is a framework for managing your Zsh configuration.
 
+You don't strictly need it as you can simply choose the "Manual Installation (Git Clone)" option for the plugins.
+
 - [Installing Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 
 ### Plugins
 
-To use plugins with Oh My Zsh, you'll need to clone and enable them in your `~/.zshrc` file.
+To use plugins with Oh My Zsh, you'll need to git clone and enable them in your `~/.zshrc` file.
+
+These are the plugins most people use with Zsh:
 
 - [zdharma/fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting#oh-my-zsh): It adds syntax highlighting while you type commands, allowing you to quickly check if they are correct.
 
@@ -37,28 +41,18 @@ plugins=(
 )
 ```
 
-## 3. Change theme or use Spaceship (optional)
+## 3. Changing theme (optional)
 
-You can choose between [themes from Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by replacing `ZSH_THEME="robbyrussell"` in `~/.zshrc` or set up your own using Spaceship.
+You can choose between [themes from Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by replacing `ZSH_THEME="robbyrussell"` in `~/.zshrc`. I personally like the default theme, so I just leave it there.
 
-<dfn>Spaceship</dfn> is a minimalistic, powerful and extremely customizable Zsh prompt.
+## 4. Changing auto-update behavior (optional)
 
-- [Installing Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#oh-my-zsh)
+By default, you will be prompted to confirm updates every 2 weeks. I find this behavior pretty annoying.
 
-### Setup
+You can choose other update modes by uncommenting one of the lines in your `~/.zshrc` file.
 
-In `~/.zshrc`, replace `ZSH_THEME="robbyrussell"` with `ZSH_THEME="spaceship"`.
-
-Below this line, place this example of customization:
+### Disable automatic updates
 
 ```bash[class="line-numbers"]
-SPACESHIP_PROMPT_ORDER=(
-  user      # Username section
-  dir       # Current directory section
-  git       # Git section (git_branch + git_status)
-  exec_time # Execution time
-  char      # Prompt character
-)
-SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_SEPARATE_LINE=false
+zstyle ':omz:update' mode disabled
 ```
