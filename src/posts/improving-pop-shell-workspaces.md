@@ -1,6 +1,6 @@
 ---
 title: 'Improving Pop Shell and Workspaces'
-description: 'Fix your Pop!_OS experience with these changes.'
+description: 'Fix your Pop!_OS 22.04 experience with these changes.'
 date: '2023-07-01'
 ---
 
@@ -8,7 +8,7 @@ date: '2023-07-01'
 
 ![Pop Shell](/images/improving-pop-shell-workspaces/pop-shell.jpg)
 
-<dfn>Pop Shell</dfn> is an extension for GNOME that comes in Pop!_OS and allows us to use tilling features like the famous i3 window manager.
+<dfn>Pop Shell</dfn> is an extension for GNOME that comes in Pop!_OS 22.04 and allows us to use tilling features like the famous i3 window manager.
 
 <dfn>Workspaces</dfn> are an easy way to group a set of windows. An example is to put the web browser on one workspace, communication applications on another one, the ones with which you work on another one and so on.
 
