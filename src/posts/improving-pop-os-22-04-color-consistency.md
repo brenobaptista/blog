@@ -8,7 +8,7 @@ date: '2024-05-12'
 
 ## Pop!_OS 22.04
 
-![Pop!_OS](/images/improving-pop-os-22-04-color-consistency/pop-os.png)
+![Pop!_OS](/images/improving-pop-os-22-04-color-consistency/pop-os.jpg)
 
 ### Match "Dock" background with "Panel" background
 
@@ -31,7 +31,7 @@ sudo nano /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/dark.css
 
 ## Browsers
 
-![Browsers](/images/improving-pop-os-22-04-color-consistency/browsers.png)
+![Browsers](/images/improving-pop-os-22-04-color-consistency/browsers.jpg)
 
 ### Chromium-based browsers
 
