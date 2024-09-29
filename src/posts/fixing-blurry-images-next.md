@@ -6,7 +6,7 @@ date: '2024-08-18'
 
 ## Table of Contents
 
-## Explanation and Solution
+## Problem, Investigation and Solution
 
 I noticed that my profile picture appeared blurry when I accessed my blog on my iPad. After searching for a solution, I found that forum users typically recommend using `quality={100}` or `unoptimized={true}`, but these options didn't fix my problem.
 
@@ -29,7 +29,25 @@ Notice that it not only uses `src` but also `srcset`. The [srcset property](http
 
 **So the problem was actually that I was storing the picture with resolution `128x128` (because that was the resolution to be rendered on my component) but for high-density displays it actually needs to use `256x256`. So, I simply had to double the resolution of my image and `next/image` would handle the rest.**
 
-## Another Example
+## Justification
+
+Vercel [mentions this in the documentation](https://nextjs.org/docs/pages/api-reference/components/image#responsive-images), although the explanation is near the end.
+
+Thinking back now, the solution to the problem may seem pretty obvious. It's just that when you create a component and put it as `128x128` you probably won't realize that it needs to be filled with `256x256` because of high-density displays. It's a matter of remembering that these displays exist and need support.
+
+My laptop doesn't have a HiDPI display, so I'm only aware of the problem because I recently bought an Apple product. This makes me wonder how many others are unaware that their images might actually appear blurry on blog posts, social media or portfolios.
+
+## What is HiDPI?
+
+4K does not mean HiDPI. We need to consider the physical size of the display, otherwise it can be too dense, making the UI (fonts and icons) too small.
+
+A 4K television is big because it uses 1x pixel density, while a 4K laptop uses 2x pixel density to occupy the same size as a 1080p laptop. In this example, the TV would be LoDPI and the laptop would be HiDPI. 1080p (1920×1080) doubled is 4K (3840×2160), so it makes sense for that physical size. The UI will be the same size, but it'll look crispy.
+
+Example: if you used to watch videos on a monitor at 1080p and you replace it with a 2x pixel density monitor, it should be 4K so you have to start streaming/downloading 4K videos.
+
+[Reading recommendation to understand HiDPI](https://medium.com/elementaryos/what-is-hidpi-and-why-does-it-matter-b024eabea20d)
+
+## Back to Investigation
 
 [Lee Robinson](https://leerob.io/) is a well-known developer in the Next.js community that now works directly at Vercel. From his screenshots, he appears to use a MacBook.
 
@@ -59,11 +77,3 @@ It indicates that the `intrinsic size` is double the original resolution on 2x p
 ## Tip for Working With SVG
 
 I noticed a few users on forums complaining about their SVG being blurred. To fix this, instead of using `next/image`, render the SVG directly in the browser: [Working With SVGs in React](/posts/working-with-svgs-in-react-using-svgr)
-
-## Rant
-
-To be fair, Vercel [mentions this in the documentation](https://nextjs.org/docs/pages/api-reference/components/image#responsive-images), although the explanation is near the end.
-
-Thinking back now, the solution to the problem may seem pretty obvious. It's just that when you create a component and put it as `128x128` you maybe won't realize that it needs to be filled with `256x256` because of these high-density displays. How are we supposed to remember to always double the resolution because a pixel is not really just a pixel?
-
-My laptop doesn't have a high-density screen, so I'm only aware of the problem now because I recently paid premium in an Apple product. So I wonder how many people aren't aware that their images may actually be blurry in their blog posts, social media, portfolios etc?
