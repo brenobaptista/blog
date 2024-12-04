@@ -42,7 +42,7 @@ Removing the workspace switcher will break the dynamic workspaces feature, so us
 
 First, you can install the **browser** extension "GNOME Shell integration" to make this easier. Then in each **desktop** extension you can install by accessing the URL and just clicking one button.
 
-- [Space Bar](https://extensions.gnome.org/extension/5090/space-bar/): displays workspaces information in top panel. I like to disable "Show empty workspaces".
+- [Space Bar](https://extensions.gnome.org/extension/5090/space-bar/): displays workspaces information in top panel.
 - [Disable Workspace Switcher](https://extensions.gnome.org/extension/4980/disable-workspace-switcher/): disables the annoying workspace switcher popup. Alternatives: "Workspace Switcher Manager" or "Just Perfection".
-- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/): sets applications to open automatically in some workspace.
-- [Disable Workspace Switch Animation for GNOME 40+](https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/): disables the animation when switching workspaces (optional, I like it)
+- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/): sets applications to open automatically in some workspace (optional).
+- [Disable Workspace Switch Animation for GNOME 40+](https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/): disables the animation when switching workspaces (optional)
