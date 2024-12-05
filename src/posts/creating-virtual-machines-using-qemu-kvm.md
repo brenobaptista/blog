@@ -10,6 +10,8 @@ date: '2021-03-06'
 
 In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
 
+The advantage of using the CLI instead of the GUI is speed and convenience. When testing different Linux distributions or desktop environments, you can quickly reuse the same command to create new virtual machines with the same settings. With the GUI, you'd have to manually create each one and set up the options again, which takes more time.
+
 ## Table of Contents
 
 ## Dependencies
@@ -33,18 +35,21 @@ qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
   -smp 4 \
+  -device VGA,vgamem_mb=64 \
   -name 'Linux' \
   -boot d \
-  -cdrom kali-linux-2020.3-live-amd64.iso
+  -cdrom linux.iso
 ```
 
-Change the parameters accordingly. `-m` is the RAM memory and `-smp` is the CPU cores.
+Change the parameters accordingly. `-m` refers to RAM memory and `-smp` refers to CPU cores. It's a good idea to use half the resources of the host machine.
 
-![Virtual machine](/images/creating-virtual-machines-using-qemu-kvm/kali-live.jpg)
+The default graphics memory (16 MB) is insufficient to be able to run with resolutions higher than 1920x1024. The parameter `-device VGA,vgamem_mb=64` fixes that problem.
 
-> Shortcut to get in and out of fullscreen mode: `Ctrl + Alt + F`
+![Virtual machine live](/images/creating-virtual-machines-using-qemu-kvm/linux-live.jpg)
+
+> Get in/out of fullscreen mode: `Ctrl + Alt + F`
 >
-> Shortcut to release the mouse from the virtual machine window: `Ctrl + Alt + G`
+> Release mouse from the window: `Ctrl + Alt + G`
 
 ### Creating data storage
 
@@ -67,19 +72,21 @@ qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
   -smp 4 \
+  -device VGA,vgamem_mb=64 \
   -name 'Linux' \
   -boot d \
-  -cdrom kali-linux-2020.3-live-amd64.iso \
+  -cdrom linux.iso \
   -hda disk.qcow2
 ```
 
-2. After installing the operating system, you can boot from disk if you remove both `-boot d` and `-cdrom kali-linux-2020.3-live-amd64.iso` flags from our command.
+2. After installing the operating system, you can boot from disk if you remove both `-boot d` and `-cdrom linux.iso` flags from our command.
 
 ```bash[class="command-line"]
 qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
   -smp 4 \
+  -device VGA,vgamem_mb=64 \
   -name 'Linux' \
   -hda disk.qcow2
 ```
@@ -93,14 +100,13 @@ qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
   -smp 4 \
+  -device VGA,vgamem_mb=64 \
   -name 'Linux' \
   -hda disk.qcow2
 ```
 
-![Kali Linux](/images/creating-virtual-machines-using-qemu-kvm/kali.jpg)
+![Virtual machine](/images/creating-virtual-machines-using-qemu-kvm/linux.jpg)
 
 ## MacOS example
 
-There is a nice README that explains [how to set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM. Here is the final result of a virtual machine running **macOS Catalina** in dark mode:
-
-![MacOS](/images/creating-virtual-machines-using-qemu-kvm/mac.jpg)
+There is a nice project that allows us to [set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM.
