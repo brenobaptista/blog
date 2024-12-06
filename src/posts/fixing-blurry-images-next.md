@@ -41,7 +41,7 @@ My laptop doesn't have a HiDPI display, so I'm only aware of the problem because
 
 4K does not mean HiDPI. We need to consider the physical size of the display, otherwise it can be too dense, making the UI (fonts and icons) too small.
 
-A 4K television is big because it uses 1x pixel density, while a 4K laptop uses 2x pixel density to occupy the same size as a 1080p laptop. In this example, the TV would be LoDPI and the laptop would be HiDPI. 1080p (1920×1080) doubled is 4K (3840×2160), so it makes sense for that physical size. The UI will be the same size, but it'll look crispy.
+A 4K television is big because it uses 1x pixel density, while a 4K laptop uses 2x pixel density to occupy the same size as a 1080p laptop. In this example, the TV would be LoDPI and the laptop would be HiDPI. 1080p (1920x1080) doubled is 4K (3840x2160), so it makes sense for that physical size. The UI will be the same size, but it'll look crispy.
 
 Example: if you used to watch videos on a monitor at 1080p and you replace it with a 2x pixel density monitor, it should be 4K so you have to start streaming/downloading 4K videos.
 
