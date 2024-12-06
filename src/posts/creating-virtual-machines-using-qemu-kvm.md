@@ -1,49 +1,50 @@
 ---
 title: 'Creating Virtual Machines Using QEMU/KVM on Linux'
-description: 'Squeeze every last drop of performance out of your virtual machine.'
-date: '2021-03-06'
+description: 'Set up virtual machines quickly and efficiently.'
+date: '2024-12-01'
 ---
 
-**What is QEMU?** <dfn><abbr title="Quick EMUlator">QEMU</abbr></dfn> is a free and open-source machine emulator that can perform hardware virtualization. It is a lot faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
+**What is QEMU?** <dfn><abbr title="Quick EMUlator">QEMU</abbr></dfn> is a free and open-source machine emulator that can perform hardware virtualization. It is often faster than VMWare or Virtualbox because it is a KVM-based virtualization platform.
 
 **What is KVM?** <dfn><abbr title="Kernel-based Virtual Machine">KVM</abbr></dfn> is a virtualization module in the Linux kernel.
 
-In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a GUI for controlling virtual machines.
+In this guide, we will manage our virtual machines through the terminal, but you could use [virt-manager](https://virt-manager.org/) as a graphical alternative for controlling virtual machines.
 
-The advantage of using the CLI instead of the GUI is speed and convenience. When testing different Linux distributions or desktop environments, you can quickly reuse the same command to create new virtual machines with the same settings. With the GUI, you'd have to manually create each one and set up the options again, which takes more time.
+The advantage of using the CLI instead of the GUI is speed and convenience. When testing different Linux distributions or desktop environments, you can reuse the same command to quickly create new virtual machines with the same settings.
 
 ## Table of Contents
 
-## Dependencies
+## Downloading QEMU
 
-### QEMU
+QEMU is packaged by most Linux distributions. Just run the respective command for yours.
 
 [Download QEMU](https://www.qemu.org/download/#linux/)
 
-## Linux example
+## Downloading .iso
 
-### Downloading .iso
+Download the `.iso` file from the official website of the operating system you want to use.
 
-First of all, you need to download the `.iso` file on the official website.
+## Booting live system
 
-### Booting in Live Mode
+**If you simply want to try some Linux distributions or desktop environments without any changes being persistent, follow these instructions.**
 
-Go to the directory where you downloaded the official `.iso` and use this command in your terminal as an example to boot the live version. No changes to the operational system will be saved.
+Navigate to the directory where you downloaded the `.iso` file and run the following command in your terminal to boot the live system.
 
 ```bash[class="command-line"]
 qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
-  -smp 4 \
+  -smp 2 \
   -device VGA,vgamem_mb=64 \
-  -name 'Linux' \
   -boot d \
   -cdrom linux.iso
 ```
 
-Change the parameters accordingly. `-m` refers to RAM memory and `-smp` refers to CPU cores. It's a good idea to use half the resources of the host machine.
+The `-m` parameter specifies the amount of RAM and the `-smp` parameter determines the number of CPU cores allocated to the virtual machine.
 
-The default graphics memory (16 MB) is insufficient to be able to run with resolutions higher than 1920x1024. The parameter `-device VGA,vgamem_mb=64` fixes that problem.
+If you open your "Settings" program and scroll down to "About", there is a good chance you'll see information about your machine there. Just assign half of those resources to the virtual machine.
+
+_The default graphics memory (16 MB) is insufficient to be able to support resolutions higher than 1920x1024. The parameter `-device VGA,vgamem_mb=64` fixes that problem._
 
 ![Virtual machine live](/images/creating-virtual-machines-using-qemu-kvm/linux-live.jpg)
 
@@ -51,62 +52,107 @@ The default graphics memory (16 MB) is insufficient to be able to run with resol
 >
 > Release mouse from the window: `Ctrl + Alt + G`
 
+You can create a Bash script and use it every time you want to test a live system. After saving in a file `qemu-iso` and making it executable with `chmod +x qemu-iso` in the terminal, you can quickly test live `.iso` by passing it as a parameter like `qemu-iso EndeavourOS_Endeavour_neo-2024.09.22.iso`.
+
+```bash[class="line-numbers"]
+#!/bin/bash
+
+# Check if an ISO file is provided as a parameter
+if [ -z "$1" ]; then
+  echo "Usage: qemu-iso <path_to_iso>"
+  exit 1
+fi
+
+ISO_FILE=$1
+
+# Check if the provided file exists
+if [ ! -f "$ISO_FILE" ]; then
+  echo "Error: File '$ISO_FILE' not found!"
+  exit 1
+fi
+
+# Run the QEMU command with the provided ISO file
+qemu-system-x86_64 \
+  --enable-kvm \
+  -m 4G \
+  -smp 2 \
+  -device VGA,vgamem_mb=64 \
+  -boot d \
+  -cdrom $ISO_FILE
+```
+
+## Booting installed OS
+
+**If you want to take a step further and actually install the operating system somewhere so the changes are persistent, follow these instructions.**
+
 ### Creating data storage
 
-You will need to create a `.qcow2` file that will act as a virtual data storage. Use `qemu-image` like this:
+You can create a `.qcow2` file that will act as a virtual data storage. Use `qemu-img` like this:
 
 ```bash[class="command-line"]
 qemu-img create -f qcow2 disk.qcow2 20G
 ```
 
-I have decided to create a data storage named `disk` that contains 20 GB of memory.
+You've created a data storage file named `disk.qcow2` that contains 20 GB of memory.
 
 ### Installing OS on storage
 
 Now you can modify the previous command to install the operating system in the virtual disk that you created earlier.
 
-1. Add `-hda disk.qcow2` to our previous script and run the live version once again. This time it will recognize the new disk and you will have the option to install the system there.
+Add `-hda disk.qcow2` to our previous command and run the live system once again. This time it will recognize the new disk and you will have the option to install the system there.
 
 ```bash[class="command-line"]
 qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
-  -smp 4 \
+  -smp 2 \
   -device VGA,vgamem_mb=64 \
-  -name 'Linux' \
   -boot d \
   -cdrom linux.iso \
   -hda disk.qcow2
 ```
 
-2. After installing the operating system, you can boot from disk if you remove both `-boot d` and `-cdrom linux.iso` flags from our command.
+After installing the operating system, you can boot from disk if you remove both `-boot d` and `-cdrom linux.iso` flags from our command.
 
 ```bash[class="command-line"]
 qemu-system-x86_64 \
   --enable-kvm \
   -m 4G \
-  -smp 4 \
+  -smp 2 \
   -device VGA,vgamem_mb=64 \
-  -name 'Linux' \
-  -hda disk.qcow2
-```
-
-3. You can create a Bash script (don't forget to make it executable running `chmod +x script.sh` in your terminal) and use it every time you want to start the virtual machine. You can tweak this script to customize your virtual machine, for example adding more RAM memory or CPU cores.
-
-```bash[class="line-numbers"]
-#!/bin/bash
-
-qemu-system-x86_64 \
-  --enable-kvm \
-  -m 4G \
-  -smp 4 \
-  -device VGA,vgamem_mb=64 \
-  -name 'Linux' \
   -hda disk.qcow2
 ```
 
 ![Virtual machine](/images/creating-virtual-machines-using-qemu-kvm/linux.jpg)
 
-## MacOS example
+You can create a Bash script and use it every time you want to start the virtual machine. After saving in a file `qemu-disk` and making it executable with `chmod +x qemu-disk` in the terminal, you can quickly boot any disk by passing it as a parameter like `qemu-disk disk.qcow2`.
 
-There is a nice project that allows us to [set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM.
+```bash[class="line-numbers"]
+#!/bin/bash
+
+# Check if a disk file is provided as a parameter
+if [ -z "$1" ]; then
+  echo "Usage: run-qemu <path_to_disk>"
+  exit 1
+fi
+
+DISK_FILE=$1
+
+# Check if the provided file exists
+if [ ! -f "$DISK_FILE" ]; then
+  echo "Error: File '$DISK_FILE' not found!"
+  exit 1
+fi
+
+# Run the QEMU command with the provided disk file
+qemu-system-x86_64 \
+  --enable-kvm \
+  -m 4G \
+  -smp 2 \
+  -device VGA,vgamem_mb=64 \
+  -hda $DISK_FILE
+```
+
+## Bonus: MacOS VM
+
+There is a nice project that helps to [set up a macOS virtual machine](https://github.com/foxlet/macOS-Simple-KVM) using QEMU accelerated by KVM.
