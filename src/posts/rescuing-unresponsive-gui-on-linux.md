@@ -23,14 +23,16 @@ Ever been gaming on Linux and then your whole system freezes? It sometimes happe
 
 The solution is to go to one of the TTYs and kill the processes. I usually press `Ctrl + Alt + F4`, put my username and password then run my alias `unfreeze` command (which is `kill -9 -1`).
 
-![TTY4](/images/rescuing-unresponsive-gui-on-linux/tty4.png)
-
-The `kill -9 -1` command kills all processes that can be killed (including your game), which means you will go back to your lockscreen and will have a clean system. It feels like a quick reboot.
-
-You could also run `shutdown` to just power off your computer normally or `reboot` to restart your computer.
+![unfreeze](/images/rescuing-unresponsive-gui-on-linux/unfreeze.png)
 
 To add an alias, go to your `.bashrc` or `.zshrc` and put this line somewhere at the end of the file:
 
 ```bash[class="line-numbers"]
 alias unfreeze="kill -9 -1"
 ```
+
+The `kill -9 -1` command kills all processes that can be killed (including your game), which means you will go back to your lockscreen and will have a clean system. It feels like a quick reboot.
+
+Another option is to install and use `htop` to select and kill specific processes. This way when you go back to your desktop environment (`Ctrl + Alt + F2`) other applications will be intact.
+
+![htop](/images/rescuing-unresponsive-gui-on-linux/htop.png)
