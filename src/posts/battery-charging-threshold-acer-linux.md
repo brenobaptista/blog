@@ -43,12 +43,6 @@ ExecStart=/home/brenobaptista/bin/limit-acer-battery.sh
 WantedBy=multi-user.target
 ```
 
-Optional, for security: grants read and write permissions to the owner and read permissions to the group. Others will have no permissions.
-
-```bash[class="command-line"]
-sudo chmod 640 /etc/systemd/system/acer-battery.service
-```
-
 When adding a new unit file or editing an existing one, you must tell systemd to reload the unit file definitions:
 
 ```bash[class="command-line"]
