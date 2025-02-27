@@ -57,17 +57,17 @@ You can create a Bash script and use it every time you want to test a live syste
 ```bash[class="line-numbers"]
 #!/bin/bash
 
-# Check if an ISO file is provided as a parameter
+# Check if a file is provided as a parameter
 if [ -z "$1" ]; then
-  echo "Usage: qemu-iso <path_to_iso>"
+  echo "Usage: qemu-iso <iso-path>"
   exit 1
 fi
 
-ISO_FILE=$1
+FILE=$1
 
 # Check if the provided file exists
-if [ ! -f "$ISO_FILE" ]; then
-  echo "Error: File '$ISO_FILE' not found!"
+if [ ! -f "$FILE" ]; then
+  echo "Error: File '$FILE' not found!"
   exit 1
 fi
 
@@ -78,7 +78,7 @@ qemu-system-x86_64 \
   -smp 2 \
   -device VGA,vgamem_mb=64 \
   -boot d \
-  -cdrom $ISO_FILE
+  -cdrom $FILE
 ```
 
 ## Booting installed OS
@@ -130,17 +130,17 @@ You can create a Bash script and use it every time you want to start the virtual
 ```bash[class="line-numbers"]
 #!/bin/bash
 
-# Check if a disk file is provided as a parameter
+# Check if a file is provided as a parameter
 if [ -z "$1" ]; then
-  echo "Usage: run-qemu <path_to_disk>"
+  echo "Usage: qemu-disk <disk-path>"
   exit 1
 fi
 
-DISK_FILE=$1
+FILE=$1
 
 # Check if the provided file exists
-if [ ! -f "$DISK_FILE" ]; then
-  echo "Error: File '$DISK_FILE' not found!"
+if [ ! -f "$FILE" ]; then
+  echo "Error: File '$FILE' not found!"
   exit 1
 fi
 
@@ -150,7 +150,7 @@ qemu-system-x86_64 \
   -m 4G \
   -smp 2 \
   -device VGA,vgamem_mb=64 \
-  -hda $DISK_FILE
+  -hda $FILE
 ```
 
 ## Bonus: MacOS VM
