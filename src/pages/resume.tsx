@@ -28,8 +28,9 @@ const Resume = () => (
           <Author>
             <h1>Breno Baptista</h1>
             <div>
-              Lead software engineer with bachelor’s degree in Computer Science
-              and 5+ years experience at high-growth early-stage startups.
+              Senior software engineer with bachelor’s degree in Computer
+              Science and 5+ years experience at high-growth early-stage
+              startups.
             </div>
           </Author>
           <Social>
@@ -79,13 +80,15 @@ const Resume = () => (
         <Section>
           <h2>EXPERIENCE</h2>
           <div>
-            <strong>Lead Software Engineer, Alternative Payments</strong>
+            <strong>Senior Software Engineer, Alternative Payments</strong>
             <em>October 2023 - Present (USA, remote)</em>
             <ul>
               <li>
-                Led a squad of 4 engineers into the development of the new auth
-                experience for partner app, which is used by 2,500+ users, and
-                for payments app, which is used by 100,000+ users.
+                Led a squad of 4 engineers into the development of the new
+                authentication experience which is used by 25,000+ users, the
+                new onboarding experience which integrates with Adyen for KYC
+                and the insights reporting dashboard which presents data in a
+                structured way to track company performance.
               </li>
               <li>
                 Replaced passwordless authentication (magic links) with an
