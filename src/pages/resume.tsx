@@ -91,6 +91,13 @@ const Resume = () => (
                 structured way to track company performance.
               </li>
               <li>
+                Developed and conducted interviews with prospective engineers to
+                assess technical skills and alignment with team objectives.
+                Collaborated with hiring managers to evaluate candidates and
+                provide recommendations for selection, contributing to building
+                a strong engineering team.
+              </li>
+              <li>
                 Replaced passwordless authentication (magic links) with an
                 advanced open-source security software called{' '}
                 <a

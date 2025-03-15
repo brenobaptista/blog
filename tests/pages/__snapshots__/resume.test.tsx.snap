@@ -282,6 +282,9 @@ exports[`matches snapshot in dracula mode 1`] = `
               Led a squad of 4 engineers into the development of the new authentication experience which is used by 25,000+ users, the new onboarding experience which integrates with Adyen for KYC and the insights reporting dashboard which presents data in a structured way to track company performance.
             </li>
             <li>
+              Developed and conducted interviews with prospective engineers to assess technical skills and alignment with team objectives. Collaborated with hiring managers to evaluate candidates and provide recommendations for selection, contributing to building a strong engineering team.
+            </li>
+            <li>
               Replaced passwordless authentication (magic links) with an advanced open-source security software called 
               <a
                 href="https://www.ory.sh/"
