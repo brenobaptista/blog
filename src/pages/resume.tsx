@@ -98,18 +98,6 @@ const Resume = () => (
                 a strong engineering team.
               </li>
               <li>
-                Replaced passwordless authentication (magic links) with an
-                advanced open-source security software called{' '}
-                <a
-                  href='https://www.ory.sh/'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  Ory
-                </a>
-                .
-              </li>
-              <li>
                 Managed the migration of webhook callbacks into a centralized
                 service that receives all webhooks from integrations and
                 transforms into messages using an outbox pattern to prevent data

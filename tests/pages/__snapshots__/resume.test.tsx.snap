@@ -285,17 +285,6 @@ exports[`matches snapshot in dracula mode 1`] = `
               Developed and conducted interviews with prospective engineers to assess technical skills and alignment with team objectives. Collaborated with hiring managers to evaluate candidates and provide recommendations for selection, contributing to building a strong engineering team.
             </li>
             <li>
-              Replaced passwordless authentication (magic links) with an advanced open-source security software called 
-              <a
-                href="https://www.ory.sh/"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                Ory
-              </a>
-              .
-            </li>
-            <li>
               Managed the migration of webhook callbacks into a centralized service that receives all webhooks from integrations and transforms into messages using an outbox pattern to prevent data loss if either the message broker or the database is down.
             </li>
             <b>
