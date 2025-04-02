@@ -52,7 +52,7 @@ _The default graphics memory (16 MB) is insufficient to be able to support resol
 >
 > Release mouse from the window: `Ctrl + Alt + G`
 
-You can create a Bash script and use it every time you want to test a live system. After saving in a file `qemu-iso` and making it executable with `chmod +x qemu-iso` in the terminal, you can quickly test live `.iso` by passing it as a parameter like `qemu-iso EndeavourOS_Endeavour_neo-2024.09.22.iso`.
+You can create a Bash script and use it every time you want to test a live system. After saving in a file `qemu-iso` and making it executable with `chmod +x qemu-iso` in the terminal, you can quickly test live `.iso` by passing it as a parameter like `qemu-iso linux.iso`.
 
 ```bash[class="line-numbers"]
 #!/bin/bash
@@ -112,6 +112,45 @@ qemu-system-x86_64 \
   -hda disk.qcow2
 ```
 
+You can create a Bash script and use it every time you want to install an operating system into the virtual data storage. After saving in a file `qemu-install` and making it executable with `chmod +x qemu-install` in the terminal, you can install OS to disk by passing them as a parameter like `qemu-install disk.qcow2 linux.iso`.
+
+```bash[class="line-numbers"]
+#!/bin/bash
+
+# Check if 2 files are provided as parameters
+if [ "$#" -ne 2 ]; then
+  echo "Usage: qemu-install <disk-path> <iso-path>"
+  exit 1
+fi
+
+DISK_FILE=$1
+ISO_FILE=$2
+
+# Check if the provided disk file exists
+if [ ! -f "$DISK_FILE" ]; then
+  echo "Error: Disk file '$DISK_FILE' not found!"
+  exit 1
+fi
+
+# Check if the provided ISO file exists
+if [ ! -f "$ISO_FILE" ]; then
+  echo "Error: ISO file '$ISO_FILE' not found!"
+  exit 1
+fi
+
+# Run the QEMU command with the provided disk file
+qemu-system-x86_64 \
+  --enable-kvm \
+  -m 4G \
+  -smp 2 \
+  -device VGA,vgamem_mb=64 \
+  -boot d \
+  -cdrom $ISO_FILE \
+  -hda $DISK_FILE
+```
+
+![Virtual machine](/images/creating-virtual-machines-using-qemu-kvm/linux.jpg)
+
 After installing the operating system, you can boot from disk if you remove both `-boot d` and `-cdrom linux.iso` flags from our command.
 
 ```bash[class="command-line"]
@@ -122,8 +161,6 @@ qemu-system-x86_64 \
   -device VGA,vgamem_mb=64 \
   -hda disk.qcow2
 ```
-
-![Virtual machine](/images/creating-virtual-machines-using-qemu-kvm/linux.jpg)
 
 You can create a Bash script and use it every time you want to start the virtual machine. After saving in a file `qemu-disk` and making it executable with `chmod +x qemu-disk` in the terminal, you can quickly boot any disk by passing it as a parameter like `qemu-disk disk.qcow2`.
 
