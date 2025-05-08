@@ -49,6 +49,7 @@ export default class MyDocument extends Document {
           />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='manifest' href='/site.webmanifest' />
+          <link rel='icon' href='./favicon.ico' type='image/x-icon'></link>
           <meta name='theme-color' content='#bd93f9' />
           <meta
             property='og:image'
