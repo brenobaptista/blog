@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import Footer from '@/components/Footer'
 import Sparkles from '@/components/Sparkles'
+import Tab from '@/components/Tab'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 import { Container, Toolbar } from '@/styles/components/Layout'
@@ -21,6 +22,7 @@ const Layout = ({ children }: ILayout) => (
     <main>{children}</main>
     <Footer />
     <Sparkles />
+    <Tab />
     <RetroGlobalStyle />
   </Container>
 )

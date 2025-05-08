@@ -11,6 +11,7 @@ const customJestConfig = {
     '<rootDir>/coverage/',
     '<rootDir>/src/components/icons/index.tsx',
     '<rootDir>/src/components/Sparkles.tsx',
+    '<rootDir>/src/components/Tab.tsx',
     '<rootDir>/src/lib',
     '<rootDir>/src/pages/_app.tsx',
     '<rootDir>/src/pages/_document.tsx',
