@@ -1,5 +1,5 @@
 import { render } from 'testUtils'
-import Retro from '@/components/Retro'
+import RetroHomeSection from '@/components/RetroHomeSection'
 import ThemeContext from '@/contexts/ThemeContext'
 
 const renderWithContext = (ui, value) =>
@@ -7,7 +7,7 @@ const renderWithContext = (ui, value) =>
 
 test('matches snapshot', () => {
   const theme = { mode: 'retro' }
-  const { asFragment } = renderWithContext(<Retro />, { theme })
+  const { asFragment } = renderWithContext(<RetroHomeSection />, { theme })
 
   expect(asFragment()).toMatchSnapshot()
 })

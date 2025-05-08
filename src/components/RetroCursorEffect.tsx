@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react'
 
 import ThemeContext from '@/contexts/ThemeContext'
 
-const Sparkles = () => {
+const RetroCursorEffect = () => {
   const { theme } = useContext(ThemeContext)
 
   const color = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
@@ -281,4 +281,4 @@ const Sparkles = () => {
   return null
 }
 
-export default Sparkles
+export default RetroCursorEffect

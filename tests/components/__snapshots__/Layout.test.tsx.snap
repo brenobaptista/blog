@@ -259,7 +259,37 @@ exports[`matches snapshot in dracula mode 1`] = `
 
 exports[`matches snapshot in retro mode for home 1`] = `
 <DocumentFragment>
-  .c11 {
+  .c13 {
+  margin: 24px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.c13 a {
+  margin: 0 8px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 8px 0 16px;
+}
+
+.c15 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -291,36 +321,6 @@ exports[`matches snapshot in retro mode for home 1`] = `
   height: 1px;
   background-color: gray;
   background-image: linear-gradient(to right,gray,gray,gray);
-}
-
-.c13 {
-  margin: 24px 0;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.c13 a {
-  margin: 0 8px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 8px 0 16px;
-}
-
-.c15 {
-  text-align: center;
-  font-size: 0.8rem;
 }
 
 .c2 {

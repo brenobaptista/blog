@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react'
 
 import ThemeContext from '@/contexts/ThemeContext'
 
-const Tab = () => {
+const RetroBrowserTab = () => {
   const { theme } = useContext(ThemeContext)
 
   useEffect(() => {
@@ -54,4 +54,4 @@ const Tab = () => {
   return null
 }
 
-export default Tab
+export default RetroBrowserTab

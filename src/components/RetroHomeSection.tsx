@@ -13,9 +13,9 @@ import {
   Construction,
   Song,
   Sheep
-} from '@/styles/components/Retro'
+} from '@/styles/components/RetroHomeSection'
 
-const Retro = () => {
+const RetroHomeSection = () => {
   const { theme } = useContext(ThemeContext)
 
   return (
@@ -54,4 +54,4 @@ const Retro = () => {
   )
 }
 
-export default Retro
+export default RetroHomeSection

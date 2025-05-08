@@ -2,8 +2,8 @@ import { ReactNode } from 'react'
 import Link from 'next/link'
 
 import Footer from '@/components/Footer'
-import Sparkles from '@/components/Sparkles'
-import Tab from '@/components/Tab'
+import RetroBrowserTab from '@/components/RetroBrowserTab'
+import RetroCursorEffect from '@/components/RetroCursorEffect'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 import { Container, Toolbar } from '@/styles/components/Layout'
@@ -21,8 +21,8 @@ const Layout = ({ children }: ILayout) => (
     </Toolbar>
     <main>{children}</main>
     <Footer />
-    <Sparkles />
-    <Tab />
+    <RetroBrowserTab />
+    <RetroCursorEffect />
     <RetroGlobalStyle />
   </Container>
 )

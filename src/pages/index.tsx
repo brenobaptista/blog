@@ -8,7 +8,7 @@ import profile from 'public/images/profile.jpg'
 import { Email, GitHub, RSS } from '@/icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
-import Retro from '@/components/Retro'
+import RetroHomeSection from '@/components/RetroHomeSection'
 import Search from '@/components/Search'
 import { Post, getSortedPostsData } from '@/lib/posts'
 import generateRss from '@/lib/rss'
@@ -95,7 +95,7 @@ const Home = ({ allPostsData }: IHome) => {
           software, digital privacy and front-end development.
         </p>
       </Intro>
-      <Retro />
+      <RetroHomeSection />
       <Blog>
         <h2>Blog</h2>
         <Search allPostsData={allPostsData} setPosts={setPosts} />
