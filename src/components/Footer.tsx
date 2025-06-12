@@ -30,9 +30,6 @@ const Footer = () => (
           LinkedIn
         </a>
       </Column>
-      <Column>
-        <Link href='/resume'>Résumé</Link>
-      </Column>
     </Nav>
     <RetroFooter />
   </footer>

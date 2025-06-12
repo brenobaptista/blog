@@ -30,9 +30,6 @@ const generateSitemapChannel = (
   <url>
     <loc>${baseUrl}</loc>
   </url>
-  <url>
-    <loc>${baseUrl}/resume</loc>
-  </url>
   ${posts.map(generateSitemapItem).join('')}
 </urlset>`
 
