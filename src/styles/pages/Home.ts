@@ -48,7 +48,7 @@ export const ProfileWrapper = styled.div`
 `
 
 export const SocialIcons = styled.div`
-  width: 160px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
 

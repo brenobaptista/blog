@@ -85,6 +85,14 @@ const Home = ({ allPostsData }: IHome) => {
           >
             <RSS width={40} height={40} />
           </a>
+          <a
+            href='https://www.linkedin.com/in/breno-baptista/'
+            target='_blank'
+            rel='noreferrer noopener'
+            aria-label='LinkedIn profile'
+          >
+            <LinkedIn width={40} height={40} />
+          </a>
         </SocialIcons>
       </HomeHeader>
       <Intro>

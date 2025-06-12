@@ -21,7 +21,15 @@ const Footer = () => (
       <Column>
         <Link href='/rss.xml'>RSS</Link>
       </Column>
-
+      <Column>
+        <a
+          href='https://www.linkedin.com/in/breno-baptista/'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          LinkedIn
+        </a>
+      </Column>
       <Column>
         <Link href='/resume'>Résumé</Link>
       </Column>
