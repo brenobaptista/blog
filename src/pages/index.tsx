@@ -16,6 +16,7 @@ import generateSitemap from '@/lib/sitemap'
 import {
   HomeHeader,
   ProfileWrapper,
+  EmailObfuscator,
   SocialIcons,
   Intro,
   Blog,
@@ -62,13 +63,17 @@ const Home = ({ allPostsData }: IHome) => {
             priority
           />
         </ProfileWrapper>
+        <EmailObfuscator>
+          <Email width={20} height={20} />
+          <div>
+            <span>me@bre</span>
+            <span className='hidden'></span>
+            <span>nobapt</span>
+            <span className='hidden'></span>
+            <span>ista.com</span>
+          </div>
+        </EmailObfuscator>
         <SocialIcons>
-          <a
-            href='mailto:me@brenobaptista.com'
-            aria-label='Contact me by email'
-          >
-            <Email width={40} height={40} />
-          </a>
           <a
             href='https://github.com/brenobaptista/'
             target='_blank'

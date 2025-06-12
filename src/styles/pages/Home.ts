@@ -7,7 +7,7 @@ export const HomeHeader = styled.header`
 `
 
 export const ProfileWrapper = styled.div`
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   overflow: hidden;
   transition: 0.2s all ease-in-out;
 
@@ -47,8 +47,20 @@ export const ProfileWrapper = styled.div`
   }
 `
 
+export const EmailObfuscator = styled.div`
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+`
+
 export const SocialIcons = styled.div`
-  width: 200px;
+  width: 160px;
   display: flex;
   justify-content: space-between;
 
