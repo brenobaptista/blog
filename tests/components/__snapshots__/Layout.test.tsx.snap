@@ -2,41 +2,7 @@
 
 exports[`matches snapshot in dracula mode 1`] = `
 <DocumentFragment>
-  .c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  font-size: 0.9rem;
-}
-
-.c11 a {
-  margin: 16px;
-  border-radius: 4px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c10 {
-  border: 0;
-  height: 1px;
-  background-color: gray;
-  background-image: linear-gradient(to right,gray,gray,gray);
-}
-
-.c2 {
+  .c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,15 +116,6 @@ exports[`matches snapshot in dracula mode 1`] = `
 .c1 a {
   font-size: 1.4rem;
   font-weight: bold;
-}
-
-@media screen and (max-width:360px) {
-  .c11 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width:768px) {
@@ -206,70 +163,30 @@ exports[`matches snapshot in dracula mode 1`] = `
       </div>
     </div>
     <main />
-    <footer>
-      <hr
-        class="c10"
-      />
-      <nav
-        class="c11"
-      >
-        <div
-          class="c12"
-        >
-          <a
-            href="mailto:me@brenobaptista.com"
-          >
-            Email
-          </a>
-        </div>
-        <div
-          class="c12"
-        >
-          <a
-            href="https://github.com/brenobaptista/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
-        <div
-          class="c12"
-        >
-          <a
-            href="/rss.xml"
-          >
-            RSS
-          </a>
-        </div>
-        <div
-          class="c12"
-        >
-          <a
-            href="/resume"
-          >
-            Résumé
-          </a>
-        </div>
-      </nav>
-    </footer>
   </div>
 </DocumentFragment>
 `;
 
 exports[`matches snapshot in retro mode for home 1`] = `
 <DocumentFragment>
-  .c13 {
+  .c10 {
+  border: 0;
+  height: 1px;
+  background-color: gray;
+  background-image: linear-gradient(to right,gray,gray,gray);
+}
+
+.c11 {
   margin: 24px 0;
   font-size: 0.9rem;
   text-align: center;
 }
 
-.c13 a {
+.c11 a {
   margin: 0 8px;
 }
 
-.c14 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -284,43 +201,9 @@ exports[`matches snapshot in retro mode for home 1`] = `
   margin: 8px 0 16px;
 }
 
-.c15 {
+.c13 {
   text-align: center;
   font-size: 0.8rem;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  font-size: 0.9rem;
-}
-
-.c11 a {
-  margin: 16px;
-  border-radius: 4px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c10 {
-  border: 0;
-  height: 1px;
-  background-color: gray;
-  background-image: linear-gradient(to right,gray,gray,gray);
 }
 
 .c2 {
@@ -437,15 +320,6 @@ exports[`matches snapshot in retro mode for home 1`] = `
 .c1 a {
   font-size: 1.4rem;
   font-weight: bold;
-}
-
-@media screen and (max-width:360px) {
-  .c11 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width:768px) {
@@ -498,53 +372,8 @@ exports[`matches snapshot in retro mode for home 1`] = `
       <hr
         class="c10"
       />
-      <nav
-        class="c11"
-      >
-        <div
-          class="c12"
-        >
-          <a
-            href="mailto:me@brenobaptista.com"
-          >
-            Email
-          </a>
-        </div>
-        <div
-          class="c12"
-        >
-          <a
-            href="https://github.com/brenobaptista/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
-        <div
-          class="c12"
-        >
-          <a
-            href="/rss.xml"
-          >
-            RSS
-          </a>
-        </div>
-        <div
-          class="c12"
-        >
-          <a
-            href="/resume"
-          >
-            Résumé
-          </a>
-        </div>
-      </nav>
-      <hr
-        class="c10"
-      />
       <div
-        class="c13"
+        class="c11"
       >
         <a
           href="https://hotlinewebring.club/brenobaptista/previous"
@@ -569,7 +398,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         </a>
       </div>
       <div
-        class="c14"
+        class="c12"
       >
         <img
           alt="Bookmark this page"
@@ -749,7 +578,7 @@ exports[`matches snapshot in retro mode for home 1`] = `
         />
       </div>
       <div
-        class="c15"
+        class="c13"
       >
         © 2020-2025 Breno Baptista
       </div>
