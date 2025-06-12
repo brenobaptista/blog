@@ -18,15 +18,19 @@ import viewedEyes from 'public/images/retro/badges/viewed-eyes.gif'
 import wiby from 'public/images/retro/badges/wiby.gif'
 import y2k from 'public/images/retro/badges/y2k.gif'
 import ThemeContext from '@/contexts/ThemeContext'
-import { Webring, Badges, Copyright } from '@/styles/components/RetroFooter'
-import { Separator } from '@/styles/components/Footer'
+import {
+  Separator,
+  Webring,
+  Badges,
+  Copyright
+} from '@/styles/components/RetroFooter'
 
 const RetroFooter = () => {
   const { theme } = useContext(ThemeContext)
 
   return (
     theme.mode === 'retro' && (
-      <>
+      <footer>
         <Separator />
         <Webring>
           <a
@@ -70,7 +74,7 @@ const RetroFooter = () => {
           <Image src={nocodeandrun} alt='No code and run' />
         </Badges>
         <Copyright>© 2020-{new Date().getFullYear()} Breno Baptista</Copyright>
-      </>
+      </footer>
     )
   )
 }

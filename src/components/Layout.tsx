@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
 
-import Footer from '@/components/Footer'
+import RetroFooter from '@/components/RetroFooter'
 import RetroBrowserTab from '@/components/RetroBrowserTab'
 import RetroCursorEffect from '@/components/RetroCursorEffect'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
@@ -20,7 +20,7 @@ const Layout = ({ children }: ILayout) => (
       <ThemeSwitcher />
     </Toolbar>
     <main>{children}</main>
-    <Footer />
+    <RetroFooter />
     <RetroBrowserTab />
     <RetroCursorEffect />
     <RetroGlobalStyle />
