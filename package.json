@@ -35,7 +35,6 @@
     "eslint": "8.57.0",
     "eslint-config-next": "15.3.4",
     "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "husky": "9.1.7",
     "lint-staged": "16.1.2",
     "prettier": "2.8.8",
