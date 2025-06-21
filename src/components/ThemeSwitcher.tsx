@@ -48,7 +48,6 @@ const ThemeSwitcher = () => {
         htmlFor='checkbox'
         tabIndex={0}
         onKeyDown={event => handleKeyPress(event)}
-        data-testid='label-checkbox'
         aria-label='Change the visual styles'
         startAnnoyingAnimation={startAnnoyingAnimation}
       >

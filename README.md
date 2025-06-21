@@ -8,7 +8,6 @@
 - Styled Components and themes (90's and Dracula).
 - TypeScript.
 - ESLint + Prettier + Husky + Lint Staged.
-- Jest and React Testing Library.
 
 ## Getting Started
 
