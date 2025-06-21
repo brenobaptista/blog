@@ -2,8 +2,7 @@ import { useState, useEffect, ReactNode } from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 
 import ThemeContext from '@/contexts/ThemeContext'
-import dracula from '@/styles/themes/dracula'
-import retro from '@/styles/themes/retro'
+import { dracula, retro } from '@/styles/themes'
 
 interface IThemeProvider {
   children: ReactNode

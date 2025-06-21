@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import { DefaultTheme } from 'styled-components'
 
-import dracula from '@/styles/themes/dracula'
+import { dracula } from '@/styles/themes'
 
 interface IThemeContext {
   theme: DefaultTheme
