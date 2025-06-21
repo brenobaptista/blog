@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
 import profile from 'public/images/profile.jpg'
-import { Email, GitHub, LinkedIn, RSS } from '@/icons'
+import { Email, GitHub, LinkedIn, RSS } from '@/components/Icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import RetroHomeSection from '@/components/RetroHomeSection'

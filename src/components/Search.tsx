@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import { Magnifier } from '@/icons'
+import { Magnifier } from '@/components/Icons'
 import { Post } from '@/lib/posts'
 import { Input, IconWrapper } from '@/styles/components/Search'
 
