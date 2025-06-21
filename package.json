@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prettier": "prettier --write src",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install",
+    "prepare": "husky",
     "dependencies": "pnpm update -i --latest"
   },
   "dependencies": {
@@ -36,8 +36,8 @@
     "eslint-config-next": "^13.4.5",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "8.0.3",
-    "lint-staged": "13.2.2",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.2",
     "prettier": "2.8.8",
     "typescript": "5.1.3"
   },
