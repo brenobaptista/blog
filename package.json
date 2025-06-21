@@ -37,7 +37,7 @@
     "eslint-config-prettier": "^8.10.0",
     "husky": "9.1.7",
     "lint-staged": "16.1.2",
-    "prettier": "2.8.8",
+    "prettier": "3.5.3",
     "typescript": "5.8.3"
   },
   "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
