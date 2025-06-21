@@ -19,7 +19,7 @@ export const InvisibleCheckbox = styled.input`
   visibility: hidden;
 `
 
-export const Background = styled.label<{ startAnnoyingAnimation: boolean }>`
+export const Background = styled.label<{ $startAnnoyingAnimation: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ export const Background = styled.label<{ startAnnoyingAnimation: boolean }>`
   height: 28px;
   background-color: ${props => props.theme.colors.primary};
   animation: ${props =>
-    props.startAnnoyingAnimation && `annoyingBackground 1.5s ease-in-out`};
+    props.$startAnnoyingAnimation && `annoyingBackground 1.5s ease-in-out`};
 
   @keyframes annoyingBackground {
     45%,
@@ -45,7 +45,7 @@ export const Background = styled.label<{ startAnnoyingAnimation: boolean }>`
   }
 `
 
-export const Toggle = styled.span<{ startAnnoyingAnimation: boolean }>`
+export const Toggle = styled.span<{ $startAnnoyingAnimation: boolean }>`
   content: '';
   position: absolute;
   top: 2px;
@@ -56,7 +56,7 @@ export const Toggle = styled.span<{ startAnnoyingAnimation: boolean }>`
   background-color: ${props => props.theme.colors.background};
   transition: 0.2s all ease-in-out;
   animation: ${props =>
-    props.startAnnoyingAnimation && `annoyingToggle 1.5s ease-in-out`};
+    props.$startAnnoyingAnimation && `annoyingToggle 1.5s ease-in-out`};
 
   @keyframes annoyingToggle {
     45%,

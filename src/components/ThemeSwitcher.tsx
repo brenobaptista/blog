@@ -49,9 +49,9 @@ const ThemeSwitcher = () => {
         tabIndex={0}
         onKeyDown={event => handleKeyPress(event)}
         aria-label='Change the visual styles'
-        startAnnoyingAnimation={startAnnoyingAnimation}
+        $startAnnoyingAnimation={startAnnoyingAnimation}
       >
-        <Toggle startAnnoyingAnimation={startAnnoyingAnimation} />
+        <Toggle $startAnnoyingAnimation={startAnnoyingAnimation} />
       </Background>
     </Wrapper>
   )
