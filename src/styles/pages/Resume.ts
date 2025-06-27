@@ -91,4 +91,9 @@ export const Section = styled.div`
   div {
     margin-bottom: 16px;
   }
+
+  span {
+    display: block;
+    margin-bottom: 8px;
+  }
 `

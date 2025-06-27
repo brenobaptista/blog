@@ -81,21 +81,26 @@ const Resume = () => (
           <h2>EXPERIENCE</h2>
           <div>
             <strong>Senior Software Engineer, Alternative Payments</strong>
-            <em>October 2023 - Present (USA, remote)</em>
+            <em>February 2022 - Present (USA, remote)</em>
             <ul>
+              <span>
+                <b>Skills: </b>Go, Microservices, TypeScript, Tailwind,
+                React.js, Next.js, Cypress, GraphQL, RabbitMQ, CockroachDB,
+                Docker, Ory (Kratos, Hydra), OAuth2 protocol, OpenID Connect
+                (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP,
+                Webhook.
+              </span>
               <li>
-                Led a squad of 4 engineers into the development of the new
-                authentication experience which is used by 25,000+ users, the
-                new onboarding experience which integrates with Adyen for KYC
-                and the insights reporting dashboard which presents data in a
-                structured way to track company performance.
+                Led a team of 4 engineers to build a new authentication flow
+                (25,000+ users), a new onboarding experience with Adyen KYC
+                integration and an insights reporting dashboard for tracking
+                company performance.
               </li>
               <li>
-                Developed and conducted interviews with prospective engineers to
+                Planned and conducted interviews with prospective engineers to
                 assess technical skills and alignment with team objectives.
                 Collaborated with hiring managers to evaluate candidates and
-                provide recommendations for selection, contributing to building
-                a strong engineering team.
+                provide recommendations for selection.
               </li>
               <li>
                 Managed the migration of webhook callbacks into a centralized
@@ -103,37 +108,17 @@ const Resume = () => (
                 transforms into messages using an outbox pattern to prevent data
                 loss if either the message broker or the database is down.
               </li>
-              <b>Skills: </b>Ory (Kratos, Hydra), OAuth2 protocol, OpenID
-              Connect (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP,
-              Webhook.
-            </ul>
-          </div>
-          <div>
-            <strong>Software Engineer, Alternative Payments</strong>
-            <em>February 2022 - October 2023 (USA, remote)</em>
-            <ul>
-              <li>
-                Provided an integrated B2B payments and checkout infrastructure
-                for service-based businesses.
-              </li>
-              <li>
-                Implemented efficient navigation in our data-driven UI by
-                introducing table pagination and better caching strategies in
-                Apollo, resulting in reduced load times and improved
-                performance.
-              </li>
-              <li>
-                Maintained highly-scalable and containerized microservices in
-                Go.
-              </li>
               <li>
                 Successfully designed and built the email service from the
                 ground up, guaranteeing reliability and seemless communication
                 using RabbitMQ messages.
                 <ul>
                   <li>
-                    It was developed with a smart internal engine to handle the
-                    logic for all templates:{' '}
+                    Implemented a smart internal engine to reuse the logic for
+                    handling all templates. It allows communication to our
+                    customers even when other services were down by leveraging
+                    cron jobs and caching. It automatically applies customized
+                    brand logo and colors for each partner.{' '}
                     <a
                       href='https://www.brenobaptista.com/posts/model-for-microservices-oriented-email-service'
                       target='_blank'
@@ -142,24 +127,24 @@ const Resume = () => (
                       brenobaptista.com/posts/model-for-microservices-oriented-email-service
                     </a>
                   </li>
-                  <li>
-                    It allowed communication to our customers even when other
-                    services were down by leveraging cron jobs and caching.
-                  </li>
-                  <li>
-                    It automatically applied customized brand logo and colors
-                    for each partner.
-                  </li>
                 </ul>
               </li>
-              <b>Skills: </b>Go, TypeScript, Tailwind, React.js, Next.js,
-              Cypress, GraphQL, RabbitMQ, CockroachDB, Docker
+              <li>
+                Implemented efficient navigation in our data-driven UI by
+                introducing table pagination and better caching strategies in
+                Apollo, resulting in reduced load times and improved
+                performance.
+              </li>
             </ul>
           </div>
           <div>
             <strong>Full-Stack Developer, Massive</strong>
             <em>January 2020 - January 2022 (USA, remote)</em>
             <ul>
+              <span>
+                <b>Skills: </b>JavaScript, PHP, React.js, Jest, Node.js,
+                Express.js, MongoDB, Firebase, AWS, Serverless, SES
+              </span>
               <li>
                 Fought intrusive advertising by offering monetization of apps at
                 the cost of unused CPU/GPU using cryptocurrencies, blockchain
@@ -180,21 +165,15 @@ const Resume = () => (
                 reduction of ~30% in size, making the application easier to
                 maintain.
               </li>
-              <b>Skills: </b>JavaScript, PHP, React.js, Jest, Node.js,
-              Express.js, MongoDB, Firebase, AWS, Serverless, SES
             </ul>
           </div>
-        </Section>
-      </Content>
-    </Page>
-
-    <Page>
-      <Content>
-        <Section>
           <div>
             <strong>Product Owner, Acens</strong>
             <em>February 2019 - January 2020 (Brazil)</em>
             <ul>
+              <span>
+                <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
+              </span>
               <li>
                 Helped businesses build an online presence by managing a small
                 team that developed high-impact projects to our customers.
@@ -207,11 +186,14 @@ const Resume = () => (
                 Took part in critical product decisions during sprint meetings
                 and calls with customers.
               </li>
-              <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
             </ul>
           </div>
         </Section>
+      </Content>
+    </Page>
 
+    <Page>
+      <Content>
         <Section>
           <h2>PROJECTS</h2>
           <ol>
