@@ -26,10 +26,10 @@ const RetroHomeSection = () => {
             <p>WARNING! This site is currently under heavy construction.</p>
           </Marquee>
           <Construction>
-            <Image src={hamster} alt='Dancing hamster' />
-            <Image src={jackhammer} alt='Man with jackhammer' />
-            <Image src={money} alt='Spinning money' />
-            <Image src={worldwideweb} alt='World Wide Web' />
+            <Image unoptimized src={hamster} alt='Dancing hamster' />
+            <Image unoptimized src={jackhammer} alt='Man with jackhammer' />
+            <Image unoptimized src={money} alt='Spinning money' />
+            <Image unoptimized src={worldwideweb} alt='World Wide Web' />
           </Construction>
           <Song>
             <figcaption>
