@@ -48,11 +48,11 @@ export const Background = styled.label<{ $startAnnoyingAnimation: boolean }>`
 export const Toggle = styled.span<{ $startAnnoyingAnimation: boolean }>`
   content: '';
   position: absolute;
-  top: 2px;
-  left: 2px;
-  border-radius: 24px;
-  width: 24px;
-  height: 24px;
+  top: 4px;
+  left: 4px;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
   background-color: ${props => props.theme.colors.background};
   transition: 0.2s all ease-in-out;
   animation: ${props =>
@@ -62,13 +62,13 @@ export const Toggle = styled.span<{ $startAnnoyingAnimation: boolean }>`
     45%,
     55% {
       background-color: black;
-      left: calc(100% - 2px);
+      left: calc(100% - 4px);
       transform: translateX(-100%);
     }
   }
 
   ${InvisibleCheckbox}:checked + ${Background} & {
-    left: calc(100% - 2px);
+    left: calc(100% - 4px);
     transform: translateX(-100%);
   }
 `
