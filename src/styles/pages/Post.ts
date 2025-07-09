@@ -186,27 +186,6 @@ export const Separator = styled.hr`
   }};
 `
 
-export const ShortBio = styled.p`
-  text-align: justify;
-  line-height: 32px;
-`
-
-export const ProfileWrapper = styled.div`
-  float: left;
-  margin: 16px 16px 0px 0px;
-  overflow: hidden;
-  transition: 0.2s all ease-in-out;
-
-  ${props =>
-    props.theme.mode === 'retro'
-      ? `
-      border-radius: 0%;
-    `
-      : `
-      border-radius: 50%;
-    `};
-`
-
 export const MorePosts = styled.div`
   display: flex;
   gap: 0 32px;

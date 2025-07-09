@@ -1,19 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import profile from 'public/images/profile.jpg'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import { PostData, getAllPostIds, getPostData } from '@/lib/posts'
-import {
-  Body,
-  Separator,
-  ShortBio,
-  ProfileWrapper,
-  MorePosts
-} from '@/styles/pages/Post'
+import { Body, Separator, MorePosts } from '@/styles/pages/Post'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
@@ -51,14 +43,6 @@ const Post = ({ postData }: IPost) => (
     </article>
     <>
       <Separator />
-      <ProfileWrapper>
-        <Image src={profile} alt='Profile picture' width={80} height={80} />
-      </ProfileWrapper>
-      <ShortBio>
-        I’m a software engineer who likes to explore new things every day. I
-        write blog posts about things I’ve found interesting during my daily
-        explorations on the web.
-      </ShortBio>
       <MorePosts>
         {postData.previousPost ? (
           <Link href={`/posts/${postData.previousPost.id}`}>
