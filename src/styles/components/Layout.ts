@@ -26,6 +26,7 @@ export const Toolbar = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 0 16px;
   align-items: center;
   margin-bottom: 32px;
   position: sticky;

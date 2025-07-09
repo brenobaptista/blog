@@ -95,6 +95,7 @@ export const BlogHeader = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 0 16px;
 `
 
 export const Card = styled.div`
