@@ -22,7 +22,6 @@ export const Page = styled.div`
 export const Content = styled.div`
   line-height: normal;
   font-size: 0.7rem;
-  text-align: justify;
 
   a {
     color: #000000;

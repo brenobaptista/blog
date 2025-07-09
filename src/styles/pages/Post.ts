@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 
 export const Body = styled.div`
-  p,
-  li {
-    text-align: justify;
-  }
-
   img {
     margin-left: auto;
     margin-right: auto;
