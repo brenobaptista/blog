@@ -55,9 +55,9 @@ const Post = ({ postData }: IPost) => (
         <Image src={profile} alt='Profile picture' width={80} height={80} />
       </ProfileWrapper>
       <ShortBio>
-        Breno Baptista is a software engineer who likes to explore new things
-        every day. He is interested in Linux, open-source software, digital
-        privacy and front-end development.
+        I’m a software engineer who likes to explore new things every day. I
+        write blog posts about things I’ve found interesting during my daily
+        explorations on the web.
       </ShortBio>
       <MorePosts>
         {postData.previousPost ? (

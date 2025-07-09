@@ -80,7 +80,7 @@ export const SocialIcons = styled.div`
 export const Intro = styled.section`
   font-size: 1.1rem;
   line-height: 1.5;
-  text-align: justify;
+  text-align: center;
   text-indent: 1.5rem;
 `
 
