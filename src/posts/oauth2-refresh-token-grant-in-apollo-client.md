@@ -27,7 +27,7 @@ Imagine you send three simultaneous requests for token refresh (Request A, Reque
 
 This ensures that only one request performs the token refresh operation, while other requests wait for be released. It prevents concurrent refresh operations and errors caused by multiple simultaneous token refresh requests.
 
-This is possible because JavaScript is a single-thread language - this code wouldn't work in Go because all three requests would see that the lock is false then try to refresh at the same time.
+This is possible because JavaScript is a single-thread language. This code wouldn't work in Go because all three requests would see that the lock is false then try to refresh at the same time.
 
 ## Implementation in React
 
