@@ -29,28 +29,6 @@ const RetroBrowserTab = () => {
     }
   }, [theme.mode])
 
-  useEffect(() => {
-    const originalFavicon = '/favicon.ico'
-    const retroFavicon = '/favicon-retro.ico'
-
-    let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement
-    if (!link) {
-      link = document.createElement('link')
-      link.rel = 'icon'
-      document.head.appendChild(link)
-    }
-
-    const bustCache = () => `?v=${new Date().getTime()}`
-
-    if (theme.mode === 'retro') {
-      link.href = retroFavicon + bustCache()
-    }
-
-    return () => {
-      link.href = originalFavicon + bustCache()
-    }
-  }, [theme.mode])
-
   return null
 }
 
