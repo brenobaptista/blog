@@ -57,7 +57,7 @@ export const Blink = styled.div`
   }
 `
 
-export const Construction = styled.div`
+export const GIFs = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

@@ -10,7 +10,7 @@ import ThemeContext from '@/contexts/ThemeContext'
 import {
   Marquee,
   Blink,
-  Construction,
+  GIFs,
   Song,
   Sheep
 } from '@/styles/components/RetroHomeSection'
@@ -25,12 +25,12 @@ const RetroHomeSection = () => {
           <Marquee>
             <p>WARNING! This site is currently under heavy construction.</p>
           </Marquee>
-          <Construction>
+          <GIFs>
             <Image unoptimized src={hamster} alt='Dancing hamster' />
             <Image unoptimized src={jackhammer} alt='Man with jackhammer' />
             <Image unoptimized src={money} alt='Spinning money' />
             <Image unoptimized src={worldwideweb} alt='World Wide Web' />
-          </Construction>
+          </GIFs>
           <Song>
             <figcaption>
               <Blink>Unleash the champion within:</Blink>
