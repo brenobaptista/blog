@@ -15,8 +15,8 @@ import generateRss from '@/lib/rss'
 import generateSitemap from '@/lib/sitemap'
 import {
   HomeHeader,
-  ProfileWrapper,
   SocialIcons,
+  ProfileWrapper,
   Intro,
   Blog,
   BlogHeader,
@@ -63,6 +63,13 @@ const Home = ({ allPostsData }: IHome) => {
             priority
           />
         </ProfileWrapper>
+        <Intro>
+          <p>
+            I’m a software engineer who likes to explore new things every day. I
+            write blog posts about things I’ve found interesting during my daily
+            explorations on the web.
+          </p>
+        </Intro>
         <SocialIcons>
           <a
             href='https://github.com/brenobaptista/'
@@ -89,13 +96,6 @@ const Home = ({ allPostsData }: IHome) => {
             <LinkedIn width={40} height={40} />
           </a>
         </SocialIcons>
-        <Intro>
-          <p>
-            I’m a software engineer who likes to explore new things every day. I
-            write blog posts about things I’ve found interesting during my daily
-            explorations on the web.
-          </p>
-        </Intro>
       </HomeHeader>
       <RetroHomeSection />
       <Blog>

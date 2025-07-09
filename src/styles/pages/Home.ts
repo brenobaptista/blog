@@ -7,7 +7,6 @@ export const HomeHeader = styled.header`
 `
 
 export const ProfileWrapper = styled.div`
-  margin-bottom: 16px;
   overflow: hidden;
   transition: 0.2s all ease-in-out;
 
@@ -47,6 +46,13 @@ export const ProfileWrapper = styled.div`
   }
 `
 
+export const Intro = styled.div`
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-indent: 1.5rem;
+`
+
 export const SocialIcons = styled.div`
   width: 160px;
   display: flex;
@@ -63,13 +69,6 @@ export const SocialIcons = styled.div`
   a {
     line-height: 0;
   }
-`
-
-export const Intro = styled.section`
-  font-size: 1.1rem;
-  line-height: 1.5;
-  text-align: center;
-  text-indent: 1.5rem;
 `
 
 export const Blog = styled.section`
