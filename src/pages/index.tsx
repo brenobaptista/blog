@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
 import profile from 'public/images/profile.jpg'
-import { Email, GitHub, LinkedIn, RSS } from '@/components/Icons'
+import { GitHub, LinkedIn, RSS } from '@/components/Icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import RetroHomeSection from '@/components/RetroHomeSection'
@@ -16,7 +16,6 @@ import generateSitemap from '@/lib/sitemap'
 import {
   HomeHeader,
   ProfileWrapper,
-  EmailObfuscator,
   SocialIcons,
   Intro,
   Blog,
@@ -63,16 +62,6 @@ const Home = ({ allPostsData }: IHome) => {
             priority
           />
         </ProfileWrapper>
-        <EmailObfuscator>
-          <Email width={20} height={20} />
-          <div>
-            <span>me@bre</span>
-            <span className='hidden'></span>
-            <span>nobapt</span>
-            <span className='hidden'></span>
-            <span>ista.com</span>
-          </div>
-        </EmailObfuscator>
         <SocialIcons>
           <a
             href='https://github.com/brenobaptista/'
@@ -99,14 +88,14 @@ const Home = ({ allPostsData }: IHome) => {
             <LinkedIn width={40} height={40} />
           </a>
         </SocialIcons>
+        <Intro>
+          <p>
+            I’m a software engineer who likes to explore new things every day. I
+            write blog posts about things I’ve found interesting during my daily
+            explorations on the web.
+          </p>
+        </Intro>
       </HomeHeader>
-      <Intro>
-        <p>
-          I’m a software engineer who likes to explore new things every day. I
-          write blog posts about things I’ve found interesting during my daily
-          explorations on the web.
-        </p>
-      </Intro>
       <RetroHomeSection />
       <Blog>
         <h2>Blog</h2>
