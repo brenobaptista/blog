@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 
+export const SearchContainer = styled.div`
+  position: relative;
+  max-width: 256px;
+`
+
 export const Input = styled.input`
-  width: 256px;
-  padding: 8px 32px 8px 16px;
+  width: 100%;
+  padding: 8px 40px 8px 16px;
   font-size: 0.8rem;
   font-family: inherit;
   line-height: 1.5;
@@ -23,10 +28,12 @@ export const Input = styled.input`
 `
 
 export const IconWrapper = styled.span`
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
   svg {
-    position: relative;
-    top: 2px;
-    right: 30px;
     fill: none;
     stroke: ${props => props.theme.colors.altText};
   }

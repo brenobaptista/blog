@@ -19,6 +19,7 @@ import {
   SocialIcons,
   Intro,
   Blog,
+  BlogHeader,
   Card
 } from '@/styles/pages/Home'
 
@@ -98,8 +99,10 @@ const Home = ({ allPostsData }: IHome) => {
       </HomeHeader>
       <RetroHomeSection />
       <Blog>
-        <h2>Blog</h2>
-        <Search allPostsData={allPostsData} setPosts={setPosts} />
+        <BlogHeader>
+          <h2>Blog</h2>
+          <Search allPostsData={allPostsData} setPosts={setPosts} />
+        </BlogHeader>
         {posts.length ? (
           posts.map(({ id, title, description, date }) => (
             <Link href={`/posts/${id}`} key={id} passHref>

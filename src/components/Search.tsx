@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 import { Magnifier } from '@/components/Icons'
 import { Post } from '@/lib/posts'
-import { Input, IconWrapper } from '@/styles/components/Search'
+import { SearchContainer, Input, IconWrapper } from '@/styles/components/Search'
 
 interface ISearch {
   allPostsData: Post[]
@@ -25,7 +25,7 @@ const Search = ({ allPostsData, setPosts }: ISearch) => {
   }, [searchValue, allPostsData, setPosts])
 
   return (
-    <>
+    <SearchContainer>
       <Input
         type='text'
         onChange={event => setSearchValue(event.target.value.toLowerCase())}
@@ -34,7 +34,7 @@ const Search = ({ allPostsData, setPosts }: ISearch) => {
       <IconWrapper>
         <Magnifier width={16} height={16} />
       </IconWrapper>
-    </>
+    </SearchContainer>
   )
 }
 
