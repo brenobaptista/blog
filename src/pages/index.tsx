@@ -10,6 +10,7 @@ import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import RetroHomeSection from '@/components/RetroHomeSection'
 import Search from '@/components/Search'
+import Separator from '@/components/Separator'
 import { Post, getSortedPostsData } from '@/lib/posts'
 import generateRss from '@/lib/rss'
 import generateSitemap from '@/lib/sitemap'
@@ -98,6 +99,7 @@ const Home = ({ allPostsData }: IHome) => {
         </SocialIcons>
       </HomeHeader>
       <RetroHomeSection />
+      <Separator margin='48px 0 16px 0' />
       <Blog>
         <BlogHeader>
           <h2>Blog</h2>
