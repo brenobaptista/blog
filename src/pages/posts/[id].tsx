@@ -4,8 +4,9 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
+import Separator from '@/components/Separator'
 import { PostData, getAllPostIds, getPostData } from '@/lib/posts'
-import { Body, Separator, MorePosts } from '@/styles/pages/Post'
+import { Body, MorePosts } from '@/styles/pages/Post'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
@@ -42,7 +43,7 @@ const Post = ({ postData }: IPost) => (
       <Body dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </article>
     <>
-      <Separator />
+      <Separator margin='24px 0 0 0' />
       <MorePosts>
         {postData.previousPost ? (
           <Link href={`/posts/${postData.previousPost.id}`}>

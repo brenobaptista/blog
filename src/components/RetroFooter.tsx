@@ -17,13 +17,9 @@ import privacy from 'public/images/retro/badges/privacy.gif'
 import viewedEyes from 'public/images/retro/badges/viewed-eyes.gif'
 import wiby from 'public/images/retro/badges/wiby.gif'
 import y2k from 'public/images/retro/badges/y2k.gif'
+import Separator from '@/components/Separator'
 import ThemeContext from '@/contexts/ThemeContext'
-import {
-  Separator,
-  Webring,
-  Badges,
-  Copyright
-} from '@/styles/components/RetroFooter'
+import { Webring, Badges, Copyright } from '@/styles/components/RetroFooter'
 
 const RetroFooter = () => {
   const { theme } = useContext(ThemeContext)

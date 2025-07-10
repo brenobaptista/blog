@@ -169,18 +169,6 @@ export const Body = styled.div`
   }
 `
 
-export const Separator = styled.hr`
-  border: 0;
-  height: 1px;
-  margin-top: 24px;
-  background-color: ${props => props.theme.colors.selector};
-  background-image: ${props => {
-    const { selector, selectorEdge } = props.theme.colors
-
-    return `linear-gradient(to right, ${selectorEdge}, ${selector}, ${selectorEdge})`
-  }};
-`
-
 export const MorePosts = styled.div`
   display: flex;
   gap: 0 32px;
