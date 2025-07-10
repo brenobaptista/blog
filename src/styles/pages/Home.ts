@@ -99,7 +99,7 @@ export const BlogHeader = styled.div`
 `
 
 export const Card = styled.div`
-  margin: 32px 0;
+  margin: 40px 0;
 
   div {
     display: flex;
@@ -120,7 +120,7 @@ export const Card = styled.div`
   }
 
   p {
-    margin-top: 4px;
+    margin-top: 8px;
     font-size: 0.9rem;
     color: ${props => props.theme.colors.text};
 
