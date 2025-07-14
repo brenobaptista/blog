@@ -50,7 +50,6 @@ export const Intro = styled.div`
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: center;
-  text-indent: 1.5rem;
 `
 
 export const SocialIcons = styled.div`
