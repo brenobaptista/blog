@@ -16,7 +16,7 @@ interface ILayout {
 const Layout = ({ children }: ILayout) => (
   <Container>
     <Toolbar>
-      <Link href='/'>Breno Baptista</Link>
+      <Link href='/'>Home</Link>
       <ThemeSwitcher />
     </Toolbar>
     <main>{children}</main>

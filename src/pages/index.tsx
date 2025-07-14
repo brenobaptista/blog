@@ -65,6 +65,7 @@ const Home = ({ allPostsData }: IHome) => {
           />
         </ProfileWrapper>
         <Intro>
+          <h1>Breno Baptista</h1>
           <p>
             I’m a software engineer who likes to explore new things every day. I
             write blog posts about things I’ve found interesting during my daily
