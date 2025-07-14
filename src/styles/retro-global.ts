@@ -23,7 +23,6 @@ export default createGlobalStyle`
       props.theme.mode === 'retro' &&
       `
       margin-left: 8px;
-      letter-spacing: 0.0625rem;
       text-shadow:
         -1px 1px violet,
         -2px 2px indigo,

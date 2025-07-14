@@ -33,7 +33,6 @@ export default createGlobalStyle`
     font-size: 1.9rem;
     line-height: 1.3;
     font-weight: 800;
-    letter-spacing: -0.05rem;
     margin: 16px 0;
   }
 
