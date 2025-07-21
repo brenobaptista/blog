@@ -30,14 +30,14 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     line-height: 1.3;
     font-weight: 800;
     margin: 16px 0;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.4;
     margin: 32px 0 16px;
   }
