@@ -1,10 +1,8 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
-import profile from 'public/images/profile.jpg'
 import { GitHub, LinkedIn, RSS } from '@/components/Icons'
 import Date from '@/components/Date'
 import Layout from '@/components/Layout'
@@ -17,7 +15,6 @@ import generateSitemap from '@/lib/sitemap'
 import {
   HomeHeader,
   SocialIcons,
-  ProfileWrapper,
   Intro,
   Blog,
   BlogHeader,
@@ -54,16 +51,6 @@ const Home = ({ allPostsData }: IHome) => {
         />
       </Head>
       <HomeHeader>
-        <ProfileWrapper>
-          <Image
-            src={profile}
-            alt='Profile picture'
-            width={128}
-            height={128}
-            quality={100}
-            priority
-          />
-        </ProfileWrapper>
         <Intro>
           <h1>Breno Baptista</h1>
           <p>

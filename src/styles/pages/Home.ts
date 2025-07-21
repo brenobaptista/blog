@@ -6,46 +6,6 @@ export const HomeHeader = styled.header`
   align-items: center;
 `
 
-export const ProfileWrapper = styled.div`
-  overflow: hidden;
-  transition: 0.2s all ease-in-out;
-
-  ${props =>
-    props.theme.mode === 'retro'
-      ? `
-      animation: aura 4s infinite;
-      border-radius: 0%;
-    `
-      : `
-      animation: eclipse 4s infinite;
-      border-radius: 50%;
-    `};
-
-  @keyframes aura {
-    0%,
-    100% {
-      transform: translate(0);
-      filter: drop-shadow(0 3px 6px orange);
-    }
-
-    50% {
-      transform: translate(0, -8px);
-      filter: drop-shadow(0 4px 8px orange);
-    }
-  }
-
-  @keyframes eclipse {
-    0%,
-    100% {
-      filter: drop-shadow(0 0 10px #bd93f9);
-    }
-
-    50% {
-      filter: drop-shadow(0 0 5px #bd93f9);
-    }
-  }
-`
-
 export const Intro = styled.div`
   font-size: 1.1rem;
   line-height: 1.5;
