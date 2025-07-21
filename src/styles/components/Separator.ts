@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const ThematicBreak = styled.hr<{ margin?: string }>`
-  margin: ${({ margin }) => margin};
+export const ThematicBreak = styled.hr<{ $margin?: string }>`
+  margin: ${props => props.$margin};
   border: 0;
   height: 1px;
   background-color: ${props => props.theme.colors.selector};
