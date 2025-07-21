@@ -50,7 +50,7 @@ const Home = ({ allPostsData }: IHome) => {
         <title>Breno Baptista</title>
         <meta
           name='description'
-          content='I’m a software engineer who likes to explore new things every day. I write blog posts about things I’ve found interesting during my daily explorations on the web.'
+          content='Coding, technology, and beyond. Welcome to my blog, a dev journal where I capture what I learn so you can learn too.'
         />
       </Head>
       <HomeHeader>
@@ -67,9 +67,8 @@ const Home = ({ allPostsData }: IHome) => {
         <Intro>
           <h1>Breno Baptista</h1>
           <p>
-            I’m a software engineer who likes to explore new things every day. I
-            write blog posts about things I’ve found interesting during my daily
-            explorations on the web.
+            Coding, technology, and beyond. Welcome to my blog, a dev journal
+            where I capture what I learn so you can learn too.
           </p>
         </Intro>
         <SocialIcons>

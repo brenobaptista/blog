@@ -50,10 +50,12 @@ export const Intro = styled.div`
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: center;
+  max-width: 450px;
 `
 
 export const SocialIcons = styled.div`
   width: 160px;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
 
