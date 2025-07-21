@@ -7,7 +7,6 @@ export const HomeHeader = styled.header`
 `
 
 export const Intro = styled.div`
-  font-size: 1.1rem;
   text-align: center;
   max-width: 450px;
 `
