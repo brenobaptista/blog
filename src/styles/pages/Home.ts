@@ -8,7 +8,14 @@ export const HomeHeader = styled.header`
 
 export const Intro = styled.div`
   text-align: center;
-  max-width: 450px;
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    max-width: 450px;
+  }
 `
 
 export const SocialIcons = styled.div`
