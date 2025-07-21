@@ -8,7 +8,6 @@ export const HomeHeader = styled.header`
 
 export const Intro = styled.div`
   font-size: 1.1rem;
-  line-height: 1.5;
   text-align: center;
   max-width: 450px;
 `
@@ -34,7 +33,6 @@ export const SocialIcons = styled.div`
 
 export const Blog = styled.section`
   font-size: 1.1rem;
-  line-height: 1.5;
 
   a {
     &:hover {
@@ -76,7 +74,7 @@ export const Card = styled.div`
 
     small {
       font-size: 0.75rem;
-      line-height: 32px;
+      line-height: 36px;
     }
   }
 
