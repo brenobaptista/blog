@@ -31,8 +31,6 @@ export const SocialIcons = styled.div`
 `
 
 export const Blog = styled.section`
-  font-size: 1.1rem;
-
   a {
     &:hover {
       text-decoration: none;
@@ -67,8 +65,12 @@ export const Card = styled.div`
       flex-direction: column;
     }
 
-    span:hover {
-      text-decoration: underline;
+    span {
+      font-size: 1.1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     small {
