@@ -171,52 +171,45 @@ export const Body = styled.div`
 
 export const MorePosts = styled.div`
   display: flex;
-  gap: 0 32px;
-  margin: 32px 0 0;
+  gap: 16px 32px;
+  margin: 32px 0 16px;
   font-size: 0.8rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+`
 
-  div {
-    flex: 1;
+export const Card = styled.div`
+  flex: 1;
+  padding: 16px;
+  border: ${props =>
+    props.theme.mode === 'retro'
+      ? `1px solid ${props.theme.colors.selector}`
+      : 'none'};
+  border-radius: 8px;
+  background-color: ${props => props.theme.colors.altBackground};
+
+  &:first-child {
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  span {
+    display: block;
+    color: ${props => props.theme.colors.altText};
   }
 
   a {
-    flex: 1;
-    margin-bottom: 16px;
-    padding: 16px;
-    border: ${props =>
-      props.theme.mode === 'retro'
-        ? `1px solid ${props.theme.colors.selector}`
-        : 'none'};
-    border-radius: 8px;
-    background-color: ${props => props.theme.colors.altBackground};
-
-    span {
-      display: block;
-      color: ${props => props.theme.colors.text};
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
-
     &:visited {
       color: ${props => props.theme.colors.visited};
-
-      span {
-        color: ${props => props.theme.colors.altText};
-      }
-    }
-
-    &:first-child {
-      text-align: right;
-
-      @media screen and (max-width: 768px) {
-        text-align: left;
-      }
     }
   }
+`
+
+export const Placeholder = styled.div`
+  flex: 1;
 `

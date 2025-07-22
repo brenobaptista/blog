@@ -6,7 +6,7 @@ import Date from '@/components/Date'
 import Layout from '@/components/Layout'
 import Separator from '@/components/Separator'
 import { PostData, getAllPostIds, getPostData } from '@/lib/posts'
-import { Body, MorePosts } from '@/styles/pages/Post'
+import { Body, MorePosts, Card, Placeholder } from '@/styles/pages/Post'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
@@ -46,20 +46,24 @@ const Post = ({ postData }: IPost) => (
       <Separator margin='24px 0 0 0' />
       <MorePosts>
         {postData.previousPost ? (
-          <Link href={`/posts/${postData.previousPost.id}`}>
+          <Card>
             <span>Previous</span>
-            {postData.previousPost.title}
-          </Link>
+            <Link href={`/posts/${postData.previousPost.id}`}>
+              {postData.previousPost.title}
+            </Link>
+          </Card>
         ) : (
-          <div />
+          <Placeholder />
         )}
         {postData.nextPost ? (
-          <Link href={`/posts/${postData.nextPost.id}`}>
+          <Card>
             <span>Next</span>
-            {postData.nextPost.title}
-          </Link>
+            <Link href={`/posts/${postData.nextPost.id}`}>
+              {postData.nextPost.title}
+            </Link>
+          </Card>
         ) : (
-          <div />
+          <Placeholder />
         )}
       </MorePosts>
     </>
