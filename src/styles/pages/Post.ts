@@ -200,7 +200,7 @@ export const Card = styled.div`
 
   span {
     display: block;
-    color: ${props => props.theme.colors.altText};
+    color: ${props => props.theme.colors.text};
   }
 
   a {

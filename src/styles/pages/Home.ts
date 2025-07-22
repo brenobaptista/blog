@@ -67,7 +67,7 @@ export const Card = styled.div`
   }
 
   div {
-    color: ${props => props.theme.colors.altText};
+    color: ${props => props.theme.colors.text};
   }
 
   small {
