@@ -42,7 +42,7 @@ export const BlogHeader = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0 16px;
+  gap: 16px;
   margin: 40px 0;
 
   h2 {
