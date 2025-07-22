@@ -54,19 +54,19 @@ const RetroFooter = () => {
         <Badges>
           <Image src={bookmark} alt='Bookmark this page' />
           <Image src={guestbook} alt='Sign my guestbook' />
-          <Image src={bestViewed} alt='Best viewed with anything' />
+          <Image unoptimized src={bestViewed} alt='Best viewed with anything' />
           <Image src={freeSpeech} alt='Free speech forever' />
-          <Image src={nukeIE} alt='Nuke IE' />
-          <Image src={anarchy} alt='Anarchy now' />
-          <Image src={viewedEyes} alt='Best viewed with eyes' />
+          <Image unoptimized src={nukeIE} alt='Nuke IE' />
+          <Image unoptimized src={anarchy} alt='Anarchy now' />
+          <Image unoptimized src={viewedEyes} alt='Best viewed with eyes' />
           <Image src={penguin} alt='Tux - Linux penguin' />
-          <Image src={geocities} alt='Geocities' />
-          <Image src={privacy} alt='Internet privacy' />
+          <Image unoptimized src={geocities} alt='Geocities' />
+          <Image unoptimized src={privacy} alt='Internet privacy' />
           <Image src={wiby} alt='Wiby search engine' />
-          <Image src={y2k} alt='I survived Y2K' />
-          <Image src={email} alt='Email me' />
+          <Image unoptimized src={y2k} alt='I survived Y2K' />
+          <Image unoptimized src={email} alt='Email me' />
           <Image src={monitor} alt='Best viewed with a monitor' />
-          <Image src={i2001} alt='I wish it was 2001' />
+          <Image unoptimized src={i2001} alt='I wish it was 2001' />
           <Image src={nocodeandrun} alt='No code and run' />
         </Badges>
         <Copyright>© 2020-{new Date().getFullYear()} Breno Baptista</Copyright>

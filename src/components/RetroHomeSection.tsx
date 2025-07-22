@@ -42,11 +42,15 @@ const RetroHomeSection = () => {
             </audio>
           </Song>
           <Sheep>
-            <Image src={sheep} alt='Sheep' style={{ animationDelay: '0s' }} />
-            <Image src={sheep} alt='Sheep' style={{ animationDelay: '1s' }} />
-            <Image src={sheep} alt='Sheep' style={{ animationDelay: '2s' }} />
-            <Image src={sheep} alt='Sheep' style={{ animationDelay: '3s' }} />
-            <Image src={sheep} alt='Sheep' style={{ animationDelay: '4s' }} />
+            {[0, 1, 2, 3, 4].map(delay => (
+              <Image
+                key={delay}
+                unoptimized
+                src={sheep}
+                alt='Sheep'
+                style={{ animationDelay: `${delay}s` }}
+              />
+            ))}
           </Sheep>
         </>
       )}

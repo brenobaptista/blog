@@ -84,6 +84,7 @@ export const Sheep = styled.div`
     transform: scaleX(-1);
     bottom: 0;
     animation: walk 30s linear infinite;
+    z-index: 1;
   }
 
   @keyframes walk {
