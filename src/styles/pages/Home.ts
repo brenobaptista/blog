@@ -43,6 +43,11 @@ export const BlogHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 0 16px;
+  margin: 40px 0;
+
+  h2 {
+    margin: 0;
+  }
 `
 
 export const CardsWrapper = styled.div`
