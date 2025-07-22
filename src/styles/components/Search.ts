@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SearchContainer = styled.div`
   position: relative;
-  max-width: 256px;
+  max-width: 180px;
 `
 
 export const Input = styled.input`

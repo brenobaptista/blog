@@ -10,7 +10,7 @@ export const Intro = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   p {
