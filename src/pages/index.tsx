@@ -16,8 +16,8 @@ import {
   HomeHeader,
   SocialIcons,
   Intro,
-  Blog,
   BlogHeader,
+  CardsWrapper,
   Card
 } from '@/styles/pages/Home'
 
@@ -87,31 +87,29 @@ const Home = ({ allPostsData }: IHome) => {
       </HomeHeader>
       <RetroHomeSection />
       <Separator margin='48px 0 16px 0' />
-      <Blog>
+      <section>
         <BlogHeader>
           <h2>Blog</h2>
           <Search allPostsData={allPostsData} setPosts={setPosts} />
         </BlogHeader>
-        {posts.length ? (
-          posts.map(({ id, title, description, date }) => (
-            <Link href={`/posts/${id}`} key={id} passHref>
-              <Card>
-                <div>
-                  <span>{title}</span>
-                  <small>
-                    <Date date={date} />
-                  </small>
-                </div>
-                <p>{description}</p>
+        <CardsWrapper>
+          {posts.length ? (
+            posts.map(({ id, title, description, date }) => (
+              <Card key={id}>
+                <Link href={`/posts/${id}`} passHref>
+                  {title}
+                </Link>
+                <div>{description}</div>
+                <small>
+                  <Date date={date} />
+                </small>
               </Card>
-            </Link>
-          ))
-        ) : (
-          <div>
-            <p className='not-found'>No posts found.</p>
-          </div>
-        )}
-      </Blog>
+            ))
+          ) : (
+            <div>No posts found.</div>
+          )}
+        </CardsWrapper>
+      </section>
     </Layout>
   )
 }

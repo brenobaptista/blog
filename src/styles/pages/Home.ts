@@ -37,22 +37,6 @@ export const SocialIcons = styled.div`
   }
 `
 
-export const Blog = styled.section`
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-
-    &:visited {
-      color: ${props => props.theme.colors.visited};
-
-      p {
-        color: ${props => props.theme.colors.altText};
-      }
-    }
-  }
-`
-
 export const BlogHeader = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -61,38 +45,27 @@ export const BlogHeader = styled.div`
   gap: 0 16px;
 `
 
+export const CardsWrapper = styled.div`
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+`
+
 export const Card = styled.div`
-  margin: 40px 0;
+  a {
+    font-size: 1.2rem;
 
-  div {
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-
-    span {
-      font-size: 1.1rem;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    small {
-      font-size: 0.75rem;
-      line-height: 36px;
+    &:visited {
+      color: ${props => props.theme.colors.visited};
     }
   }
 
-  p {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: ${props => props.theme.colors.text};
+  div {
+    color: ${props => props.theme.colors.altText};
+  }
 
-    &.not-found {
-      color: ${props => props.theme.colors.altText};
-    }
+  small {
+    font-size: 0.8rem;
   }
 `
