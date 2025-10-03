@@ -1,284 +1,118 @@
-import { useEffect, useContext } from 'react'
+import { useEffect, useContext, useRef, useState } from 'react'
 
 import ThemeContext from '@/contexts/ThemeContext'
+import {
+  SparkleWrapper,
+  Star,
+  StarHorizontal,
+  StarVertical,
+  Tiny
+} from '@/styles/components/RetroCursorEffect'
+
+interface Sparkle {
+  id: number
+  type: 'star' | 'tiny'
+  x: number
+  y: number
+  life: number
+  color: string
+  size: 'large' | 'small'
+}
+
+const COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const MAX_SPARKLES = 10
+const ANIMATION_INTERVAL = 40
 
 const RetroCursorEffect = () => {
   const { theme } = useContext(ThemeContext)
-
-  const color = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
-  const sparkles = 10
-
-  let currentX = 400
-  let lastX = 400
-  let currentY = 300
-  let lastY = 300
-  let screenWidth = 800
-  let screenHeight = 600
-  let scrollLeft = 0
-  let scrollDown = 0
-
-  let tiny: HTMLDivElement[] = []
-  let star: HTMLDivElement[] = []
-  let starV: number[] = []
-  let starX: number[] = []
-  let starY: number[] = []
-  let tinyX: number[] = []
-  let tinyY: number[] = []
-  let tinyV: number[] = []
-
-  const updateStar = (i: number) => {
-    if (--starV[i] === sparkles / 2) {
-      star[i].style.clipPath =
-        'inset(1px calc(100% - 4px) calc(100% - 4px) 1px)'
-    }
-
-    if (starV[i]) {
-      starY[i] += 1 + Math.random() * 3
-      starX[i] += ((i % 5) - 2) / 5
-
-      if (
-        starY[i] < screenHeight + scrollDown &&
-        starX[i] < screenWidth + scrollLeft
-      ) {
-        star[i].style.top = `${starY[i]}px`
-        star[i].style.left = `${starX[i]}px`
-      } else {
-        star[i].style.visibility = 'hidden'
-        starV[i] = 0
-      }
-    } else {
-      tinyV[i] = sparkles
-      tiny[i].style.top = `${(tinyY[i] = starY[i])}px`
-      tiny[i].style.left = `${(tinyX[i] = starX[i])}px`
-      tiny[i].style.width = '2px'
-      tiny[i].style.height = '2px'
-      const starFirstChild = star[i].childNodes[0] as HTMLDivElement
-      if (starFirstChild) {
-        tiny[i].style.backgroundColor = starFirstChild.style.backgroundColor
-      }
-      star[i].style.visibility = 'hidden'
-      tiny[i].style.visibility = 'visible'
-    }
-  }
-
-  const updateTiny = (i: number) => {
-    if (--tinyV[i] === sparkles / 2) {
-      tiny[i].style.width = '1px'
-      tiny[i].style.height = '1px'
-    }
-
-    if (tinyV[i]) {
-      tinyY[i] += 1 + Math.random() * 3
-      tinyX[i] += ((i % 5) - 2) / 5
-
-      if (
-        tinyY[i] < screenHeight + scrollDown &&
-        tinyX[i] < screenWidth + scrollLeft
-      ) {
-        tiny[i].style.top = `${tinyY[i]}px`
-        tiny[i].style.left = `${tinyX[i]}px`
-      } else {
-        tiny[i].style.visibility = 'hidden'
-        tinyV[i] = 0
-      }
-    } else {
-      tiny[i].style.visibility = 'hidden'
-    }
-  }
-
-  const createSparkle = () => {
-    if (Math.abs(currentX - lastX) > 1 || Math.abs(currentY - lastY) > 1) {
-      lastX = currentX
-      lastY = currentY
-
-      for (let i = 0; i < sparkles; i++)
-        if (!starV[i]) {
-          starV[i] = sparkles
-
-          star[i].style.left = `${(starX[i] = currentX)}px`
-          star[i].style.top = `${(starY[i] = currentY + 1)}px`
-          star[i].style.clipPath =
-            'inset(0px calc(100% - 5px) calc(100% - 5px) 0px)'
-          star[i].style.visibility = 'visible'
-
-          const starFirstChild = star[i].childNodes[0] as HTMLDivElement
-          const starSecondChild = star[i].childNodes[1] as HTMLDivElement
-          if (starFirstChild && starSecondChild) {
-            const filteredColor = color[Math.floor(Math.random() * 7)]
-            starFirstChild.style.backgroundColor = filteredColor
-            starSecondChild.style.backgroundColor = filteredColor
-          }
-
-          break
-        }
-    }
-
-    for (let i = 0; i < sparkles; i++) {
-      if (starV[i]) updateStar(i)
-      if (tinyV[i]) updateTiny(i)
-    }
-
-    setTimeout(createSparkle, 40)
-  }
-
-  const calculateScroll = () => {
-    if (typeof window.self.pageYOffset === 'number') {
-      scrollDown = window.self.pageYOffset
-      scrollLeft = window.self.pageXOffset
-    } else if (
-      document.body &&
-      (document.body.scrollTop || document.body.scrollLeft)
-    ) {
-      scrollDown = document.body.scrollTop
-      scrollLeft = document.body.scrollLeft
-    } else if (
-      document.documentElement &&
-      (document.documentElement.scrollTop ||
-        document.documentElement.scrollLeft)
-    ) {
-      scrollLeft = document.documentElement.scrollLeft
-      scrollDown = document.documentElement.scrollTop
-    } else {
-      scrollDown = 0
-      scrollLeft = 0
-    }
-  }
-
-  const moveMouse = (event: MouseEvent) => {
-    if (event) {
-      currentY = event.pageY
-      currentX = event.pageX
-    }
-  }
-
-  const calculateScreen = () => {
-    let screenWidthTemp = 999999
-    let screenHeightTemp = 999999
-
-    if (document.documentElement && document.documentElement.clientWidth) {
-      if (document.documentElement.clientWidth > 0) {
-        screenWidthTemp = document.documentElement.clientWidth
-      }
-
-      if (document.documentElement.clientHeight > 0) {
-        screenHeightTemp = document.documentElement.clientHeight
-      }
-    }
-
-    if (typeof window.self.innerWidth === 'number' && window.self.innerWidth) {
-      if (
-        window.self.innerWidth > 0 &&
-        window.self.innerWidth < screenWidthTemp
-      ) {
-        screenWidthTemp = window.self.innerWidth
-      }
-
-      if (
-        window.self.innerHeight > 0 &&
-        window.self.innerHeight < screenHeightTemp
-      ) {
-        screenHeightTemp = window.self.innerHeight
-      }
-    }
-
-    if (document.body.clientWidth) {
-      if (
-        document.body.clientWidth > 0 &&
-        document.body.clientWidth < screenWidthTemp
-      ) {
-        screenWidthTemp = document.body.clientWidth
-      }
-
-      if (
-        document.body.clientHeight > 0 &&
-        document.body.clientHeight < screenHeightTemp
-      ) {
-        screenHeightTemp = document.body.clientHeight
-      }
-    }
-
-    if (screenWidthTemp === 999999 || screenHeightTemp === 999999) {
-      screenWidthTemp = 800
-      screenHeightTemp = 600
-    }
-
-    screenWidth = screenWidthTemp
-    screenHeight = screenHeightTemp
-  }
-
-  const createDiv = (height: number, width: number) => {
-    const div = document.createElement('div')
-
-    div.style.position = 'absolute'
-    div.style.height = `${height}px`
-    div.style.width = `${width}px`
-    div.style.overflow = 'hidden'
-    div.className = 'sparkle'
-
-    return div
-  }
+  const [sparkles, setSparkles] = useState<Sparkle[]>([])
+  const mousePos = useRef({ x: 0, y: 0 })
+  const lastMousePos = useRef({ x: 0, y: 0 })
+  const intervalId = useRef<number | undefined>(undefined)
+  const nextId = useRef(0)
 
   useEffect(() => {
-    if (theme.mode === 'retro') {
-      if (typeof document !== 'undefined') {
-        for (let i = 0; i < sparkles; i++) {
-          starV[i] = 0
-          tinyV[i] = 0
+    if (theme.mode !== 'retro') {
+      setSparkles([])
+      return
+    }
 
-          const ratsFirst = createDiv(3, 3)
-          ratsFirst.style.visibility = 'hidden'
-          ratsFirst.style.zIndex = '999'
-          tiny[i] = ratsFirst
-          document.body.appendChild(tiny[i])
+    const handleMouseMove = (e: MouseEvent) => {
+      mousePos.current = { x: e.pageX, y: e.pageY }
+    }
 
-          const ratsLeft = createDiv(1, 5)
-          const ratsDown = createDiv(5, 1)
-          ratsLeft.style.top = '2px'
-          ratsLeft.style.left = '0px'
-          ratsDown.style.top = '0px'
-          ratsDown.style.left = '2px'
+    const animate = () => {
+      const curr = mousePos.current
+      const last = lastMousePos.current
 
-          const ratsSecond = createDiv(5, 5)
-          ratsSecond.style.backgroundColor = 'transparent'
-          ratsSecond.style.visibility = 'hidden'
-          ratsSecond.style.zIndex = '999'
-          ratsSecond.appendChild(ratsLeft)
-          ratsSecond.appendChild(ratsDown)
-          star[i] = ratsSecond
-          document.body.appendChild(star[i])
+      setSparkles(prev => {
+        const updated = [...prev]
+
+        // Create new sparkle if mouse moved
+        if (Math.abs(curr.x - last.x) > 1 || Math.abs(curr.y - last.y) > 1) {
+          lastMousePos.current = curr
+          if (updated.filter(s => s.type === 'star').length < MAX_SPARKLES) {
+            updated.push({
+              id: nextId.current++,
+              type: 'star',
+              x: curr.x,
+              y: curr.y + 1,
+              life: MAX_SPARKLES,
+              color: COLORS[Math.floor(Math.random() * COLORS.length)],
+              size: 'large'
+            })
+          }
         }
 
-        calculateScreen()
-        createSparkle()
-
-        document.addEventListener('mousemove', moveMouse)
-
-        document.body.style.overflowX = 'hidden'
-      }
-
-      if (typeof window !== 'undefined') {
-        window.addEventListener('resize', calculateScreen)
-        window.addEventListener('scroll', calculateScroll, { passive: true })
-      }
-    } else {
-      document.querySelectorAll('.sparkle').forEach(sparkle => {
-        sparkle.remove()
+        // Update and filter sparkles
+        return updated
+          .map(s => {
+            const life = s.life - 1
+            if (life <= 0) {
+              return s.type === 'star'
+                ? {
+                    ...s,
+                    type: 'tiny' as const,
+                    life: MAX_SPARKLES,
+                    size: 'small' as const
+                  }
+                : null
+            }
+            return {
+              ...s,
+              x: s.x + ((s.id % 5) - 2) / 5,
+              y: s.y + 1 + Math.random() * 3,
+              life,
+              size: life === Math.floor(MAX_SPARKLES / 2) ? 'small' : s.size
+            }
+          })
+          .filter((s): s is Sparkle => s !== null)
       })
     }
+
+    document.addEventListener('mousemove', handleMouseMove)
+    intervalId.current = window.setInterval(animate, ANIMATION_INTERVAL)
 
     return () => {
-      document.removeEventListener('mousemove', moveMouse)
-      window.removeEventListener('resize', calculateScreen)
-      window.removeEventListener('scroll', calculateScroll)
-
-      document.querySelectorAll('.sparkle').forEach(sparkle => {
-        sparkle.remove()
-      })
+      document.removeEventListener('mousemove', handleMouseMove)
+      if (intervalId.current) clearInterval(intervalId.current)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [theme])
+  }, [theme.mode])
 
-  return null
+  if (theme.mode !== 'retro') return null
+
+  return sparkles.map(sparkle => (
+    <SparkleWrapper key={sparkle.id} $x={sparkle.x} $y={sparkle.y}>
+      {sparkle.type === 'star' ? (
+        <Star $size={sparkle.size}>
+          <StarHorizontal $color={sparkle.color} />
+          <StarVertical $color={sparkle.color} />
+        </Star>
+      ) : (
+        <Tiny $color={sparkle.color} $size={sparkle.size} />
+      )}
+    </SparkleWrapper>
+  ))
 }
 
 export default RetroCursorEffect
