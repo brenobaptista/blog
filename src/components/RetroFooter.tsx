@@ -55,7 +55,7 @@ const RetroFooter = () => {
           <Image src={bookmark} alt='Bookmark this page' />
           <Image src={guestbook} alt='Sign my guestbook' />
           <Image unoptimized src={bestViewed} alt='Best viewed with anything' />
-          <Image src={freeSpeech} alt='Free speech forever' />
+          <Image unoptimized src={freeSpeech} alt='Free speech forever' />
           <Image unoptimized src={nukeIE} alt='Nuke IE' />
           <Image unoptimized src={anarchy} alt='Anarchy now' />
           <Image unoptimized src={viewedEyes} alt='Best viewed with eyes' />
