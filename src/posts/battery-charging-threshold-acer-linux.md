@@ -17,7 +17,7 @@ As an owner of an Acer Nitro 5 (AN515-57), I wanted to extend the lifespan of my
 
 ## Startup application to fix health_mode persistence
 
-I created this script to enable health mode in `/home/brenobaptista/bin/limit-acer-battery.sh`:
+I created this script to enable health mode in `/usr/local/bin/limit-acer-battery.sh`:
 
 ```bash[class="line-numbers"]
 #!/bin/bash
@@ -37,7 +37,7 @@ Then I created this systemd service to run on startup in `/etc/systemd/system/ac
 Description=Limit Acer battery service
 
 [Service]
-ExecStart=/home/brenobaptista/bin/limit-acer-battery.sh
+ExecStart=/usr/local/bin/limit-acer-battery.sh
 
 [Install]
 WantedBy=multi-user.target
