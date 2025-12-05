@@ -15,7 +15,7 @@
   "dependencies": {
     "date-fns": "4.1.0",
     "gray-matter": "4.0.3",
-    "next": "15.3.4",
+    "next": "15.3.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "rehype-raw": "^7.0.0",
@@ -33,7 +33,7 @@
     "@types/node": "24.0.3",
     "@types/react": "19.1.8",
     "eslint": "9.29.0",
-    "eslint-config-next": "15.3.4",
+    "eslint-config-next": "15.3.6",
     "eslint-config-prettier": "^10.1.5",
     "husky": "9.1.7",
     "lint-staged": "16.1.2",
