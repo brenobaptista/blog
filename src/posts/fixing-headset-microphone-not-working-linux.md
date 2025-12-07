@@ -8,6 +8,8 @@ The first step is to confirm that the physical button to turn the microphone on 
 
 If it's confirmed that the Linux computer is not recognizing the microphone, the issue might be that the kernel isn't detecting the correct driver. This problem can occur because the kernel fails to detect the correct model to use, which is a level below the sound server (PipeWire or PulseAudio). To fix that, we need to manually select the correct driver by trying different `headset-mic HDA model variations`.
 
+## Table of Contents
+
 ## Identify the Audio Codec
 
 Running the following command on the terminal will return a list of codecs. One of them will be the audio codec. For my Acer Nitro 5, the codec is `Realtek ALC295`. For my previous Lenovo laptop, it was `Realtek ALC236`.
@@ -41,3 +43,27 @@ You need to reboot the computer to apply the changes.
 A model that works for a lot of people online is `dell-headset-multi`. It can be used by all these chips: `ALC22x/23x/25x/269/27x/28x/29x, some ALC3xxx, ALC66x/67x/892`.
 
 If the suggestion doesn't work, try other models depending on the audio codec of your computer. Search the web for people experiencing problems with the same chip.
+
+## Optional: Disable Internal Microphone
+
+If you have a laptop, you may want to disable the internal microphone so that only the headset microphone will be recognized by the system.
+
+Install the alsa-tools package:
+
+```bash[class="command-line"]
+sudo apt install alsa-tools-gui # Debian/Ubuntu
+sudo dnf install alsa-tools     # Fedora
+sudo pacman -S alsa-tools       # Arch Linux
+```
+
+Launch hdajackretask with root privileges:
+
+```bash[class="command-line"]
+sudo hdajackretask
+```
+
+- At the top of the window, use the dropdown to select your audio codec (e.g. `Realtek ALC295`).
+- Under "Internal Mic", check "Override" and select "Not connected".
+- In the bottom-right corner, click "Install boot override" and reboot.
+
+The alsa-tools package can be uninstalled afterward if desired.
