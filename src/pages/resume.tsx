@@ -84,11 +84,10 @@ const Resume = () => (
             <em>February 2022 - Present (USA, remote)</em>
             <ul>
               <span>
-                <b>Skills: </b>Go, Microservices, TypeScript, Tailwind,
-                React.js, Next.js, Cypress, GraphQL, RabbitMQ, CockroachDB,
-                Docker, Ory (Kratos, Hydra), OAuth2 protocol, OpenID Connect
-                (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP,
-                Webhook.
+                <b>Skills: </b>Go, Microservices, TypeScript, Tailwind, Next.js,
+                Cypress, GraphQL, gRPC, RabbitMQ, PostgreSQL, Docker, Webhook,
+                Datadog, Ory (Kratos, Hydra), OAuth2 protocol, OpenID Connect
+                (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP.
               </span>
               <li>
                 Led a team of 4 engineers to build a new authentication flow
