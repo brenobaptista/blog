@@ -21,18 +21,19 @@ isColorLight(0, 128, 255) // false
 
 ## Converting color to grayscale
 
-One way of converting color to grayscale would be using the arithmetic mean of the RGB values. However, this is not the best way to do it, as our eyes recognize shades of green better than the other colors (**60-70% for green** against **20-30% for red** and **10% for blue**).
+One way of converting color to grayscale would be using the arithmetic average of the RGB values. However, this is not the best way to do it, as our eyes recognize shades of green better than the other colors (**60-70% for green** against **20-30% for red** and **10% for blue**).
 
 The best way to convert color to grayscale is using a formula that is a weighted average of the RGB values. This formula gives us a more precise sensation of how bright the color is.
 
-> Converting to grayscale using the arithmetic mean versus REC.601 standard
+![Comparison](/images/detecting-if-color-is-light-or-dark/comparison.jpg)
 
-![Comparison](/images/detecting-if-color-is-light-or-dark/comparison.png)
-
-The original implementation of the formula was the [REC.601](https://en.wikipedia.org/wiki/Rec._601) standard (for analog TVs), which uses the following weights:
-
-> GRAY = 0.299 * R + 0.587 * G + 0.114 * B
-
-Newer implementations use the [REC.709](https://en.wikipedia.org/wiki/Rec._709) standard (for digital TVs), which uses the following weights:
+Newer implementations use the [Rec. 709](https://en.wikipedia.org/wiki/Rec._709) standard (for digital TVs), which uses the following weights:
 
 > GRAY = 0.2126 * R + 0.7152 * G + 0.0722 * B
+
+In practice, we can convert to grayscale using [ImageMagick](/posts/editing-images-from-terminal-with-imagemagick):
+
+```bash[class="command-line"]
+magick original.jpg -grayscale Average average.jpg
+magick original.jpg -grayscale Rec709Luma 709.jpg
+```
