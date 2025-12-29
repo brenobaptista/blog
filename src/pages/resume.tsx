@@ -104,8 +104,8 @@ const Resume = () => (
               <li>
                 Managed the migration of webhook callbacks into a centralized
                 service that receives all webhooks from integrations and
-                transforms into messages using an outbox pattern to prevent data
-                loss if either the message broker or the database is down.
+                transforms into messages using a transactional outbox to prevent
+                data loss if either the message broker or the database is down.
               </li>
               <li>
                 Successfully designed and built the email service from the
