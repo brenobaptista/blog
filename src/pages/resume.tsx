@@ -28,8 +28,8 @@ const Resume = () => (
           <Author>
             <h1>Breno Baptista</h1>
             <div>
-              Senior software engineer with bachelor’s degree in Computer
-              Science and 7+ years experience at high-growth early-stage
+              Senior software engineer with a bachelor’s degree in Computer
+              Science and 7+ years of experience at high-growth early-stage
               startups. SFC™.
             </div>
           </Author>
@@ -86,20 +86,26 @@ const Resume = () => (
               <span>
                 <b>Skills: </b>Go, Microservices, TypeScript, Tailwind, Next.js,
                 Cypress, GraphQL, gRPC, RabbitMQ, PostgreSQL, Docker, Webhook,
-                Datadog, Ory (Kratos, Hydra), OAuth2 protocol, OpenID Connect
-                (OIDC) protocol, Multi-Factor Authentication (MFA), TOTP.
+                Datadog, Ory (Kratos, Hydra), OAuth2/OIDC protocols.
               </span>
               <li>
                 Led a team of 4 engineers to build a new authentication flow
-                (25,000+ users), a new onboarding experience with Adyen KYC
-                integration and an insights reporting dashboard for tracking
-                company performance.
+                (13,000+ monthly active users), a new onboarding experience with
+                Adyen KYC integration and an insights reporting dashboard for
+                tracking company performance.
               </li>
               <li>
-                Planned and conducted interviews with prospective engineers to
-                assess technical skills and alignment with team objectives.
-                Collaborated with hiring managers to evaluate candidates and
-                provide recommendations for selection.
+                Designed and built the email service from the ground up using
+                RabbitMQ, featuring a reusable templating engine and
+                fault-tolerant architecture with caching to ensure delivery
+                during downstream outages.{' '}
+                <a
+                  href='https://www.brenobaptista.com/posts/microservice-email'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  brenobaptista.com/posts/microservice-email
+                </a>
               </li>
               <li>
                 Managed the migration of webhook callbacks into a centralized
@@ -108,31 +114,16 @@ const Resume = () => (
                 data loss if either the message broker or the database is down.
               </li>
               <li>
-                Successfully designed and built the email service from the
-                ground up, guaranteeing reliability and seemless communication
-                using RabbitMQ messages.
-                <ul>
-                  <li>
-                    Implemented a smart internal engine to reuse the logic for
-                    handling all templates. It allows communication to our
-                    customers even when other services were down by leveraging
-                    cron jobs and caching. It automatically applies customized
-                    brand logo and colors for each partner.{' '}
-                    <a
-                      href='https://www.brenobaptista.com/posts/model-for-microservices-oriented-email-service'
-                      target='_blank'
-                      rel='noreferrer noopener'
-                    >
-                      brenobaptista.com/posts/model-for-microservices-oriented-email-service
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
                 Implemented efficient navigation in our data-driven UI by
                 introducing table pagination and better caching strategies in
                 Apollo, resulting in reduced load times and improved
                 performance.
+              </li>
+              <li>
+                Planned and conducted interviews with prospective engineers to
+                assess technical skills and alignment with team objectives.
+                Collaborated with hiring managers to evaluate candidates and
+                provide recommendations for selection.
               </li>
             </ul>
           </div>
@@ -145,24 +136,23 @@ const Resume = () => (
                 Express.js, MongoDB, Firebase, AWS, Serverless, SES
               </span>
               <li>
-                Fought intrusive advertising by offering monetization of apps at
-                the cost of unused CPU/GPU using cryptocurrencies, blockchain
-                and web3 instead of personal attention and data.
-              </li>
-              <li>
-                Helped businesses comply with data laws (GDPR/CCPA) easily by
-                developing WordPress and Shopify plugins that integrate with our
-                custom scripts.
-              </li>
-              <li>
-                Led efforts to vastly reduce technical debt in web and desktop
-                apps, launching a refactored partner dashboard with better UI/UX
-                and performance.
+                Led technical debt reduction, achieved comprehensive test
+                coverage, introduced dark mode and delivered a redesigned
+                partner dashboard with enhanced UI/UX.
               </li>
               <li>
                 Rewrote the codebase to hooks in React 16.8, resulting in a
                 reduction of ~30% in size, making the application easier to
                 maintain.
+              </li>
+              <li>
+                Developed WordPress and Shopify plugins integrating our custom
+                scripts to help businesses comply with GDPR/CCPA data
+                regulations.
+              </li>
+              <li>
+                Built desktop apps using web technologies, integrating Massive
+                SDK for crypto-based monetization of unused CPU/GPU.
               </li>
             </ul>
           </div>
@@ -174,16 +164,19 @@ const Resume = () => (
                 <b>Skills: </b>Scrum, JavaScript, HTML, CSS, Git, SEO, WordPress
               </span>
               <li>
-                Helped businesses build an online presence by managing a small
-                team that developed high-impact projects to our customers.
+                Managed a small development team delivering websites and digital
+                solutions that helped local businesses establish their online
+                presence and reach new customers.
               </li>
               <li>
-                Improved the organization productivity by enforcing agile across
-                the company.
+                Pushed company-wide adoption of Scrum, leveraging SFC™
+                certification to improve team productivity and sprint
+                predictability.
               </li>
               <li>
-                Took part in critical product decisions during sprint meetings
-                and calls with customers.
+                Led sprint planning sessions and client calls, translating
+                business requirements into actionable development tasks and
+                prioritizing features based on customer feedback.
               </li>
             </ul>
           </div>
