@@ -120,10 +120,9 @@ const Resume = () => (
                 performance.
               </li>
               <li>
-                Planned and conducted interviews with prospective engineers to
-                assess technical skills and alignment with team objectives.
-                Collaborated with hiring managers to evaluate candidates and
-                provide recommendations for selection.
+                Conducted technical interviews with engineers to assess skills
+                and alignment with team objectives. Collaborated with hiring
+                managers on evaluation and selection recommendations.
               </li>
             </ul>
           </div>

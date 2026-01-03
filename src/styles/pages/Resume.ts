@@ -12,10 +12,10 @@ export const Page = styled.div`
   background: #ffffff;
   width: 210mm;
   height: 297mm;
-  padding: 22mm 18mm;
+  padding: 20mm 18mm;
 
   @media screen {
-    margin: 5mm auto;
+    margin: 4mm auto;
   }
 `
 
@@ -75,15 +75,15 @@ export const Section = styled.div`
 
   ul,
   ol {
-    margin: 10px 0 20px;
-    padding-left: 30px;
+    margin: 8px 0 24px;
+    padding-left: 32px;
   }
 
   li {
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 
     ul {
-      margin: 5px 0 0;
+      margin: 8px 0 0;
     }
   }
 
