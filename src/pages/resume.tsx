@@ -85,8 +85,8 @@ const Resume = () => (
             <ul>
               <span>
                 <b>Skills: </b>Go, Microservices, TypeScript, Tailwind, Next.js,
-                Cypress, GraphQL, gRPC, RabbitMQ, PostgreSQL, Docker, Webhook,
-                Datadog, Ory (Kratos, Hydra), OAuth2/OIDC protocols.
+                Cypress, Storybook, Apollo GraphQL, gRPC, RabbitMQ, PostgreSQL,
+                Docker, Kubernetes, Webhooks, Datadog, Python, Linux, Ory
               </span>
               <li>
                 Led a team of 4 engineers to build a new authentication flow
@@ -131,8 +131,8 @@ const Resume = () => (
             <em>January 2020 - January 2022 (USA, remote)</em>
             <ul>
               <span>
-                <b>Skills: </b>JavaScript, PHP, React.js, Jest, Node.js,
-                Express.js, MongoDB, Firebase, AWS, Serverless, SES
+                <b>Skills: </b>JavaScript, PHP, React.js, Redux, Jest, Node.js,
+                Express.js, MongoDB, Firebase, AWS, Serverless, Bash
               </span>
               <li>
                 Led technical debt reduction, achieved comprehensive test
