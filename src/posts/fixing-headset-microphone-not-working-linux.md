@@ -4,9 +4,11 @@ description: 'The kernel may not be detecting the correct driver.'
 date: '2024-09-08'
 ---
 
-The first step is to confirm that the physical button to turn the microphone on or off is in the correct position and to check other potential issues, such as a loose connection. Test the headset on other computers to ensure it's not a hardware issue.
+This issue specifically affects analog 3.5mm headsets. USB headsets include their own sound card and don't depend on the kernel correctly detecting the internal Realtek codec.
 
-If it's confirmed that the Linux computer is not recognizing the microphone, the issue might be that the kernel isn't detecting the correct driver. This problem can occur because the kernel fails to detect the correct model to use, which is a level below the sound server (PipeWire or PulseAudio). To fix that, we need to manually select the correct driver by trying different `headset-mic HDA model variations`.
+Because generic Realtek codecs are used across many different laptop designs, the kernel can't always determine how the audio hardware is wired. As a result, the driver may fall back to an incorrect pin layout, causing the headset microphone to be unavailable.
+
+To resolve this, we need to manually specify the appropriate HDA model, which tells the kernel how the codec is wired, by testing different headset-mic model variations until the correct one is found.
 
 ## Table of Contents
 
@@ -43,6 +45,12 @@ You need to reboot the computer to apply the changes.
 A model that works for a lot of people online is `dell-headset-multi`. It can be used by all these chips: `ALC22x/23x/25x/269/27x/28x/29x, some ALC3xxx, ALC66x/67x/892`.
 
 If the suggestion doesn't work, try other models depending on the audio codec of your computer. Search the web for people experiencing problems with the same chip.
+
+## (Sometimes Bad) Alternative: USB Dongle
+
+I bought a $5 USB dongle (so you don't have to). It bypasses the problem mentioned above, but the microphone audio quality is really bad.
+
+The system recognizes it as a new device because it uses its own sound card instead of the computer's. Maybe buying a more expensive one would work.
 
 ## Optional: Disable Internal Microphone
 
