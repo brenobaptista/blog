@@ -47,15 +47,15 @@ const Home = ({ allPostsData }: IHome) => {
         <title>Breno Baptista</title>
         <meta
           name='description'
-          content='Coding, technology, and beyond. Welcome to my blog, a dev journal where I capture what I learn so you can learn too.'
+          content='Welcome to my blog, a dev journal where I share what I learn so you can learn too.'
         />
       </Head>
       <HomeHeader>
         <Intro>
           <h1>Breno Baptista</h1>
           <p>
-            Coding, technology, and beyond. Welcome to my blog, a dev journal
-            where I capture what I learn so you can learn too.
+            Welcome to my blog, a dev journal where I share what I learn so you
+            can learn too.
           </p>
         </Intro>
         <SocialIcons>

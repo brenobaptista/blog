@@ -14,7 +14,7 @@ export const Intro = styled.div`
   }
 
   p {
-    max-width: 450px;
+    max-width: 480px;
   }
 `
 
