@@ -1,6 +1,6 @@
 ---
 title: 'Fixing Headset Microphone not Working on Linux'
-description: 'The kernel may not be detecting the correct driver.'
+description: 'The kernel may not know the correct pin configuration.'
 date: '2024-09-08'
 ---
 
