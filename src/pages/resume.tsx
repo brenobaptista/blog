@@ -86,7 +86,8 @@ const Resume = () => (
               <span>
                 <b>Skills: </b>Go, Microservices, TypeScript, Tailwind, Next.js,
                 Cypress, Storybook, Apollo GraphQL, gRPC, RabbitMQ, PostgreSQL,
-                Docker, Kubernetes, Webhooks, Datadog, Python, Linux, Ory
+                Docker, Kubernetes, Webhooks, Datadog, Python, Linux, Ory, AI,
+                MCP, Claude Code, Cursor
               </span>
               <li>
                 Led a team of 4 engineers to build a new authentication flow
@@ -123,6 +124,11 @@ const Resume = () => (
                 Conducted technical interviews with engineers to assess skills
                 and alignment with team objectives. Collaborated with hiring
                 managers on evaluation and selection recommendations.
+              </li>
+              <li>
+                Incorporated AI-assisted development into delivery workflows,
+                enabling faster iteration and quicker feedback cycles to improve
+                product quality.
               </li>
             </ul>
           </div>
