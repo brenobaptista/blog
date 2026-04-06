@@ -30,7 +30,7 @@ const Resume = () => (
             <div>
               Senior software engineer with a bachelor’s degree in Computer
               Science and 7+ years of experience at high-growth early-stage
-              startups. SFC™.
+              startups.
             </div>
           </Author>
           <Social>
@@ -184,6 +184,102 @@ const Resume = () => (
                 prioritizing features based on customer feedback.
               </li>
             </ul>
+          </div>
+        </Section>
+      </Content>
+    </Page>
+
+    <Page>
+      <Content>
+        <Section>
+          <h2>PROJECTS</h2>
+          <ol>
+            <li>
+              <i>Programming Blog: </i>
+              <a
+                href='https://github.com/brenobaptista/blog'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/blog
+              </a>
+              <br />
+              <b>Skills: </b>TypeScript, Styled Components, React.js, Next.js
+            </li>
+            <li>
+              <i>Signed Webhooks Service: </i>
+              <a
+                href='https://github.com/brenobaptista/go-signed-webhooks'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/go-signed-webhooks
+              </a>
+              <br />
+              <b>Skills: </b>Go, Docker, Postgres
+            </li>
+            <li>
+              <i>URL Shortener Service: </i>
+              <a
+                href='https://github.com/brenobaptista/node-url-shortener'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/node-url-shortener
+              </a>
+              <br />
+              <b>Skills: </b>TypeScript, Node, Postgres, Docker
+            </li>
+            <li>
+              <i>Tailwind Dashboard Template: </i>
+              <a
+                href='https://github.com/brenobaptista/plume-dashboard'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/plume-dashboard
+              </a>
+              <br />
+              <b>Skills: </b>TypeScript, Tailwind, React.js, Next.js
+            </li>
+            <li>
+              <i>React Native iOS Calculator: </i>
+              <a
+                href='https://github.com/brenobaptista/ios-calculator-react-native'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                github.com/brenobaptista/ios-calculator-react-native
+              </a>
+              <br />
+              <b>Skills: </b>JavaScript, React Native, Expo
+            </li>
+          </ol>
+        </Section>
+
+        <Section>
+          <h2>EDUCATION</h2>
+          <div>
+            <strong>Bachelor’s Degree in Computer Science</strong>
+            <div>Unifacvest University Center (2019 - 2023)</div>
+          </div>
+          <div>
+            <strong>Scrum Fundamentals Certified (SFC™)</strong>
+            <div>
+              SCRUMstudy - Accreditation Body for Scrum and Agile (2020)
+            </div>
+          </div>
+          <div>
+            <strong>
+              React - The Complete Guide (incl Hooks, React Router, Redux)
+            </strong>
+            <div>Udemy (2019)</div>
+          </div>
+          <div>
+            <strong>
+              NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)
+            </strong>
+            <div>Udemy (2019)</div>
           </div>
         </Section>
       </Content>
