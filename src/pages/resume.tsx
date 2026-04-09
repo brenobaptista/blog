@@ -195,6 +195,34 @@ const Resume = () => (
           <h2>PROJECTS</h2>
           <ol>
             <li>
+              Multiple contributions to popular open-source projects like the{' '}
+              <a
+                href='https://github.com/torvalds/linux/commit/51db05283f7c9c95a3e6853a3044cd04226551bf'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <i>Linux kernel</i>
+              </a>
+              ,{' '}
+              <a
+                href='https://github.com/laurent22/joplin/pulls?q=is%3Apr+author%3Abrenobaptista+is%3Aclosed'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <i>Joplin</i>
+              </a>{' '}
+              and{' '}
+              <a
+                href='https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pulls?q=is%3Apr+is%3Aclosed+author%3Abrenobaptista'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <i>Heroic</i>
+              </a>
+              <br />
+              <b>Skills: </b>Open-Source Software
+            </li>
+            <li>
               <i>Programming Blog: </i>
               <a
                 href='https://github.com/brenobaptista/blog'
