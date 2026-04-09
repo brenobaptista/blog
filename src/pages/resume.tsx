@@ -193,96 +193,100 @@ const Resume = () => (
       <Content>
         <Section>
           <h2>PROJECTS</h2>
-          <ol>
-            <li>
-              Multiple contributions to popular open-source projects like the{' '}
-              <a
-                href='https://github.com/torvalds/linux/commit/51db05283f7c9c95a3e6853a3044cd04226551bf'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                <i>Linux kernel</i>
-              </a>
-              ,{' '}
-              <a
-                href='https://github.com/laurent22/joplin/pulls?q=is%3Apr+author%3Abrenobaptista+is%3Aclosed'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                <i>Joplin</i>
-              </a>{' '}
-              and{' '}
-              <a
-                href='https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pulls?q=is%3Apr+is%3Aclosed+author%3Abrenobaptista'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                <i>Heroic</i>
-              </a>
-              <br />
+          <div>
+            Multiple contributions to popular open-source projects like the{' '}
+            <a
+              href='https://github.com/torvalds/linux/commit/51db05283f7c9c95a3e6853a3044cd04226551bf'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <i>Linux kernel</i>
+            </a>
+            ,{' '}
+            <a
+              href='https://github.com/laurent22/joplin/pulls?q=is%3Apr+author%3Abrenobaptista+is%3Aclosed'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <i>Joplin</i>
+            </a>{' '}
+            and{' '}
+            <a
+              href='https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pulls?q=is%3Apr+is%3Aclosed+author%3Abrenobaptista'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <i>Heroic</i>
+            </a>
+            <span>
               <b>Skills: </b>Open-Source Software
-            </li>
-            <li>
-              <i>Programming Blog: </i>
-              <a
-                href='https://github.com/brenobaptista/blog'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                github.com/brenobaptista/blog
-              </a>
-              <br />
+            </span>
+          </div>
+          <div>
+            <i>Programming Blog: </i>
+            <a
+              href='https://github.com/brenobaptista/blog'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              github.com/brenobaptista/blog
+            </a>
+            <span>
               <b>Skills: </b>TypeScript, Styled Components, React.js, Next.js
-            </li>
-            <li>
-              <i>Signed Webhooks Service: </i>
-              <a
-                href='https://github.com/brenobaptista/go-signed-webhooks'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                github.com/brenobaptista/go-signed-webhooks
-              </a>
-              <br />
+            </span>
+          </div>
+          <div>
+            <i>Signed Webhooks Service: </i>
+            <a
+              href='https://github.com/brenobaptista/go-signed-webhooks'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              github.com/brenobaptista/go-signed-webhooks
+            </a>
+            <span>
               <b>Skills: </b>Go, Docker, Postgres
-            </li>
-            <li>
-              <i>URL Shortener Service: </i>
-              <a
-                href='https://github.com/brenobaptista/node-url-shortener'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                github.com/brenobaptista/node-url-shortener
-              </a>
-              <br />
+            </span>
+          </div>
+          <div>
+            <i>URL Shortener Service: </i>
+            <a
+              href='https://github.com/brenobaptista/node-url-shortener'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              github.com/brenobaptista/node-url-shortener
+            </a>
+            <span>
               <b>Skills: </b>TypeScript, Node, Postgres, Docker
-            </li>
-            <li>
-              <i>Tailwind Dashboard Template: </i>
-              <a
-                href='https://github.com/brenobaptista/plume-dashboard'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                github.com/brenobaptista/plume-dashboard
-              </a>
-              <br />
+            </span>
+          </div>
+          <div>
+            <i>Tailwind Dashboard Template: </i>
+            <a
+              href='https://github.com/brenobaptista/plume-dashboard'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              github.com/brenobaptista/plume-dashboard
+            </a>
+            <span>
               <b>Skills: </b>TypeScript, Tailwind, React.js, Next.js
-            </li>
-            <li>
-              <i>React Native iOS Calculator: </i>
-              <a
-                href='https://github.com/brenobaptista/ios-calculator-react-native'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                github.com/brenobaptista/ios-calculator-react-native
-              </a>
-              <br />
+            </span>
+          </div>
+          <div>
+            <i>React Native iOS Calculator: </i>
+            <a
+              href='https://github.com/brenobaptista/ios-calculator-react-native'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              github.com/brenobaptista/ios-calculator-react-native
+            </a>
+            <span>
               <b>Skills: </b>JavaScript, React Native, Expo
-            </li>
-          </ol>
+            </span>
+          </div>
         </Section>
 
         <Section>
