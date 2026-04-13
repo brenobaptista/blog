@@ -130,6 +130,12 @@ const Resume = () => (
                 enabling faster iteration and quicker feedback cycles to improve
                 product quality.
               </li>
+              <li>
+                Contributed to R&D of a Python-based MCP layer for internal AI
+                tools, enabling natural language driven issue investigation and
+                improving access to internal databases while accelerating root
+                cause analysis and reducing manual troubleshooting effort.
+              </li>
             </ul>
           </div>
           <div>
@@ -173,6 +179,17 @@ const Resume = () => (
                 solutions that helped local businesses establish their online
                 presence and reach new customers.
               </li>
+            </ul>
+          </div>
+        </Section>
+      </Content>
+    </Page>
+
+    <Page>
+      <Content>
+        <Section>
+          <div>
+            <ul>
               <li>
                 Pushed company-wide adoption of Scrum, leveraging SFC™
                 certification to improve team productivity and sprint
@@ -186,11 +203,7 @@ const Resume = () => (
             </ul>
           </div>
         </Section>
-      </Content>
-    </Page>
 
-    <Page>
-      <Content>
         <Section>
           <h2>PROJECTS</h2>
           <div>
