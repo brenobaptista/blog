@@ -6,11 +6,9 @@ date: '2025-12-06'
 
 As the owner of an Acer Nitro 5 (AN515-57), I wanted to extend my battery's lifespan by limiting its charging capacity to 80%. Unfortunately, Acer doesn't provide an official solution for this on Linux. However, we can still achieve this functionality.
 
-The [acer-wmi-battery](https://github.com/frederik-h/acer-wmi-battery) repository hosts a custom kernel module that provides this feature. However, it's recommended to use the alternatives below so that the build step runs automatically whenever the kernel is updated.
+The [acer-wmi-battery](https://github.com/frederik-h/acer-wmi-battery) repository provides a custom kernel module for this feature. However, using the alternatives below is recommended so the module is rebuilt automatically when the kernel is updated.
 
-For general use, try this [fork with DKMS support](https://github.com/Diman119/acer-wmi-battery/tree/dkms). You can also search for packages for this module in your package manager, such as the AUR.
-
-For Fedora specifically, try the [Copr repository with akmods support](https://copr.fedorainfracloud.org/coprs/asan/acer-modules).
+You can use this [fork with DKMS support](https://github.com/Diman119/acer-wmi-battery/tree/dkms) or check repositories for packages providing this module, such as the [AUR](https://aur.archlinux.org/packages?O=0&K=acer-wmi-battery-dkms) on Arch Linux (DKMS) or [Copr](https://copr.fedorainfracloud.org/coprs/asan/acer-modules) on Fedora (akmods).
 
 ### Make health_mode persist between reboots (DKMS/akmods)
 
