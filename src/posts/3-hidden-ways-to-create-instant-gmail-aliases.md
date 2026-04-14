@@ -1,6 +1,6 @@
 ---
 title: '3 Hidden Ways to Create Instant Gmail Aliases'
-description: 'Legally blame the spammers in your inbox.'
+description: 'Blame the spammers in your inbox.'
 date: '2024-02-04'
 ---
 
