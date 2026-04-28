@@ -217,7 +217,7 @@ const Resume = () => (
             </a>
             ,{' '}
             <a
-              href='https://github.com/laurent22/joplin/pulls?q=is%3Apr+author%3Abrenobaptista+is%3Aclosed'
+              href='https://github.com/laurent22/joplin/pulls?q=author%3Abrenobaptista'
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -225,7 +225,7 @@ const Resume = () => (
             </a>{' '}
             and{' '}
             <a
-              href='https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pulls?q=is%3Apr+is%3Aclosed+author%3Abrenobaptista'
+              href='https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pulls?q=author%3Abrenobaptista'
               target='_blank'
               rel='noreferrer noopener'
             >
