@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { GitHub, LinkedIn, RSS } from '@/components/Icons'
+import { Email, GitHub, LinkedIn, RSS } from '@/components/Icons'
 import {
   PrintingRules,
   Page,
@@ -34,6 +34,15 @@ const Resume = () => (
             </div>
           </Author>
           <Social>
+            <div>
+              <a
+                href='mailto:me@brenobaptista.com'
+                aria-label='Contact me by email'
+              >
+                <Email width={16} height={16} />
+                <span>me@brenobaptista.com</span>
+              </a>
+            </div>
             <div>
               <a
                 href='https://www.brenobaptista.com/'
