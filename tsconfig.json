@@ -19,7 +19,8 @@
       "@/contexts/*": ["./src/contexts/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/pages/*": ["./src/pages/*"],
-      "@/styles/*": ["./src/styles/*"]
+      "@/styles/*": ["./src/styles/*"],
+      "@/public/*": ["./public/*"]
     },
     "plugins": [
       {

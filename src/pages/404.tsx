@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import pitucho from 'public/images/pitucho.jpg'
+import pitucho from '@/public/images/pitucho.jpg'
 import Layout from '@/components/Layout'
 
 const Custom404 = () => (
