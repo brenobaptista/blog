@@ -33,7 +33,6 @@ const RetroCursorEffect = () => {
 
   useEffect(() => {
     if (theme.mode !== 'retro') {
-      setSparkles([])
       return
     }
 
@@ -96,6 +95,7 @@ const RetroCursorEffect = () => {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove)
       if (intervalId.current) clearInterval(intervalId.current)
+      setSparkles([])
     }
   }, [theme.mode])
 
