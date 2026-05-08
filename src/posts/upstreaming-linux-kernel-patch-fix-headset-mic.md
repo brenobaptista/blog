@@ -39,7 +39,7 @@ sudo dnf install perl # on Fedora
 
 ./scripts/checkpatch.pl 0001-patch-name.patch
 
-./scripts/get_maintainer.pl path/file.c # or 0001-patch-name.patch
+./scripts/get_maintainer.pl path/file.c
 ```
 
 ## Sending the Patch
@@ -52,9 +52,10 @@ sudo dnf install git-email # on Fedora
 # set it up (next section)
 
 git send-email --confirm=always \
- --to='Maintainer1 <maintainer@project.org>, Maintainer2 <maintainer2@project.org>' \
- --cc='reviewer@project.org, reviewer2@project.org' \
- 0001-patch-name.patch
+  --to=mailing-list@project.org \
+  --cc=maintainer@project.org \
+  --cc=maintainer2@project.org \
+  0001-patch-name.patch
 ```
 
 ### Setting Up With Gmail
@@ -69,4 +70,4 @@ smtpencryption = tls
 smtpserverport = 587
 ```
 
-You'll need to generate an app password in your Google Account settings. `git send-email` will ask for this password (not your Google password) before sending the email.
+You'll need to generate an app password in your [Google Account settings](https://myaccount.google.com/u/0/apppasswords). `git send-email` will ask for this password (not your Google password) before sending the email.
