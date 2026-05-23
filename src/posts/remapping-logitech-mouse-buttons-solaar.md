@@ -8,17 +8,11 @@ I use a Logitech MX Master 3S, which has extra programmable buttons. When I was 
 
 ![KDE mouse](/images/remapping-logitech-mouse-buttons-solaar/kde-mouse.png)
 
-After moving to Ubuntu (GNOME), that option was no longer there. I started looking for alternatives, but then I realized the answer was already installed on my machine: Solaar.
+After moving to GNOME, that option was no longer there. I started looking for alternatives, but then I realized the answer was already installed on my machine: Solaar.
 
 ## Solaar
 
 [Solaar](https://github.com/pwr-Solaar/Solaar/) is the Linux device manager for Logitech devices that use the Unifying or Bolt receivers. I had been using it just to monitor battery levels, but it also ships with a full [rules editor](https://pwr-solaar.github.io/Solaar/rules/) that can intercept events and trigger actions.
-
-Solaar is available in the Ubuntu repositories:
-
-```bash[class="command-line"]
-sudo apt install solaar
-```
 
 ## Step 1: Divert the Buttons
 
